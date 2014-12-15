@@ -1,0 +1,41 @@
+﻿{
+  "name": "mietpreise",
+  "title": "Mietpreise in Leipzig mit Koordinaten",
+  "description": "Kaltmietpreise in Leipzig errechnet aus Mietwohnungsangeboten der jeweils letzten zwölf Monate, mit entsprechenden Koordinaten. Achtung: Aus Datenschutzgründen werden einzelne Wohnungsangebote auf Häuserebene zusammengefasst und erst ab drei vorhandenen Wohnungs-Datensätzen als Datenpunkt angegeben.",
+  "license": "CC0 1.0",
+  "sources": [{
+    "name": "x",
+    "web": "x"
+  }],
+  "resources": [
+    {
+      "path": "data.php",
+	  "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "lon",
+            "type": "number"
+          },
+          {
+            "name": "lat",
+            "type": "number"
+          },
+          {
+            "name": "flaeche",
+            "type": "number"
+          },
+          {
+            "name": "kaltmiete",
+            "type": "number"
+          },
+          {
+            "name": "europrom2",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ]
+}

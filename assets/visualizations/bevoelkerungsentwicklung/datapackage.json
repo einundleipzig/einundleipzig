@@ -1,0 +1,70 @@
+﻿{
+  "name": "bevoelkerungsentwicklung",
+  "title": "Bevölkerungsentwicklung auf Ortsteilebene in Leipzig - Vergleich zwischen 2012 und 2013",
+  "description": "Vergleich verschiedener Indikatoren (Einwohnerzahl, Geburten und Sterbefälle, Zu- und Wegzüge) zur Bevölkerungsentwicklung in Leipzig auf Ortsteilebene",
+  "license": "CC0 1.0",
+  "last_updated": "2014-12-04",
+  "sources": [{
+    "name": "Leipzig Informationssystem",
+    "web": "http://statistik.leipzig.de/statdist/index.aspx"
+  }],
+  "resources": [
+    {
+      "path": "bevoelkerungsentwicklung.csv",
+	  "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Gebiet",
+            "type": "string"
+          },
+          {
+            "name": "Einwohner 2013",
+            "type": "integer"
+          },
+          {
+            "name": "Einwohner 2012",
+            "type": "integer"
+          },
+          {
+            "name": "Saldo Einwohnerentwicklung in Personen",
+            "type": "integer"
+          },
+          {
+            "name": "Saldo Einwohner Wachstum Prozent",
+            "type": "number"
+          },
+          {
+            "name": "Saldo aus Geburten und Sterbefällen in Personen",
+            "type": "integer"
+          },
+          {
+            "name": "Saldo aus Geburten und Sterbefällen in Prozent",
+            "type": "number"
+          },
+          {
+            "name": "Saldo aus innerstädtischen Zu- und Wegzügen",
+            "type": "integer"
+          },
+          {
+            "name": "Saldo aus außerstädtischen Zu- und Wegzügen",
+            "type": "integer"
+          },
+          {
+            "name": "Saldo Zu- und Wegzüge insgesamt",
+            "type": "integer"
+          },
+          {
+            "name": "Saldo Zu- und Wegzüge in Prozent",
+            "type": "number"
+          },
+          {
+            "name": "Durchschnittsalter",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+﻿{
+  "name": "herkunft",
+  "title": "Herkunft der Zuzügler nach Leipzig von außen, Stand Okt. 2012 bis Sept. 2013",
+  "license": "© UFZ Leipzig und Amt für Stadterneuerung und Wohnungsbauförderung",
+  "last_updated": "2014-12-14",
+  "sources": [{
+    "name": "Wanderungsbefragung 2014, UFZ Leipzig und Amt für Stadterneuerung und Wohnungsbauförderung (ASW)"
+  }],
+  "resources": [
+    {
+      "path": "herkunft.csv",
+	  "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Berlin",
+            "type": "number"
+          },
+          {
+            "name": "Alte Bundesländer",
+            "type": "number"
+          },
+          {
+            "name": "Ausland",
+            "type": "number"
+          },
+          {
+            "name": "Sachsen",
+            "type": "integer"
+          },
+          {
+            "name": "Sachsen-Anhalt",
+            "type": "integer"
+          },
+          {
+            "name": "Restliche neue Bundesländer",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ]
+}

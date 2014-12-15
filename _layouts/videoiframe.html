@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+		<!-- video.js CDN -->
+		<link href="http://vjs.zencdn.net/4.9/video-js.css" rel="stylesheet">
+
+	</head>
+	<body>	
+	
+	{{content}}
+	
+    <!-- video.js -->
+	<script src="http://vjs.zencdn.net/4.9/video.js"></script>	
+	
+	</body>
+
+</html>	

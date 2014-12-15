@@ -1,0 +1,42 @@
+﻿{
+  "name": "bevoelkerungszahl",
+  "title": "Bevölkerungszahl von Leipzig, Dresden, Duisburg und Nürnberg zwischen 1995 und 2013",
+  "description": "Bevölkerungszahl von Leipzig, Dresden, Duisburg und Nürnberg zwischen 1995 und 2013, jeweils zum Stichtag 31.12.",
+  "license": "© Statistische Ämter des Bundes und der Länder",
+  "last_updated": "2014-12-14",
+  "sources": [{
+    "name": "Regionaldatenbank Deutschland",
+    "web": "https://www.regionalstatistik.de/genesis/online/data;jsessionid=38F46EAB1A7FBFB4D2321F724E1C7052?operation=abruftabelleBearbeiten&levelindex=2&levelid=1418284875500&auswahloperation=abruftabelleAuspraegungAuswaehlen&auswahlverzeichnis=ordnungsstruktur&auswahlziel=werteabruf&selectionname=173-01-4&auswahltext=%23SHRKRLB-05112%2C14612%2C09564%2C14713&werteabruf=Werteabruf"
+  }],
+  "resources": [
+    {
+      "path": "bevoelkerungsentwicklung.csv",
+	  "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "jahr",
+            "type": "date"
+          },
+          {
+            "name": "Leipzig",
+            "type": "integer"
+          },
+          {
+            "name": "Dresden",
+            "type": "integer"
+          },
+          {
+            "name": "Duisburg",
+            "type": "integer"
+          },
+          {
+            "name": "Nürnberg",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+---
+layout: index
+scripts: [jquery-1.11.1.min.js, bootstrap.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing.min.js]
+---
+
+<header class="intro">
+	<video autoplay loop poster="assets/pages/index/header.jpg" id="bgvid">
+		<source src="assets/pages/index/intro.webm" type="video/webm">
+		<source src="assets/pages/index/intro.mp4" type="video/mp4">
+	</video>
+	
+	<div class="intro-body">
+		
+		<div class="intro-logo">
+			<img src="assets/pages/index/logo.png" class="img-responsive">
+		</div>		
+	
+		<div class="intro-text">
+			<p>
+				„Sie sind so frei“, schrieb Zeit Online über das Leben junger Menschen in Leipzig. Und die New York Times verkündete, die Stadt sei das „bessere Berlin“. Mittlerweile werben Immobilienfirmen mit den gleichen Sprüchen. Das hat Auswirkungen auf den Wohnungsmarkt und das Leben der Leipziger. Wie viel Freiheit bleibt, dazukommt oder geht, nimmt einundleipzig in den Blick. Soziale Segregation, Reurbanisierung und Gentrifizierung sind die Themen: Einfach erklärt mit Daten und Ergebnissen aus der Stadt-Forschung. Interaktiv mit Karten und Filmen, für und vor allem mit den Menschen in Leipzig.
+			</p>
+		</div>
+	
+		<div class="intro-buttons">
+			<a type="button" class="btn btn-themen" href="#themen"><i class="fa fa-arrow-circle-o-down fa-lg fa-intro"></i> Themen</a>
+
+			<a type="button" class="btn btn-about" href="about/"><i class="fa fa-info-circle fa-lg fa-intro"></i> Über uns</a>
+		</div>
+
+	</div>
+</header>
+
+<!-- About Section -->
+<section id="themen" class="themen-section text-center">
+
+	<h3 class="text-uppercase" style="font-size: 2em;">Unsere Themen</h3>
+
+	<ul id="filterOptions">
+		<li class="active"><a href="#" class="all">Alle</a></li>
+		<li>
+			<a href="javascript:void(0);" class="wissenschaft">Wissenschaft</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);" class="geschichten">Geschichten</a>
+		</li>
+	</ul>
+	<!--<ul id="filterOptions">
+		<li class="active"><a href="#" class="all">Alle</a></li>
+		{% for item in site.menu %}
+			{% for category in item.categories %}
+				<li>
+					<a href="javascript:void(0);" class="{{category}}">{{category}}</a>
+				</li>
+			{% endfor %}
+		{% endfor %}
+	</ul>-->
+
+
+	<ul class="ourHolder">
+	{% for item in site.menu %}
+		<li class="item" data-id="id-{{ forloop.index }}" data-type="{% for category in item.categories %}{{category }} {% endfor %}">
+			<a href="{{ item.url }}">
+				<div class="descriptionContainer">
+					<div class="description">
+						<h3 style="font-size: 2em;">{{ item.title }}</h3>
+						<h3>{{ item.subtitle }}</h3>
+					</div>
+				</div>
+				
+				<img src="{{site.baseurl }}assets/pages{{item.url}}{{item.image}}" class="img-responsive" />
+			</a>
+		</li>
+	{% endfor %}				
+	</ul>   
+</section>

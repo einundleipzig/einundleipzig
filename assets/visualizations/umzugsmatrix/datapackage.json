@@ -1,0 +1,2662 @@
+﻿{
+  "name": "binnenwanderung",
+  "title": "Binnenwanderung innerhalb Leipzig zwischen 2004 und 2013 auf Ortsteilebene",
+  "description": "Binnenwanderung innerhalb Leipzig (Hauptwohnsitz in Leipzig) zwischen 2004 und 2013 auf Ortsteilebene. Umzüge von Gebiet in Kopfzeile nach Gebiet in 1. Spalte. Achtung: Die Zahlen-Werte 1 und 2 werden aus Datenschutzgründen anonymisiert und sind deshalb nicht ausgegeben.",
+  "license": "CC0 1.0",
+  "last_updated": "2014-01-16",
+  "sources": [{
+    "name": "Amt für Statistik und Wahlen der Stadt Leipzig"
+  }],
+  "resources": [
+    {
+      "path": "ortsteildaten2004.csv",
+	  "format": "csv",
+      "mediatype": "text/csv",	  
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "Zentrum",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Südost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-West",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nordwest",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Abtnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Thekla",
+            "type": "number"
+          },
+          {
+            "name": "Plaußig-Portitz",
+            "type": "number"
+          },
+          {
+            "name": "Neustadt-Neuschönefeld",
+            "type": "number"
+          },
+          {
+            "name": "Volkmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Anger-Crottendorf",
+            "type": "number"
+          },
+          {
+            "name": "Sellerhausen-Stünz",
+            "type": "number"
+          },
+          {
+            "name": "Paunsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Heiterblick",
+            "type": "number"
+          },
+          {
+            "name": "Mölkau",
+            "type": "number"
+          },
+          {
+            "name": "Engelsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Baalsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Althen-Kleinpösna",
+            "type": "number"
+          },
+          {
+            "name": "Reudnitz-Thonberg",
+            "type": "number"
+          },
+          {
+            "name": "Stötteritz",
+            "type": "number"
+          },
+          {
+            "name": "Probstheida",
+            "type": "number"
+          },
+          {
+            "name": "Meusdorf",
+            "type": "number"
+          },
+          {
+            "name": "Liebertwolkwitz",
+            "type": "number"
+          },
+          {
+            "name": "Holzhausen",
+            "type": "number"
+          },
+          {
+            "name": "Südvorstadt",
+            "type": "number"
+          },
+          {
+            "name": "Connewitz",
+            "type": "number"
+          },
+          {
+            "name": "Marienbrunn",
+            "type": "number"
+          },
+          {
+            "name": "Lößnig",
+            "type": "number"
+          },
+          {
+            "name": "Dölitz-Dösen",
+            "type": "number"
+          },
+          {
+            "name": "Schleußig",
+            "type": "number"
+          },
+          {
+            "name": "Plagwitz",
+            "type": "number"
+          },
+          {
+            "name": "Kleinzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Großzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Knautkleeberg-Knauthain",
+            "type": "number"
+          },
+          {
+            "name": "Hartmannsdorf-Knautnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Siedlung",
+            "type": "number"
+          },
+          {
+            "name": "Lausen-Grünau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Miltitz",
+            "type": "number"
+          },
+          {
+            "name": "Lindenau",
+            "type": "number"
+          },
+          {
+            "name": "Altlindenau",
+            "type": "number"
+          },
+          {
+            "name": "Neulindenau",
+            "type": "number"
+          },
+          {
+            "name": "Leutzsch",
+            "type": "number"
+          },
+          {
+            "name": "Böhlitz-Ehrenberg",
+            "type": "number"
+          },
+          {
+            "name": "Burghausen-Rückmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Möckern",
+            "type": "number"
+          },
+          {
+            "name": "Wahren",
+            "type": "number"
+          },
+          {
+            "name": "Lützschena-Stahmeln",
+            "type": "number"
+          },
+          {
+            "name": "Lindenthal",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Eutritzsch",
+            "type": "number"
+          },
+          {
+            "name": "Seehausen",
+            "type": "number"
+          },
+          {
+            "name": "Wiederitzsch",
+            "type": "number"
+          }
+        ]
+      }
+    },
+	{
+      "path": "ortsteildaten2005.csv",
+	  "format": "csv",
+      "mediatype": "text/csv",	  
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "Zentrum",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Südost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-West",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nordwest",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Abtnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Thekla",
+            "type": "number"
+          },
+          {
+            "name": "Plaußig-Portitz",
+            "type": "number"
+          },
+          {
+            "name": "Neustadt-Neuschönefeld",
+            "type": "number"
+          },
+          {
+            "name": "Volkmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Anger-Crottendorf",
+            "type": "number"
+          },
+          {
+            "name": "Sellerhausen-Stünz",
+            "type": "number"
+          },
+          {
+            "name": "Paunsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Heiterblick",
+            "type": "number"
+          },
+          {
+            "name": "Mölkau",
+            "type": "number"
+          },
+          {
+            "name": "Engelsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Baalsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Althen-Kleinpösna",
+            "type": "number"
+          },
+          {
+            "name": "Reudnitz-Thonberg",
+            "type": "number"
+          },
+          {
+            "name": "Stötteritz",
+            "type": "number"
+          },
+          {
+            "name": "Probstheida",
+            "type": "number"
+          },
+          {
+            "name": "Meusdorf",
+            "type": "number"
+          },
+          {
+            "name": "Liebertwolkwitz",
+            "type": "number"
+          },
+          {
+            "name": "Holzhausen",
+            "type": "number"
+          },
+          {
+            "name": "Südvorstadt",
+            "type": "number"
+          },
+          {
+            "name": "Connewitz",
+            "type": "number"
+          },
+          {
+            "name": "Marienbrunn",
+            "type": "number"
+          },
+          {
+            "name": "Lößnig",
+            "type": "number"
+          },
+          {
+            "name": "Dölitz-Dösen",
+            "type": "number"
+          },
+          {
+            "name": "Schleußig",
+            "type": "number"
+          },
+          {
+            "name": "Plagwitz",
+            "type": "number"
+          },
+          {
+            "name": "Kleinzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Großzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Knautkleeberg-Knauthain",
+            "type": "number"
+          },
+          {
+            "name": "Hartmannsdorf-Knautnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Siedlung",
+            "type": "number"
+          },
+          {
+            "name": "Lausen-Grünau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Miltitz",
+            "type": "number"
+          },
+          {
+            "name": "Lindenau",
+            "type": "number"
+          },
+          {
+            "name": "Altlindenau",
+            "type": "number"
+          },
+          {
+            "name": "Neulindenau",
+            "type": "number"
+          },
+          {
+            "name": "Leutzsch",
+            "type": "number"
+          },
+          {
+            "name": "Böhlitz-Ehrenberg",
+            "type": "number"
+          },
+          {
+            "name": "Burghausen-Rückmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Möckern",
+            "type": "number"
+          },
+          {
+            "name": "Wahren",
+            "type": "number"
+          },
+          {
+            "name": "Lützschena-Stahmeln",
+            "type": "number"
+          },
+          {
+            "name": "Lindenthal",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Eutritzsch",
+            "type": "number"
+          },
+          {
+            "name": "Seehausen",
+            "type": "number"
+          },
+          {
+            "name": "Wiederitzsch",
+            "type": "number"
+          }
+        ]
+      }
+    },
+	{
+      "path": "ortsteildaten2006.csv",
+	  "format": "csv",
+      "mediatype": "text/csv",	  
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "Zentrum",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Südost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-West",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nordwest",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Abtnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Thekla",
+            "type": "number"
+          },
+          {
+            "name": "Plaußig-Portitz",
+            "type": "number"
+          },
+          {
+            "name": "Neustadt-Neuschönefeld",
+            "type": "number"
+          },
+          {
+            "name": "Volkmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Anger-Crottendorf",
+            "type": "number"
+          },
+          {
+            "name": "Sellerhausen-Stünz",
+            "type": "number"
+          },
+          {
+            "name": "Paunsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Heiterblick",
+            "type": "number"
+          },
+          {
+            "name": "Mölkau",
+            "type": "number"
+          },
+          {
+            "name": "Engelsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Baalsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Althen-Kleinpösna",
+            "type": "number"
+          },
+          {
+            "name": "Reudnitz-Thonberg",
+            "type": "number"
+          },
+          {
+            "name": "Stötteritz",
+            "type": "number"
+          },
+          {
+            "name": "Probstheida",
+            "type": "number"
+          },
+          {
+            "name": "Meusdorf",
+            "type": "number"
+          },
+          {
+            "name": "Liebertwolkwitz",
+            "type": "number"
+          },
+          {
+            "name": "Holzhausen",
+            "type": "number"
+          },
+          {
+            "name": "Südvorstadt",
+            "type": "number"
+          },
+          {
+            "name": "Connewitz",
+            "type": "number"
+          },
+          {
+            "name": "Marienbrunn",
+            "type": "number"
+          },
+          {
+            "name": "Lößnig",
+            "type": "number"
+          },
+          {
+            "name": "Dölitz-Dösen",
+            "type": "number"
+          },
+          {
+            "name": "Schleußig",
+            "type": "number"
+          },
+          {
+            "name": "Plagwitz",
+            "type": "number"
+          },
+          {
+            "name": "Kleinzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Großzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Knautkleeberg-Knauthain",
+            "type": "number"
+          },
+          {
+            "name": "Hartmannsdorf-Knautnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Siedlung",
+            "type": "number"
+          },
+          {
+            "name": "Lausen-Grünau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Miltitz",
+            "type": "number"
+          },
+          {
+            "name": "Lindenau",
+            "type": "number"
+          },
+          {
+            "name": "Altlindenau",
+            "type": "number"
+          },
+          {
+            "name": "Neulindenau",
+            "type": "number"
+          },
+          {
+            "name": "Leutzsch",
+            "type": "number"
+          },
+          {
+            "name": "Böhlitz-Ehrenberg",
+            "type": "number"
+          },
+          {
+            "name": "Burghausen-Rückmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Möckern",
+            "type": "number"
+          },
+          {
+            "name": "Wahren",
+            "type": "number"
+          },
+          {
+            "name": "Lützschena-Stahmeln",
+            "type": "number"
+          },
+          {
+            "name": "Lindenthal",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Eutritzsch",
+            "type": "number"
+          },
+          {
+            "name": "Seehausen",
+            "type": "number"
+          },
+          {
+            "name": "Wiederitzsch",
+            "type": "number"
+          }
+        ]
+      }
+    },
+	{
+      "path": "ortsteildaten2007.csv",
+	  "format": "csv",
+      "mediatype": "text/csv",	  
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "Zentrum",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Südost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-West",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nordwest",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Abtnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Thekla",
+            "type": "number"
+          },
+          {
+            "name": "Plaußig-Portitz",
+            "type": "number"
+          },
+          {
+            "name": "Neustadt-Neuschönefeld",
+            "type": "number"
+          },
+          {
+            "name": "Volkmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Anger-Crottendorf",
+            "type": "number"
+          },
+          {
+            "name": "Sellerhausen-Stünz",
+            "type": "number"
+          },
+          {
+            "name": "Paunsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Heiterblick",
+            "type": "number"
+          },
+          {
+            "name": "Mölkau",
+            "type": "number"
+          },
+          {
+            "name": "Engelsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Baalsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Althen-Kleinpösna",
+            "type": "number"
+          },
+          {
+            "name": "Reudnitz-Thonberg",
+            "type": "number"
+          },
+          {
+            "name": "Stötteritz",
+            "type": "number"
+          },
+          {
+            "name": "Probstheida",
+            "type": "number"
+          },
+          {
+            "name": "Meusdorf",
+            "type": "number"
+          },
+          {
+            "name": "Liebertwolkwitz",
+            "type": "number"
+          },
+          {
+            "name": "Holzhausen",
+            "type": "number"
+          },
+          {
+            "name": "Südvorstadt",
+            "type": "number"
+          },
+          {
+            "name": "Connewitz",
+            "type": "number"
+          },
+          {
+            "name": "Marienbrunn",
+            "type": "number"
+          },
+          {
+            "name": "Lößnig",
+            "type": "number"
+          },
+          {
+            "name": "Dölitz-Dösen",
+            "type": "number"
+          },
+          {
+            "name": "Schleußig",
+            "type": "number"
+          },
+          {
+            "name": "Plagwitz",
+            "type": "number"
+          },
+          {
+            "name": "Kleinzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Großzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Knautkleeberg-Knauthain",
+            "type": "number"
+          },
+          {
+            "name": "Hartmannsdorf-Knautnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Siedlung",
+            "type": "number"
+          },
+          {
+            "name": "Lausen-Grünau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Miltitz",
+            "type": "number"
+          },
+          {
+            "name": "Lindenau",
+            "type": "number"
+          },
+          {
+            "name": "Altlindenau",
+            "type": "number"
+          },
+          {
+            "name": "Neulindenau",
+            "type": "number"
+          },
+          {
+            "name": "Leutzsch",
+            "type": "number"
+          },
+          {
+            "name": "Böhlitz-Ehrenberg",
+            "type": "number"
+          },
+          {
+            "name": "Burghausen-Rückmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Möckern",
+            "type": "number"
+          },
+          {
+            "name": "Wahren",
+            "type": "number"
+          },
+          {
+            "name": "Lützschena-Stahmeln",
+            "type": "number"
+          },
+          {
+            "name": "Lindenthal",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Eutritzsch",
+            "type": "number"
+          },
+          {
+            "name": "Seehausen",
+            "type": "number"
+          },
+          {
+            "name": "Wiederitzsch",
+            "type": "number"
+          }
+        ]
+      }
+    },
+	{
+      "path": "ortsteildaten2008.csv",
+	  "format": "csv",
+      "mediatype": "text/csv",	  
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "Zentrum",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Südost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-West",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nordwest",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Abtnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Thekla",
+            "type": "number"
+          },
+          {
+            "name": "Plaußig-Portitz",
+            "type": "number"
+          },
+          {
+            "name": "Neustadt-Neuschönefeld",
+            "type": "number"
+          },
+          {
+            "name": "Volkmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Anger-Crottendorf",
+            "type": "number"
+          },
+          {
+            "name": "Sellerhausen-Stünz",
+            "type": "number"
+          },
+          {
+            "name": "Paunsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Heiterblick",
+            "type": "number"
+          },
+          {
+            "name": "Mölkau",
+            "type": "number"
+          },
+          {
+            "name": "Engelsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Baalsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Althen-Kleinpösna",
+            "type": "number"
+          },
+          {
+            "name": "Reudnitz-Thonberg",
+            "type": "number"
+          },
+          {
+            "name": "Stötteritz",
+            "type": "number"
+          },
+          {
+            "name": "Probstheida",
+            "type": "number"
+          },
+          {
+            "name": "Meusdorf",
+            "type": "number"
+          },
+          {
+            "name": "Liebertwolkwitz",
+            "type": "number"
+          },
+          {
+            "name": "Holzhausen",
+            "type": "number"
+          },
+          {
+            "name": "Südvorstadt",
+            "type": "number"
+          },
+          {
+            "name": "Connewitz",
+            "type": "number"
+          },
+          {
+            "name": "Marienbrunn",
+            "type": "number"
+          },
+          {
+            "name": "Lößnig",
+            "type": "number"
+          },
+          {
+            "name": "Dölitz-Dösen",
+            "type": "number"
+          },
+          {
+            "name": "Schleußig",
+            "type": "number"
+          },
+          {
+            "name": "Plagwitz",
+            "type": "number"
+          },
+          {
+            "name": "Kleinzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Großzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Knautkleeberg-Knauthain",
+            "type": "number"
+          },
+          {
+            "name": "Hartmannsdorf-Knautnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Siedlung",
+            "type": "number"
+          },
+          {
+            "name": "Lausen-Grünau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Miltitz",
+            "type": "number"
+          },
+          {
+            "name": "Lindenau",
+            "type": "number"
+          },
+          {
+            "name": "Altlindenau",
+            "type": "number"
+          },
+          {
+            "name": "Neulindenau",
+            "type": "number"
+          },
+          {
+            "name": "Leutzsch",
+            "type": "number"
+          },
+          {
+            "name": "Böhlitz-Ehrenberg",
+            "type": "number"
+          },
+          {
+            "name": "Burghausen-Rückmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Möckern",
+            "type": "number"
+          },
+          {
+            "name": "Wahren",
+            "type": "number"
+          },
+          {
+            "name": "Lützschena-Stahmeln",
+            "type": "number"
+          },
+          {
+            "name": "Lindenthal",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Eutritzsch",
+            "type": "number"
+          },
+          {
+            "name": "Seehausen",
+            "type": "number"
+          },
+          {
+            "name": "Wiederitzsch",
+            "type": "number"
+          }
+        ]
+      }
+    },
+	{
+      "path": "ortsteildaten2009.csv",
+	  "format": "csv",
+      "mediatype": "text/csv",	  
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "Zentrum",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Südost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-West",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nordwest",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Abtnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Thekla",
+            "type": "number"
+          },
+          {
+            "name": "Plaußig-Portitz",
+            "type": "number"
+          },
+          {
+            "name": "Neustadt-Neuschönefeld",
+            "type": "number"
+          },
+          {
+            "name": "Volkmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Anger-Crottendorf",
+            "type": "number"
+          },
+          {
+            "name": "Sellerhausen-Stünz",
+            "type": "number"
+          },
+          {
+            "name": "Paunsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Heiterblick",
+            "type": "number"
+          },
+          {
+            "name": "Mölkau",
+            "type": "number"
+          },
+          {
+            "name": "Engelsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Baalsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Althen-Kleinpösna",
+            "type": "number"
+          },
+          {
+            "name": "Reudnitz-Thonberg",
+            "type": "number"
+          },
+          {
+            "name": "Stötteritz",
+            "type": "number"
+          },
+          {
+            "name": "Probstheida",
+            "type": "number"
+          },
+          {
+            "name": "Meusdorf",
+            "type": "number"
+          },
+          {
+            "name": "Liebertwolkwitz",
+            "type": "number"
+          },
+          {
+            "name": "Holzhausen",
+            "type": "number"
+          },
+          {
+            "name": "Südvorstadt",
+            "type": "number"
+          },
+          {
+            "name": "Connewitz",
+            "type": "number"
+          },
+          {
+            "name": "Marienbrunn",
+            "type": "number"
+          },
+          {
+            "name": "Lößnig",
+            "type": "number"
+          },
+          {
+            "name": "Dölitz-Dösen",
+            "type": "number"
+          },
+          {
+            "name": "Schleußig",
+            "type": "number"
+          },
+          {
+            "name": "Plagwitz",
+            "type": "number"
+          },
+          {
+            "name": "Kleinzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Großzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Knautkleeberg-Knauthain",
+            "type": "number"
+          },
+          {
+            "name": "Hartmannsdorf-Knautnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Siedlung",
+            "type": "number"
+          },
+          {
+            "name": "Lausen-Grünau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Miltitz",
+            "type": "number"
+          },
+          {
+            "name": "Lindenau",
+            "type": "number"
+          },
+          {
+            "name": "Altlindenau",
+            "type": "number"
+          },
+          {
+            "name": "Neulindenau",
+            "type": "number"
+          },
+          {
+            "name": "Leutzsch",
+            "type": "number"
+          },
+          {
+            "name": "Böhlitz-Ehrenberg",
+            "type": "number"
+          },
+          {
+            "name": "Burghausen-Rückmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Möckern",
+            "type": "number"
+          },
+          {
+            "name": "Wahren",
+            "type": "number"
+          },
+          {
+            "name": "Lützschena-Stahmeln",
+            "type": "number"
+          },
+          {
+            "name": "Lindenthal",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Eutritzsch",
+            "type": "number"
+          },
+          {
+            "name": "Seehausen",
+            "type": "number"
+          },
+          {
+            "name": "Wiederitzsch",
+            "type": "number"
+          }
+        ]
+      }
+    },
+	{
+      "path": "ortsteildaten2010.csv",
+	  "format": "csv",
+      "mediatype": "text/csv",	  
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "Zentrum",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Südost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-West",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nordwest",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Abtnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Thekla",
+            "type": "number"
+          },
+          {
+            "name": "Plaußig-Portitz",
+            "type": "number"
+          },
+          {
+            "name": "Neustadt-Neuschönefeld",
+            "type": "number"
+          },
+          {
+            "name": "Volkmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Anger-Crottendorf",
+            "type": "number"
+          },
+          {
+            "name": "Sellerhausen-Stünz",
+            "type": "number"
+          },
+          {
+            "name": "Paunsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Heiterblick",
+            "type": "number"
+          },
+          {
+            "name": "Mölkau",
+            "type": "number"
+          },
+          {
+            "name": "Engelsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Baalsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Althen-Kleinpösna",
+            "type": "number"
+          },
+          {
+            "name": "Reudnitz-Thonberg",
+            "type": "number"
+          },
+          {
+            "name": "Stötteritz",
+            "type": "number"
+          },
+          {
+            "name": "Probstheida",
+            "type": "number"
+          },
+          {
+            "name": "Meusdorf",
+            "type": "number"
+          },
+          {
+            "name": "Liebertwolkwitz",
+            "type": "number"
+          },
+          {
+            "name": "Holzhausen",
+            "type": "number"
+          },
+          {
+            "name": "Südvorstadt",
+            "type": "number"
+          },
+          {
+            "name": "Connewitz",
+            "type": "number"
+          },
+          {
+            "name": "Marienbrunn",
+            "type": "number"
+          },
+          {
+            "name": "Lößnig",
+            "type": "number"
+          },
+          {
+            "name": "Dölitz-Dösen",
+            "type": "number"
+          },
+          {
+            "name": "Schleußig",
+            "type": "number"
+          },
+          {
+            "name": "Plagwitz",
+            "type": "number"
+          },
+          {
+            "name": "Kleinzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Großzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Knautkleeberg-Knauthain",
+            "type": "number"
+          },
+          {
+            "name": "Hartmannsdorf-Knautnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Siedlung",
+            "type": "number"
+          },
+          {
+            "name": "Lausen-Grünau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Miltitz",
+            "type": "number"
+          },
+          {
+            "name": "Lindenau",
+            "type": "number"
+          },
+          {
+            "name": "Altlindenau",
+            "type": "number"
+          },
+          {
+            "name": "Neulindenau",
+            "type": "number"
+          },
+          {
+            "name": "Leutzsch",
+            "type": "number"
+          },
+          {
+            "name": "Böhlitz-Ehrenberg",
+            "type": "number"
+          },
+          {
+            "name": "Burghausen-Rückmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Möckern",
+            "type": "number"
+          },
+          {
+            "name": "Wahren",
+            "type": "number"
+          },
+          {
+            "name": "Lützschena-Stahmeln",
+            "type": "number"
+          },
+          {
+            "name": "Lindenthal",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Eutritzsch",
+            "type": "number"
+          },
+          {
+            "name": "Seehausen",
+            "type": "number"
+          },
+          {
+            "name": "Wiederitzsch",
+            "type": "number"
+          }
+        ]
+      }
+    },
+	{
+      "path": "ortsteildaten2011.csv",
+	  "format": "csv",
+      "mediatype": "text/csv",	  
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "Zentrum",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Südost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-West",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nordwest",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Abtnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Thekla",
+            "type": "number"
+          },
+          {
+            "name": "Plaußig-Portitz",
+            "type": "number"
+          },
+          {
+            "name": "Neustadt-Neuschönefeld",
+            "type": "number"
+          },
+          {
+            "name": "Volkmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Anger-Crottendorf",
+            "type": "number"
+          },
+          {
+            "name": "Sellerhausen-Stünz",
+            "type": "number"
+          },
+          {
+            "name": "Paunsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Heiterblick",
+            "type": "number"
+          },
+          {
+            "name": "Mölkau",
+            "type": "number"
+          },
+          {
+            "name": "Engelsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Baalsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Althen-Kleinpösna",
+            "type": "number"
+          },
+          {
+            "name": "Reudnitz-Thonberg",
+            "type": "number"
+          },
+          {
+            "name": "Stötteritz",
+            "type": "number"
+          },
+          {
+            "name": "Probstheida",
+            "type": "number"
+          },
+          {
+            "name": "Meusdorf",
+            "type": "number"
+          },
+          {
+            "name": "Liebertwolkwitz",
+            "type": "number"
+          },
+          {
+            "name": "Holzhausen",
+            "type": "number"
+          },
+          {
+            "name": "Südvorstadt",
+            "type": "number"
+          },
+          {
+            "name": "Connewitz",
+            "type": "number"
+          },
+          {
+            "name": "Marienbrunn",
+            "type": "number"
+          },
+          {
+            "name": "Lößnig",
+            "type": "number"
+          },
+          {
+            "name": "Dölitz-Dösen",
+            "type": "number"
+          },
+          {
+            "name": "Schleußig",
+            "type": "number"
+          },
+          {
+            "name": "Plagwitz",
+            "type": "number"
+          },
+          {
+            "name": "Kleinzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Großzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Knautkleeberg-Knauthain",
+            "type": "number"
+          },
+          {
+            "name": "Hartmannsdorf-Knautnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Siedlung",
+            "type": "number"
+          },
+          {
+            "name": "Lausen-Grünau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Miltitz",
+            "type": "number"
+          },
+          {
+            "name": "Lindenau",
+            "type": "number"
+          },
+          {
+            "name": "Altlindenau",
+            "type": "number"
+          },
+          {
+            "name": "Neulindenau",
+            "type": "number"
+          },
+          {
+            "name": "Leutzsch",
+            "type": "number"
+          },
+          {
+            "name": "Böhlitz-Ehrenberg",
+            "type": "number"
+          },
+          {
+            "name": "Burghausen-Rückmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Möckern",
+            "type": "number"
+          },
+          {
+            "name": "Wahren",
+            "type": "number"
+          },
+          {
+            "name": "Lützschena-Stahmeln",
+            "type": "number"
+          },
+          {
+            "name": "Lindenthal",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Eutritzsch",
+            "type": "number"
+          },
+          {
+            "name": "Seehausen",
+            "type": "number"
+          },
+          {
+            "name": "Wiederitzsch",
+            "type": "number"
+          }
+        ]
+      }
+    },
+	{
+      "path": "ortsteildaten2012.csv",
+	  "format": "csv",
+      "mediatype": "text/csv",	  
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "Zentrum",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Südost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-West",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nordwest",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Abtnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Thekla",
+            "type": "number"
+          },
+          {
+            "name": "Plaußig-Portitz",
+            "type": "number"
+          },
+          {
+            "name": "Neustadt-Neuschönefeld",
+            "type": "number"
+          },
+          {
+            "name": "Volkmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Anger-Crottendorf",
+            "type": "number"
+          },
+          {
+            "name": "Sellerhausen-Stünz",
+            "type": "number"
+          },
+          {
+            "name": "Paunsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Heiterblick",
+            "type": "number"
+          },
+          {
+            "name": "Mölkau",
+            "type": "number"
+          },
+          {
+            "name": "Engelsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Baalsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Althen-Kleinpösna",
+            "type": "number"
+          },
+          {
+            "name": "Reudnitz-Thonberg",
+            "type": "number"
+          },
+          {
+            "name": "Stötteritz",
+            "type": "number"
+          },
+          {
+            "name": "Probstheida",
+            "type": "number"
+          },
+          {
+            "name": "Meusdorf",
+            "type": "number"
+          },
+          {
+            "name": "Liebertwolkwitz",
+            "type": "number"
+          },
+          {
+            "name": "Holzhausen",
+            "type": "number"
+          },
+          {
+            "name": "Südvorstadt",
+            "type": "number"
+          },
+          {
+            "name": "Connewitz",
+            "type": "number"
+          },
+          {
+            "name": "Marienbrunn",
+            "type": "number"
+          },
+          {
+            "name": "Lößnig",
+            "type": "number"
+          },
+          {
+            "name": "Dölitz-Dösen",
+            "type": "number"
+          },
+          {
+            "name": "Schleußig",
+            "type": "number"
+          },
+          {
+            "name": "Plagwitz",
+            "type": "number"
+          },
+          {
+            "name": "Kleinzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Großzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Knautkleeberg-Knauthain",
+            "type": "number"
+          },
+          {
+            "name": "Hartmannsdorf-Knautnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Siedlung",
+            "type": "number"
+          },
+          {
+            "name": "Lausen-Grünau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Miltitz",
+            "type": "number"
+          },
+          {
+            "name": "Lindenau",
+            "type": "number"
+          },
+          {
+            "name": "Altlindenau",
+            "type": "number"
+          },
+          {
+            "name": "Neulindenau",
+            "type": "number"
+          },
+          {
+            "name": "Leutzsch",
+            "type": "number"
+          },
+          {
+            "name": "Böhlitz-Ehrenberg",
+            "type": "number"
+          },
+          {
+            "name": "Burghausen-Rückmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Möckern",
+            "type": "number"
+          },
+          {
+            "name": "Wahren",
+            "type": "number"
+          },
+          {
+            "name": "Lützschena-Stahmeln",
+            "type": "number"
+          },
+          {
+            "name": "Lindenthal",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Eutritzsch",
+            "type": "number"
+          },
+          {
+            "name": "Seehausen",
+            "type": "number"
+          },
+          {
+            "name": "Wiederitzsch",
+            "type": "number"
+          }
+        ]
+      }
+    },
+	{
+      "path": "ortsteildaten2013.csv",
+	  "format": "csv",
+      "mediatype": "text/csv",	  
+      "schema": {
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "Zentrum",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Südost",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-West",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nordwest",
+            "type": "number"
+          },
+          {
+            "name": "Zentrum-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Abtnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönefeld-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Mockau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Thekla",
+            "type": "number"
+          },
+          {
+            "name": "Plaußig-Portitz",
+            "type": "number"
+          },
+          {
+            "name": "Neustadt-Neuschönefeld",
+            "type": "number"
+          },
+          {
+            "name": "Volkmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Anger-Crottendorf",
+            "type": "number"
+          },
+          {
+            "name": "Sellerhausen-Stünz",
+            "type": "number"
+          },
+          {
+            "name": "Paunsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Heiterblick",
+            "type": "number"
+          },
+          {
+            "name": "Mölkau",
+            "type": "number"
+          },
+          {
+            "name": "Engelsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Baalsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Althen-Kleinpösna",
+            "type": "number"
+          },
+          {
+            "name": "Reudnitz-Thonberg",
+            "type": "number"
+          },
+          {
+            "name": "Stötteritz",
+            "type": "number"
+          },
+          {
+            "name": "Probstheida",
+            "type": "number"
+          },
+          {
+            "name": "Meusdorf",
+            "type": "number"
+          },
+          {
+            "name": "Liebertwolkwitz",
+            "type": "number"
+          },
+          {
+            "name": "Holzhausen",
+            "type": "number"
+          },
+          {
+            "name": "Südvorstadt",
+            "type": "number"
+          },
+          {
+            "name": "Connewitz",
+            "type": "number"
+          },
+          {
+            "name": "Marienbrunn",
+            "type": "number"
+          },
+          {
+            "name": "Lößnig",
+            "type": "number"
+          },
+          {
+            "name": "Dölitz-Dösen",
+            "type": "number"
+          },
+          {
+            "name": "Schleußig",
+            "type": "number"
+          },
+          {
+            "name": "Plagwitz",
+            "type": "number"
+          },
+          {
+            "name": "Kleinzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Großzschocher",
+            "type": "number"
+          },
+          {
+            "name": "Knautkleeberg-Knauthain",
+            "type": "number"
+          },
+          {
+            "name": "Hartmannsdorf-Knautnaundorf",
+            "type": "number"
+          },
+          {
+            "name": "Schönau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Ost",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Siedlung",
+            "type": "number"
+          },
+          {
+            "name": "Lausen-Grünau",
+            "type": "number"
+          },
+          {
+            "name": "Grünau-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Miltitz",
+            "type": "number"
+          },
+          {
+            "name": "Lindenau",
+            "type": "number"
+          },
+          {
+            "name": "Altlindenau",
+            "type": "number"
+          },
+          {
+            "name": "Neulindenau",
+            "type": "number"
+          },
+          {
+            "name": "Leutzsch",
+            "type": "number"
+          },
+          {
+            "name": "Böhlitz-Ehrenberg",
+            "type": "number"
+          },
+          {
+            "name": "Burghausen-Rückmarsdorf",
+            "type": "number"
+          },
+          {
+            "name": "Möckern",
+            "type": "number"
+          },
+          {
+            "name": "Wahren",
+            "type": "number"
+          },
+          {
+            "name": "Lützschena-Stahmeln",
+            "type": "number"
+          },
+          {
+            "name": "Lindenthal",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Süd",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Mitte",
+            "type": "number"
+          },
+          {
+            "name": "Gohlis-Nord",
+            "type": "number"
+          },
+          {
+            "name": "Eutritzsch",
+            "type": "number"
+          },
+          {
+            "name": "Seehausen",
+            "type": "number"
+          },
+          {
+            "name": "Wiederitzsch",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ]
+}
