@@ -1,0 +1,151 @@
+/*-----------------------------------------------------------------------------------*/
+/* Blog post styles
+/*-----------------------------------------------------------------------------------*/
+
+article.post {
+	@include make-md-column(9);
+	
+	@include make-xs-column(12);
+	
+	margin-bottom: 35px;
+	
+	a {
+		&.readmore {
+			display: inline-block;
+			font-family: "Merriweather Sans",sans-serif;
+			font-weight: 700;
+			font-size: 0.8em;
+			text-transform: uppercase;
+			margin-left: 0.2em;
+			position: relative;
+			
+			span {
+				//font-family: "Lusitana",serif;
+				font-style: normal;
+				position: absolute;
+				//font-size: 1.5em;
+				top: -1px;
+				right: -12px;
+			}
+		}
+	}
+	
+	h1,
+	h2,
+	h3,
+	h4
+	{
+		width: 100%;
+	}
+	
+	p {
+		font-family: "Merriweather",serif;
+		line-height: 1.6em;
+		font-style: normal;
+		font-size: 0.9em;
+		margin-bottom: 1.5em;
+		
+		width: 100%;
+		
+		&.type {
+			border-bottom: 1px solid;
+			display: inline-block;
+			font-family: "Merriweather Sans",sans-serif;
+			font-size: 0.7em;
+			font-weight: 700;
+			margin-bottom: 2em;
+			padding: 0.3em 0px;
+			text-align: left;
+			text-transform: uppercase;	
+
+			width: auto;			
+		}
+		
+		&.author {
+			font-style: italic;
+		}			
+	}
+	
+
+	
+	h2 {
+		font-family: "Merriweather",serif;
+		font-style: italic;
+		font-size: 1em;
+		font-weight: 400;
+		line-height: 1.6em;
+		margin-bottom: 0.9em;
+	}
+	
+	time {
+		color: rgba(51, 51, 51, 0.4);
+		font-family: "Merriweather",serif;
+		font-style: italic;
+		font-size: 0.9em;
+		margin-bottom: 0.3em;	
+		line-height: 1.6em;
+	}
+}
+
+.pagination {
+	text-align: center;
+	
+	ul {
+		text-align: center;
+		display: inline; 
+		
+		li {
+			display: inline;
+		}
+		
+		ul li {
+			display: none;
+		  
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3) {
+				display: inline;
+			}
+		}
+	}
+	
+	
+    li a {
+		transition: all 0.2s ease-in-out 0s;
+		background: none repeat scroll 0% 0% #F7F7F7;
+		border-radius: 3px;
+		border: 1px solid #DDD;
+		color: #333;
+		padding: 0.375em 0.809em;
+
+		&:hover,
+		&:focus {
+			background: none repeat scroll 0% 0% #FFF;
+			color: #477DCA;
+		}
+		
+		&:active {
+			background: none repeat scroll 0% 0% #F7F7F7;
+		}
+	}
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Vimeo embedder
+/*-----------------------------------------------------------------------------------*/
+
+.vimeo-embed {
+	position: relative;
+	padding-bottom: 55%/*56.25%*/;
+	padding-top: 25px;
+	height: 0;
+}
+.vimeo-embed iframe,
+.vimeo-embed object,
+.vimeo-embed embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,780 @@
+/*-----------------------------------------------------------------------------------*/
+/* Styles that are only required for certain _pages
+/*-----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------*/
+/* Index page: Quicksand sort styles
+/*-----------------------------------------------------------------------------------*/
+ .themen-section {
+	width: 100%;
+	padding-top: 40px;
+	margin: 0px;
+}
+ .themen-section h1, h2, h3, h4 {
+	color: #000;
+}
+
+.btn-sort {
+	color: #000;
+	font-size: 12pt;
+}
+
+.fa-intro {
+	margin-right: 20px;
+}
+
+/*- FILTER OPTIONS -*/
+ul#filterOptions {
+	width: 100%;
+	margin: 30px 0;
+	overflow: hidden;
+	padding: 0;
+  
+	li {
+		margin-right: 2px;
+		display: inline-block;
+		float: center;
+		
+		a {
+			border: 1px solid #333;
+			padding: 15px;
+			color: #000;
+			font-weight: bold;
+			text-decoration: none;
+			display: block;
+		  
+			text-transform: uppercase;
+			font-family: $font-stack-sans;
+			font-weight: $regular;
+			
+			@include transition (all .3s ease-in-out);
+			
+			border-radius: 0px; 	
+
+			&:hover {
+				background-color: #000;
+				color: #fff;
+			}
+		}
+		
+		&.active {
+			a {
+				background-color: #000;
+				color: #fff;	
+			}
+		}
+	}
+}
+
+/*- DATA HOLDER -*/
+ul.ourHolder {
+	width: 100% !important;
+	max-width: 100%;
+	overflow: hidden;
+	list-style-type: none;
+  
+	padding: 0;
+	
+	li {
+		&.item {
+			display: block;
+			position: relative;
+
+			float: left;
+			text-align: center;
+			overflow: hidden;
+			width: 33.33%;		
+				
+			h3 {
+				margin-top: 10px;
+				font-size: 16px;
+				line-height: 1em;
+			}
+		}
+	}
+}
+
+@media(max-width:992px) {
+	ul.ourHolder li.item {
+		width: 50%;
+	}
+}
+
+@media(max-width:768px) {
+	ul.ourHolder li.item {
+		width: 100%;
+	}
+}
+
+.descriptionContainer {
+    position: absolute;
+    background: none repeat scroll 0% 0% rgba(0, 159, 227, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.description h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Index page: Background video
+/*-----------------------------------------------------------------------------------*/
+.intro {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    text-align: right;
+    color: #000;
+	
+	.intro-body {
+		padding-top: 2%;
+		
+		@media(min-width: $screen-sm-min)
+		{
+			padding-top: 5%;
+		}
+		
+		p
+		{
+			width: 100%; 
+			padding: 20px; 
+			color: #333; 
+			font-family: $font-stack-sans; 
+			font-size: 14pt; 
+			text-shadow: 0px 0px 2px rgba(255,255,255,0.1);
+			text-align: center;
+			line-height: 1.3em;
+			
+			@media(max-width: $screen-xs-max)
+			{
+				font-size: 12pt;
+			}
+		}
+		
+		.intro-logo
+		{
+			@include make-xs-column(12);
+			
+			@include make-sm-column(6);
+			@include make-sm-column-offset(3);
+			
+			@include make-md-column(6);
+			@include make-md-column-offset(5);
+			
+			img
+			{
+				width: 75%;
+				margin: 0 auto;
+			}
+				
+			@media(min-width: 1600px)
+			{
+				@include make-md-column(5);
+				@include make-md-column-offset(6);
+			}
+		}
+		
+		.intro-text
+		{
+
+			@include make-xs-column(12);
+			
+			@include make-sm-column(8);
+			@include make-sm-column-offset(2);
+			
+			@include make-md-column(6);
+			@include make-md-column-offset(5);
+		
+			@media(min-width: 1600px)
+			{
+				@include make-md-column(5);
+				@include make-md-column-offset(6);
+				
+				margin-bottom: 50px; 
+				margin-top: 35px;	
+			}
+		}
+		
+		.intro-buttons 
+		{
+			@extend .intro-text;
+			
+			text-align: center;
+			margin-top: 0px;
+			margin-bottom: 10px;
+			
+			a
+			{
+				margin-top: 5px;
+			}
+		}
+	}
+
+}
+
+@media(min-width: $screen-sm-min) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+}
+
+
+video#bgvid 
+{ 
+	position: absolute; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -100;
+	background: url(../pages/index/header.jpg) no-repeat bottom center scroll;
+	background-size: auto; 
+
+	@media(max-width: $screen-xs-max)
+	{
+		display: none;
+	}
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Was ist Gentrifizierung: Flipcards
+/*-----------------------------------------------------------------------------------*/
+#karten {
+	background: url(/assets/pages/was-ist-gentrifizierung/diagramm.jpg);
+	
+	@media(max-width: $screen-md-max) {	
+		background: url(/assets/pages/was-ist-gentrifizierung/diagramm-md.jpg);
+	}
+	
+	@media(max-width: $screen-sm-max) {	
+		background: none;
+	}
+}
+
+.card-container {
+	@include size(100% 206px);
+
+    position: relative;
+    margin: 0 auto 40px;
+	  
+	@include perspective( 800px );
+}
+
+.flipped {
+	@include transform(rotateY( 180deg ));
+	
+	.ribbon-wrapper {
+		z-index: auto;
+	}
+	
+		.ribbon-wrapper2 {
+		z-index: 50;
+	}
+}
+
+.card {
+	@include size(100% 100%);
+
+	position: absolute;
+			  
+	@include transition (transform 1s);		  
+
+	@include transform-style( preserve-3d );
+
+	figure {
+		display: block;
+		@include size(100% 100%);
+		
+		font-size: 12pt;
+		color: #000;
+		text-align: center;
+		font-weight: $bold;
+
+		position: absolute;
+		
+		@include backface-visibility(hidden);	
+		@include transform(rotateY( 0deg ));
+	}
+	
+	.back {
+		background: black;
+	  
+		@include transform(rotateY( 180deg ));
+	}	
+	
+	.front {
+	
+	
+		padding-top: 25px;
+		
+		background: $einundleipzig_cyan;
+		border: 1px solid #CCC;	  
+		//box-shadow: 0 1px 5px rgba(0,0,0,0.9);
+		
+		font-weight: $regular;	
+		
+		background-color: #F7F7F7;
+		border-radius: 3px;
+		border: 1px solid #DDD;
+		margin-bottom: 1.5em;
+		//cursor: pointer;
+		box-shadow: 0px 2px 4px #E6E6E6;
+
+		
+		
+		> h3 {
+			font-weight: 300;
+		}
+	}
+
+	.aussen {
+		background: #FFB700;
+	}		
+}
+	
+.flip {
+	cursor: pointer;
+}
+	
+.ribbon-wrapper {
+	width: 85px;
+	height: 85px;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 50;
+	transition: all 0.2s ease-in-out 0s;
+	
+	.ribbon {
+		font-size: 0.8em;
+		font-weight: 800;
+		text-align: center;
+		transform: rotate(45deg);
+		position: relative;
+		padding: 2px 7px;
+		left: -5px;
+		top: 15px;
+		width: 120px;
+		background-color: #477DCA;
+		color: #FFF;
+		box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	}
+}	
+
+.ribbon-wrapper2 {
+	width: 85px;
+	height: 85px;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: auto;
+	transition: all 0.2s ease-in-out 0s;
+	
+	.ribbon2 {
+		font-size: 0.8em;
+		font-weight: 800;
+		text-align: center;
+		transform: rotate(45deg);
+		position: relative;
+		padding: 2px 7px;
+		left: -5px;
+		top: 15px;
+		width: 120px;
+		background-color: #477DCA;
+		color: #FFF;
+		box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	}
+}	
+
+.card2 {
+	transition: all 0.2s ease-in-out 0s;
+	background-color: #F7F7F7;
+	border-radius: 3px;
+	border: 1px solid #DDD;
+	margin-bottom: 1.5em;
+	cursor: pointer;
+	box-shadow: 0px 2px 4px #E6E6E6;
+	position: relative;
+	
+	&:hover {
+		background-color: #fff;
+		
+		.card-header {
+			background-color: #fff;
+		}
+	}
+
+	.card-video {
+		overflow: hidden;
+		max-height: 150px;
+		
+		video {
+			width: 100%;
+			transition: all 0.2s ease-in-out 0s;
+			background: none repeat scroll 0% 0% #DBD199;
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+		}
+	}
+
+	
+	.card-header {
+		transition: all 0.2s ease-in-out 0s;
+		background-color: #F7F7F7;
+		border-bottom: 1px solid #DDD;
+		border-radius: 3px 3px 0px 0px;
+		font-weight: bold;
+		padding: 0.5em 0.809em;
+	}
+	
+	.card-copy {
+		padding: 0.75em 0.809em;
+		font-size: 0.9em;
+		line-height: 1.5em;	
+	}
+	
+	.card-stats {
+		padding: 0.75em 0.809em;
+		overflow: auto;
+	}
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Krochsiedlung: Timeline
+/*-----------------------------------------------------------------------------------*/
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+	
+	&:before
+	{
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 40px;
+		width: 2px;
+		margin-left: -1.5px;
+		background-color: #f1f1f1;
+	}
+	
+	.timeline-heading
+	{
+		h4
+		{
+			margin-top: 0;
+			color: inherit;		
+
+			&.subheading
+			{
+				text-transform: none;
+			}
+		}
+	}
+	
+	.timeline-body
+	{
+		& > p,
+		& > ul
+		{
+			margin-bottom: 0;
+		}
+	}
+	
+	& > li
+	{
+		position: relative;
+		margin-bottom: 50px;
+		min-height: 50px;
+		
+		&:before,
+		&:after
+		{
+		    content: " ";
+			display: table;
+		}
+		
+		&:after
+		{
+			clear: both;
+		}
+		
+		&:last-child
+		{
+			margin-bottom: 0;
+		}
+		
+		.timeline-panel
+		{
+		    float: right;
+			position: relative;
+			width: 100%;
+			padding: 0 20px 0 100px;
+			text-align: left;
+			font-size: 10pt;
+			
+			&:before
+			{
+				right: auto;
+				left: -15px;
+				border-right-width: 15px;
+				border-left-width: 0;
+			}
+			
+			&:after
+			{
+			    right: auto;
+				left: -14px;
+				border-right-width: 14px;
+				border-left-width: 0;
+			}
+		}
+		
+		.timeline-image
+		{
+			z-index: 100;
+			position: absolute;
+			left: 0;
+			width: 80px;
+			height: 80px;
+			margin-left: 0;
+			border: 7px solid #f1f1f1;
+			border-radius: 100%;
+			text-align: center;
+			color: #fff;
+			background-color: #fed136;
+			
+			h4
+			{
+				margin-top: 12px;
+				font-size: 10px;
+				line-height: 14px;		
+			}
+		}
+		
+		&.timeline-inverted
+		{
+			& > .timeline-panel
+			{
+				float: right;
+				padding: 0 20px 0 100px;
+				text-align: left;
+
+				&:before
+				{
+					right: auto;
+					left: -15px;
+					border-right-width: 15px;
+					border-left-width: 0;
+				}
+				
+				&:after
+				{
+				    right: auto;
+					left: -14px;
+					border-right-width: 14px;
+					border-left-width: 0;
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: $screen-sm-min) {
+    .timeline
+	{
+		&:before {
+			left: 50%;
+		}
+		
+		& > li 
+		{
+			margin-bottom: 100px;
+			min-height: 100px;
+			
+			.timeline-panel
+			{
+				float: left;
+				width: 41%;
+				padding: 0 20px 20px 30px;
+				text-align: right;	
+			}
+			
+			.timeline-image
+			{
+				left: 50%;
+				width: 100px;
+				height: 100px;
+				margin-left: -50px;		
+
+				h4
+				{
+					margin-top: 16px;
+					font-size: 13px;
+					line-height: 18px;
+				}
+			}
+			
+			&.timeline-inverted
+			{
+				& > .timeline-panel
+				{
+					float: right;
+					padding: 0 30px 20px 20px;
+					text-align: left;				
+				}
+			}
+		}
+    }
+}
+
+@media(min-width: $screen-md-min) {
+    .timeline
+	{
+		& > li 
+		{
+			min-height: 150px;
+		
+			.timeline-panel
+			{
+				padding: 0 20px 20px;
+			}
+			
+			.timeline-image
+			{
+				width: 150px;
+				height: 150px;
+				margin-left: -75px;
+			
+				h4
+				{
+					margin-top: 30px;
+					font-size: 18px;
+					line-height: 26px;		
+				}
+			}
+			
+			&.timeline-inverted
+			{
+				& > .timeline-panel
+				{
+					padding: 0 20px 20px;
+				}
+			}
+		}
+    }
+}
+
+@media(min-width: $screen-lg-min) {
+    .timeline
+	{
+		& > li 
+		{
+			min-height: 170px;
+		
+			.timeline-panel
+			{
+				padding: 0 20px 20px 100px;
+			}
+			
+			.timeline-image
+			{
+		        width: 170px;
+				height: 170px;
+				margin-left: -85px;
+				
+				h4
+				{
+					margin-top: 40px;
+				}
+			}
+			
+			&.timeline-inverted
+			{
+				> .timeline-panel
+				{
+					padding: 0 100px 20px 20px;				
+				}
+			}
+		}
+	}
+
+}
+
+#anmerkungen {
+	border-top: 1px solid $lighter-grey;
+	
+	padding-top: 100px;
+	
+	p {
+		font-size: 10pt;
+		color: $lighter-grey;	
+	}
+}
+
+a > .video-description
+{
+	color: #000;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Data: Entries
+/*-----------------------------------------------------------------------------------*/
+
+$side-image-background-top: #B5EBEB;
+$side-image-background-bottom: #5DAC5D;
+$side-image-border: 1px solid darken(transparentize($side-image-background-bottom, .8), 30);
+
+.side-image {
+  background: #F9F9F9;
+
+  @media(min-width: $screen-lg-min) {
+    
+  }
+
+	.content {
+		@include make-xs-column(12);
+		@include make-lg-column(12);
+		padding: 1em 1em 2em 1em;
+		
+		h1 {
+			margin-bottom: .9em;
+			width: 100%;
+		}
+		
+		h4
+		{
+		    background: #BBB;
+			color: white;
+			display: inline-block;
+			font-size: .75em;
+			font-weight: 800;
+			margin-bottom: 1.3em;
+			padding: 3px 8px;
+			text-transform: uppercase;
+		}
+		
+		p {
+			color: gray;
+			margin-bottom: 3em;
+		}
+		
+		a.btn-simple
+		{
+			@extend .btn-simple;
+		}
+		
+	}
+}

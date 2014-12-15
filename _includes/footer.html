@@ -1,0 +1,104 @@
+    <div id="footer" class="clear">
+        <div class="container">
+		
+			<div class="row" style="padding-bottom: 50px;">
+				<img src="{{page.relative}}assets/img/logoklein.png" style="display: block; margin-left: auto; margin-right: auto; width: 50px; opacity: 0.8;">
+			</div>
+				
+			<hr style="border: 1px solid #53647a;width: 100%; margin-top: 1em">
+				
+			<div class="row">
+		
+				<div class="col-sm-3 col-sm-offset-1">
+					<h4>Themen</h4>
+					<ul>
+					{% for item in site.menu %}
+						<li>
+							<a href="{{ item.url | remove_first: '/' | prepend: site.baseurl }}">{{ item.title }}</a>
+						</li>
+					{% endfor %}	
+					</ul>
+				</div>
+		
+				<div class="col-sm-2">
+					<h4>einundleipzig</h4>
+					<ul>
+						<li><a href="{{ site.baseurl }}about/">Wer wir sind</a></li>
+						<li><a href="{{ site.baseurl }}blog/">Blog</a></li>
+						<li><a href="{{ site.baseurl }}contact/">Kontakt</a></li>
+						<li><a href="{{ site.baseurl }}dank/">Danksagung</a></li>
+					</ul>
+				</div>
+					
+				<div class="col-sm-2">
+					<h4>Social</h4>
+					<ul class="socialbuttons">
+						<li>
+							<a href="http://www.facebook.com/einundleipzig" target="_blank"><i class="fa fa-facebook-square"></i> </a>
+						</li>
+						
+						<li>
+							<a href="http://www.twitter.com/einundleipzig" target="_blank"><i class="fa fa-twitter-square"></i> </a>
+						</li>
+						
+						<li>
+							<a href="http://www.github.com/einundleipzig" target="_blank"><i class="fa fa-github-square"></i></a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="col-sm-2">
+					<h4>Support</h4>
+					
+					<ul>
+						<li>
+							<a href="https://flattr.com/submit/auto?user_id=einundleipzig&url=http%3A%2F%2Fwww.einundleipzig.de" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" style="float: left;"></a>
+						</li>
+						<li>
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="4RSX768L6X3YL">
+							<input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+							</form>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="col-sm-1">
+					<h4><a href="{{ site.baseurl }}impressum/">Impressum</a></h4>
+				</div>
+									
+				
+				<div style="padding-top: 35px;" class="col-xs-12 col-sm-11 col-sm-offset-1">
+					<h4>Lizenz</h4>
+					Die von uns verfassten Inhalte stehen, soweit nicht anders vermerkt, unter der Lizenz <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons BY-NC-SA 4.0</a>.</div>
+					
+			</div>
+				
+		</div>
+			
+	</div>	
+			
+	<div id="partner">
+	
+		<div class="container">
+			
+			<div class="col-sm-2 col-sm-offset-1">
+				<h4>Förderer:</h4>
+			</div>
+			
+			<div class="col-xs-4 col-sm-2 col-centered">
+				<a href="http://www.bosch-stiftung.de" target="_blank"><img src="{{ site.baseurl }}assets/img/robertboschstiftung.png" class="img-responsive"></a>
+			</div>
+					
+			<div class="col-xs-4 col-sm-2 col-centered">
+				<a href="http://www.vocer.org/medialab/" target="_blank"><img src="{{ site.baseurl }}assets/img/vocer.png" class="img-responsive"></a>
+			</div>
+			
+			<div class="col-xs-4 col-sm-5 col-centered">
+				... sowie großen Dank an unsere <a href="{{ site.baseurl }}dank/">individuellen Förderer</a>
+			</div>
+	
+		</div>	
+			
+	</div>

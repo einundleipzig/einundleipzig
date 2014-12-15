@@ -1,0 +1,8 @@
+_site
+.sass-cache
+_oldStuff
+_pages/gentrifizierung-in-leipzig/post.php
+assets/visualizations/mietkarte/data.php
+lib
+*.webm
+*.mp4

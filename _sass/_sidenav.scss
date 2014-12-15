@@ -1,0 +1,151 @@
+/*-----------------------------------------------------------------------------------*/
+/* Sidebar navigation
+/*-----------------------------------------------------------------------------------*/
+div#myScrollspy {
+	margin-left: 900px;
+
+	ul {
+			// bootstrap fix
+			position: fixed;
+			top: 0px;
+			right: 15px;
+			
+		&.dotnav  {
+			padding: 0px;
+			list-style-type: none;
+			direction: rtl;
+			
+			//z-index: -9999;
+			background: rgba(0, 0, 0, 0.2);
+			border-radius: 5px;
+			
+			// bootstrap fix
+			border: 0px;
+			
+			padding-top: 5px;
+			padding-bottom: 5px;
+			
+			&:hover {
+				width: 350px;
+				
+				box-shadow: 0px 0px 10px #333;
+				
+				border-radius: 5px;	
+				
+				background: rgba(255, 255, 255, 0.9);
+				color: #333;
+				
+				padding-top: 5px;
+				padding-bottom: 5px;
+			
+				z-index: 23;
+				
+				li {
+					&.anfang {
+						border-bottom: 1px solid #999;
+					}
+					
+					a {
+						display: inline;
+						direction: ltr;
+					}
+				}
+			}
+			
+			li {
+				font-family: "Open-Sans", sans-serif;
+				font-size: $font-size-small;
+				margin: 0;
+				padding: 0;
+				
+				
+				a {
+					// bootstrap fix
+					border-radius: 0px;
+					display: inline;
+					padding: 0px;
+					display: none;	
+
+					&:hover,
+					&:focus {
+						// bootstrap fix
+						background: none;
+						border: 0px;
+					}
+				}
+			
+				&:before {
+					font-size: 18pt;
+					font-weight: $bold;
+					content: "\002022";
+					color: #999;
+					
+					padding-left: 10px;
+					padding-right: 10px;
+					
+					border-right: 5px solid transparent;
+					border-left: 5px solid transparent;
+					
+					//border-right: 10px solid #fff;	
+				}
+				
+				&:hover {
+					background: $einundleipzig_cyan;
+					
+					a {
+						color: #fff;
+					}
+				}
+			
+				
+				&.anfang {
+					a {
+						font-weight: $bold;
+					}
+					
+					&:before {
+						//margin-right: -5px;
+						//direction: rtl;
+						//font-family: 'FontAwesome';
+						//content: "\f0c9";
+					}
+				}
+				
+				&.active {
+					a {
+						background: transparent;
+						border: 0px;			
+					}
+				}
+					
+			}
+			
+			&:hover {
+				li {
+					&.active {
+						&:before {
+							border-right: 5px solid $einundleipzig_cyan;
+						}
+					}
+				}
+			}
+		}	
+		
+		&.affix-top {
+			position: fixed;
+			//@include transform(translate3d( 5px, 150px, 0px ));
+			top: 250px;
+		}
+		
+		&.affix {
+			// bootstrap fix
+			position: fixed;
+			top: 250px;
+			//@include transform(translate3d( 5px, 150px, 0px ));
+		}
+		
+		&.affix-bottom {
+			position: absolute;
+		}
+	}
+}
