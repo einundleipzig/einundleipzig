@@ -1,5 +1,5 @@
-<script src="http://eyeseast.github.io/visible-data/components/queue-async/queue.min.js" type="text/javascript"></script>
-<script src="http://eyeseast.github.io/visible-data/components/underscore/underscore-min.js" type="text/javascript"></script>
+<script src="{{ "assets/js/queue.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "assets/js/underscore-min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
 
 <style type="text/css">
 path.ortsteil {
@@ -47,15 +47,6 @@ div.bevoelkerungsentwicklung_tooltip {
 
 
 <script type="text/javascript" charset="utf-8">
-//
-//
-//
-// TODO: Heiterblick und Engelsdorf ausgrauen		
-// Rot: alles bis 0 (außer bei Geburtensaldo: alles unter -0.5)
-// Gelb: zwischen 0 und städtischer Durchschnitt (außer bei Geburtensaldo: -0.5 - 0)
-// Grün: alles über (Geburtensaldo: alles über 0)
-//		
-		
 var bevoelkerungsentwicklung_urls = {
 	ot: "/assets/visualizations/ot.json",
 	data: "/assets/visualizations/bevoelkerungsentwicklung/bevoelkerungsentwicklung.csv"
@@ -212,7 +203,6 @@ d3.select("#saldogeburtensterbefaelle").on("click", function(){
 		bevoelkerungsentwicklung_ortsteile
 			.style('fill', function(d) {	
 				// Tooltip updaten
-				//bevoelkerungsentwicklung_showPopover.popover({title: data[d.properties.Name]['Saldo aus Geburten und Sterbefällen in Prozent']});
 				
 				// Heiterblick und Engelsdorf ausblenden wegen Gebietsumgliederung
 				if (d.properties.Name == 'Heiterblick' || d.properties.Name == 'Engelsdorf')
@@ -375,8 +365,6 @@ d3.select("#bevoelkerungsentwicklunggesamt").on("click", function(){
 });	
 		
 }
-
-
 
 function bevoelkerungsentwicklung_resize() {
 	// adjust things when the window size changes
