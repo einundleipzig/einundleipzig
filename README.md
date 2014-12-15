@@ -24,9 +24,13 @@ Im Zweifelsfall bitte bei den unten stehenden Kontaktdaten melden.
 einundleipzig basiert auf folgenden Open Source Projekten:
 * [jekyll] - Ein simpler Generator für statische Webseiten basierend auf Ruby
 * [php-geocoder] - Geocoding Bibliothek für PHP
+
+**Javascript:**
 * [jquery]
  * [jquery UI]
  * [jquery Quicksand] - Reorder and filter items with a nice shuffling animation
+* [queue.js]
+* [underscore.js]
 * [OpenStreetMap]
  * [leaflet]
 * [video.js] - HTML5 Video Player
@@ -34,22 +38,33 @@ einundleipzig basiert auf folgenden Open Source Projekten:
 * [c3.js] - Auf D3 basierende JavaScript-Bibliothek für Diagramme
 * [impress.js] - An prezi angelehntes JavaScript-Tool für interaktive Präsentationen
 * [inlineDisqussions] - zur inline-Einbindung von [disqus]
-* [timeline.js]
+* [timeline.js] -
+* [ekko-lightbox] - auf Bootstrap basierende Lightboxes
+
+**CSS:**
 * [bootstrap] - CSS Framework
- * [ekko-lightbox] - auf Bootstrap basierende Lightboxes
 * [bourbon] in Verbindung mit [bitters] - Eine SASS Mixin Bibliothek
 * [font awesome] - Nice Icons
 
 Visualisierungen liegen im Ordner `_includes/visualizations/`,
-Daten liegen im Ordner `assets/visualizations`
+Daten liegen im Ordner `assets/visualizations/`
 
 ### To Do's
-
 Lust, mitzuwirken? Folgende Dinge müssen noch eingebunden/verbessert werden:
+
+* Internet Explorer
+ * Flip Cards: fehlende Unterstützung von preserve-3d
+ * HTML5 Slider 
+* Firefox
+ * Full Screen bei Flip Cards Videos 
+ * Ladeverhalten von video.js optimieren
+* inlineDisqussions noch nicht optimal positioniert
+
 
 * Formular zum Eintragen von Mietpreisen durch User (HALF DONE)
 * Visualisierung von `_includes/visualizations/umzugsmatrix.html` verbessern
 * Getting rid of Bootstrap: Vollständige Umstellung auf die Bourbon-Familie: Neat als Grid-System verwenden
+* Inhalte in `_pages/` auf Markdown umstellen
 
 ### Kontakt
 
@@ -78,3 +93,5 @@ Lust, mitzuwirken? Folgende Dinge müssen noch eingebunden/verbessert werden:
 [font awesome]: http://fortawesome.github.io/Font-Awesome/
 [leaflet]: http://leafletjs.com/
 [timeline.js]: http://timeline.knightlab.com/
+[underscore.js]: http://underscorejs.org/
+[queue.js]: https://github.com/mbostock/queue

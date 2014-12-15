@@ -4,8 +4,60 @@
   "description": "Kaltmietpreise in Leipzig errechnet aus Mietwohnungsangeboten der jeweils letzten zwölf Monate, mit entsprechenden Koordinaten. Achtung: Aus Datenschutzgründen werden einzelne Wohnungsangebote auf Häuserebene zusammengefasst und erst ab drei vorhandenen Wohnungs-Datensätzen als Datenpunkt angegeben.",
   "license": "CC0 1.0",
   "sources": [{
-    "name": "x",
-    "web": "x"
+    "name": "Immowelt",
+    "web": "http://www.immowelt.de/"
+  },
+  {
+    "name": "Immoscout24",
+    "web": "http://www.immobilienscout24.de/"
+  },
+  {
+    "name": "LWB",
+    "web": "http://www.lwb.de/"
+  },
+  {
+    "name": "Unitas",
+    "web": "http://www.wg-unitas.de/"
+  },
+  {
+    "name": "Conwert",
+    "web": "http://www.altundkelber.de/"
+  },
+  {
+    "name": "KSW",
+    "web": "http://www.ksw-leipzig.de"
+  },
+  {
+    "name": "CG",
+    "web": "http://www.cg-gruppe.de/"
+  },
+  {
+    "name": "Stadtbau",
+    "web": "http://www.stadtbau.com/"
+  },
+  {
+    "name": "GRK",
+    "web": "http://www.grk-holding.com/"
+  },
+  {
+    "name": "Baugenossenschaft Leipzig eG",
+    "web": "http://www.bgleipzig.de/"
+  },
+  {
+    "name": "VLW",
+    "web": "http://www.ksw-leipzig.de"
+  },
+  {
+    "name": "Wohngenossenschaft Lipsia",
+    "web": "http://www.wg-lipsia.de/"
+  },
+  {
+    "name": "Wohnbau-Genossenschaft Kontakt",
+    "web": "http://www.wbg-kontakt.de/"
+  },
+  {
+    "name": "Wogetra",
+    "web": "http://www.wogetra.de/"
   }],
   "resources": [
     {
