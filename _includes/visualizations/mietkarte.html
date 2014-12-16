@@ -1,14 +1,8 @@
 <script src="{{ "assets/js/queue.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
 <script src="{{ "assets/js/underscore-min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-		
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
- 
-<script>
-	L_PREFER_CANVAS = true;
-</script>
 <script src="{{ "assets/js/leaflet.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-			
-		
+ 
 <style type="text/css">
 #mietkarte_legend {
 	padding: 1.5em 0 0 1.5em;
@@ -22,7 +16,9 @@
 	padding-left: 0;
 	padding-right: 0;
 }
-</style>
+</style> 
+ 
+			
 
 
 <!--<button id="neuvermietungen" class="btn btn-simple active">Neuvermietungen</button> <button id="bestandsmieten" class="btn btn-simple active">Bestandsmieten</button>-->
@@ -37,6 +33,10 @@
 			
 
 <script type="text/javascript" charset="utf-8">
+
+	// use canvas, not SVG
+	L_PREFER_CANVAS = true;
+
 	{% if include.schleussig %}
 	var map_mietkarte = L.map('map_mietkarte').setView([51.319444, 12.343056], 14);
 	{% else %}
