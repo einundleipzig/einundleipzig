@@ -49,7 +49,7 @@ einundleipzig basiert auf folgenden Open Source Projekten:
 Visualisierungen liegen im Ordner `_includes/visualizations/`,
 Daten liegen im Ordner `assets/visualizations/`
 
-### To Do's
+### ToDos
 Lust, mitzuwirken? Folgende Dinge müssen noch eingebunden/verbessert werden:
 
 * Internet Explorer
