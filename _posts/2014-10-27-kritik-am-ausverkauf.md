@@ -27,3 +27,45 @@ Am Ende hat uns Frau Jennicke noch einen Tipp gegeben, wie wir finanzielle Unter
 *„Sind Sie als Verein organisiert, können Sie Fördermittel beantragen. Sich um Spenden zu bemühen, ist eine weitere Möglichkeit. Meine Fraktion würde Ihre Arbeit gern mit einer Spende aus den Aufwandsentschädigungen der Stadträte unterstützen. Und: Fragen Sie doch mal bei den großen Investoren! Wenn sie reflektieren, woher ihr Reichtum stammt, wären sie möglicherweise bereit, davon etwas zurückzugeben.”*
 
 Über eine Spende aus den Aufwandsentschädigungen würden wir uns sehr freuen. Aber wie gesagt, auch andere Dinge helfen uns schon weiter. Auch die kritische Diskussion um unser Projekt begrüßen wir. Außerdem fänden wir es toll, wenn noch andere Fraktionen (aus allen politischen Lagern) sich dazu entschließen, unser Projekt zu unterstützen. Wir haben bewusst vorrangig die Stadtpolitiker angesprochen – und keine Investoren – da sie die Repräsentanten der Bürger sind und politisch am meisten bewirken können, was Open Data angeht. **Einundleipzig soll eine Art städtisches „Gemeingut” werden, beruhend auf offenen Daten.**
+
+<img src="/assets/pages/dank/img/karte.jpg" style="width: 75%; display: block; margin: 0 auto;" />
+
+<ul class="bullets" style="font-size: 11pt">
+
+<li>
+Großzschocher: <a href="http://www.opendatacity.de" target="_blank">OpenDataCity</a>
+</li>
+<li>
+Zentrum-Nordwest: <a href="http://www.joergweise.de/" target="_blank">Jörg Weise (SPD)</a>
+</li>
+<li>
+Lausen-Grünau: <a href="http://www.ilse-lauter.de/" target="_blank">Ilse Lauter (DIE LINKE)</a>
+</li>
+<li>
+Reudnitz-Thonberg: <a href="http://www.dunkeldreckig.de/" target="_blank">Dunkel. Dreckig. Reudnitz.</a> und <a href="https://www.facebook.com/kajuetenquiz" target="_blank">Kajüten-Quiz</a>
+</li>
+<li>
+Grünau-Mitte, Grünau-Ost und Schönau: <a href="http://www.soeren-pellmann.de/" target="_blank">Sören Pellmann (DIE LINKE)</a>
+</li>
+<li>
+Schleußig: <a href="https://www.facebook.com/Assiviertel" target="_blank">Assiviertel</a>
+</li>
+<li>
+Plagwitz: <a href="http://piraten-leipzig.de/author/hartmut/" target="_blank">Hartmut Thomas (PIRATEN)</a>
+</li>
+<li>
+Zentrum-Ost: <a href="http://piraten-leipzig.de/author/wwilleke/" target="_blank">Werner Willeke (PIRATEN)</a>
+</li>
+<li>
+Altlindenau: <a href="http://www.central-ls-w33.de/" target="_blank">Wohnungsgesellschaft mbH Central LS W33</a>
+</li>
+<li>
+Anger-Crottendorf: <a href="http://www.gruene-leipzig.de/stadtratswahl-2014/kandidatinnen/wahlkreis-2/" target="_blank">Stephan Stach (Grüne)</a>
+</li>
+<li>
+Zentrum, Zentrum-Südost, Zentrum-Süd, Zentrum-West, Zentrum-Nord, Südvorstadt, Connewitz, Gohlis-Süd: <a href="http://piraten-leipzig.de/srle/lily/" target="_blank">Ute Elisabeth Gabelmann (PIRATEN)</a>
+</li>
+<li>
+Volkmarksdorf: <a href="http://baumit.weebly.com" target="_blank">Helden wider Willen e.V.</a>
+</li>
+</ul>
