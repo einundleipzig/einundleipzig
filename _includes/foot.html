@@ -1,12 +1,7 @@
 {% if page.scripts %}
 
 	{% for script in page.scripts %}
-		{% if script == 'video.js' %}
-			<script src="{{ "assets/js/video.js" | prepend: site.baseurl }}"></script>
-			<script>
-			  videojs.options.flash.swf = "{{ "assets/js/video-js.swf" | prepend: site.baseurl }}"
-			</script>
-		{% elsif script == 'ekko-lightbox.min.js' %}
+		{% if script == 'ekko-lightbox.min.js' %}
 			<script src="{{ "assets/js/" | append: script | prepend: site.baseurl }}"></script>	
 			
 			<script type="text/javascript">
