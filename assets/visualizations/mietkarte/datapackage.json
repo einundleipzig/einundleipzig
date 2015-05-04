@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "mietpreise",
   "title": "Mietpreise in Leipzig mit Koordinaten",
   "description": "Kaltmietpreise in Leipzig errechnet aus Mietwohnungsangeboten der jeweils letzten zwölf Monate, mit entsprechenden Koordinaten. Achtung: Aus Datenschutzgründen werden einzelne Wohnungsangebote auf Häuserebene zusammengefasst und erst ab drei vorhandenen Wohnungs-Datensätzen als Datenpunkt angegeben.",
