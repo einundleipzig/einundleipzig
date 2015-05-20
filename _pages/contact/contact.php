@@ -3,23 +3,32 @@
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
    empty($_POST['message'])	||
-   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
+   !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
    {
 	echo "No arguments Provided!";
 	return false;
    }
-	
+   
+// Vars   
 $name = $_POST['name'];
 $email_address = $_POST['email'];
 $message = $_POST['message'];
-
 $empfaenger = "wolfgang@einundleipzig.de";
 $betreff = "einundleipzig Kontaktformular: " . $name;
-$from = "From: einundleipzig Kontakt <kontakt@einundleipzig.de>\n";
-$from .= "Reply-To: " . $email_address . "\n";
-$from .= "Content-Type: text/html\n";
-$text = "Neue Nachricht auf einundleipzig.\n\n" . "Details:\n\nName: " . $name . "\n\nEmail: " . $email_address . "\n\nNachricht:\n " . $message;
 
+// Headers
+$from = "From: einundleipzig Kontakt <kontakt@einundleipzig.de>\r\n";
+$from .= "Reply-To: " . $email_address . "\r\n";
+$from .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$from .= "Content-Transfer-Encoding: 8bit";
+
+// The actual text
+$text = "Neue Nachricht auf einundleipzig:\r\n";
+$text .= "Name: " . $name . "\r\n";
+$text .= "Email: " . $email_address . "\r\n\r\n";
+$text .= "Nachricht:\r\n" . $message;
+
+// Send the mail
 mail($empfaenger, $betreff, $text, $from);
-return true;			
+return true;	
 ?>
