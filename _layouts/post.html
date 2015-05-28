@@ -14,7 +14,7 @@ layout: default
 		</h1>
 		
 		{% if page.image %}
-			<img src="{{page.image}}" class="img-responsive" style="padding-bottom: 35px;" />
+			<img src="{{page.image}}" class="img-responsive" style="padding-bottom: 35px;" alt="{{ page.title }}" />
 		{% endif %}
 		
 		{% if page.description %}
@@ -23,7 +23,7 @@ layout: default
 			</h2>
 		{% endif %}
 	  
-		<time>
+		<p class="time">
 			{% assign m = page.date | date: "%-m" %}
 			{{ page.date | date: "%-d" }}.
 			{% case m %}
@@ -44,7 +44,7 @@ layout: default
 			von
 			{% assign author = site.authors[page.author] %}
 			{{ author.display_name }}
-		</time>
+		</p>
 		
 		{{ content | markdownify }}
 							

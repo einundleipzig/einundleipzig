@@ -104,8 +104,7 @@ div.binnenwanderung_tooltip {
 //
 // Concept taken from http://stackoverflow.com/a/21923560
 //
-
-/*** Define parameters and tools ***/
+// Define parameters and tools
 var chord_margin = {top: 10, left: 10, bottom: 10, right: 10}, 
 	chord_width = parseInt(d3.select('#binnenwanderung').style('width')), 
 	chord_width = chord_width - chord_margin.left - chord_margin.right, 
@@ -126,10 +125,12 @@ var arc = d3.svg.arc()
 var path = d3.svg.chord()
     .radius(innerRadius);
 
-//define the default chord layout parameters
-//within a function that returns a new layout object;
-//that way, you can create multiple chord layouts
-//that are the same except for the data.
+/**
+ * define the default chord layout parameters within a function that returns a new layout object;
+ * that way, you can create multiple chord layouts that are the same except for the data.
+ *
+ * @return {Datentyp} default d3 chord layout 
+ */
 function getDefaultLayout() {
 	return d3.layout.chord()
 		.padding(0.03)
@@ -177,7 +178,12 @@ var indexByName = {},
   mode = 'received',
   year = '2013';
   
-// PREPARE DATA
+/**
+ * Prepare the Data
+ *
+ * @param {} year Jahre
+ * @param {} callback 
+ */
 function prepareData(year, callback)
 {
 	d3.text("/assets/visualizations/umzugsmatrix/stadtteile.csv", function(imports){
@@ -185,8 +191,6 @@ function prepareData(year, callback)
 
 		d3.text("/assets/visualizations/umzugsmatrix/ortsteildaten" + year + ".csv", function(imports) {
 			var csv_values = d3.csv.parseRows(imports);
-			
-			
 
 			// read data
 			for (var i = 1; i < csv_values.length; i ++){
@@ -237,7 +241,12 @@ queue()
 	.defer(prepareData, year)
 	.await(updateChords);
 	
-/* Create OR update a chord layout from a data matrix */
+/**
+ * Create OR update a chord layout from a data matrix
+ *
+ * @param {} error Beschreibung
+ * @param {} matrix Bechreibung 
+ */
 function updateChords( error, matrix ) {
 
         
@@ -464,10 +473,14 @@ function updateChords( error, matrix ) {
     last_layout = layout; //save for next update
 }
 
+/**
+ * this function will be called once per update cycle
+ *
+ * @return {} Beschreibung
+ * @return {} Beschreibung
+ */
 function arcTween(oldLayout) {
-    //this function will be called once per update cycle
-    
-    //Create a key:value version of the old layout's groups array
+     //Create a key:value version of the old layout's groups array
     //so we can easily find the matching group 
     //even if the group index values don't match the array index
     //(because of sorting)
@@ -497,18 +510,24 @@ function arcTween(oldLayout) {
     };
 }
 
+/**
+ * create a key that will represent the relationship between these two groups *regardless* of which group is called 'source' and which 'target'
+ *
+ * @param {} data Beschreibung
+ * @return {} Beschreibung
+ */
 function chordKey(data) {
     return (data.source.index < data.target.index) ?
         data.source.index  + "-" + data.target.index:
         data.target.index  + "-" + data.source.index;
-    
-    //create a key that will represent the relationship
-    //between these two groups *regardless*
-    //of which group is called 'source' and which 'target'
 }
-function chordTween(oldLayout) {
-    //this function will be called once per update cycle
-    
+/**
+ * this function will be called once per update cycle
+ *
+ * @param {} oldLayout Beschreibung
+ * @return {} Beschreibung
+ */
+function chordTween(oldLayout) {    
     //Create a key:value version of the old layout's chords array
     //so we can easily find the matching chord 
     //(which may not have a matching index)

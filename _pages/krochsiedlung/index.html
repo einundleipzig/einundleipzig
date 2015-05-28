@@ -10,7 +10,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 <section class="story-header-image">
 		
 	<!-- image -->  
-	<img src="{{ page.image }}" class="img-responsive" />  
+	<img src="{{ page.image }}" class="img-responsive" alt="{{ page.title }}" />  
 	<!-- description div -->  
 	<div class="story-header-image-description">  
 		<span class="subdescr">
@@ -24,7 +24,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	</div>
 </section>				
 
-<section id="kapitel1">
+<section>
 	
 	<article class="teaser no-comment" style="padding-top: 35px;">
 	
@@ -50,7 +50,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 		<h3>Gebaut nach modernsten Standards</h3>
 		
 		<div class="floater">
-			<img src="{% asset_path Seidel-4572.jpg %}" class="img-responsive" />
+			<img src="{% asset_path Seidel-4572.jpg %}" class="img-responsive" alt="" />
 			<div class="video-description">
 				Flaches Dach, Kastenform und der typische Wintergarten - Die Krochsiedlung wurde im Bauhausstil erbaut und steht heute unter Denkmalschutz.
 			</div>
@@ -64,7 +64,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 
 		
 		<div class="floater">
-			<img src="{% asset_path Seidel-4014.jpg %}" class="img-responsive" />
+			<img src="{% asset_path Seidel-4014.jpg %}" class="img-responsive" alt="" />
 			<div class="video-description">
 				Ein Bett und ein Schreibtisch - viel mehr Platz war nicht, als Siegfried Seidel in der Krochsiedlung einzog.
 			</div>
@@ -74,7 +74,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 		<p>Dass er mehr als 60 Jahre in derselben Wohnung leben sollte, konnte sich der Student damals nicht vorstellen. „Irgendwie hat sich das so ergeben“, erklärt Seidel. Erst bekam er eine Stelle an der Universität Halle und schließlich wurde ihm zusammen mit seiner Frau die Wohnung in der Krochsiedlung zugeteilt. „Auch da hatten wir viel Glück“, sagt Seidel. „Man muss schließlich sagen, dass während der DDR in dieser Siedlung immer bevorzugte Leute gelebt haben.“ Der Zusammenhalt in der Siedlung sei immer sehr gut gewesen, sagt Seidel, „selbst dann, wenn der Geheimdienst an die Tür geklopft hat.“ So habe die Nachbarin nur Gutes erzählt, als sich ein Agent einmal über Seidel erkundigte. “Sie hätte dem Mann auch sagen können, dass sie mich nicht kennt”, erklärt Seidel. Dass sie ihn hereingebeten hat, habe er erst Jahre später erfahren. “Ihr habe ich es zu verdanken, dass ich für die Universität in den Kongo reisen durfte“, freut sich der 81-Jährige bis heute.</p>
 
 		<div class="floater">
-			<img src="{% asset_path Seidel-4162.jpg %}" class="img-responsive" />
+			<img src="{% asset_path Seidel-4162.jpg %}" class="img-responsive" alt="" />
 			<div class="video-description">
 				Hier hat Siegfried Seidel inzwischen 60 Jahre gelebt.
 			</div>
@@ -88,14 +88,14 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	</article>
 	
 	<article class="half" style="padding-bottom: 35px;">
-			<img src="{% asset_path Seidel-4143.jpg %}" class="img-responsive" />
+			<img src="{% asset_path Seidel-4143.jpg %}" class="img-responsive" alt="" />
 			<div class="video-description">
 				Für den Erhalt der Krochsiedlung und die Aufarbeitung ihrer Geschichte gründete sich nach der Wende der Bürgerverein Krochsiedlung
 			</div>
 	</article>
 
 	<article class="half" style="padding-bottom: 35px;">
-			<img src="{% asset_path Seidel-4250.jpg %}" class="img-responsive" />
+			<img src="{% asset_path Seidel-4250.jpg %}" class="img-responsive" alt=""/>
 			<div class="video-description">
 				Die Wohnung des Bürgervereins wurde im Originalzustand der 30er Jahre belassen.
 			</div>
@@ -104,14 +104,14 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	<div class="clearfix"></div>
 
 	<article class="half" style="padding-bottom: 35px;">
-			<img src="{% asset_path Seidel-4222.jpg %}" class="img-responsive" />
+			<img src="{% asset_path Seidel-4222.jpg %}" class="img-responsive" alt="" />
 			<div class="video-description">
 				Eine Fernheizung brachte schon in den 30er Jahren warmes Wasser direkt ins Haus.
 			</div>
 	</article>
 
 	<article class="half" style="padding-bottom: 35px;">
-			<img src="{% asset_path Seidel-4191.jpg %}" class="img-responsive" />
+			<img src="{% asset_path Seidel-4191.jpg %}" class="img-responsive" alt="" />
 			<div class="video-description">
 				Ende der 90er Jahre wurde erst mit der Sanierung der Krochsiedlung begonnen.
 			</div>
@@ -124,7 +124,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	</article>
 	
 	<article class="full" style="padding-top: 35px;">
-			<ul class="timeline">
+		<ul class="timeline">
 			<li>
 				<div class="timeline-image">
 					<img class="img-circle img-responsive" src="{% asset_path timeline/krochsiedlung_gruendung.jpg %}" alt="">
@@ -252,14 +252,15 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 		<p>„Viele Vorträge und Diskussionsrunden haben wir seitdem in dieser Wohnung veranstaltet“, erklärt Seidel, während er nachdenklich aus dem Fenster der Loggia schaut, und sich an die vielen Feste mit den alten Nachbarn und Freunden erinnert. Noch immer wohnen viele von ihnen hier. Gohlis Nord ist ein beständiger Ortsteil. Diesen Eindruck bestätigen auch Zahlen zur Bevölkerung von der Stadt Leipzig. Ein Drittel der Bewohner ist älter als 70 Jahre</p>
 		
 		<div class="floater">
-			<img src="{% asset_path Seidel-4184.jpg %}" class="img-responsive" />
+			<img src="{% asset_path Seidel-4184.jpg %}" class="img-responsive" alt="" />
 		</div>
 		<p>Mit diesem Problem hat auch der Bürgerverein zu kämpfen. Der steht vor dem Aus. „Es kamen leider einfach nicht genug junge Leute dazu“, erklärt Seidel. Dass das Leben in der Krochsiedlung aber weiter geht, da hat er keinen Zweifel. „Ich hoffe, dass ich noch lange hier bleiben kann. Wegziehen möchte ich nicht“, erklärt er mit fester Stimme. </p>
 		
-		<p>Seit 2010 nimmt der Zuzug in Gohlis Nord wieder zu. „In letzter Zeit habe ich immer mehr auch Familien gesehen“. Das freut Seidel. Er ist schon gespannt, wer in die alte Wohnung des Bürgervereins einzieht. <a href="http://www.wohnen-gaedeke.de/Angebote.32.0.html?&no_cache=1&tx_mjimmobilien_pi1[stadt_id]=6&tx_mjimmobilien_pi1[stadtteil_id]=11&tx_mjimmobilien_pi1[category_id]=2&tx_mjimmobilien_pi1[object_id]=175&tx_mjimmobilien_pi1[view_mode]=4" target="_blank">Im Internet wird sie schon angepriesen</a>, als „denkmalgeschütze Liebhaberwohnung“. Diese befinde sich in Mitten eines gepflegten und parkähnlichen Wohngebietes mit Bauhaus-Architektur, das „durch den schönen alten Baumbestand wie eine kleine grüne Lunge wirkt und zum Spazieren und Verweilen einlädt.“</p>
+		<p>Seit 2010 nimmt der Zuzug in Gohlis Nord wieder zu. „In letzter Zeit habe ich immer mehr auch Familien gesehen“. Das freut Seidel. Er ist schon gespannt, wer in die alte Wohnung des Bürgervereins einzieht. <a href="http://www.wohnen-gaedeke.de/Angebote.32.0.html?no_cache=1&amp;tx_mjimmobilien_pi1[stadt_id]=6&amp;tx_mjimmobilien_pi1[stadtteil_id]=11&amp;tx_mjimmobilien_pi1[category_id]=2&amp;tx_mjimmobilien_pi1[object_id]=175&amp;tx_mjimmobilien_pi1[view_mode]=4" target="_blank">Im Internet wird sie schon angepriesen</a>, als „denkmalgeschütze Liebhaberwohnung“. Diese befinde sich in Mitten eines gepflegten und parkähnlichen Wohngebietes mit Bauhaus-Architektur, das „durch den schönen alten Baumbestand wie eine kleine grüne Lunge wirkt und zum Spazieren und Verweilen einlädt.“</p>
 	
 	</article>
 	
 	<article class="comments">
 		{% include comments.html inline="true" %}
 	</article>	
+</section>
