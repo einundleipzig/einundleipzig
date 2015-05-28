@@ -63,7 +63,16 @@ article.post {
 		
 		&.author {
 			font-style: italic;
-		}			
+		}
+
+		&.time {
+			color: rgba(51, 51, 51, 0.4);
+			font-family: "Merriweather",serif;
+			font-style: italic;
+			font-size: 0.9em;
+			margin-bottom: 0.3em;	
+			line-height: 1.6em;
+		}		
 	}
 	
 
@@ -76,15 +85,7 @@ article.post {
 		line-height: 1.6em;
 		margin-bottom: 0.9em;
 	}
-	
-	time {
-		color: rgba(51, 51, 51, 0.4);
-		font-family: "Merriweather",serif;
-		font-style: italic;
-		font-size: 0.9em;
-		margin-bottom: 0.3em;	
-		line-height: 1.6em;
-	}
+
 }
 
 .pagination {

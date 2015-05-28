@@ -12,7 +12,7 @@ scripts: [jquery-1.11.1.min.js, bootstrap.min.js, jquery-ui.js, jquery.quicksand
 	<div class="intro-body">
 		
 		<div class="intro-logo">
-			<img src="assets/pages/index/logo.png" class="img-responsive">
+			<img src="assets/pages/index/logo.png" class="img-responsive" alt="einundleipzig Logo" />
 		</div>		
 	
 		<div class="intro-text">
@@ -22,9 +22,9 @@ scripts: [jquery-1.11.1.min.js, bootstrap.min.js, jquery-ui.js, jquery.quicksand
 		</div>
 	
 		<div class="intro-buttons">
-			<a type="button" class="btn btn-themen" href="#themen"><i class="fa fa-arrow-circle-o-down fa-lg fa-intro"></i> Themen</a>
+			<a class="btn btn-themen" href="#themen"><i class="fa fa-arrow-circle-o-down fa-lg fa-intro"></i> Themen</a>
 
-			<a type="button" class="btn btn-about" href="about/"><i class="fa fa-info-circle fa-lg fa-intro"></i> Über uns</a>
+			<a class="btn btn-about" href="about/"><i class="fa fa-info-circle fa-lg fa-intro"></i> Über uns</a>
 		</div>
 
 	</div>
@@ -67,7 +67,7 @@ scripts: [jquery-1.11.1.min.js, bootstrap.min.js, jquery-ui.js, jquery.quicksand
 					</div>
 				</div>
 				
-				<img src="{{site.baseurl }}assets/pages{{item.url}}{{item.image}}" class="img-responsive" />
+				<img src="{{site.baseurl }}assets/pages{{item.url}}{{item.image}}" class="img-responsive" alt="{{ item.title }}" />
 			</a>
 		</li>
 	{% endfor %}				

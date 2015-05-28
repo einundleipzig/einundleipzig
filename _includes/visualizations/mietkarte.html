@@ -1,13 +1,18 @@
 <script src="{{ "assets/js/queue.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
 <script src="{{ "assets/js/underscore-min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
-<script src="{{ "assets/js/leaflet.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+		
+<link href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" rel="stylesheet" type="text/css" />
  
+<script>
+	L_PREFER_CANVAS = true;
+</script>
+<script src="{{ "assets/js/leaflet.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+			
+		
 <style type="text/css">
 #mietkarte_legend {
 	padding: 1.5em 0 0 1.5em;
 }
-
 #mietkarte_legend li.key {
 	border-top-width: 15px;
 	border-top-style: solid;
@@ -16,9 +21,7 @@
 	padding-left: 0;
 	padding-right: 0;
 }
-</style> 
- 
-			
+</style>
 
 
 <!--<button id="neuvermietungen" class="btn btn-simple active">Neuvermietungen</button> <button id="bestandsmieten" class="btn btn-simple active">Bestandsmieten</button>-->
@@ -32,11 +35,7 @@
 
 			
 
-<script type="text/javascript" charset="utf-8">
-
-	// use canvas, not SVG
-	L_PREFER_CANVAS = true;
-
+<script type="text/javascript">
 	{% if include.schleussig %}
 	var map_mietkarte = L.map('map_mietkarte').setView([51.319444, 12.343056], 14);
 	{% else %}
@@ -48,12 +47,11 @@
 	mapLink =
 		'<a href="http://openstreetmap.org">OpenStreetMap</a>';
 		L.tileLayer(
-		'http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {
+		'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.jpg', {
 		attribution: '&copy; ' + mapLink + ' Contributors',
 		maxZoom: 18,
 		}).addTo(map_mietkarte);
 							
-
 	// Layer initialisieren
 	var neuvermietungen = new L.LayerGroup;
 	var bestandsmieten = new L.LayerGroup;
@@ -66,7 +64,6 @@
 	var mietkarte_legend = d3.select('#mietkarte_legend')
 		.append('ul')
 		.attr('class', 'list-inline');
-
 	d3.csv("/assets/visualizations/mietkarte/data.php?mode=neuvermietungen", function(collection) {
 			
 				// Color Domain
@@ -183,5 +180,4 @@
 		}
 	});	
 			
-	
 </script>

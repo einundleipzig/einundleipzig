@@ -10,7 +10,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 <section class="story-header-image">
 		
 	<!-- image -->  
-	<img src="{{ page.image }}" class="img-responsive" />  
+	<img src="{{ page.image }}" class="img-responsive" alt="{{ page.title }}"/>  
 	<!-- description div -->  
 	<div class="story-header-image-description">  
 		<span class="subdescr">
@@ -39,7 +39,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	</article>
 	
 	<article class="full">
-		{% include video.html id="example_video_1" poster="/assets/pages/holbeinstrasse/video/Fotofilm.jpg" mp4="/assets/pages/holbeinstrasse/video/Fotofilm.mp4" webm="/assets/pages/holbeinstrasse/video/Fotofilm.webm" %}
+		{% include video.html id="video-holbeinstrasse-fotofilm" poster="/assets/pages/holbeinstrasse/video/Fotofilm.jpg" mp4="/assets/pages/holbeinstrasse/video/Fotofilm.mp4" webm="/assets/pages/holbeinstrasse/video/Fotofilm.webm" %}
 	</article>
 	
 	<article>
@@ -60,7 +60,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 		
 		<div class="floater">
 			
-			{% include video.html id="example_video_1" poster="/assets/pages/holbeinstrasse/video/Schultz_Entwicklungsmotor Spinnerei.jpg" mp4="/assets/pages/holbeinstrasse/video/Schultz_Entwicklungsmotor Spinnerei.mp4" webm="/assets/pages/holbeinstrasse/video/Schultz_Entwicklungsmotor Spinnerei.webm" %}
+			{% include video.html id="video-holbeinstrasse-schultz" poster="/assets/pages/holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.jpg" mp4="/assets/pages/holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.mp4" webm="/assets/pages/holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.webm" %}
 			
 			<div class="video-description">
 				„Der Motor für die Stadtentwicklung und Leipzigs gesamtcooles Image“ – Bertram Schultze, Geschäftsführer des Kunstbetriebs „Die alte Baumwollspinnerei“
@@ -93,7 +93,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	<article class="full" style="padding-bottom: 35px;">
 	
 		<a href="{% asset_path img/1.JPG %}" data-toggle="lightbox" data-gallery="hiddenimages" data-footer="Früher wuchs Wein an der Hausfassade des Elsterwerks in der Holbeinstraße 28a. Mit Beginn der Sanierungsarbeiten ließ der Eigentümer das Grün entfernen." class="col-sm-6">
-			<img src="{% asset_path img/1.JPG %}" class="img-responsive">
+			<img src="{% asset_path img/1.JPG %}" class="img-responsive" alt="" />
 		
 			<span class="video-description">
 				Früher wuchs Wein an der Hausfassade des Elsterwerks in der Holbeinstraße 28a. Mit Beginn der Sanierungsarbeiten ließ der Eigentümer das Grün entfernen.
@@ -102,7 +102,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 		
 		
 		<a href="{% asset_path img/2.JPG %}" data-toggle="lightbox" data-gallery="hiddenimages" data-footer="Mieter Steffen Balmer witzelt über die „neue“ Eingangstür. Sie versprühe ein besonderes „Baustellen-Flair“, sagt er." class="col-sm-6">
-			<img src="{% asset_path img/2.JPG %}" class="img-responsive">
+			<img src="{% asset_path img/2.JPG %}" class="img-responsive" alt=""/>
 			<span class="video-description">
 				Mieter Steffen Balmer witzelt über die „neue“ Eingangstür. Sie versprühe ein besonderes „Baustellen-Flair“, sagt er.
 			</span>

@@ -15,7 +15,7 @@ layout: default
 		</h1>
 		
 		{% if post.image %}
-			<img src="{{post.image}}" class="img-responsive" style="padding-bottom: 35px;" />
+			<img src="{{post.image}}" class="img-responsive" style="padding-bottom: 35px;" alt="{{ post.title }}" />
 		{% endif %}
 		
 		{% if post.description %}
@@ -24,7 +24,7 @@ layout: default
 			</h2>
 		{% endif %}
 	  
-		<time>
+		<p class="time">
 			{% assign m = post.date | date: "%-m" %}
 			{{ post.date | date: "%-d" }}.
 			{% case m %}
@@ -45,9 +45,9 @@ layout: default
 			von
 			{% assign author = site.authors[post.author] %}
 			{{ author.display_name }}
-		</time>
+		</p>
 		
-		{{ post.excerpt | markdownify }}</p>
+		{{ post.excerpt | markdownify }}
 		<a class="readmore" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">Weiter lesen... <span>›</span></a>
 		
 		<hr>

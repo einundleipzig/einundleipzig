@@ -11,7 +11,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 <section class="story-header-image">
 		
 	<!-- image -->  
-	<img src="{{ page.image }}" class="img-responsive" />  
+	<img src="{{ page.image }}" class="img-responsive" alt="{{ page.title }}"/>  
 	<!-- description div -->  
 	<div class="story-header-image-description">  
 		<span class="subdescr">
@@ -40,7 +40,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	
 	<article>
 		<div class="floater">
-			{% include video.html id="example_video_1" poster="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_image.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_image.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_image.webm" %}
+			{% include video.html id="video-glatter-hype" poster="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_image.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_image.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_image.webm" %}
 			<div class="video-description">
 				„Der Hype ist eine Image-tragende Geschichte“
 			</div>
@@ -95,7 +95,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 				}
 			});
 			
-			chart.xgrids([{value: '2011-01-01', text:'Zensus 2011'}]);
+			chart.xgrids([{value: '2011-12-31', text:'Zensus 2011'}]);
 			</script>			
 		<div class="video-description text-right">
 			Einwohnerentwicklung im Vergleich, Quelle: Statistische Landesämter, jeweils zum Stichtag 31.12. 
@@ -117,14 +117,14 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	</article>	
 
 	<article class="half">
-		{% include video.html id="example_video_1" poster="/assets/pages/gentrifizierung-in-leipzig/video/Ehrlich_Reurbanisierung_Leipzig.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Ehrlich_Reurbanisierung_Leipzig.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Ehrlich_Reurbanisierung_Leipzig.webm" %}
+		{% include video.html id="video-ehrlich-reurbanisierung" poster="/assets/pages/gentrifizierung-in-leipzig/video/Ehrlich_Reurbanisierung_Leipzig.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Ehrlich_Reurbanisierung_Leipzig.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Ehrlich_Reurbanisierung_Leipzig.webm" %}
 		<div class="video-description">
 			Dr. Kornelia Ehrlich, Research Assistant, Institut für Länderkunde Leipzig 
 		</div>
 	</article>
 	
 	<article class="half">
-		{% include video.html id="example_video_1" poster="/assets/pages/gentrifizierung-in-leipzig/video/Rink_ReurbanisierungLeipzig.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Rink_ReurbanisierungLeipzig.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Rink_ReurbanisierungLeipzig.webm" %}
+		{% include video.html id="video-rink-reurbanisierung" poster="/assets/pages/gentrifizierung-in-leipzig/video/Rink_ReurbanisierungLeipzig.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Rink_ReurbanisierungLeipzig.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Rink_ReurbanisierungLeipzig.webm" %}
 		<div class="video-description">
 			Prof. Dr. Dieter Rink, Stadtsoziologe am Helmholtzzentrum Leipzig
 		</div>
@@ -190,7 +190,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	</article>	
 
 	<article>
-		<p class="begin">Wer kommt nach Leipzig und warum? Im Auftrag der Stadt Leipzig hat das Helmholtz-Zentrum für Umweltforschung (UFZ) eine <a href="http://www.leipzig.de/buergerservice-und-verwaltung/unsere-stadt/statistik-und-zahlen/?eID=dam_frontend_push&docID=35588" target="_blank">Wanderungsbefragung</a> unter 10.000 Bürgern zwischen Oktober 2012 und September 2013 durchgeführt. Die Wissenschaftler untersuchen, was die Zugezogenen reizvoll an der Stadt finden, aber auch, warum Leipziger ihr Wohnviertel verlassen. </p>	
+		<p class="begin">Wer kommt nach Leipzig und warum? Im Auftrag der Stadt Leipzig hat das Helmholtz-Zentrum für Umweltforschung (UFZ) eine <a href="http://www.leipzig.de/buergerservice-und-verwaltung/unsere-stadt/statistik-und-zahlen/?eID=dam_frontend_push&amp;docID=35588" target="_blank">Wanderungsbefragung</a> unter 10.000 Bürgern zwischen Oktober 2012 und September 2013 durchgeführt. Die Wissenschaftler untersuchen, was die Zugezogenen reizvoll an der Stadt finden, aber auch, warum Leipziger ihr Wohnviertel verlassen. </p>	
 		
 		<h3>Zuzüge von außen</h3>
 		
@@ -257,7 +257,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	</article>					
 
 	<article>
-		<p class="begin" style="padding-top: 35px;">Anfang der 2000er standen mehr als 20 Prozent der Wohnungen in Leipzig leer. Investoren hatten die Nachfrage überschätzt und viele der Gründerzeithäuser saniert. Gleichzeitig zogen viele Leipziger weg und es entstand ein Überangebot an sanierten, bezugsfertigen Wohnungen. Das drückte die Mietpreise. „Teilweise haben die Eigentümer draufgezahlt und viele sind Pleite gegangen“, sagt der Pressesprecher der Immobilienakteure in Leipzig, Michael Rücker. Im neuesten <a href="http://www.leipzig.de/bauen-und-wohnen/stadtentwicklung/raumbeobachtung-und-monitoring/monitoring-wohnen/?eID=dam_frontend_push&docID=32022" target="_blank">Monitoringbericht</a> der Stadt Leipzig (2013/14) zum Thema Wohnen wird der Leerstand auf 39.800 Wohnungen geschätzt. Allerdings gilt diese Zahl für den Stichtag am 9.5.2011. Die Leerstandsquote hätte sich damit seit Anfang der 2000er bis 2011 beinahe halbiert. Besonders in den Stadtteilen im „Auwald-Streifen“ ist der Leerstand in den 2000er Jahren auf unter fünf Prozent zurückgegangen. Diese Gebiete hatten sich somit bis 2011 schon aufgefüllt.</p>
+		<p class="begin" style="padding-top: 35px;">Anfang der 2000er standen mehr als 20 Prozent der Wohnungen in Leipzig leer. Investoren hatten die Nachfrage überschätzt und viele der Gründerzeithäuser saniert. Gleichzeitig zogen viele Leipziger weg und es entstand ein Überangebot an sanierten, bezugsfertigen Wohnungen. Das drückte die Mietpreise. „Teilweise haben die Eigentümer draufgezahlt und viele sind Pleite gegangen“, sagt der Pressesprecher der Immobilienakteure in Leipzig, Michael Rücker. Im neuesten <a href="http://www.leipzig.de/bauen-und-wohnen/stadtentwicklung/raumbeobachtung-und-monitoring/monitoring-wohnen/?eID=dam_frontend_push&amp;docID=32022" target="_blank">Monitoringbericht</a> der Stadt Leipzig (2013/14) zum Thema Wohnen wird der Leerstand auf 39.800 Wohnungen geschätzt. Allerdings gilt diese Zahl für den Stichtag am 9.5.2011. Die Leerstandsquote hätte sich damit seit Anfang der 2000er bis 2011 beinahe halbiert. Besonders in den Stadtteilen im „Auwald-Streifen“ ist der Leerstand in den 2000er Jahren auf unter fünf Prozent zurückgegangen. Diese Gebiete hatten sich somit bis 2011 schon aufgefüllt.</p>
 	
 		<h3>Leerstand: Jeder macht seine eigene Rechnung auf</h3>
 	
@@ -428,20 +428,20 @@ EIGENEN MIETPREIS EINTRAGEN KOMMT HIER HIN - NOCH NICHT FERTIG!
 	
 	<article>
 		
-		<p class="begin">Wir ziehen (fürs Erste und nur für diesen Beitrag) Resümee: Ja, es gab und gibt Verdrängung in Leipzig. Konkrete <a href="https://www.google.com/maps/d/viewer?oe=UTF8&gl=de&ie=UTF8&msa=0&mid=zoDdJ63qBApU.k-wwqyJ670RI" target="_blank">Beispiele</a> finden sich derzeit stark in den Medien: Die <a href="{{ site.baseurl }}holbeinstrasse">Holbeinstraße 28a</a>, die der Häuserblock in der Windmühlenstraße oder aber auch die Bernhard-Göring-Straße 110. Juliane Nagel von DIE LINKE in Leipzig etwa vermutet auf ihrem <a href="http://jule.linxxnet.de/index.php/2014/11/verdraengung-von-mieterinnen-und-mietern-ist-in-leipzig-kein-randproblem/" target="_blank">Blog</a>, dass die Zahl der Fälle um ein Vielfaches höher sein dürfte als noch vor einigen Jahren. Ob das stimmt, ist schwer mit Zahlen zu belegen. Viele, die von Mieterhöhungen oder direkter Verdrängung betroffen sind, gehen dem Konflikt mit dem Vermieter lieber aus dem Weg und suchen sich eine neue Wohnung.</p>
+		<p class="begin">Wir ziehen (fürs Erste und nur für diesen Beitrag) Resümee: Ja, es gab und gibt Verdrängung in Leipzig. Konkrete <a href="https://www.google.com/maps/d/viewer?oe=UTF8&amp;gl=de&amp;ie=UTF8&amp;msa=0&amp;mid=zoDdJ63qBApU.k-wwqyJ670RI" target="_blank">Beispiele</a> finden sich derzeit stark in den Medien: Die <a href="{{ site.baseurl }}holbeinstrasse">Holbeinstraße 28a</a>, die der Häuserblock in der Windmühlenstraße oder aber auch die Bernhard-Göring-Straße 110. Juliane Nagel von DIE LINKE in Leipzig etwa vermutet auf ihrem <a href="http://jule.linxxnet.de/index.php/2014/11/verdraengung-von-mieterinnen-und-mietern-ist-in-leipzig-kein-randproblem/" target="_blank">Blog</a>, dass die Zahl der Fälle um ein Vielfaches höher sein dürfte als noch vor einigen Jahren. Ob das stimmt, ist schwer mit Zahlen zu belegen. Viele, die von Mieterhöhungen oder direkter Verdrängung betroffen sind, gehen dem Konflikt mit dem Vermieter lieber aus dem Weg und suchen sich eine neue Wohnung.</p>
 	
 		<p>Mit der Finanzkrise haben Investoren Immobilien als „sichere Anlage“ entdeckt – und auch in Leipzig ist das zu spüren. Die Investoren in Leipzig hätten kaum ein Interesse an preiswerten Sanierungen, sagt der Stadtsoziologe Dieter Rink vom Helmholtz-Zentrum für Umweltforschung in Leipzig. Stattdessen seien hauptsächlich Wohnungen im gehobenen Wohnsegment entstanden. Um das refinanzieren zu können, müssen die Wohnungen relativ teuer vermietet werden. Zahlungskräftigere Bevölkerungsschichten ziehen ins Viertel. „Bars und Cafés werden entstehen für ein ganz anderes Publikum. Und auf lange Sicht werden wahrscheinlich auch die Mietpreise der umliegenden Häuser steigen“, sagt Rink.</p>
 	</article>
 		
 	<article class="half">
-		{% include video.html id="example_video_1" poster="/assets/pages/gentrifizierung-in-leipzig/video/Rink_Gentr_Leipzig.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Rink_Gentr_Leipzig.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Rink_Gentr_Leipzig.webm" %}
+		{% include video.html id="video-rink-gentrifizierung-leipzig" poster="/assets/pages/gentrifizierung-in-leipzig/video/Rink_Gentr_Leipzig.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Rink_Gentr_Leipzig.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Rink_Gentr_Leipzig.webm" %}
 		<div class="video-description">
 			Prof. Dr. Dieter Rink, Stadtsoziologe, Helmholtz-Zentrum für Umweltforschung (UFZ) in Leipzig
 		</div>
 	</article>
 	
 	<article class="half">
-		{% include video.html id="example_video_1" poster="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Gentr_Leipzig.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Gentr_Leipzig.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Gentr_Leipzig.webm" %}
+		{% include video.html id="video-glatter-gentrifizierung-leipzig" poster="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Gentr_Leipzig.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Gentr_Leipzig.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Gentr_Leipzig.webm" %}
 		<div class="video-description">
 			Dr. Jan Glatter, geographische Wohnungsmarktforschung, Universität Köln
 		</div>
@@ -453,7 +453,7 @@ EIGENEN MIETPREIS EINTRAGEN KOMMT HIER HIN - NOCH NICHT FERTIG!
 		
 		<h3 id="weitergehen">Wie soll es weiter gehen?</h3>
 		
-		<p>Die Stadt hat sich zum Ziel gesetzt weiter zu wachsen. Wenn es nach den Wunschvorstellungen der kommunalen Politik geht, sollen bis 2030 630.000 Menschen in Leipzig leben. In dem <a href="http://www.leipzig.de/buergerservice-und-verwaltung/stadtverwaltung/oberbuergermeister/arbeitsprogramm-leipzig-2020/?eID=dam_frontend_push&docID=28519" target="_blank">Arbeitsprogramm 2020</a> der Stadt Leipzig heißt es:</p>
+		<p>Die Stadt hat sich zum Ziel gesetzt weiter zu wachsen. Wenn es nach den Wunschvorstellungen der kommunalen Politik geht, sollen bis 2030 630.000 Menschen in Leipzig leben. In dem <a href="http://www.leipzig.de/buergerservice-und-verwaltung/stadtverwaltung/oberbuergermeister/arbeitsprogramm-leipzig-2020/?eID=dam_frontend_push&amp;docID=28519" target="_blank">Arbeitsprogramm 2020</a> der Stadt Leipzig heißt es:</p>
 	</article>
 	
 	<article class="full" style="padding-bottom: 35px;">
@@ -465,14 +465,14 @@ EIGENEN MIETPREIS EINTRAGEN KOMMT HIER HIN - NOCH NICHT FERTIG!
 			
 	
 	<article class="half">
-		{% include video.html id="example_video_1" poster="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Zukunftleipzigs.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Zukunftleipzigs.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Zukunftleipzigs.webm" %}
+		{% include video.html id="video-glatter-zukunft" poster="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Zukunftleipzigs.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Zukunftleipzigs.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Zukunftleipzigs.webm" %}
 		<div class="video-description">
 			Dr. Jan Glatter, geographische Wohnungsmarktforschung, Universität Köln
 		</div>
 	</article>
 	
 	<article class="half">
-		{% include video.html id="example_video_1" poster="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buerger.jpg" mp4="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buerger.mp4" webm="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buerger.webm" %}
+		{% include video.html id="video-buerger" poster="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buerger.jpg" mp4="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buerger.mp4" webm="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buerger.webm" %}
 		<div class="video-description">
 			Umfrage unter den Bürgern zum Karli Beben im April 2014
 		</div>
@@ -494,7 +494,7 @@ EIGENEN MIETPREIS EINTRAGEN KOMMT HIER HIN - NOCH NICHT FERTIG!
 		<p class="no-comment">Heinig, Stefan/ Herfert, Günter (2012): Leipzig – intraregionale und innerstädtische Reurbanisierungspfade. In: Brake, Klaus/ Herfert, Günter: Reurbanisierung, Wiesbaden: S. 323 – 342.</p> 
 		<p class="no-comment">Rink, Dieter (2014): Stadtentwicklung und Gentrifizierung in Leipzig. Vortrag. Helmholtz-Zentrum für Umweltforschung UFZ. Leipzig.</p> 
 		<p class="no-comment">Rink, Dieter/ Haase, Annegret/ Schneider, Andreas (2014): Vom Leerstand zum Bauboom? Zur Entwicklung des Leipziger Wohnungsmarkts. In: Stadt Leipzig (Hrsg.): Statistischer Quartalsbericht 1/2014. Leipzig: S. 25-28.</p> 
-		<p class="no-comment">Stadt Leipzig: Leipzig! wächst nachhaltig, Leipzig: Messedruck Leipzig GmbH, 15.08.2012. (<a href="http://www.leipzig.de/bauen-und-wohnen/buergerbeteiligung-und-planinformation/publikationen/?eID=dam_frontend_push&docID=4602" target="_blank">www.leipzig.de</a>)</p> 
+		<p class="no-comment">Stadt Leipzig: Leipzig! wächst nachhaltig, Leipzig: Messedruck Leipzig GmbH, 15.08.2012. (<a href="http://www.leipzig.de/bauen-und-wohnen/buergerbeteiligung-und-planinformation/publikationen/?eID=dam_frontend_push&amp;docID=4602" target="_blank">www.leipzig.de</a>)</p> 
 		<p class="no-comment">Stadt Leipzig (2014): Monitoringbericht Wohnen 2013/2014. Leipzig.</p>
 	</article>
 		
