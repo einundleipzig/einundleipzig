@@ -1,23 +1,4 @@
 // ------------------------------------------------------------------------
-// Themen: Hover (http://geekgirllife.com/animate-text-over-images-on-hover-without-javascript/)
-// ------------------------------------------------------------------------
-
-$('.descriptionContainer').css({ opacity: 0 });
-	
-$('.descriptionContainer').hover( function(){ 
-	$(this).stop().animate({ opacity: 1 }, 'slow');
-}, function(){ 
-	$(this).stop().animate({ opacity: 0 }, 'slow'); 
-});
-
-	$('.descriptionContainer').hover(function () {
-    var projDesc = $(this).find('.descriptionContainer');
-    var offset = ($(this).height() / 2) - (projDesc.height() / 2);
-	console.log($(this).height());
-    $(this).find('.description').css('padding-top', offset -40);
-});
-
-// ------------------------------------------------------------------------
 // Themen: Quicksand Sort (http://www.evoluted.net/thinktank/web-development/jquery-quicksand-tutorial-filtering)
 // ------------------------------------------------------------------------
 
