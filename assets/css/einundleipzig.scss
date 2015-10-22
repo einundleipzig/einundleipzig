@@ -56,6 +56,9 @@ $grid-float-breakpoint: 992px;
 // add bourbon bitters
 @import "base/base";
 
+// add font-awesome
+@import "font-awesome/font-awesome";
+
 @import 'general';
 
 @import 'navigation';
