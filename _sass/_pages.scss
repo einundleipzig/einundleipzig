@@ -90,6 +90,7 @@ ul.ourHolder {
 				text-shadow: 0 0 20px rgba(0, 0, 20, 1);
 				margin-top: 10px;
 				font-size: 16px;
+				font-weight: 600;
 				line-height: 1em;
 			}
 		}
@@ -110,7 +111,7 @@ ul.ourHolder {
 
 .descriptionContainer {
     position: absolute;
-    background: none repeat scroll 0% 0% rgba(0, 159, 227, 0.25);
+    background: none repeat scroll 0% 0% rgba(0, 159, 227, 0.15);
     width: 100%;
     height: 100%;
     top: 0px;
