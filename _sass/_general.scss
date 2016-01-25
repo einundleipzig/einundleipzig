@@ -277,7 +277,7 @@ blockquote
 
 ul.bullets 
 {
-	@extend %default-ul; 
+	list-style-type: disc;	
 	
 	li 
 	{
