@@ -1,4 +1,4 @@
-<script src="{{ "assets/js/queue.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+{% javascript d3-queue.js %}
 <style> 
 input[type=range] {
     background-color: #fff;
@@ -186,10 +186,10 @@ var indexByName = {},
  */
 function prepareData(year, callback)
 {
-	d3.text("/assets/visualizations/umzugsmatrix/stadtteile.csv", function(imports){
+	d3.text("{% asset_path umzugsmatrix/stadtteile.csv %}", function(imports){
 		neighborhoods = d3.csv.parse(imports);
 
-		d3.text("/assets/visualizations/umzugsmatrix/ortsteildaten" + year + ".csv", function(imports) {
+		d3.text("/assets/umzugsmatrix/ortsteildaten" + year + ".csv", function(imports) {
 			var csv_values = d3.csv.parseRows(imports);
 
 			// read data
@@ -237,7 +237,7 @@ function prepareData(year, callback)
 	});
 }
 
-queue()
+d3_queue.queue()
 	.defer(prepareData, year)
 	.await(updateChords);
 	
@@ -598,7 +598,7 @@ d3.select("#umzugsmatrix_sent").on("click", function(){
 	
 	mode = 'sent';
 	
-	queue()
+	d3_queue.queue()
 		.defer(prepareData, year)
 		.await(updateChords);
 
@@ -612,7 +612,7 @@ d3.select("#umzugsmatrix_received").on("click", function(){
 	
 	mode = 'received';
 	
-	queue()
+	d3_queue.queue()
 		.defer(prepareData, year)
 		.await(updateChords);
 });
@@ -621,7 +621,7 @@ d3.select('#slider').on('change', function change() {
 
 	var year = this.value;
 	
-	queue()
+	d3_queue.queue()
 		.defer(prepareData, year)
 		.await(updateChords);
 	

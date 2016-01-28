@@ -1,0 +1,79 @@
+/*-----------------------------------------------------------------------------------*/
+/* define variables
+/*-----------------------------------------------------------------------------------*/
+// font variables
+
+$font-stack-serif: "Merriweather", serif;
+$font-stack-sans: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-stack-sans-alt: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$bold: 700;
+$semibold: 600;
+$regular: 400;
+$light: 300;
+
+$font-size-smaller: 10pt;
+$font-size-small: 11pt;
+$font-size-regular: 12pt;
+$font-size-large: 14pt;
+$font-size-larger: 15pt;
+
+// color variables
+$einundleipzig_cyan: #009fe3;
+$einundleipzig_cyan-dark: #006F9F;
+
+$einundleipzig_yellow: #ffed00;
+$einundleipzig_yellow-dark: #C5B700;
+
+$einundleipzig_magenta: #e6007e;
+$einundleipzig_magenta-dark: #D10072;
+
+$einundleipzig_green: #96c11f;
+$einundleipzig_green-dark: #769C0E;
+
+$lighter-grey: #999;
+$light-grey: #666;
+
+$dark-grey: #333;
+$darker-grey: #222;
+
+// overwrite nav collapse
+$grid-float-breakpoint: 992px;
+
+/*-----------------------------------------------------------------------------------*/
+/* load files
+/*-----------------------------------------------------------------------------------*/
+
+// add bootstrap
+@import "bootstrap/bootstrap";
+
+// add some bourbon!
+@import "bourbon/bourbon";
+
+// add bourbon bitters
+@import "base/base";
+
+// add font-awesome
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(asset_path('font-awesome/fontawesome-webfont.eot?v=4.5.0'));
+  src: url(asset_path('font-awesome/fontawesome-webfont.eot?#iefix&v=4.5.0')) format('embedded-opentype'),
+    url(asset_path('font-awesome/fontawesome-webfont.woff2?v=4.5.0')) format('woff2'),
+    url(asset_path('font-awesome/fontawesome-webfont.woff?v=4.5.0')) format('woff'),
+    url(asset_path('font-awesome/fontawesome-webfont.ttf?v=4.5.0')) format('truetype'),
+    url(asset_path('font-awesome/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular')) format('svg');
+//  src: url(asset_path('FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "font-awesome/font-awesome";
+
+@import 'general';
+
+@import 'navigation';
+
+@import 'sidenav';
+
+@import 'pages';
+
+@import 'posts';

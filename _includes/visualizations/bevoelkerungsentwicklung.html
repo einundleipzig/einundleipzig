@@ -1,5 +1,5 @@
-<script src="{{ "assets/js/queue.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ "assets/js/underscore-min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+{% javascript d3-queue.js %}
+{% javascript underscore.js %}
 
 <style type="text/css">
 path.ortsteil {
@@ -48,8 +48,8 @@ div.bevoelkerungsentwicklung_tooltip {
 
 <script type="text/javascript">
 var bevoelkerungsentwicklung_urls = {
-	ot: "/assets/visualizations/ot.json",
-	data: "/assets/visualizations/bevoelkerungsentwicklung/bevoelkerungsentwicklung.csv"
+	ot: "{% asset_path ot.json %}",
+	data: "{% asset_path bevoelkerungsentwicklung/bevoelkerungsentwicklung.csv %}"
 };
 	
 var bevoelkerungsentwicklung_margin = {top: 10, left: 10, bottom: 10, right: 10}
@@ -83,7 +83,7 @@ var bevoelkerungsentwicklung_tooltip = d3.select("body").append("div")
 	.style("opacity", 0);	
 
 // queue and render
-queue()
+d3_queue.queue()
 	.defer(d3.json, bevoelkerungsentwicklung_urls.ot)
 	.defer(d3.csv, bevoelkerungsentwicklung_urls.data)
 	.await(bevoelkerungsentwicklung_render);

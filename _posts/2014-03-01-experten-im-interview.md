@@ -4,7 +4,7 @@ category: einundleipzig
 author: carolyn
 title: Experten im Interview
 description: Gentrifizierung, Re-Urbanisierung? Wenn es um Veränderungsprozesse in der Stadt geht, kommt man um diese Begriffe nicht herum. Doch was genau verbirgt sich dahinter? Welche Vorgänge in der Stadt beschreiben sie? Und inwiefern trifft das auf Leipzig zu? Wir sprechen mit Geographen und Stadtplanern über die wissenschaftliche Perspektive auf Stadtentwicklung. Kornelia Ehrlich hat uns ihre Sicht schon verraten.
-image: /assets/posts/experten-im-interview/experten-im-interview.jpg
+image: experten-im-interview/experten-im-interview.jpg
 ---
 Eine einheitliche Definition für Gentrifizierung und Re-Urbanisierung gibt es nicht. Deswegen wollen wir hier mehrere Experten in einem Video zu Wort kommen lassen, die zum Teil ganz unterschiedliche Ansichten vertreten. Auch für Leipzigs Zukunft zeichnen sie verschiedene Szenarien. Kornelia Ehrlich ist wissenschaftliche Mitarbeiterin am Leibniz-Institut für Länderkunde und beschäftigt sich seit einigen Jahren mit Veränderungsprozessen in Städten.
 

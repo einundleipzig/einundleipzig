@@ -2,8 +2,8 @@
 <html>
 	<head>
 	<meta charset="utf-8">
-	<link href="{{ "assets/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
-	<link href="{{ "assets/css/impress-demo.css" | prepend: site.baseurl }}" rel="stylesheet">
+	{% stylesheet einundleipzig.css %}
+	{% stylesheet impress-demo.css %}
 </head>
 	<body>
 		<div id="impress">	
@@ -40,53 +40,53 @@
     </div>
 			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(3500px, 2100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(90deg) scale(1); transform-style: preserve-3d;" id="step-5" class="step future" data-y=-500 data-x=2000>
 				<div style="height: 75%">
-					<img alt="" src="/assets/pages/was-ist-gentrifizierung/img/1.png" style="height: auto; max-width: 60%; display: block;" />
+					<img alt="" src="{% asset_path was-ist-gentrifizierung/img/1.png %}" style="height: auto; max-width: 60%; display: block;" />
 				</div>
 				<span class="footnote"> Günstiger Wohnraum</span>
 			</div>
 		<div style="position: absolute; transform: translate(-50%, -50%) translate3d(3500px, 2100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;" id="step-6" class="step future" data-x="3150" data-y="-500" data-scale="1">
-					<img alt="" src="/assets/pages/was-ist-gentrifizierung/img/2.png" style="height: auto; max-width: 57%; display: block;" />
+					<img alt="" src="{% asset_path was-ist-gentrifizierung/img/2.png %}" style="height: auto; max-width: 57%; display: block;" />
 				 <span class="footnote">...in attraktiver Lage</span>
 		</div>
 		<div style="position: absolute; transform: translate (-50%, -50%) translate3d(3500px, 2100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;" id="step-7" class="step future" data-y="750" data-x="3150" data-scale="1">
-				<img alt="" src="/assets/pages/was-ist-gentrifizierung/img/3.png" style="height: auto; max-width: 80%; display: block;" />
+				<img alt="" src="{% asset_path was-ist-gentrifizierung/img/3.png %}" style="height: auto; max-width: 80%; display: block;" />
 			</div>
 		<div style="position: absolute; transform: translate (-50%, -50%) translate3d(3500px, 2100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;" id="step-8" class="step future" data-y="750" data-x="2000" data-z="-100" data-scale="1">
-				<img alt="" src="/assets/pages/was-ist-gentrifizierung/img/4.png" style="height: auto; max-width: 95%; display: block;" />
+				<img alt="" src="{% asset_path was-ist-gentrifizierung/img/4.png %}" style="height: auto; max-width: 95%; display: block;" />
 			</div>
 	<div style="position: absolute; transform: translate(-50%, -50%) translate3d(2825px, 2325px, -1000px) rotateX(0deg) rotateY(0deg) rotateZ(90deg) scale(1); transform-style: preserve-3d;" id="step-9" class="step future" data-x="1000" data-y="800" data-z="-1000" data-rotate="90" data-scale="1">
         <p>Das Viertel als Geheimtipp &#8594; symbolische <b>Aufwertung</b></p>
 	</div>
 	<div style="position: absolute; transform: translate(-50%, -50%) translate3d(3500px, 2100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;" id="step-10" class="step future" data-x="2000" data-y="2500" data-rotate="270" data-scale="1">
-					<img alt="" src="/assets/pages/was-ist-gentrifizierung/img/5.png" style="height: auto; max-width: 80%; display: block;" />
+					<img alt="" src="{% asset_path was-ist-gentrifizierung/img/5.png %}" style="height: auto; max-width: 80%; display: block;" />
 		</div>
 	<div style="position: absolute; transform: translate(-50%, -50%) translate3d(3500px, 2100px, 0px) rotateX(0deg) rotateY(90deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;" id="step-11" class="step future" data-x="3000" data-y="2000" data-z="-100" data-rotate="90" data-scale="1">
-					<img alt="" src="/assets/pages/was-ist-gentrifizierung/img/7.png" style="height: auto; max-width: 70%; display: block;" />
+					<img alt="" src="{% asset_path was-ist-gentrifizierung/img/7.png %}" style="height: auto; max-width: 70%; display: block;" />
 		</div>
 	<div style="position: absolute; transform: translate(-50%, -50%) translate3d(3500px, 2100px, 0px) rotateX(90deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;" id="step-12" class="step future" data-x="3200" data-y="3150" data-rotate="0" data-scale="1">
-					<img alt="" src="/assets/pages/was-ist-gentrifizierung/img/6.png" style="height: auto; max-width: 90%; display: block;" />
+					<img alt="" src="{% asset_path was-ist-gentrifizierung/img/6.png %}" style="height: auto; max-width: 90%; display: block;" />
 		</div>
 	<div style="position: absolute; transform: translate(-50%, -50%) translate3d(3500px, 2100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;" id="step-13" class="step future" data-x="1000" data-y="3150" data-scale="1">
-					<img alt="" src="/assets/pages/was-ist-gentrifizierung/img/8.png" style="height: auto; max-width: 85%; display: block;" />
+					<img alt="" src="{% asset_path was-ist-gentrifizierung/img/8.png %}" style="height: auto; max-width: 85%; display: block;" />
 		</div>
 	<div style="position: absolute; transform: translate(-50%, -50%) translate3d(3500px, 2100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;" id="step-14" class="step future" data-x="-1000" data-y="3000" data-scale="1">
-					<img alt="" src="/assets/pages/was-ist-gentrifizierung/img/9.png" style="height: auto; max-width: 95%; display: block;" />
+					<img alt="" src="{% asset_path was-ist-gentrifizierung/img/9.png %}" style="height: auto; max-width: 95%; display: block;" />
 		</div>
 			<div style="position: absolute; transform: translate(-50%, -50%) translate3d(2825px, 2325px, -1000px) rotateX(0deg) rotateY(0deg) rotateZ(90deg) scale(1); transform-style: preserve-3d;" id="step-15" class="step future" data-x="-1900" data-y="3150" data-z="-750" data-rotate="90" data-scale="1">
         <p><b>Immobilienwirtschaftliche Aufwertung des gesamten Viertels</b>, oft unterstützt durch Förderprogramme der Stadt.</p>
 	</div>
 	<div style="position: absolute; transform: translate(-50%, -50%) translate3d(3500px, 2100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;" id="step-16" class="step future" data-x="-1050" data-y="1500" data-scale="1">
-					<img alt="" src="/assets/pages/was-ist-gentrifizierung/img/10.png" style="height: auto; max-width: 95%; display: block;" />
+					<img alt="" src="{% asset_path was-ist-gentrifizierung/img/10.png %}" style="height: auto; max-width: 95%; display: block;" />
 		</div>
 	<div style="position: absolute; transform: translate(-50%, -50%) translate3d(3500px, 2100px, -750px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;" id="step-17" class="step future" data-x="1000" data-y="1750" data-z="-500" data-scale="1">
-					<img alt="" src="/assets/pages/was-ist-gentrifizierung/img/11.png" style="height: auto; max-width: 50%; display: block;" />
+					<img alt="" src="{% asset_path was-ist-gentrifizierung/img/11.png %}" style="height: auto; max-width: 50%; display: block;" />
 		</div>
 		<div style="position: absolute; transform: translate(-50%, -50%) translate3d(3500px, 2100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;" id="step-18" class="step future" data-x="0" data-y="750" data-scale="1">
-					<img alt="" src="/assets/pages/was-ist-gentrifizierung/img/12.png" style="height: auto; max-width: 80%; display: block;" />
+					<img alt="" src="{% asset_path was-ist-gentrifizierung/img/12.png %}" style="height: auto; max-width: 80%; display: block;" />
 		</div>
 		
 		<div style="position: absolute; transform: translate(-50%, -50%) translate3d(2000px, 2100px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;" id="step-18" class="step future" data-x="-3000" data-y="0" data-scale="1">
-				<img alt="" src="/assets/pages/was-ist-gentrifizierung/img/Pfeil1.png" style="height: auto; max-width: 50%; display: block;" />
+				<img alt="" src="{% asset_path was-ist-gentrifizierung/img/Pfeil1.png %}" style="height: auto; max-width: 50%; display: block;" />
 					<p>Zuzug zahlungskräftiger Bevölkerungsschichten, Homogenisierung des Viertels, Kommerzialisierung von Kunst </p> 
 			</div>
 		<div style="position: absolute; transform: translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(4); transform-style: preserve-3d;" id="overview" class="step future" data-x="0" data-y="0" data-scale="4">
@@ -99,7 +99,7 @@
 	}
 	</script>	
 	
-	<script type="text/javascript" src="{{ "assets/js/impress.js" | prepend: site.baseurl }}"></script>
+	{% javascript impress.js %}
 	<script>impress().init();</script>
 	
 	</body>

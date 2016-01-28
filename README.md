@@ -23,13 +23,11 @@ Im Zweifelsfall bitte bei den unten stehenden Kontaktdaten melden.
 ### Tech
 einundleipzig basiert auf folgenden Open Source Projekten:
 * [jekyll] - Ein simpler Generator für statische Webseiten basierend auf Ruby
-* [php-geocoder] - Geocoding Bibliothek für PHP
 
 **Javascript:**
 * [jquery]
- * [jquery UI]
  * [jquery Quicksand] - Reorder and filter items with a nice shuffling animation
-* [queue.js]
+* [d3-queue.js]
 * [underscore.js]
 * [OpenStreetMap]
  * [leaflet]
@@ -37,8 +35,7 @@ einundleipzig basiert auf folgenden Open Source Projekten:
 * [d3.js] - JavaScript-Bibliothek zur Visualisierung von Daten
 * [c3.js] - Auf D3 basierende JavaScript-Bibliothek für Diagramme
 * [impress.js] - An prezi angelehntes JavaScript-Tool für interaktive Präsentationen
-* [inlineDisqussions] - zur inline-Einbindung von [disqus]
-* [timeline.js] -
+* [timeline.js]
 * [ekko-lightbox] - auf Bootstrap basierende Lightboxes
 
 **CSS:**
@@ -58,7 +55,6 @@ Lust, mitzuwirken? Folgende Dinge müssen noch eingebunden/verbessert werden:
 * Firefox
  * Full Screen bei Flip Cards Videos 
  * Ladeverhalten von video.js optimieren
-* inlineDisqussions noch nicht optimal positioniert
 
 
 * Formular zum Eintragen von Mietpreisen durch User (HALF DONE)
@@ -75,9 +71,7 @@ Lust, mitzuwirken? Folgende Dinge müssen noch eingebunden/verbessert werden:
 [CC0 1.0]: http://creativecommons.org/publicdomain/zero/1.0/deed.de
 [Creative Commons BY-NC-SA 4.0]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [jekyll]: http://www.jekyllrb.com
-[php-geocoder]: http://geocoder-php.org/
 [jquery]: http://jquery.com
-[jQuery UI]: http://jqueryui.com/
 [jQuery Quicksand]: http://razorjack.net/quicksand/
 [OpenStreetMap]: http://www.openstreetmap.org/
 [video.js]: http://www.videojs.com/
@@ -89,9 +83,8 @@ Lust, mitzuwirken? Folgende Dinge müssen noch eingebunden/verbessert werden:
 [impress.js]: http://bartaz.github.io/impress.js
 [disqus]: http://disqus.com
 [ekko-lightbox]: http://ashleydw.github.io/lightbox/
-[inlineDisqussions]: http://tsi.github.io/inlineDisqussions/
 [font awesome]: http://fortawesome.github.io/Font-Awesome/
 [leaflet]: http://leafletjs.com/
 [timeline.js]: http://timeline.knightlab.com/
 [underscore.js]: http://underscorejs.org/
-[queue.js]: https://github.com/mbostock/queue
+[d3-queue.js]: https://github.com/mbostock/queue

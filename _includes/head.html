@@ -6,9 +6,9 @@
 	<meta name="keywords" content="Leipzig, Gentrifizierung, Reurbanisierung, Re-Urbanisierung, Verdrängung, Mieter, Vermieter" />
 	
 	<!-- favicon -->
-	<link rel="icon" href="{{ "assets/img/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
-	<link rel="shortcut icon" href="{{ "assets/img/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
-	<link rel="shortcut icon" href="{{ "assets/img/favicon.ico" | prepend: site.baseurl }}" type="image/vnd.microsoft.icon">	
+	<link rel="icon" href="{% asset_path favicon.ico %}" type="image/x-icon">
+	<link rel="shortcut icon" href="{% asset_path favicon.ico %}" type="image/x-icon">
+	<link rel="shortcut icon" href="{% asset_path favicon.ico %}" type="image/vnd.microsoft.icon">	
 	
 	<!-- Facebook OG Tags -->
 	<meta property="og:type" content="website" />
@@ -16,7 +16,7 @@
 	<meta property="og:url" content="{{ page.url | prepend: site.url }}" />
 	<meta property="og:site_name" content="einundleipzig">
 	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %} {{ site.description }} {% endif %}" />
-	<meta property="og:image" name="facebook" content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{{ "assets/img/einundleipzigfacebook.jpg" | prepend: site.baseurl }}{% endif %}" />
+	<meta property="og:image" name="facebook" content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{% asset_path einundleipzigfacebook.jpg %}{% endif %}" />
 	<meta property="og:locale" content="de_DE" /> 
 
 	<!-- Twitter Card Tags -->
@@ -24,25 +24,23 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
 	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %} {{ site.description }} {% endif %}" />
-	<meta name="twitter:image" content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{{ "assets/img/einundleipzigtwitter.jpg" | prepend: site.baseurl }}{% endif %}" />		
+	<meta name="twitter:image" content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{% asset_path einundleipzigtwitter.jpg %}{% endif %}" />		
 	
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
 	<!-- video.js CDN -->
-	<link href="{{ "assets/css/videojs-sublime-skin.min.css" | prepend: site.baseurl }}" rel="stylesheet">	
+	{% stylesheet videojs-sublime-skin.css %}
 
-
+	<!-- jQuery -->
+    {% javascript jquery.js %}		
+	
     <!-- Custom CSS -->
-    <link href="{{ "assets/css/einundleipzig.css" | prepend: site.baseurl }}" rel="stylesheet">
-	
-	<!-- disqus -->
-	<link rel="stylesheet" type="text/css" href="{{ "assets/css/inlineDisqussions.css" | prepend: site.baseurl }}" />
-	
-	<!-- jQuery Version 1.11.1 -->
-    <script src="{{ "assets/js/jquery-1.11.1.min.js" | prepend: site.baseurl }}"></script>
+	{% javascript bootstrap.js %}	
+    {% stylesheet einundleipzig.css %}
 	
 	<!-- ekko-lightbox -->
-	<link rel="stylesheet" type="text/css" href="{{ "assets/css/ekko-lightbox.min.css" | prepend: site.baseurl }}" />
+	{% stylesheet ekko-lightbox.css %}
+	{% stylesheet ekko-lightbox-dark.css %}
 
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic,600,600italic' rel='stylesheet' type='text/css'>
@@ -58,17 +56,17 @@
 	{% for script in page.scripts %}
 		{% if script == 'video.js' %}
 			<!-- video.js - has to be loaded in head of page due to performance -->
-			<script src="{{ "assets/js/video.js" | prepend: site.baseurl }}"></script>
+			{% javascript video.js %}
 			<script>
-			  videojs.options.flash.swf = "{{ "assets/js/video-js.swf" | prepend: site.baseurl }}"
+			  videojs.options.flash.swf = "{% asset_path video-js.swf %}"
 			</script>
 			{% endif %}
 	{% endfor %}
 	
 	<!-- d3js JavaScript - has to be loaded in head of page -->
-    <script src="{{ "assets/js/d3.min.js" | prepend: site.baseurl }}"></script>	
-	<script src="{{ "assets/js/colorbrewer.js" | prepend: site.baseurl }}"></script>	
+    {% javascript d3.js %}
+	{% javascript colorbrewer.js %}	
 	
 	<!-- c3.js -->
-	<script src="{{ "assets/js/c3.min.js" | prepend: site.baseurl }}"></script>					
-	<link rel="stylesheet" type="text/css" href="{{ "assets/css/c3.css" | prepend: site.baseurl }}" />
+    {% javascript c3.js %}				
+	{% stylesheet c3.css %}

@@ -1,40 +1,34 @@
 {% if page.scripts %}
 
 	{% for script in page.scripts %}
-		{% if script == 'ekko-lightbox.min.js' %}
-			<script src="{{ "assets/js/" | append: script | prepend: site.baseurl }}"></script>	
+		{% if script == 'ekko-lightbox.js' %}
+			{% javascript {{script}} %}	
 			
 			<script type="text/javascript">
 			$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) { event.preventDefault(); $(this).ekkoLightbox(); });
 			</script>		
 		{% else %}
-			<script src="{{ "assets/js/" | append: script | prepend: site.baseurl }}"></script>	
+			{% javascript {{script}} %}
 		{% endif %}
 	{% endfor %}
 
 {% endif %}
 
-<script src="{{ "assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>	
-
-<script src="{{ "assets/js/einundleipzig.js" | prepend: site.baseurl }}"></script>	
+{% javascript einundleipzig.js %}
 
 
-<!-- Start Open Web Analytics Tracker -->
+<!-- Piwik -->
 <script type="text/javascript">
-//<![CDATA[
-var owa_baseUrl = 'http://www.einundleipzig.de/owa/';
-var owa_cmds = owa_cmds || [];
-owa_cmds.push(['setSiteId', '6f59411c570ecc1431ea2c73df5717ed']);
-owa_cmds.push(['trackPageView']);
-owa_cmds.push(['trackClicks']);
-owa_cmds.push(['trackDomStream']);
-
-(function() {
-	var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
-	owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
-	_owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
-	var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
-}());
-//]]>
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//einundleipzig.de/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
-<!-- End Open Web Analytics Code -->
+<noscript><p><img src="//einundleipzig.de/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->

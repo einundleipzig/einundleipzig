@@ -4,7 +4,7 @@ category: einundleipzig
 author: christina
 title: „Der symbolische Ausverkauf der Stadt”
 description: Wir haben die Leipziger Stadtpolitiker dazu aufgefordert, einen Ortsteil freizukaufen. Auf unsere Aktion haben wir bislang vor allem Rückmeldung aus der Fraktion „Die Linke” bekommen. Dabei gab es auch kritische Nachfragen. Wir würden den Ausverkauf der Stadt simulieren – und damit unser Ziel ad absurdum führen, schrieb uns Skadi Jennicke. Wir sehen das Ganze aus einem anderen Blickwinkel. Deshalb möchten wir uns dazu positionieren. Teil Eins unserer Kritik-Zusammenfassung.
-image: /assets/posts/kritik-am-ausverkauf/kritik-am-ausverkauf.jpg
+image: kritik-am-ausverkauf/kritik-am-ausverkauf.jpg
 ---
 Eine halbe Stunde nachdem wir unsere E-Mails an die Stadtpolitiker abgesetzt hatten, machte es Bling: eine neue Nachricht. Skadi Jennicke von der Partei Die Linke schickte prompt ihre Antwort. Sie findet einundleipzig an sich unterstützenswert, schrieb sie. Ihr Urteil zu unserer [Freikauf-Aktion](http://www.einundleipzig.de/blog/ortsteil-freikaufen/) aber fiel so gar nicht positiv aus. Als Begründung schrieb sie uns später Folgendes:
 
@@ -28,7 +28,7 @@ Am Ende hat uns Frau Jennicke noch einen Tipp gegeben, wie wir finanzielle Unter
 
 Über eine Spende aus den Aufwandsentschädigungen würden wir uns sehr freuen. Aber wie gesagt, auch andere Dinge helfen uns schon weiter. Auch die kritische Diskussion um unser Projekt begrüßen wir. Außerdem fänden wir es toll, wenn noch andere Fraktionen (aus allen politischen Lagern) sich dazu entschließen, unser Projekt zu unterstützen. Wir haben bewusst vorrangig die Stadtpolitiker angesprochen – und keine Investoren – da sie die Repräsentanten der Bürger sind und politisch am meisten bewirken können, was Open Data angeht. **Einundleipzig soll eine Art städtisches „Gemeingut” werden, beruhend auf offenen Daten.**
 
-<img src="/assets/pages/dank/img/karte.jpg" style="width: 75%; display: block; margin: 0 auto;" />
+<img src="{% asset_path dank/img/karte.jpg %}" style="width: 75%; display: block; margin: 0 auto;" />
 
 <ul class="bullets" style="font-size: 11pt">
 

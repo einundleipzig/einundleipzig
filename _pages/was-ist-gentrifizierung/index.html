@@ -2,15 +2,15 @@
 layout: default
 title: Was ist Gentrifizierung?
 subtitle: Begriffe, Akteure und Hintergründe
-image: /assets/pages/was-ist-gentrifizierung/wissenschaft.jpg
+image: was-ist-gentrifizierung/wissenschaft.jpg
 description: Leipzig ist das neue Berlin, ruft die Republik. Günstige Mieten, Raum für kreative Köpfe und der Charme des Unvollkommenen. Aus Leipzig wurde Hypezig. Die Diskussion in den Medien aber macht nun kehrt&#58; Ist es wirklich so gut, wenn die Stadt weiterwächst? Was bedeutet das für die Mietpreise und den Freiraum? Viele fürchten sich vor einer Stadtentwicklung, die keinen Platz für alle zulässt. Gentrifizierung wurde zum Schreckgespenst.
 author: christina
-scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing.min.js, ekko-lightbox.min.js, video.js]
+scripts: [ekko-lightbox.js, video.js]
 ---
 <section class="story-header-image">
 		
 	<!-- image -->  
-	<img src="{{ page.image }}" class="img-responsive" alt="{{ page.title }}" />  
+	<img src="{% asset_path {{page.image}} %}" class="img-responsive" alt="{{ page.title }}" />  
 	<!-- description div -->  
 	<div class="story-header-image-description">  
 		<span class="subdescr">
@@ -49,7 +49,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 		
 	<div class="col-xs-12 col-md-4 nopadding" style="padding-right: 1px;">
 		
-		{% include video.html id="video-stadtfueralle" poster="/assets/pages/was-ist-gentrifizierung/video/Stadt_Fuer_Alle1.jpg" webm="/assets/pages/was-ist-gentrifizierung/video/Stadt_Fuer_Alle1.webm" mp4="/assets/pages/was-ist-gentrifizierung/video/Stadt_Fuer_Alle1.mp4" %}	
+		{% include video.html id="video-stadtfueralle" poster="was-ist-gentrifizierung/video/Stadt_Fuer_Alle1.jpg" webm="was-ist-gentrifizierung/video/Stadt_Fuer_Alle1.webm" mp4="was-ist-gentrifizierung/video/Stadt_Fuer_Alle1.mp4" %}	
 
 		<div class="video-description">
 			<strong>"Eine extreme Dynamik für Leipzig"</strong><br />
@@ -59,7 +59,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	</div>	
 	<div class="col-xs-12 col-md-4 nopadding" style="padding-right: 0.5px;">
 	
-		{% include video.html id="video-schulze-gentrifizierung" poster="/assets/pages/was-ist-gentrifizierung/video/Schultze1.jpg" mp4="/assets/pages/was-ist-gentrifizierung/video/Schultze1.mp4" webm="/assets/pages/was-ist-gentrifizierung/video/Schultze1.webm" %}
+		{% include video.html id="video-schulze-gentrifizierung" poster="was-ist-gentrifizierung/video/Schultze1.jpg" mp4="was-ist-gentrifizierung/video/Schultze1.mp4" webm="was-ist-gentrifizierung/video/Schultze1.webm" %}
 	
 		
 		<div class="video-description">
@@ -70,7 +70,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	</div>
 	<div class="col-xs-12 col-md-4 nopadding" style="padding-left: 0.5px;">
 	
-		{% include video.html id="video-hobusch-gentrifizierung" poster="/assets/pages/was-ist-gentrifizierung/video/Hobusch1.jpg" mp4="/assets/pages/was-ist-gentrifizierung/video/Hobusch1.mp4" webm="/assets/pages/was-ist-gentrifizierung/video/Hobusch1.webm" %}
+		{% include video.html id="video-hobusch-gentrifizierung" poster="was-ist-gentrifizierung/video/Hobusch1.jpg" mp4="was-ist-gentrifizierung/video/Hobusch1.mp4" webm="was-ist-gentrifizierung/video/Hobusch1.webm" %}
 		<div class="video-description">
 			<strong>"Noch nicht einmal in Berlin gibt es Gentrification"</strong><br />
 			René Hobusch<br />
@@ -121,7 +121,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 					<figure class="back">
 						<div style="height: 100%;">
 						<div class="ribbon-wrapper2"><div class="ribbon2 flip">Klick</div></div>
-							{% include video.html id="hermann-hypezig" poster="/assets/pages/was-ist-gentrifizierung/video/flipcards/Medien.jpg" mp4="/assets/pages/was-ist-gentrifizierung/video/flipcards/Medien.mp4" webm="/assets/pages/was-ist-gentrifizierung/video/flipcards/Medien.webm" %}
+							{% include video.html id="hermann-hypezig" poster="was-ist-gentrifizierung/video/flipcards/Medien.jpg" mp4="was-ist-gentrifizierung/video/flipcards/Medien.mp4" webm="was-ist-gentrifizierung/video/flipcards/Medien.webm" %}
 						</div>
 			
 			
@@ -147,7 +147,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 					<figure class="back">
 						<div style="height: 100%;">
 						<div class="ribbon-wrapper2"><div class="ribbon2 flip">Klick</div></div>
-							{% include video.html id="video-buerger" poster="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buerger.jpg" mp4="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buerger.mp4" webm="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buerger.webm" %}
+							{% include video.html id="video-buerger" poster="was-ist-gentrifizierung/video/flipcards/Buerger.jpg" mp4="was-ist-gentrifizierung/video/flipcards/Buerger.mp4" webm="was-ist-gentrifizierung/video/flipcards/Buerger.webm" %}
 						</div>
 			
 			
@@ -172,7 +172,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 					<figure class="back">
 						<div style="height: 100%;">
 						<div class="ribbon-wrapper2"><div class="ribbon2 flip">Klick</div></div>
-							{% include video.html id="video-immobilienwirtschaft" poster="/assets/pages/was-ist-gentrifizierung/video/flipcards/Immobilienwirtschaft.jpg" mp4="/assets/pages/was-ist-gentrifizierung/video/flipcards/Immobilienwirtschaft.mp4" webm="/assets/pages/was-ist-gentrifizierung/video/flipcards/Immobilienwirtschaft.webm" %}
+							{% include video.html id="video-immobilienwirtschaft" poster="was-ist-gentrifizierung/video/flipcards/Immobilienwirtschaft.jpg" mp4="was-ist-gentrifizierung/video/flipcards/Immobilienwirtschaft.mp4" webm="was-ist-gentrifizierung/video/flipcards/Immobilienwirtschaft.webm" %}
 						</div>
 			
 			
@@ -197,7 +197,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 					<figure class="back">
 						<div style="height: 100%;">
 						<div class="ribbon-wrapper2"><div class="ribbon2 flip">Klick</div></div>
-							{% include video.html id="video-buergerverein" poster="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buergerverein.jpg" mp4="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buergerverein.mp4" webm="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buergerverein.webm" %}
+							{% include video.html id="video-buergerverein" poster="was-ist-gentrifizierung/video/flipcards/Buergerverein.jpg" mp4="was-ist-gentrifizierung/video/flipcards/Buergerverein.mp4" webm="was-ist-gentrifizierung/video/flipcards/Buergerverein.webm" %}
 						</div>
 			
 			
@@ -221,7 +221,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 					<figure class="back">
 						<div style="height: 100%;">
 						<div class="ribbon-wrapper2"><div class="ribbon2 flip">Klick</div></div>
-							{% include video.html id="video-stadt" poster="/assets/pages/was-ist-gentrifizierung/video/flipcards/Stadt.jpg" mp4="/assets/pages/was-ist-gentrifizierung/video/flipcards/Stadt.mp4" webm="/assets/pages/was-ist-gentrifizierung/video/flipcards/Stadt.webm" %}
+							{% include video.html id="video-stadt" poster="was-ist-gentrifizierung/video/flipcards/Stadt.jpg" mp4="was-ist-gentrifizierung/video/flipcards/Stadt.mp4" webm="was-ist-gentrifizierung/video/flipcards/Stadt.webm" %}
 						</div>
 			
 			
@@ -245,7 +245,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 					<figure class="back">
 						<div style="height: 100%;">
 						<div class="ribbon-wrapper2"><div class="ribbon2 flip">Klick</div></div>
-							{% include video.html id="video-kreativwirtschaft" poster="/assets/pages/was-ist-gentrifizierung/video/flipcards/Kreativwirtschaft.jpg" mp4="/assets/pages/was-ist-gentrifizierung/video/flipcards/Kreativwirtschaft.mp4" webm="/assets/pages/was-ist-gentrifizierung/video/flipcards/Kreativwirtschaft.webm" %}
+							{% include video.html id="video-kreativwirtschaft" poster="was-ist-gentrifizierung/video/flipcards/Kreativwirtschaft.jpg" mp4="was-ist-gentrifizierung/video/flipcards/Kreativwirtschaft.mp4" webm="was-ist-gentrifizierung/video/flipcards/Kreativwirtschaft.webm" %}
 						</div>
 			
 			
@@ -288,13 +288,13 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	</article>
 	
 	<article class="half">
-		{% include video.html id="video-glatter-gentrifizierung" poster="/assets/pages/was-ist-gentrifizierung/video/Glatter_Def_Gentrifizierung.jpg" webm="/assets/pages/was-ist-gentrifizierung/video/Glatter_Def_Gentrifizierung.webm" mp4="/assets/pages/was-ist-gentrifizierung/video/Glatter_Def_Gentrifizierung.mp4" %}
+		{% include video.html id="video-glatter-gentrifizierung" poster="was-ist-gentrifizierung/video/Glatter_Def_Gentrifizierung.jpg" webm="was-ist-gentrifizierung/video/Glatter_Def_Gentrifizierung.webm" mp4="was-ist-gentrifizierung/video/Glatter_Def_Gentrifizierung.mp4" %}
 		<div class="video-description">
 			Dr. Jan Glatter, geographische Wohnungsmarktforschung, Universität Köln
 		</div>
 	</article>
 	<article class="half">
-		{% include video.html id="video-rink-gentrifizierung" poster="/assets/pages/was-ist-gentrifizierung/video/Rink_Def_Gentrifizierung.jpg" webm="/assets/pages/was-ist-gentrifizierung/video/Rink_Def_Gentrifizierung.webm" mp4="/assets/pages/was-ist-gentrifizierung/video/Rink_Def_Gentrifizierung.mp4" %}
+		{% include video.html id="video-rink-gentrifizierung" poster="was-ist-gentrifizierung/video/Rink_Def_Gentrifizierung.jpg" webm="was-ist-gentrifizierung/video/Rink_Def_Gentrifizierung.webm" mp4="was-ist-gentrifizierung/video/Rink_Def_Gentrifizierung.mp4" %}
 		<div class="video-description">
 			Prof. Dr. Dieter Rink, Stadtsoziologe, Helmholtzzentrum für Umweltforschung (UFZ) in Leipzig
 		</div>
@@ -357,7 +357,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	
 	<article class="half">
 
-		{% include video.html id="video-glatter-reurbanisierung" poster="/assets/pages/was-ist-gentrifizierung/video/Glatter_Def_Reurbanisierung.jpg" webm="/assets/pages/was-ist-gentrifizierung/video/Glatter_Def_Reurbanisierung.webm" mp4="/assets/pages/was-ist-gentrifizierung/video/Glatter_Def_Reurbanisierung.mp4" %}
+		{% include video.html id="video-glatter-reurbanisierung" poster="was-ist-gentrifizierung/video/Glatter_Def_Reurbanisierung.jpg" webm="was-ist-gentrifizierung/video/Glatter_Def_Reurbanisierung.webm" mp4="was-ist-gentrifizierung/video/Glatter_Def_Reurbanisierung.mp4" %}
 		<div class="video-description">
 			Dr. Jan Glatter, geographische Wohnungsmarktforschung, Universität Köln
 		</div>
@@ -366,7 +366,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	
 	<article class="half">
 
-		{% include video.html id="video-rink-reurbanisierung" poster="/assets/pages/was-ist-gentrifizierung/video/Rink_Def_Reurbanisierung.jpg" webm="/assets/pages/was-ist-gentrifizierung/video/Rink_Def_Reurbanisierung.webm" mp4="/assets/pages/was-ist-gentrifizierung/video/Rink_Def_Reurbanisierung.mp4" %}
+		{% include video.html id="video-rink-reurbanisierung" poster="was-ist-gentrifizierung/video/Rink_Def_Reurbanisierung.jpg" webm="was-ist-gentrifizierung/video/Rink_Def_Reurbanisierung.webm" mp4="was-ist-gentrifizierung/video/Rink_Def_Reurbanisierung.mp4" %}
 		<div class="video-description">
 			Prof. Dr. Dieter Rink, Stadtsoziologe, Helmholtzzentrum für Umweltforschung (UFZ) in Leipzig
 		</div>

@@ -4,7 +4,7 @@ category: einundleipzig
 author: christina
 title: An die Leipziger Stadtpolitiker&#58; Kaufen Sie einen Ortsteil frei!
 description: einundleipzig möchte das Wissen um die Stadt für alle zugänglich machen und Daten gut verständlich aufbereiten. Allerdings begegnen wir immer wieder Problemen, deren Lösung uns viel Zeit kostet und unseren Re-Launch nach hinten verschiebt. Die Stadt Leipzig tut sich schwer mit offenen Daten. Darauf wollen wir aufmerksam machen und fordern die Stadtpolitiker auf&#58; Unterstützen Sie uns, leisten Sie Ihren Anteil an einer bürgernahen Informationskultur – und kaufen Sie einen Ortsteil frei!
-image: /assets/posts/ortsteil-freikaufen/legende.jpg
+image: ortsteil-freikaufen/legende.jpg
 ---
 Obwohl wir seit April mit der Stadt Leipzig in Kontakt stehen und diese unser Projekt auch sehr begrüßt, gestaltet sich die Datenbeschaffung problematisch. So wollen wir etwa die Binnenwanderung der Leipziger in einer Karte veranschaulichen. Daraus könnte sich zum Beispiel ergeben, wohin die Bürger ziehen, wenn ihre Wohnung zu klein oder zu teuer wird. Kostenpunkt für die Daten: mehrere hundert Euro. Mittlerweile stehen wir in Verhandlungen mit der Stadt über einen Kooperationsvertrag – ein bürokratischer Akt, der sich in die Länge gezogen und uns viel Zeit gekostet hat. Wir finden aber, so kompliziert muss es doch eigentlich nicht sein, wenn man **aus Steuergeldern finanzierte Datenerhebungen** der Stadt abfragt. Oder? Schließlich verfolgen wir keine kommerziellen Interessen, sondern wollen ein Informationsangebot für alle Leipziger schaffen.
 
@@ -24,7 +24,7 @@ An die Stadtpolitiker: Senden Sie uns eine Mail und teilen Sie uns mit, welchen 
 
 ### Derzeitiger Stand:
 
-<img src="/assets/pages/dank/img/karte.jpg" style="width: 75%; display: block; margin: 0 auto;" />
+<img src="{% asset_path dank/img/karte.jpg %}" style="width: 75%; display: block; margin: 0 auto;" />
 
 <ul class="bullets" style="font-size: 11pt">
 

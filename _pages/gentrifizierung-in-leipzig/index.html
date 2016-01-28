@@ -2,21 +2,21 @@
 layout: default
 title: Gentrifizierung in Leipzig? 
 subtitle: Daten und Analysen
-image: /assets/pages/gentrifizierung-in-leipzig/teaser.jpg
+image: gentrifizierung-in-leipzig/teaser.jpg
 description: Wir haben uns auf die Suche nach der Gentrifizierung in Leipzig begeben. Eine abschließende Antwort haben wir selbst noch nicht. Aber wir versuchen etwas aufzuräumen mit dem Wissen um die Stadt. Um dem Thema näher zu kommen, blicken wir zurück auf Leipzigs Entwicklung seit dem Mauerfall.
 
 author: christina
-scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing.min.js, ekko-lightbox.min.js, video.js]
+scripts: [ekko-lightbox.js, video.js]
 ---
 <section class="story-header-image">
 		
 	<!-- image -->  
-	<img src="{{ page.image }}" class="img-responsive" alt="{{ page.title }}"/>  
+	<img src="{% asset_path {{page.image}} %}" class="img-responsive" alt="{{ page.title }}"/>  
 	<!-- description div -->  
 	<div class="story-header-image-description">  
 		<span class="subdescr">
 			{{ page.title }}
-		</span> 
+		</span>
 		<div class="clearfix">&nbsp;</div>
 		<span class="descr">
 			{{ page.subtitle }}
@@ -40,7 +40,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	
 	<article>
 		<div class="floater">
-			{% include video.html id="video-glatter-hype" poster="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_image.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_image.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_image.webm" %}
+			{% include video.html id="video-glatter-hype" poster="gentrifizierung-in-leipzig/video/Glatter_image.jpg" mp4="gentrifizierung-in-leipzig/video/Glatter_image.mp4" webm="gentrifizierung-in-leipzig/video/Glatter_image.webm" %}
 			<div class="video-description">
 				„Der Hype ist eine Image-tragende Geschichte“
 			</div>
@@ -67,35 +67,42 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	<article class="full" style="padding-bottom: 35px;">
 		<div id="bevoelkerungszahl" style="width: 100%;"></div>
 			<script>
-			var chart = c3.generate({
-				bindto: '#bevoelkerungszahl',
-				data: {
-					x: 'jahr',
-					url: '/assets/visualizations/bevoelkerungszahl/bevoelkerungszahl.csv',
-					type: 'spline'
-				},
-				axis : {
-					x : {
-						type : 'timeseries',
-						tick: {
-							format: function (x) { return x.getFullYear(); }
-						  //format: '%Y' // format string is also available for timeseries data
+			//$(function() {
+				var chart = c3.generate({
+					bindto: '#bevoelkerungszahl',
+					data: {
+						x: 'jahr',
+						url: '{% asset_path bevoelkerungszahl/bevoelkerungszahl.csv %}',
+						type: 'spline'
+					},
+					axis: {
+						x : {
+							type : 'timeseries',
+							tick: {
+								format: function (x) { return x.getFullYear(); }
+							}
 						}
-					}
-				},
-				tooltip: {
-					format: {
-						value: function (value, ratio, id) {
-							return value + " Einwohner";
+					},
+					grid: {
+					  x: {
+						lines: [
+						  {value: '2011-12-31', text: 'Zensus 2011'},
+						]
+					  }
+					},					
+					tooltip: {
+						format: {
+							value: function (value, ratio, id) {
+								return value + " Einwohner";
+							}
 						}
+					},
+					legend: {
+						position: 'right'
 					}
-				},
-				legend: {
-					position: 'right'
-				}
-			});
-			
-			chart.xgrids([{value: '2011-12-31', text:'Zensus 2011'}]);
+				});
+				
+			//});
 			</script>			
 		<div class="video-description text-right">
 			Einwohnerentwicklung im Vergleich, Quelle: Statistische Landesämter, jeweils zum Stichtag 31.12. 
@@ -117,14 +124,14 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	</article>	
 
 	<article class="half">
-		{% include video.html id="video-ehrlich-reurbanisierung" poster="/assets/pages/gentrifizierung-in-leipzig/video/Ehrlich_Reurbanisierung_Leipzig.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Ehrlich_Reurbanisierung_Leipzig.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Ehrlich_Reurbanisierung_Leipzig.webm" %}
+		{% include video.html id="video-ehrlich-reurbanisierung" poster="gentrifizierung-in-leipzig/video/Ehrlich_Reurbanisierung_Leipzig.jpg" mp4="gentrifizierung-in-leipzig/video/Ehrlich_Reurbanisierung_Leipzig.mp4" webm="gentrifizierung-in-leipzig/video/Ehrlich_Reurbanisierung_Leipzig.webm" %}
 		<div class="video-description">
 			Dr. Kornelia Ehrlich, Research Assistant, Institut für Länderkunde Leipzig 
 		</div>
 	</article>
 	
 	<article class="half">
-		{% include video.html id="video-rink-reurbanisierung" poster="/assets/pages/gentrifizierung-in-leipzig/video/Rink_ReurbanisierungLeipzig.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Rink_ReurbanisierungLeipzig.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Rink_ReurbanisierungLeipzig.webm" %}
+		{% include video.html id="video-rink-reurbanisierung" poster="gentrifizierung-in-leipzig/video/Rink_ReurbanisierungLeipzig.jpg" mp4="gentrifizierung-in-leipzig/video/Rink_ReurbanisierungLeipzig.mp4" webm="gentrifizierung-in-leipzig/video/Rink_ReurbanisierungLeipzig.webm" %}
 		<div class="video-description">
 			Prof. Dr. Dieter Rink, Stadtsoziologe am Helmholtzzentrum Leipzig
 		</div>
@@ -197,13 +204,15 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 		<div class="floater">
 			<div id="herkunft" style="width: 100%;"></div>
 			<script>
-			var chart = c3.generate({
-				bindto: '#herkunft',
-				data: {
-					url: '/assets/visualizations/herkunft/herkunft.csv',
-					type : 'pie'
-				 }
-			});
+			//$(function() {
+				var chart = c3.generate({
+					bindto: '#herkunft',
+					data: {
+						url: '{% asset_path herkunft/herkunft.csv %}',
+						type : 'pie'
+					 }
+				});
+			//});
 			</script>	
 			<div class="video-description">
 				Herkunft der Zuzügler von außen, Stand Okt. 2012 bis Sept. 2013, Quelle: Wanderungsbefragung 2014, UFZ Leipzig und Amt für Stadterneuerung und Wohnungsbauförderung (ASW)
@@ -434,14 +443,14 @@ EIGENEN MIETPREIS EINTRAGEN KOMMT HIER HIN - NOCH NICHT FERTIG!
 	</article>
 		
 	<article class="half">
-		{% include video.html id="video-rink-gentrifizierung-leipzig" poster="/assets/pages/gentrifizierung-in-leipzig/video/Rink_Gentr_Leipzig.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Rink_Gentr_Leipzig.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Rink_Gentr_Leipzig.webm" %}
+		{% include video.html id="video-rink-gentrifizierung-leipzig" poster="gentrifizierung-in-leipzig/video/Rink_Gentr_Leipzig.jpg" mp4="gentrifizierung-in-leipzig/video/Rink_Gentr_Leipzig.mp4" webm="gentrifizierung-in-leipzig/video/Rink_Gentr_Leipzig.webm" %}
 		<div class="video-description">
 			Prof. Dr. Dieter Rink, Stadtsoziologe, Helmholtz-Zentrum für Umweltforschung (UFZ) in Leipzig
 		</div>
 	</article>
 	
 	<article class="half">
-		{% include video.html id="video-glatter-gentrifizierung-leipzig" poster="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Gentr_Leipzig.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Gentr_Leipzig.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Gentr_Leipzig.webm" %}
+		{% include video.html id="video-glatter-gentrifizierung-leipzig" poster="gentrifizierung-in-leipzig/video/Glatter_Gentr_Leipzig.jpg" mp4="gentrifizierung-in-leipzig/video/Glatter_Gentr_Leipzig.mp4" webm="gentrifizierung-in-leipzig/video/Glatter_Gentr_Leipzig.webm" %}
 		<div class="video-description">
 			Dr. Jan Glatter, geographische Wohnungsmarktforschung, Universität Köln
 		</div>
@@ -465,14 +474,14 @@ EIGENEN MIETPREIS EINTRAGEN KOMMT HIER HIN - NOCH NICHT FERTIG!
 			
 	
 	<article class="half">
-		{% include video.html id="video-glatter-zukunft" poster="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Zukunftleipzigs.jpg" mp4="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Zukunftleipzigs.mp4" webm="/assets/pages/gentrifizierung-in-leipzig/video/Glatter_Zukunftleipzigs.webm" %}
+		{% include video.html id="video-glatter-zukunft" poster="gentrifizierung-in-leipzig/video/Glatter_Zukunftleipzigs.jpg" mp4="gentrifizierung-in-leipzig/video/Glatter_Zukunftleipzigs.mp4" webm="gentrifizierung-in-leipzig/video/Glatter_Zukunftleipzigs.webm" %}
 		<div class="video-description">
 			Dr. Jan Glatter, geographische Wohnungsmarktforschung, Universität Köln
 		</div>
 	</article>
 	
 	<article class="half">
-		{% include video.html id="video-buerger" poster="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buerger.jpg" mp4="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buerger.mp4" webm="/assets/pages/was-ist-gentrifizierung/video/flipcards/Buerger.webm" %}
+		{% include video.html id="video-buerger" poster="was-ist-gentrifizierung/video/flipcards/Buerger.jpg" mp4="was-ist-gentrifizierung/video/flipcards/Buerger.mp4" webm="was-ist-gentrifizierung/video/flipcards/Buerger.webm" %}
 		<div class="video-description">
 			Umfrage unter den Bürgern zum Karli Beben im April 2014
 		</div>
