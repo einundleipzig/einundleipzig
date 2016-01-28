@@ -1,9 +1,7 @@
 _site
 .sass-cache
-_oldStuff
+.asset-cache
 _pages/gentrifizierung-in-leipzig/post.php
-assets/visualizations/mietkarte/mietpreise.php
-lib
+_assets/visualizations/mietkarte/mietpreise.php
 *.webm
 *.mp4
-.gitignore

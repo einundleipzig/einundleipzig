@@ -15,11 +15,11 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-{% if include.inline == "true" %}
+{% if include.inline == "deactivated" %}
 	
 	<script>
 	$(document).ready(function() {
-		$.getScript("{{ "assets/js/inlineDisqussions.js" | prepend: site.baseurl }}", function() {
+		$.getScript("{% asset_path inlineDisqussions.js %}", function() {
 	
 			  jQuery("p:not(.no-comment)").inlineDisqussions({
 			  identifier: 'disqussion',

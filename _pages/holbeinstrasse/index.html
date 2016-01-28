@@ -2,15 +2,15 @@
 layout: default
 title: Kampf den Mietern
 subtitle: „Vielleicht hätten wir etwas anders gemacht“
-image: /assets/pages/holbeinstrasse/teaser.jpg
+image: holbeinstrasse/teaser.jpg
 description: Er gehört zu den Pionieren des Leipziger Westens&#58;  Vor 15 Jahren zog Künstler Steffen Balmer ins Elsterwerk, eine ehemalige Fabrik. Dann kam ein Schreiben seines Vermieters&#58; Kernsanierung, er soll ausziehen. Balmer aber will das nicht. Der Kampf ums Bleiben beginnt.
 author: christina
-scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing.min.js, ekko-lightbox.min.js, video.js]
+scripts: [ekko-lightbox.js, video.js]
 ---		
 <section class="story-header-image">
 		
 	<!-- image -->  
-	<img src="{{ page.image }}" class="img-responsive" alt="{{ page.title }}"/>  
+	<img src="{% asset_path {{page.image}} %}" class="img-responsive" alt="{{ page.title }}"/>  
 	<!-- description div -->  
 	<div class="story-header-image-description">  
 		<span class="subdescr">
@@ -39,7 +39,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	</article>
 	
 	<article class="full">
-		{% include video.html id="video-holbeinstrasse-fotofilm" poster="/assets/pages/holbeinstrasse/video/Fotofilm.jpg" mp4="/assets/pages/holbeinstrasse/video/Fotofilm.mp4" webm="/assets/pages/holbeinstrasse/video/Fotofilm.webm" %}
+		{% include video.html id="video-holbeinstrasse-fotofilm" poster="holbeinstrasse/video/Fotofilm.jpg" mp4="holbeinstrasse/video/Fotofilm.mp4" webm="holbeinstrasse/video/Fotofilm.webm" %}
 	</article>
 	
 	<article>
@@ -60,7 +60,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 		
 		<div class="floater">
 			
-			{% include video.html id="video-holbeinstrasse-schultz" poster="/assets/pages/holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.jpg" mp4="/assets/pages/holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.mp4" webm="/assets/pages/holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.webm" %}
+			{% include video.html id="video-holbeinstrasse-schultz" poster="holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.jpg" mp4="holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.mp4" webm="holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.webm" %}
 			
 			<div class="video-description">
 				„Der Motor für die Stadtentwicklung und Leipzigs gesamtcooles Image“ – Bertram Schultze, Geschäftsführer des Kunstbetriebs „Die alte Baumwollspinnerei“
@@ -92,8 +92,8 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	
 	<article class="full" style="padding-bottom: 35px;">
 	
-		<a href="{% asset_path img/1.JPG %}" data-toggle="lightbox" data-gallery="hiddenimages" data-footer="Früher wuchs Wein an der Hausfassade des Elsterwerks in der Holbeinstraße 28a. Mit Beginn der Sanierungsarbeiten ließ der Eigentümer das Grün entfernen." class="col-sm-6">
-			<img src="{% asset_path img/1.JPG %}" class="img-responsive" alt="" />
+		<a href="{%asset_path holbeinstrasse/img/1.JPG%}" data-toggle="lightbox" data-gallery="hiddenimages" data-footer="Früher wuchs Wein an der Hausfassade des Elsterwerks in der Holbeinstraße 28a. Mit Beginn der Sanierungsarbeiten ließ der Eigentümer das Grün entfernen." class="col-sm-6">
+			<img src="{%asset_path holbeinstrasse/img/1.JPG%}" class="img-responsive" alt="" />
 		
 			<span class="video-description">
 				Früher wuchs Wein an der Hausfassade des Elsterwerks in der Holbeinstraße 28a. Mit Beginn der Sanierungsarbeiten ließ der Eigentümer das Grün entfernen.
@@ -101,22 +101,22 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 		</a>
 		
 		
-		<a href="{% asset_path img/2.JPG %}" data-toggle="lightbox" data-gallery="hiddenimages" data-footer="Mieter Steffen Balmer witzelt über die „neue“ Eingangstür. Sie versprühe ein besonderes „Baustellen-Flair“, sagt er." class="col-sm-6">
-			<img src="{% asset_path img/2.JPG %}" class="img-responsive" alt=""/>
+		<a href="{%asset_path holbeinstrasse/img/2.JPG%}" data-toggle="lightbox" data-gallery="hiddenimages" data-footer="Mieter Steffen Balmer witzelt über die „neue“ Eingangstür. Sie versprühe ein besonderes „Baustellen-Flair“, sagt er." class="col-sm-6">
+			<img src="{%asset_path holbeinstrasse/img/2.JPG%}" class="img-responsive" alt=""/>
 			<span class="video-description">
 				Mieter Steffen Balmer witzelt über die „neue“ Eingangstür. Sie versprühe ein besonderes „Baustellen-Flair“, sagt er.
 			</span>
 		</a>
 		<!-- elements not showing, use data-remote -->
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset_path img/3.JPG %}" data-footer="Seit 15 Jahren wohnt Steffen Balmer in der ehemaligen Fabrik. Dabei hatte sich einiges angesammelt..."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset_path img/4.JPG %}" data-footer="... zum Beispiel Mitbringsel von verschiedenen Reisen."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset_path img/5.JPG %}" data-footer="Ein Selbstportrait. Steffen Balmer hat an der Hochschule für Grafik und Buchkunst studiert."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset_path img/6.JPG %}" data-footer="Den Flur hat sich Balmer mit anderen Bewohnern geteilt."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset_path img/7.JPG %}" data-footer="Hinter der Tür befindet sich der Lastaufzug, über den vor mehr als 15 Jahren noch die Autos in die verschiedenen Stockwerke der Fabrik gehievt wurden."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset_path img/8.JPG %}" data-footer="Auch die anderen Bewohner kämpfen noch darum, in der ehemaligen Fabrik wohnen bleiben zu können."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset_path img/9.JPG %}" data-footer="Andere sind gegen eine Abfindung bereits ausgezogen. Hinter dieser Tür wohnte vorher eine Familie."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset_path img/10.JPG %}" data-footer="Direkt vor der Wohnungstür einer Bewohnerin haben Bauarbeiter Schutt hinterlassen."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset_path img/11.JPG %}" data-footer="Der Eigentümer wirbt bereits am Gebäude um künftige Mieter: „Für Genießer. Der Blick für’s Wesentliche“."></div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{%asset_path holbeinstrasse/img/3.JPG%}" data-footer="Seit 15 Jahren wohnt Steffen Balmer in der ehemaligen Fabrik. Dabei hatte sich einiges angesammelt..."></div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{%asset_path holbeinstrasse/img/4.JPG%}" data-footer="... zum Beispiel Mitbringsel von verschiedenen Reisen."></div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{%asset_path holbeinstrasse/img/5.JPG%}" data-footer="Ein Selbstportrait. Steffen Balmer hat an der Hochschule für Grafik und Buchkunst studiert."></div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{%asset_path holbeinstrasse/img/6.JPG%}" data-footer="Den Flur hat sich Balmer mit anderen Bewohnern geteilt."></div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{%asset_path holbeinstrasse/img/7.JPG%}" data-footer="Hinter der Tür befindet sich der Lastaufzug, über den vor mehr als 15 Jahren noch die Autos in die verschiedenen Stockwerke der Fabrik gehievt wurden."></div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{%asset_path holbeinstrasse/img/8.JPG%}" data-footer="Auch die anderen Bewohner kämpfen noch darum, in der ehemaligen Fabrik wohnen bleiben zu können."></div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{%asset_path holbeinstrasse/img/9.JPG%}" data-footer="Andere sind gegen eine Abfindung bereits ausgezogen. Hinter dieser Tür wohnte vorher eine Familie."></div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{%asset_path holbeinstrasse/img/10.JPG%}" data-footer="Direkt vor der Wohnungstür einer Bewohnerin haben Bauarbeiter Schutt hinterlassen."></div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{%asset_path holbeinstrasse/img/11.JPG%}" data-footer="Der Eigentümer wirbt bereits am Gebäude um künftige Mieter: „Für Genießer. Der Blick für’s Wesentliche“."></div>
 	</article>
 	
 	<article>

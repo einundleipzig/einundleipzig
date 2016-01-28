@@ -4,7 +4,7 @@ category: einundleipzig
 author: wolfgang
 title: Alternativer Medienpreis
 description: Wir freuen uns sehr, dass wir für die Arbeit an einundleipzig einen 2. Preis in der Sparte „Online“ beim Alternativen Medienpreis 2015 verliehen bekommen haben. Letzten Freitag fand im Bildungszentrum Nürnberg die Preisverleihung statt.
-image: /assets/posts/alternativer-medienpreis/alternativer-medienpreis.jpg
+image: alternativer-medienpreis/alternativer-medienpreis.jpg
 ---
 Dort hat Michael Hallermayer, stellvertretender Pressesprecher der Universität Augsburg, bei der Übergabe des Preises die [Laudatio](http://www.alternativer-medienpreis.de/pdf/15_2einundleipzig.pdf) auf uns gehalten:
 

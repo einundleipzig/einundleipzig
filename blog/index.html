@@ -15,7 +15,7 @@ layout: default
 		</h1>
 		
 		{% if post.image %}
-			<img src="{{post.image}}" class="img-responsive" style="padding-bottom: 35px;" alt="{{ post.title }}" />
+			<img src="{% asset_path {{post.image}} %}" class="img-responsive" style="padding-bottom: 35px;" alt="{{ post.title }}" />
 		{% endif %}
 		
 		{% if post.description %}

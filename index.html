@@ -1,17 +1,17 @@
 ---
 layout: index
-scripts: [jquery-1.11.1.min.js, bootstrap.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing.min.js]
+scripts: [jquery.quicksand.js, jquery.easing.min.js]
 ---
 <header class="intro">
-	<video autoplay loop poster="assets/pages/index/header.jpg" id="bgvid">
-		<source src="assets/pages/index/intro.webm" type="video/webm">
-		<source src="assets/pages/index/intro.mp4" type="video/mp4">
+	<video autoplay loop poster="{% asset_path index/header.jpg %}" id="bgvid">
+		<source src="{% asset_path index/intro.webm %}" type="video/webm">
+		<source src="{% asset_path index/intro.mp4 %}" type="video/mp4">
 	</video>
 	
 	<div class="intro-body">
 		
 		<div class="intro-logo">
-			<img src="assets/pages/index/logo.png" class="img-responsive" alt="einundleipzig Logo" />
+			<img src="{% asset_path index/logo.png %}" class="img-responsive" alt="einundleipzig Logo" />
 		</div>		
 	
 		<div class="intro-text">
@@ -58,7 +58,7 @@ scripts: [jquery-1.11.1.min.js, bootstrap.min.js, jquery-ui.js, jquery.quicksand
 	<ul class="ourHolder">
 	{% for item in site.menu %}
 		<li class="item" data-id="id-{{ forloop.index }}" data-type="{% for category in item.categories %}{{category }} {% endfor %}">
-			<a href="{{ item.url }}">
+			<a href="/{{ item.url }}">
 				<div class="descriptionContainer">
 					<div class="description">
 						<h3 style="font-size: 2em;">{{ item.title }}</h3>
@@ -66,9 +66,54 @@ scripts: [jquery-1.11.1.min.js, bootstrap.min.js, jquery-ui.js, jquery.quicksand
 					</div>
 				</div>
 				
-				<img src="{{site.baseurl }}assets/pages{{item.url}}{{item.image}}" class="img-responsive" alt="{{ item.title }}" />
+				<img src="{% asset_path {{item.url}}{{item.image}} %}" class="img-responsive" alt="{{ item.title }}" />
 			</a>
 		</li>
 	{% endfor %}				
 	</ul>   
 </section>
+
+<script type="text/javascript">
+// ------------------------------------------------------------------------
+// Themen: Quicksand Sort (http://www.evoluted.net/thinktank/web-development/jquery-quicksand-tutorial-filtering)
+// ------------------------------------------------------------------------
+
+$(document).ready(function() {
+	// get the action filter option item on page load
+	var $filterType = $('#filterOptions li.active a').attr('class');
+
+	// get and assign the ourHolder element to the $holder varible for use later
+	var $holder = $('ul.ourHolder');
+
+	// clone all items within the pre-assigned $holder element
+	var $data = $holder.clone();
+
+	// attempt to call Quicksand when a filter option item is clicked
+	$('#filterOptions li a').click(function(e) {
+    
+		// reset the active class on all the buttons
+		$('#filterOptions li').removeClass('active');
+
+		// assign the class of the clicked filter option element to our $filterType variable
+		var $filterType = $(this).attr('class');
+		$(this).parent().addClass('active');
+		
+		if ($filterType == 'all') {
+			// assign all li items to the $filteredData var when the 'All' filter option is clicked
+			var $filteredData = $data.find('li');
+		}
+		else {
+		  // find all li elements that have our required $filterType values for the data-type element
+		  var $filteredData = $data.find('li[data-type~=' + $filterType + ']');
+		}
+
+		// call quicksand and assign transition parameters
+		$holder.quicksand($filteredData, {
+		  duration: 800,
+		  easing: 'easeInOutQuad'
+		});
+	});
+    
+	return false;
+});
+</script>

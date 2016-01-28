@@ -4,7 +4,7 @@ category: einundleipzig
 author: wolfgang
 title: Vortrag beim „Forum Bürgerstadt Leipzig“
 description: Das „Forum Bürgerstadt Leipzig“ hat sich zur Aufgabe gemacht, einen Trialog zwischen Stadtverwaltung, Stadträten und Bürgerinnen und Bürgern von Leipzig zu ermöglichen - bei der letzten Veranstaltung wurden wir dazu eingeladen, über Gentrifizierung im Leipziger Westen aus Sicht der Bürger zu sprechen.
-image: /assets/posts/forum-buergerstadt-leipzig/forum-buergerstadt-leipzig.jpg
+image: forum-buergerstadt-leipzig/forum-buergerstadt-leipzig.jpg
 ---
 Dort stellte Wolfgang den 18 Teilnehmern der Veranstaltung noch einmal die grundlegenden Gedanken zur Gründung unserer Website dar und ging auf die grundlegende Problematik von Gentrifizierung anhand von ausgewählten Beispielen im Leipziger Westen ein.
 

@@ -2,15 +2,15 @@
 layout: default
 title: Die Platte im Aufwind
 subtitle: „Das gehört eh alles wechgerissen“
-image: /assets/pages/gruenau/gruenau.jpg
+image: gruenau/gruenau.jpg
 description: Um den Leipziger Stadtteil Grünau zu beschreiben, haben Politiker, Journalisten und DDR-Gegner schon viele Worte gefunden – meist unschöne. Bernd Puckelwaldt hat es sich zur Aufgabe gemacht, dieses Bild zurechtzurücken. Ein Rundgang durch eine der größten Plattenbausiedlungen Ostdeutschlands.
 author: carolyn
-scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing.min.js, ekko-lightbox.min.js, video.js]
+scripts: [ekko-lightbox.js, video.js]
 ---
 <section class="story-header-image">
 		
 	<!-- image -->  
-	<img src="{{ page.image }}" class="img-responsive" alt="{{ page.title }}" />  
+	<img src="{% asset_path {{page.image}} %}" class="img-responsive" alt="{{ page.title }}" />  
 	<!-- description div -->  
 	<div class="story-header-image-description">  
 		<span class="subdescr">
@@ -41,7 +41,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 	<article>
 	 
 		<div class="floater">
-			{% include video.html id="video-gruenau-wgz" poster="/assets/pages/gruenau/video/wgz.jpg" mp4="/assets/pages/gruenau/video/wgz.mp4" webm="/assets/pages/gruenau/video/wgz.webm" %}
+			{% include video.html id="video-gruenau-wgz" poster="gruenau/video/wgz.jpg" mp4="gruenau/video/wgz.mp4" webm="gruenau/video/wgz.webm" %}
 		</div>
 		
 		<p class="begin">Da haben wir ja Glück gehabt!“ Bernd Puckelwaldt schaut den Wolken hinterher, die sich gerade an der Sonne vorbeigeschoben haben. Wenn er Besuchern sein Grünau zeigt, dann soll es auch im schönsten Licht erstrahlen. Der hochgewachsene 67-Jährige mit dem Rauschebart hat einen Großteil seines Lebens in der Großwohnsiedlung verbracht, beruflich wie privat. Er kennt hier alle Wege, jede Platte und sogar die Baupläne dahinter. Als Bauleiter hat er vor über 30 Jahren geholfen, den Stadtteil hochzuziehen. Seither ist Grünau auch sein Zuhause, in das er Neugierige gerne einlädt. „Los geht’s.“ Er steigt auf sein Fahrrad und steuert den ersten Besichtigungspunkt an. Schon auf dem Weg dorthin erzählt er mehr, als so mancher Leipziger über Grünau weiß.</p>
@@ -91,33 +91,33 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 						<text transform="matrix(1 0 0 1 437 368.8496)">WK 1</text>
 					</a>
 					
-					<a xlink:href="#" data-toggle="lightbox" data-gallery="WK2" data-footer="Die Wohnkomplexe 1, 2 und 3 waren die ersten, die Anfang der 80er Jahre fertiggestellt waren. Wer hier eine Wohnung im Erstbezug mit Fernwärme und Badezimmer ergattern konnte, hatte Glück oder Beziehungen. „Dementsprechend wohnte hier die überdurchschnittliche Leipziger Familie: Professoren, Uni-Angestellte, Betriebsleiter“, erklärt Bernd Puckelwaldt." data-remote="{% asset_path WK2/01.jpg %}">
+					<a xlink:href="#" data-toggle="lightbox" data-gallery="WK2" data-footer="Die Wohnkomplexe 1, 2 und 3 waren die ersten, die Anfang der 80er Jahre fertiggestellt waren. Wer hier eine Wohnung im Erstbezug mit Fernwärme und Badezimmer ergattern konnte, hatte Glück oder Beziehungen. „Dementsprechend wohnte hier die überdurchschnittliche Leipziger Familie: Professoren, Uni-Angestellte, Betriebsleiter“, erklärt Bernd Puckelwaldt." data-remote="{% asset_path gruenau/WK2/01.jpg %}">
 						<polygon class="gruenau-path" points="413.5,343.2 394.2,349.2 368.9,353.5 
 							348.7,281.7 382.4,279 439.3,253.3 460.6,323.9 445.9,328"/>
 						<text transform="matrix(1 0 0 1 392 312.6043)">WK 2</text>
 					</a>	
 					<foreignObject>
-						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/02.jpg %}" data-footer="Das Erscheinungsbild Grünaus hat sich in den letzten 20 Jahren stark gewandelt. Trotzdem gibt es Orte, die an alte Zeiten erinnern. Weite, kahle Plätze wie dieser hier strahlen weiterhin den „Charme“ der DDR-Planung aus."></div>
-						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/03.jpg %}" data-footer="Hinter den Plattenbaufassaden, im Zentrum der Wohnkarrees eröffnen sich weitläufige, grüne Innenhöfe."></div>
-						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/04.jpg %}" data-footer="Nicht alle Wohngebäude sind in gleichem Umfang saniert worden oder werden von den Eigentümern gleichermaßen gepflegt. Bei einem Anblick wie diesem schämt sich Bernd Puckelwaldt ein wenig. „Das war mal eine schicke Ladenzeile zum Bummeln. Jetzt liegt hier der Müll rum und die Ecken vergammeln. Schade ist das.“"></div>
-						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/05.jpg %}" data-footer="Ein paar hundert Meter weiter, der gleiche Gebäudetyp, die gleiche Ladenzeile saniert und aufgeräumt – ganz in Puckelwaldts Sinne."></div>
-						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/06.jpg %}" data-footer="Brunnen, Statuen und Plastiken findet man an vielen Knotenpunkten in ganz Grünau. Manche wirken in ihrer Umgebung etwas deplatziert und vernachlässigt..."></div>
-						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/07.jpg %}" data-footer="... andere hingegen werten die Umgebung auf."></div>
-						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/08.jpg %}" data-footer="Der Name Grünau leitet sich ab von „Grüne Aue“. Und Grün ist es tatsächlich im Stadtteil. Die Lindenallee zum Beispiel verläuft zwischen den Wohnkomplexen 2 und 3."></div>
+						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/02.jpg %}" data-footer="Das Erscheinungsbild Grünaus hat sich in den letzten 20 Jahren stark gewandelt. Trotzdem gibt es Orte, die an alte Zeiten erinnern. Weite, kahle Plätze wie dieser hier strahlen weiterhin den „Charme“ der DDR-Planung aus."></div>
+						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/03.jpg %}" data-footer="Hinter den Plattenbaufassaden, im Zentrum der Wohnkarrees eröffnen sich weitläufige, grüne Innenhöfe."></div>
+						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/04.jpg %}" data-footer="Nicht alle Wohngebäude sind in gleichem Umfang saniert worden oder werden von den Eigentümern gleichermaßen gepflegt. Bei einem Anblick wie diesem schämt sich Bernd Puckelwaldt ein wenig. „Das war mal eine schicke Ladenzeile zum Bummeln. Jetzt liegt hier der Müll rum und die Ecken vergammeln. Schade ist das.“"></div>
+						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/05.jpg %}" data-footer="Ein paar hundert Meter weiter, der gleiche Gebäudetyp, die gleiche Ladenzeile saniert und aufgeräumt – ganz in Puckelwaldts Sinne."></div>
+						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/06.jpg %}" data-footer="Brunnen, Statuen und Plastiken findet man an vielen Knotenpunkten in ganz Grünau. Manche wirken in ihrer Umgebung etwas deplatziert und vernachlässigt..."></div>
+						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/07.jpg %}" data-footer="... andere hingegen werten die Umgebung auf."></div>
+						<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/08.jpg %}" data-footer="Der Name Grünau leitet sich ab von „Grüne Aue“. Und Grün ist es tatsächlich im Stadtteil. Die Lindenallee zum Beispiel verläuft zwischen den Wohnkomplexen 2 und 3."></div>
 					</foreignObject>
 					
-					<a xlink:href="#" data-toggle="lightbox" data-gallery="WK3" data-footer="Grünau braucht junge Familien mit Kindern, um nicht zu überaltern. Doch der Stadtteil fernab vom Zentrum ist nicht unbedingt attraktiv für junge Menschen, die in der Freizeit Abwechslung suchen. In den letzten Jahren sind in Grünau einige Einrichtungen und Plätze entstanden –wie hier das Heizhaus –  die diesen Bedarf abdecken sollen." data-remote="{% asset_path WK3/01.jpg %}">
+					<a xlink:href="#" data-toggle="lightbox" data-gallery="WK3" data-footer="Grünau braucht junge Familien mit Kindern, um nicht zu überaltern. Doch der Stadtteil fernab vom Zentrum ist nicht unbedingt attraktiv für junge Menschen, die in der Freizeit Abwechslung suchen. In den letzten Jahren sind in Grünau einige Einrichtungen und Plätze entstanden –wie hier das Heizhaus –  die diesen Bedarf abdecken sollen." data-remote="{% asset_path gruenau/WK3/01.jpg %}">
 						<path class="gruenau-path" d="M325.5,347.7l-2.8-7.5l-4.5-12l-2.8-14.6l-3-6.2
 						l-0.8-14.4l18.3-7.1c0.4-0.2,0.8-0.3,1.3-0.4l17.6-3.8l20.2,71.8l-33.4,7.1L325.5,347.7z"/>
 						<text transform="matrix(1 0 0 1 326 323.1405)">WK 3</text>
 					</a>
 					<foreignObject>
-						<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path WK3/02.jpg %}" data-footer="Im und um das Heizhaus im Wohnkomplex 2 hat man 2009 für Skater..."></div>
-						<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path WK3/03.jpg %}" data-footer="... und BMX-Fahrer Parcours, Rampen und Hindernisse gebaut, die sogar Nicht-Leipziger anziehen."></div>
-						<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path WK3/04.jpg %}" data-footer="Im Theatrium stehen Grünauer auf der Bühne. Vor allem Kinder und Jugendliche entwickeln hier eigene Theaterstücke und führen sie auf. Um die pädagogische Betreuung kümmert sich der Verein großstadtKINDER."></div>
-						<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path WK3/05.jpg %}" data-footer="Der Kletterfelsen K4 ist im Jahr 2000 errichtet worden. Was viele nicht wissen: Der Felsen besteht aus recycleter Platte. Man hat die alten Balkonbrüstungen eines Grünauer Hochhauses gestapelt und mit Spritzbeton verkleidet."></div>
-						<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path WK3/06.jpg %}" data-footer="An dem 21 Meter hohen Kletterfelsen probieren sich Anfänger und Könner auf den 30 Kletterrouten aus."></div>
-						<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path WK3/07.jpg %}" data-footer="Nur wenige Meter vom K4 entfernt, steht die Grünauer Welle – das Hallenbad, das viele Grünauer sich herbeigesehnt hatten. Schon in den 70er Jahren gab es Pläne für ein Schwimmbad in der Großsiedlung, eröffnet wurde aber erst 1999."></div>
+						<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path gruenau/WK3/02.jpg %}" data-footer="Im und um das Heizhaus im Wohnkomplex 2 hat man 2009 für Skater..."></div>
+						<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path gruenau/WK3/03.jpg %}" data-footer="... und BMX-Fahrer Parcours, Rampen und Hindernisse gebaut, die sogar Nicht-Leipziger anziehen."></div>
+						<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path gruenau/WK3/04.jpg %}" data-footer="Im Theatrium stehen Grünauer auf der Bühne. Vor allem Kinder und Jugendliche entwickeln hier eigene Theaterstücke und führen sie auf. Um die pädagogische Betreuung kümmert sich der Verein großstadtKINDER."></div>
+						<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path gruenau/WK3/05.jpg %}" data-footer="Der Kletterfelsen K4 ist im Jahr 2000 errichtet worden. Was viele nicht wissen: Der Felsen besteht aus recycleter Platte. Man hat die alten Balkonbrüstungen eines Grünauer Hochhauses gestapelt und mit Spritzbeton verkleidet."></div>
+						<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path gruenau/WK3/06.jpg %}" data-footer="An dem 21 Meter hohen Kletterfelsen probieren sich Anfänger und Könner auf den 30 Kletterrouten aus."></div>
+						<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path gruenau/WK3/07.jpg %}" data-footer="Nur wenige Meter vom K4 entfernt, steht die Grünauer Welle – das Hallenbad, das viele Grünauer sich herbeigesehnt hatten. Schon in den 70er Jahren gab es Pläne für ein Schwimmbad in der Großsiedlung, eröffnet wurde aber erst 1999."></div>
 					</foreignObject>
 					
 					<a xlink:href="wk5.html" data-width="95%" data-toggle="lightbox" data-parent="" data-gallery="WK5" data-remote="wk5.html">						
@@ -147,19 +147,19 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 						<text transform="matrix(1 0 0 1 100 339.274)">WK 7</text>
 					</a>
 					
-					<a xlink:href="#" data-toggle="lightbox" data-gallery="WK8" data-footer="Vergangenes Panorama: Der Blick über den Kulkwitzer See Richtung Grünau. Nach der Wende zogen viele Bewohner weg, in das Stadtzentrum, ein Eigenheim oder in den Westen. Zurück blieben leere Plattenbauten." data-remote="{% asset_path WK8/01.jpg %}">
+					<a xlink:href="#" data-toggle="lightbox" data-gallery="WK8" data-footer="Vergangenes Panorama: Der Blick über den Kulkwitzer See Richtung Grünau. Nach der Wende zogen viele Bewohner weg, in das Stadtzentrum, ein Eigenheim oder in den Westen. Zurück blieben leere Plattenbauten." data-remote="{% asset_path gruenau/WK8/01.jpg %}">
 						<path class="gruenau-path" d="M42.1,568.9l1.4-44.7l-10.7-26.1l-1.1-21.3
 							l16.7-51.1c0-0.3,0.2-0.5,0.5-0.5l73.8-12.9l31.3,110.3l2.6,29.3l-34,18.3H88.1l-1.4-3.9l-18.8,3.9L42.1,568.9z"/>
 						<text transform="matrix(1 0 0 1 81 503)">WK 8</text>
 					</a>
 					<foreignObject>
-						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/02.jpg %}" data-footer="2002 entschied man sich für umfassende Rückbaumaßnahmen. „Das war nichts anderes wie knallharter Abriss“, sagt Bernd Puckelwaldt. Vor allem viele der 16-Geschosser aber auch andere Plattenbauten verschwanden und mit ihnen mehrere tausend Wohnungen."></div>
-						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/03.jpg %}" data-footer="Gleichzeitig investierten die Stadt, die Baugenossenschaften und andere Eigentümer in die Aufbesserung von Grünflächen und Gebäudesanierungen."></div>
-						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/04.jpg %}" data-footer="Und da die Bewohner langsam mit ihrem Stadtteil alterten, mussten die Wohnungen den Bedürfnissen angepasst werden. So erhielten einige Wohngebäude nachträglich Aufzüge."></div>
-						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/05.jpg %}" data-footer="Die Einwohnerzahl Grünaus hat sich in den letzten Jahren stabilisiert. Manche Wohnkomplexe gewinnen sogar wieder an Bewohnern. Und für die potentiellen Zuzügler wird nun sogar wieder neu gebaut."></div>
-						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/06.jpg %}" data-footer="Die Neubauten im Wohnkomplex 8 werden aber wohl nicht den alten DDR-Charme tragen. Die Genossenschaft Lipsia errichtet drei moderne 6-Geschosser – an eben der Stelle, wo vor wenigen Jahren noch ein anderer Bau abgerissen wurde."></div>
-						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/07.jpg %}" data-footer="Die Genossenschaft wirbt: „Nur wenige Schritte vom Wasser entfernt entstehen mit den ‚Kulkwitzer See-Terrassen‘ 48 exklusive Mietwohnungen in bester Lage. Die 2- bis 5-Raum-Wohnungen verfügen über Parkett und Fußbodenheizung, moderne Bäder mit Wanne und bodengleichen Duschen, Abstellraum sowie Balkon oder Terrasse in Richtung Kulkwitzer See.“"></div>
-						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/08.jpg %}" data-footer="Die Anwohner in direkter Nachbarschaft sind nicht gerade begeistert vom exklusiven Neubau. Einige ärgern sich darüber, dass der Blick von ihrem Balkon nun nicht mehr auf den See, sondern in das Wohnzimmer der Nachbarn geht. Andere hatten auf dem Grundstück einen Kleingarten angelegt, der dann im Frühjahr 2014 mit Beginn der Bauarbeiten weichen musste."></div>
+						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/02.jpg %}" data-footer="2002 entschied man sich für umfassende Rückbaumaßnahmen. „Das war nichts anderes wie knallharter Abriss“, sagt Bernd Puckelwaldt. Vor allem viele der 16-Geschosser aber auch andere Plattenbauten verschwanden und mit ihnen mehrere tausend Wohnungen."></div>
+						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/03.jpg %}" data-footer="Gleichzeitig investierten die Stadt, die Baugenossenschaften und andere Eigentümer in die Aufbesserung von Grünflächen und Gebäudesanierungen."></div>
+						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/04.jpg %}" data-footer="Und da die Bewohner langsam mit ihrem Stadtteil alterten, mussten die Wohnungen den Bedürfnissen angepasst werden. So erhielten einige Wohngebäude nachträglich Aufzüge."></div>
+						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/05.jpg %}" data-footer="Die Einwohnerzahl Grünaus hat sich in den letzten Jahren stabilisiert. Manche Wohnkomplexe gewinnen sogar wieder an Bewohnern. Und für die potentiellen Zuzügler wird nun sogar wieder neu gebaut."></div>
+						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/06.jpg %}" data-footer="Die Neubauten im Wohnkomplex 8 werden aber wohl nicht den alten DDR-Charme tragen. Die Genossenschaft Lipsia errichtet drei moderne 6-Geschosser – an eben der Stelle, wo vor wenigen Jahren noch ein anderer Bau abgerissen wurde."></div>
+						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/07.jpg %}" data-footer="Die Genossenschaft wirbt: „Nur wenige Schritte vom Wasser entfernt entstehen mit den ‚Kulkwitzer See-Terrassen‘ 48 exklusive Mietwohnungen in bester Lage. Die 2- bis 5-Raum-Wohnungen verfügen über Parkett und Fußbodenheizung, moderne Bäder mit Wanne und bodengleichen Duschen, Abstellraum sowie Balkon oder Terrasse in Richtung Kulkwitzer See.“"></div>
+						<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/08.jpg %}" data-footer="Die Anwohner in direkter Nachbarschaft sind nicht gerade begeistert vom exklusiven Neubau. Einige ärgern sich darüber, dass der Blick von ihrem Balkon nun nicht mehr auf den See, sondern in das Wohnzimmer der Nachbarn geht. Andere hatten auf dem Grundstück einen Kleingarten angelegt, der dann im Frühjahr 2014 mit Beginn der Bauarbeiten weichen musste."></div>
 					</foreignObject>
 						
 					<a xlink:href="siedlung.html" data-width="95%" data-toggle="lightbox" data-parent="" data-gallery="siedlung" data-remote="siedlung.html">		
@@ -201,26 +201,26 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 					WK2
 				</div>
 				<div class="bullet-content">
-					<a href="#" data-toggle="lightbox" data-gallery="WK2" data-footer="Die Wohnkomplexe 1, 2 und 3 waren die ersten, die Anfang der 80er Jahre fertiggestellt waren. Wer hier eine Wohnung im Erstbezug mit Fernwärme und Badezimmer ergattern konnte, hatte Glück oder Beziehungen. „Dementsprechend wohnte hier die überdurchschnittliche Leipziger Familie: Professoren, Uni-Angestellte, Betriebsleiter“, erklärt Bernd Puckelwaldt." data-remote="{% asset_path WK2/01.jpg %}">Schön neben schäbig</a>
-					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/02.jpg %}" data-footer="Das Erscheinungsbild Grünaus hat sich in den letzten 20 Jahren stark gewandelt. Trotzdem gibt es Orte, die an alte Zeiten erinnern. Weite, kahle Plätze wie dieser hier strahlen weiterhin den „Charme“ der DDR-Planung aus."></div>
-					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/03.jpg %}" data-footer="Hinter den Plattenbaufassaden, im Zentrum der Wohnkarrees eröffnen sich weitläufige, grüne Innenhöfe."></div>
-					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/04.jpg %}" data-footer="Nicht alle Wohngebäude sind in gleichem Umfang saniert worden oder werden von den Eigentümern gleichermaßen gepflegt. Bei einem Anblick wie diesem schämt sich Bernd Puckelwaldt ein wenig. „Das war mal eine schicke Ladenzeile zum Bummeln. Jetzt liegt hier der Müll rum und die Ecken vergammeln. Schade ist das.“"></div>
-					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/05.jpg %}" data-footer="Ein paar hundert Meter weiter, der gleiche Gebäudetyp, die gleiche Ladenzeile saniert und aufgeräumt – ganz in Puckelwaldts Sinne."></div>
-					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/06.jpg %}" data-footer="Brunnen, Statuen und Plastiken findet man an vielen Knotenpunkten in ganz Grünau. Manche wirken in ihrer Umgebung etwas deplatziert und vernachlässigt..."></div>
-					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/07.jpg %}" data-footer="... andere hingegen werten die Umgebung auf."></div>
-					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path WK2/08.jpg %}" data-footer="Der Name Grünau leitet sich ab von „Grüne Aue“. Und Grün ist es tatsächlich im Stadtteil. Die Lindenallee zum Beispiel verläuft zwischen den Wohnkomplexen 2 und 3."></div>
+					<a href="#" data-toggle="lightbox" data-gallery="WK2" data-footer="Die Wohnkomplexe 1, 2 und 3 waren die ersten, die Anfang der 80er Jahre fertiggestellt waren. Wer hier eine Wohnung im Erstbezug mit Fernwärme und Badezimmer ergattern konnte, hatte Glück oder Beziehungen. „Dementsprechend wohnte hier die überdurchschnittliche Leipziger Familie: Professoren, Uni-Angestellte, Betriebsleiter“, erklärt Bernd Puckelwaldt." data-remote="{% asset_path gruenau/WK2/01.jpg %}">Schön neben schäbig</a>
+					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/02.jpg %}" data-footer="Das Erscheinungsbild Grünaus hat sich in den letzten 20 Jahren stark gewandelt. Trotzdem gibt es Orte, die an alte Zeiten erinnern. Weite, kahle Plätze wie dieser hier strahlen weiterhin den „Charme“ der DDR-Planung aus."></div>
+					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/03.jpg %}" data-footer="Hinter den Plattenbaufassaden, im Zentrum der Wohnkarrees eröffnen sich weitläufige, grüne Innenhöfe."></div>
+					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/04.jpg %}" data-footer="Nicht alle Wohngebäude sind in gleichem Umfang saniert worden oder werden von den Eigentümern gleichermaßen gepflegt. Bei einem Anblick wie diesem schämt sich Bernd Puckelwaldt ein wenig. „Das war mal eine schicke Ladenzeile zum Bummeln. Jetzt liegt hier der Müll rum und die Ecken vergammeln. Schade ist das.“"></div>
+					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/05.jpg %}" data-footer="Ein paar hundert Meter weiter, der gleiche Gebäudetyp, die gleiche Ladenzeile saniert und aufgeräumt – ganz in Puckelwaldts Sinne."></div>
+					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/06.jpg %}" data-footer="Brunnen, Statuen und Plastiken findet man an vielen Knotenpunkten in ganz Grünau. Manche wirken in ihrer Umgebung etwas deplatziert und vernachlässigt..."></div>
+					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/07.jpg %}" data-footer="... andere hingegen werten die Umgebung auf."></div>
+					<div data-toggle="lightbox" data-gallery="WK2" data-remote="{% asset_path gruenau/WK2/08.jpg %}" data-footer="Der Name Grünau leitet sich ab von „Grüne Aue“. Und Grün ist es tatsächlich im Stadtteil. Die Lindenallee zum Beispiel verläuft zwischen den Wohnkomplexen 2 und 3."></div>
 				</div>
 				<div class="bullet-icon" style="font-size: 7pt;">
 					WK3
 				</div>
 				<div class="bullet-content">
-					<a href="#" data-toggle="lightbox" data-gallery="WK3" data-footer="Grünau braucht junge Familien mit Kindern, um nicht zu überaltern. Doch der Stadtteil fernab vom Zentrum ist nicht unbedingt attraktiv für junge Menschen, die in der Freizeit Abwechslung suchen. In den letzten Jahren sind in Grünau einige Einrichtungen und Plätze entstanden –wie hier das Heizhaus –  die diesen Bedarf abdecken sollen." data-remote="{% asset_path WK3/01.jpg %}">Was für die Jugend</a>
-					<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path WK3/02.jpg %}" data-footer="Im und um das Heizhaus im Wohnkomplex 2 hat man 2009 für Skater..."></div>
-					<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path WK3/03.jpg %}" data-footer="... und BMX-Fahrer Parcours, Rampen und Hindernisse gebaut, die sogar Nicht-Leipziger anziehen."></div>
-					<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path WK3/04.jpg %}" data-footer="Im Theatrium stehen Grünauer auf der Bühne. Vor allem Kinder und Jugendliche entwickeln hier eigene Theaterstücke und führen sie auf. Um die pädagogische Betreuung kümmert sich der Verein großstadtKINDER."></div>
-					<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path WK3/05.jpg %}" data-footer="Der Kletterfelsen K4 ist im Jahr 2000 errichtet worden. Was viele nicht wissen: Der Felsen besteht aus recycleter Platte. Man hat die alten Balkonbrüstungen eines Grünauer Hochhauses gestapelt und mit Spritzbeton verkleidet."></div>
-					<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path WK3/06.jpg %}" data-footer="An dem 21 Meter hohen Kletterfelsen probieren sich Anfänger und Könner auf den 30 Kletterrouten aus."></div>
-					<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path WK3/07.jpg %}" data-footer="Nur wenige Meter vom K4 entfernt, steht die Grünauer Welle – das Hallenbad, das viele Grünauer sich herbeigesehnt hatten. Schon in den 70er Jahren gab es Pläne für ein Schwimmbad in der Großsiedlung, eröffnet wurde aber erst 1999."></div>
+					<a href="#" data-toggle="lightbox" data-gallery="WK3" data-footer="Grünau braucht junge Familien mit Kindern, um nicht zu überaltern. Doch der Stadtteil fernab vom Zentrum ist nicht unbedingt attraktiv für junge Menschen, die in der Freizeit Abwechslung suchen. In den letzten Jahren sind in Grünau einige Einrichtungen und Plätze entstanden –wie hier das Heizhaus –  die diesen Bedarf abdecken sollen." data-remote="{% asset_path gruenau/WK3/01.jpg %}">Was für die Jugend</a>
+					<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path gruenau/WK3/02.jpg %}" data-footer="Im und um das Heizhaus im Wohnkomplex 2 hat man 2009 für Skater..."></div>
+					<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path gruenau/WK3/03.jpg %}" data-footer="... und BMX-Fahrer Parcours, Rampen und Hindernisse gebaut, die sogar Nicht-Leipziger anziehen."></div>
+					<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path gruenau/WK3/04.jpg %}" data-footer="Im Theatrium stehen Grünauer auf der Bühne. Vor allem Kinder und Jugendliche entwickeln hier eigene Theaterstücke und führen sie auf. Um die pädagogische Betreuung kümmert sich der Verein großstadtKINDER."></div>
+					<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path gruenau/WK3/05.jpg %}" data-footer="Der Kletterfelsen K4 ist im Jahr 2000 errichtet worden. Was viele nicht wissen: Der Felsen besteht aus recycleter Platte. Man hat die alten Balkonbrüstungen eines Grünauer Hochhauses gestapelt und mit Spritzbeton verkleidet."></div>
+					<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path gruenau/WK3/06.jpg %}" data-footer="An dem 21 Meter hohen Kletterfelsen probieren sich Anfänger und Könner auf den 30 Kletterrouten aus."></div>
+					<div data-toggle="lightbox" data-gallery="WK3" data-remote="{% asset_path gruenau/WK3/07.jpg %}" data-footer="Nur wenige Meter vom K4 entfernt, steht die Grünauer Welle – das Hallenbad, das viele Grünauer sich herbeigesehnt hatten. Schon in den 70er Jahren gab es Pläne für ein Schwimmbad in der Großsiedlung, eröffnet wurde aber erst 1999."></div>
 				</div>
 				<div class="bullet-icon" style="font-size: 7pt;">
 					WK4
@@ -261,14 +261,14 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 					WK8
 				</div>
 				<div class="bullet-content">
-					<a href="#" data-toggle="lightbox" data-gallery="WK8" data-footer="Vergangenes Panorama: Der Blick über den Kulkwitzer See Richtung Grünau. Nach der Wende zogen viele Bewohner weg, in das Stadtzentrum, ein Eigenheim oder in den Westen. Zurück blieben leere Plattenbauten." data-remote="{% asset_path WK8/01.jpg %}">Neubau in Grünau</a>
-					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/02.jpg %}" data-footer="2002 entschied man sich für umfassende Rückbaumaßnahmen. „Das war nichts anderes wie knallharter Abriss“, sagt Bernd Puckelwaldt. Vor allem viele der 16-Geschosser aber auch andere Plattenbauten verschwanden und mit ihnen mehrere tausend Wohnungen."></div>
-					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/03.jpg %}" data-footer="Gleichzeitig investierten die Stadt, die Baugenossenschaften und andere Eigentümer in die Aufbesserung von Grünflächen und Gebäudesanierungen."></div>
-					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/04.jpg %}" data-footer="Und da die Bewohner langsam mit ihrem Stadtteil alterten, mussten die Wohnungen den Bedürfnissen angepasst werden. So erhielten einige Wohngebäude nachträglich Aufzüge."></div>
-					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/05.jpg %}" data-footer="Die Einwohnerzahl Grünaus hat sich in den letzten Jahren stabilisiert. Manche Wohnkomplexe gewinnen sogar wieder an Bewohnern. Und für die potentiellen Zuzügler wird nun sogar wieder neu gebaut."></div>
-					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/06.jpg %}" data-footer="Die Neubauten im Wohnkomplex 8 werden aber wohl nicht den alten DDR-Charme tragen. Die Genossenschaft Lipsia errichtet drei moderne 6-Geschosser – an eben der Stelle, wo vor wenigen Jahren noch ein anderer Bau abgerissen wurde."></div>
-					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/07.jpg %}" data-footer="Die Genossenschaft wirbt: „Nur wenige Schritte vom Wasser entfernt entstehen mit den ‚Kulkwitzer See-Terrassen‘ 48 exklusive Mietwohnungen in bester Lage. Die 2- bis 5-Raum-Wohnungen verfügen über Parkett und Fußbodenheizung, moderne Bäder mit Wanne und bodengleichen Duschen, Abstellraum sowie Balkon oder Terrasse in Richtung Kulkwitzer See.“"></div>
-					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path WK8/08.jpg %}" data-footer="Die Anwohner in direkter Nachbarschaft sind nicht gerade begeistert vom exklusiven Neubau. Einige ärgern sich darüber, dass der Blick von ihrem Balkon nun nicht mehr auf den See, sondern in das Wohnzimmer der Nachbarn geht. Andere hatten auf dem Grundstück einen Kleingarten angelegt, der dann im Frühjahr 2014 mit Beginn der Bauarbeiten weichen musste."></div>
+					<a href="#" data-toggle="lightbox" data-gallery="WK8" data-footer="Vergangenes Panorama: Der Blick über den Kulkwitzer See Richtung Grünau. Nach der Wende zogen viele Bewohner weg, in das Stadtzentrum, ein Eigenheim oder in den Westen. Zurück blieben leere Plattenbauten." data-remote="{% asset_path gruenau/WK8/01.jpg %}">Neubau in Grünau</a>
+					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/02.jpg %}" data-footer="2002 entschied man sich für umfassende Rückbaumaßnahmen. „Das war nichts anderes wie knallharter Abriss“, sagt Bernd Puckelwaldt. Vor allem viele der 16-Geschosser aber auch andere Plattenbauten verschwanden und mit ihnen mehrere tausend Wohnungen."></div>
+					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/03.jpg %}" data-footer="Gleichzeitig investierten die Stadt, die Baugenossenschaften und andere Eigentümer in die Aufbesserung von Grünflächen und Gebäudesanierungen."></div>
+					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/04.jpg %}" data-footer="Und da die Bewohner langsam mit ihrem Stadtteil alterten, mussten die Wohnungen den Bedürfnissen angepasst werden. So erhielten einige Wohngebäude nachträglich Aufzüge."></div>
+					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/05.jpg %}" data-footer="Die Einwohnerzahl Grünaus hat sich in den letzten Jahren stabilisiert. Manche Wohnkomplexe gewinnen sogar wieder an Bewohnern. Und für die potentiellen Zuzügler wird nun sogar wieder neu gebaut."></div>
+					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/06.jpg %}" data-footer="Die Neubauten im Wohnkomplex 8 werden aber wohl nicht den alten DDR-Charme tragen. Die Genossenschaft Lipsia errichtet drei moderne 6-Geschosser – an eben der Stelle, wo vor wenigen Jahren noch ein anderer Bau abgerissen wurde."></div>
+					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/07.jpg %}" data-footer="Die Genossenschaft wirbt: „Nur wenige Schritte vom Wasser entfernt entstehen mit den ‚Kulkwitzer See-Terrassen‘ 48 exklusive Mietwohnungen in bester Lage. Die 2- bis 5-Raum-Wohnungen verfügen über Parkett und Fußbodenheizung, moderne Bäder mit Wanne und bodengleichen Duschen, Abstellraum sowie Balkon oder Terrasse in Richtung Kulkwitzer See.“"></div>
+					<div data-toggle="lightbox" data-gallery="WK8" data-remote="{% asset_path gruenau/WK8/08.jpg %}" data-footer="Die Anwohner in direkter Nachbarschaft sind nicht gerade begeistert vom exklusiven Neubau. Einige ärgern sich darüber, dass der Blick von ihrem Balkon nun nicht mehr auf den See, sondern in das Wohnzimmer der Nachbarn geht. Andere hatten auf dem Grundstück einen Kleingarten angelegt, der dann im Frühjahr 2014 mit Beginn der Bauarbeiten weichen musste."></div>
 				</div>
 			</div>
 	</article>
@@ -287,8 +287,8 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 					data: {
 						x: 'x',
 						columns: [
-							['x', '1979-01-01', '1981-01-01', '1983-01-01', '1989-01-01', '1992-01-01', '1995-01-01', '2000-01-01', '2004-01-01', '2008-01-01', '2010-01-01', '2012-01-01', '2013-01-01'],
-							['Einwohnerzahl Grünau', 16000, 36000, 60000, 85000, 78000, 74000, 56487, 47489, 44542, 43075, 42983, 43258]
+							['x', '1979-01-01', '1981-01-01', '1983-01-01', '1989-01-01', '1992-01-01', '1995-01-01', '2000-01-01', '2001-01-01', '2002-01-01', '2003-01-01', '2004-01-01', '2005-01-01', '2006-01-01', '2007-01-01', '2008-01-01', '2009-01-01', '2010-01-01', '2011-01-01', '2012-01-01', '2013-01-01', '2014-01-01', '2015-01-01'],
+							['Einwohnerzahl Grünau', 16000, 36000, 60000, 85000, 78000, 74000, 55425, 52627, 50431, 48583, 47181, 46394, 45581, 44509, 43692, 42936, 42340, 42215, 42691, 42950, 43502, 44182]
 						],
 						type: 'spline'
 					},
@@ -310,7 +310,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 		</div>
 		
 		<aside>
-			<i class="fa fa-chevron-up"></i> Abb. 1: Einwohnerentwicklung in Grünau (1979-1995 vgl. Kahl (2000)/ 2000-2013 vgl. Einwohnermelderegister Stadt Leipzig)
+			<i class="fa fa-chevron-up"></i> Abb. 1: Einwohnerentwicklung in Grünau (1979-1995 vgl. Kahl (2000)/ 2000-2015 vgl. Einwohnermelderegister Stadt Leipzig)
 		</aside>
 		
 		<p>Bernd Puckelwaldt hat im Stadtteilladen an einem der runden Tische mit Blick auf das Allee-Center Platz genommen und blättert in alten Plänen und Broschüren über Grünau. Ende der 1980er Jahre lebten in den Wohnkomplexen rund 85.000 Menschen. „Tja und dann kam die Wende“. Bernd Puckelwaldt seufzt. Wer wollte und es sich leisten konnte, zog weg aus Grünau nach Westdeutschland, in sanierte Gründerzeithäuser im Zentrum oder in Eigenheime am Stadtrand. „Klar, dass zum Beispiel ein Universitätsprofessor sich nach einer großzügigeren Wohnung umschaut oder sein eigenes Häuschen baut, wenn plötzlich die Möglichkeiten dafür da sind“, sagt Puckelwaldt. Mitte der 1990er Jahre waren bereits mehr als 10.000 Grünauer abgewandert.</p>
@@ -335,7 +335,7 @@ scripts: [jquery-1.11.1.min.js, jquery-ui.js, jquery.quicksand.js, jquery.easing
 		<p>Möglicherweise hat Grünau aber die Kehrtwende geschafft. Die Einwohnerzahlen stabilisieren sich. In manchen Wohnkomplexen gibt es in den letzten zwei Jahren sogar etwas mehr Zu- als Wegzüge. Oft sind es junge Familien, die sich für Grünau entscheiden. Vergleichsweise günstige Kaltmieten von maximal 4,50 Euro pro Quadratmeter, aber auch die kurzen Schulwege und grünen Innenhöfe sind ausschlaggebende Kriterien für junge Eltern. Seit Mitte der 2000er beobachtet Sigrun Kabisch außerdem das Phänomen der sogenannten Rückkehrer. „Leute, die als Kinder in Grünau gelebt haben, aber dann aus unterschiedlichen Gründen weggezogen sind, kehren jetzt wieder zurück in den Stadtteil“, erklärt Kabisch. Die Intervallstudie zeigt, dass es eine ganz bewusste Entscheidung war, mit der die Rückkehrer glücklich sind. 76 Prozent von ihnen würden einem guten Freund empfehlen, auch nach Grünau zu ziehen.</p>
 		
 		<div class="floater">
-			{% include video.html id="video-gruenau-kabisch" poster="/assets/pages/gruenau/video/Kabisch.jpg" mp4="/assets/pages/gruenau/video/Kabisch.mp4" webm="/assets/pages/gruenau/video/Kabisch.webm" %}
+			{% include video.html id="video-gruenau-kabisch" poster="gruenau/video/Kabisch.jpg" mp4="gruenau/video/Kabisch.mp4" webm="gruenau/video/Kabisch.webm" %}
 			<div class="video-description">
 				„Soziale Netzwerke veranlassen Menschen, nach Grünau zurückzukehren“, sagt Sigrun Kabisch.
 			</div>

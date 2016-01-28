@@ -4,7 +4,7 @@ category: einundleipzig
 author: carolyn
 title: Euer Input
 description: Wir sind begeistert! Viele Zuschriften haben uns in den letzten Wochen erreicht. Ihr schreibt uns von Eurer Begeisterung oder Enttäuschung über Leipzig, von Vorzügen und Problemen in der Stadt. Einige Zuschriften haben uns so gut gefallen, dass wir sie hier für alle lesbar veröffentlichen wollen. Anni Froh macht den Anfang mit ihrem “verklärten Blick” auf Leipzig.
-image: /assets/posts/euer-input/euer-input.jpg
+image: euer-input/euer-input.jpg
 ---
 ### Verklärter Blick
 

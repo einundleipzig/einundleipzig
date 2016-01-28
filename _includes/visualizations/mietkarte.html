@@ -1,12 +1,9 @@
-<script src="{{ "assets/js/queue.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-<script src="{{ "assets/js/underscore-min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-		
 <link href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" rel="stylesheet" type="text/css" />
  
 <script>
 	L_PREFER_CANVAS = true;
 </script>
-<script src="{{ "assets/js/leaflet.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+{% javascript leaflet.js %}
 			
 		
 <style type="text/css">
@@ -64,13 +61,13 @@
 	var mietkarte_legend = d3.select('#mietkarte_legend')
 		.append('ul')
 		.attr('class', 'list-inline');
-	d3.csv("/assets/visualizations/mietkarte/mietpreise.php?mode=neuvermietungen", function(collection) {
+	d3.csv("{% asset_path mietkarte/mietpreise.php %}?mode=neuvermietungen", function(collection) {
 			
-				// Color Domain
-				mietkarte_colors.domain([
-					d3.min(d3.values(collection), function(d) { return +d['europrom2']; }), 
-					d3.max(d3.values(collection), function(d) { return +d['europrom2']; })
-				]);
+		// Color Domain
+		mietkarte_colors.domain([
+			d3.min(d3.values(collection), function(d) { return +d['europrom2']; }), 
+			d3.max(d3.values(collection), function(d) { return +d['europrom2']; })
+		]);
 			
 		/* Add a LatLng object to each item in the dataset */
 		collection.forEach(function(d) {
@@ -116,7 +113,7 @@
 			});	
 		});
 				
-	d3.csv("/assets/visualizations/mietkarte/mietpreise.php?mode=bestandsmieten", function(collection) {
+	d3.csv("{% asset_path mietkarte/mietpreise.php %}?mode=bestandsmieten", function(collection) {
 					
 		/* Add a LatLng object to each item in the dataset */
 		collection.forEach(function(d) {

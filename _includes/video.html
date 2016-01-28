@@ -1,13 +1,13 @@
 <div class="videocontent fade-in-element">
-<video id="{{ include.id }}" class="video-js vjs-sublime-skin vjs-big-play-centered" controls preload="none" width="auto" height="auto" poster="{{ include.poster }}" data-setup='{"controls": true, "autoplay": false, "preload": "none"}'
+<video id="{{ include.id }}" class="video-js vjs-sublime-skin vjs-big-play-centered" controls preload="none" width="auto" height="auto" poster="{% asset_path {{include.poster}} %}" data-setup='{"controls": true, "autoplay": false, "preload": "none"}'
 
 {% if include.iframe %}
 style="position: relative !important;"
 {% endif %}
 >
 
-	{% if include.webm %}<source src="{{ include.webm }}" type='video/webm' />{% endif %}
-	{% if include.mp4 %}<source src="{{ include.mp4 }}" type='video/mp4' />{% endif %}
+	{% if include.webm %}<source src="{% asset_path {{include.webm}} %}" type='video/webm' />{% endif %}
+	{% if include.mp4 %}<source src="{% asset_path {{include.mp4}} %}" type='video/mp4' />{% endif %}
 	<p class="vjs-no-js no-comment">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
 </video>
 </div>

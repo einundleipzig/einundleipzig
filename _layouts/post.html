@@ -14,7 +14,7 @@ layout: default
 		</h1>
 		
 		{% if page.image %}
-			<img src="{{page.image}}" class="img-responsive" style="padding-bottom: 35px;" alt="{{ page.title }}" />
+			<img src="{% asset_path {{page.image}} %}" class="img-responsive" style="padding-bottom: 35px;" alt="{{ page.title }}" />
 		{% endif %}
 		
 		{% if page.description %}
