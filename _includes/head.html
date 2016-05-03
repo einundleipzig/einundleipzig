@@ -4,12 +4,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="{{ site.description }}" />
 	<meta name="keywords" content="Leipzig, Gentrifizierung, Reurbanisierung, Re-Urbanisierung, Verdrängung, Mieter, Vermieter" />
-	
+
 	<!-- favicon -->
 	<link rel="icon" href="{% asset_path favicon.ico %}" type="image/x-icon">
 	<link rel="shortcut icon" href="{% asset_path favicon.ico %}" type="image/x-icon">
-	<link rel="shortcut icon" href="{% asset_path favicon.ico %}" type="image/vnd.microsoft.icon">	
-	
+	<link rel="shortcut icon" href="{% asset_path favicon.ico %}" type="image/vnd.microsoft.icon">
+
 	<!-- Facebook OG Tags -->
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
@@ -17,42 +17,39 @@
 	<meta property="og:site_name" content="einundleipzig">
 	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %} {{ site.description }} {% endif %}" />
 	<meta property="og:image" name="facebook" content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{% asset_path einundleipzigfacebook.jpg %}{% endif %}" />
-	<meta property="og:locale" content="de_DE" /> 
+	<meta property="og:locale" content="de_DE" />
 
 	<!-- Twitter Card Tags -->
 	<meta name="twitter:site" content="@einundleipzig" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
 	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %} {{ site.description }} {% endif %}" />
-	<meta name="twitter:image" content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{% asset_path einundleipzigtwitter.jpg %}{% endif %}" />		
-	
+	<meta name="twitter:image" content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{% asset_path einundleipzigtwitter.jpg %}{% endif %}" />
+
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
 	<!-- video.js CDN -->
 	{% stylesheet videojs-sublime-skin.css %}
 
 	<!-- jQuery -->
-    {% javascript jquery.js %}		
-	
+    {% javascript jquery.js %}
+
     <!-- Custom CSS -->
-	{% javascript bootstrap.js %}	
+	{% javascript bootstrap.js %}
     {% stylesheet einundleipzig.css %}
-	
+
 	<!-- ekko-lightbox -->
 	{% stylesheet ekko-lightbox.css %}
 	{% stylesheet ekko-lightbox-dark.css %}
 
-	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic,600,600italic' rel='stylesheet' type='text/css'>
-	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
-	
+
+
 	{% for script in page.scripts %}
 		{% if script == 'video.js' %}
 			<!-- video.js - has to be loaded in head of page due to performance -->
@@ -62,11 +59,11 @@
 			</script>
 			{% endif %}
 	{% endfor %}
-	
+
 	<!-- d3js JavaScript - has to be loaded in head of page -->
     {% javascript d3.js %}
-	{% javascript colorbrewer.js %}	
-	
+	{% javascript colorbrewer.js %}
+
 	<!-- c3.js -->
-    {% javascript c3.js %}				
+    {% javascript c3.js %}
 	{% stylesheet c3.css %}

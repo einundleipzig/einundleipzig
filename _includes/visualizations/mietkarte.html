@@ -1,4 +1,4 @@
-<link href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" rel="stylesheet" type="text/css" />
+{% stylesheet leaflet.css %}
  
 <script>
 	L_PREFER_CANVAS = true;
@@ -42,9 +42,9 @@
 	map_mietkarte.scrollWheelZoom.disable();
 	
 	mapLink =
-		'<a href="http://openstreetmap.org">OpenStreetMap</a>';
+		'<a href="https://openstreetmap.org">OpenStreetMap</a>';
 		L.tileLayer(
-		'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.jpg', {
+		'//server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.jpg', {
 		attribution: '&copy; ' + mapLink + ' Contributors',
 		maxZoom: 18,
 		}).addTo(map_mietkarte);
