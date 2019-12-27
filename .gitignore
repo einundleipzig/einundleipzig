@@ -1,9 +1,13 @@
+# IntelliJ
 .idea/
+*.iml
 
+node_modules
+
+# Jekyll
+.jekyll-cache
 _site
 .sass-cache
 .asset-cache
 _pages/gentrifizierung-in-leipzig/post.php
 _assets/visualizations/mietkarte/mietpreise.php
-*.webm
-*.mp4
