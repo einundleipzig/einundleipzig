@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<head> 
+	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,17 +9,13 @@
 
 		<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
-		<!-- video.js CDN -->
-		<link href="http://vjs.zencdn.net/4.9/video-js.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="{{ 'node_modules/video.js/dist/video-js.min.css' | prepend: site.baseurl }}">
+  </head>
+	<body>
 
-	</head>
-	<body>	
-	
 	{{content}}
-	
-    <!-- video.js -->
-	{% javascript video.js %}
-	
-	</body>
 
-</html>	
+  <script src="{{ 'node_modules/video.js/dist/video.min.js' | prepend: site.baseurl }}"></script>
+  </body>
+
+</html>

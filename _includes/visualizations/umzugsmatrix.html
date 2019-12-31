@@ -1,5 +1,5 @@
-{% javascript d3-queue.js %}
-<style> 
+<script src="{{ 'node_modules/d3-queue/build/d3-queue.min.js' | prepend: site.baseurl }}"></script>
+<style>
 input[type=range] {
     background-color: #fff;
     width: 200px;
@@ -17,7 +17,7 @@ input[type="range"]::-webkit-slider-thumb {
 	fill: none;
 	pointer-events: all;
 }
- 
+
 .group path {
 	fill-opacity: .5;
 }
@@ -29,28 +29,28 @@ input[type="range"]::-webkit-slider-thumb {
 	cursor: pointer;
 }
 
-.group text.highlighted { 
- 	fill: #2171B5; 
-	font-size: 9pt; 
+.group text.highlighted {
+ 	fill: #2171B5;
+	font-size: 9pt;
 	font-weight: bold;
-} 
+}
 
-.group text:hover, .group text.selected { 
-	fill: #000; 
-	font-size: 10pt; 
+.group text:hover, .group text.selected {
+	fill: #000;
+	font-size: 10pt;
 	font-weight: bold;
-} 
+}
 
 path.chord {
 	stroke-width: 0.1;
 }
 
 .chord.source {
-	stroke-width: 1; 
+	stroke-width: 1;
 	stroke-opacity:.5;
 	cursor:pointer;
 }
- 
+
 #circle:hover path.fade {
 	display: none;
 }
@@ -60,17 +60,17 @@ path.chord {
 	font-family: "Titillium Web",sans-serif;
 }
 
-div.binnenwanderung_tooltip {   
-  position: absolute;           
-  text-align: center;                           
-  padding: 0px;             
+div.binnenwanderung_tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 0px;
   margin: 10px;
-  font: 10pt "Titillium Web",sans-serif;        
-  background: #FEFEFE;   
-  border: 1px solid #333;      
-  border-radius: 5px;           
+  font: 10pt "Titillium Web",sans-serif;
+  background: #FEFEFE;
+  border: 1px solid #333;
+  border-radius: 5px;
 }
- 
+
 </style>
 <div style="width: 25%; float: left">
 	<!--<a href="javascript:void(0)" id="umzugsmatrix_showall" class="btn btn-simple" role="button">Saldo</a>-->
@@ -79,7 +79,7 @@ div.binnenwanderung_tooltip {
 </div>
 <div style="width: 75%; float: left">
 
-<span style="float: left;">2004 </span> <input id="slider" type="range" min="2004" max="2013" value="2013" style="width: 75%; float: left" step="1" /> <span style="float: left;"> 2013</span> 
+<span style="float: left;">2004 </span> <input id="slider" type="range" min="2004" max="2013" value="2013" style="width: 75%; float: left" step="1" /> <span style="float: left;"> 2013</span>
 <div class="clearfix">&nbsp;</div>
 <div class="text-center" style="width: 75%">
 	Ausgewähltes Jahr: <span id="range">2013</span>
@@ -95,7 +95,7 @@ div.binnenwanderung_tooltip {
 </script>
 
 </div>
-				
+
 
 
 <div id="binnenwanderung" style="width: 80%; margin: 0 auto;"></div>
@@ -105,9 +105,9 @@ div.binnenwanderung_tooltip {
 // Concept taken from http://stackoverflow.com/a/21923560
 //
 // Define parameters and tools
-var chord_margin = {top: 10, left: 10, bottom: 10, right: 10}, 
-	chord_width = parseInt(d3.select('#binnenwanderung').style('width')), 
-	chord_width = chord_width - chord_margin.left - chord_margin.right, 
+var chord_margin = {top: 10, left: 10, bottom: 10, right: 10},
+	chord_width = parseInt(d3.select('#binnenwanderung').style('width')),
+	chord_width = chord_width - chord_margin.left - chord_margin.right,
 	chord_height = chord_width,
     outerRadius = Math.min(chord_width, chord_height) / 2 - 130,
     innerRadius = outerRadius - 18;
@@ -129,24 +129,24 @@ var path = d3.svg.chord()
  * define the default chord layout parameters within a function that returns a new layout object;
  * that way, you can create multiple chord layouts that are the same except for the data.
  *
- * @return {Datentyp} default d3 chord layout 
+ * @return {Datentyp} default d3 chord layout
  */
 function getDefaultLayout() {
 	return d3.layout.chord()
 		.padding(0.03)
 		.sortSubgroups(d3.descending)
 		.sortChords(d3.ascending);
-}  
+}
 
 var last_layout; //store layout between updates
 var neighborhoods; //store neighbourhood data outside data-reading function
 
-var neighborhoodColors = {'Mitte': '#e41a1c','Nordost':'#377eb8','Ost':'#4daf4a','Südost':'#984ea3','Süd':'#ff7f00','Südwest':'#B2B200','West':'#a65628','Alt-West':'#f781bf','Nordwest':'#999','Nord':'#000'};  
+var neighborhoodColors = {'Mitte': '#e41a1c','Nordost':'#377eb8','Ost':'#4daf4a','Südost':'#984ea3','Süd':'#ff7f00','Südwest':'#B2B200','West':'#a65628','Alt-West':'#f781bf','Nordwest':'#999','Nord':'#000'};
 
 // Create tooltip div
-var binnenwanderung_tooltip = d3.select("body").append("div")   
-    .attr("class", "binnenwanderung_tooltip")               
-    .style("opacity", 0);	
+var binnenwanderung_tooltip = d3.select("body").append("div")
+    .attr("class", "binnenwanderung_tooltip")
+    .style("opacity", 0);
 
 /*** Initialize the visualization ***/
 var g = d3.select("#binnenwanderung").append("svg")
@@ -154,7 +154,7 @@ var g = d3.select("#binnenwanderung").append("svg")
         .attr("height", chord_height)
 		.append("g")
         .attr("id", "circle")
-        .attr("transform", 
+        .attr("transform",
               "translate(" + chord_width / 2 + "," + chord_height / 2 + ")");
 //the entire graphic will be drawn within this <g> element,
 //so all coordinates will be relative to the center of the circle
@@ -177,19 +177,19 @@ var indexByName = {},
   colorByIndex = [],
   mode = 'received',
   year = '2013';
-  
+
 /**
  * Prepare the Data
  *
  * @param {} year Jahre
- * @param {} callback 
+ * @param {} callback
  */
 function prepareData(year, callback)
 {
-	d3.text("{% asset_path umzugsmatrix/stadtteile.csv %}", function(imports){
+	d3.text("{% asset umzugsmatrix/stadtteile.csv @path %}", function(imports){
 		neighborhoods = d3.csv.parse(imports);
 
-		d3.text("/assets/umzugsmatrix/ortsteildaten" + year + ".csv", function(imports) {
+		d3.text("{{ site.baseurl }}assets/umzugsmatrix/ortsteildaten" + year + ".csv", function(imports) {
 			var csv_values = d3.csv.parseRows(imports);
 
 			// read data
@@ -201,7 +201,7 @@ function prepareData(year, callback)
 				for (var j = 1 ; j < csv_values[i].length; j ++)
 				{
 					// "ausgepunktete" and empty vars are 0
-					if (!csv_values[i][j] || csv_values[i][j] == ".") 
+					if (!csv_values[i][j] || csv_values[i][j] == ".")
 					{
 						csv_values[i][j] = 0;
 					}
@@ -209,28 +209,28 @@ function prepareData(year, callback)
 					dataMatrix[i-1][j-1] = parseFloat(value);
 				}
 			}
-			
-			
+
+
 			// find out colors
 			for (var j = 0; j < neighborhoods.length; j++)
 			{
 				//var found = false;
 				for (var i = 0; i < dataMatrix.length; i++)
-				{	
+				{
 					if (neighborhoods[j].country == nameByIndex[i])
 					{
-						colorByIndex[i] = neighborhoodColors[neighborhoods[j].continent];			
+						colorByIndex[i] = neighborhoodColors[neighborhoods[j].continent];
 					};
 				};
 			};
-		
+
 			//transposing matrix for remittances received and received totals calculation
-			for (var i = 0; i < dataMatrix.length; i++){	
+			for (var i = 0; i < dataMatrix.length; i++){
 				outcomingMatrix[i] = [];
 				for (var j = 0; j < dataMatrix[i].length; j++){
 					outcomingMatrix[i][j] = dataMatrix[j][i];
 				};
-			};	 
+			};
 
 			mode == 'sent' ? callback(null, dataMatrix) : callback(null, outcomingMatrix);
 		});
@@ -240,69 +240,69 @@ function prepareData(year, callback)
 d3_queue.queue()
 	.defer(prepareData, year)
 	.await(updateChords);
-	
+
 /**
  * Create OR update a chord layout from a data matrix
  *
  * @param {} error Beschreibung
- * @param {} matrix Bechreibung 
+ * @param {} matrix Bechreibung
  */
 function updateChords( error, matrix ) {
 
-        
+
     /* Compute chord layout. */
     layout = getDefaultLayout(); //create a new layout object
     layout.matrix(matrix);
-	
-	
- 
+
+
+
     /* Create/update "group" elements */
     var groupG = g.selectAll("g.group")
         .data(layout.groups(), function (d) {
-            return d.index; 
-            //use a key function in case the 
+            return d.index;
+            //use a key function in case the
             //groups are sorted differently between updates
         });
-		
-		
+
+
     groupG.exit()
         .transition()
             .duration(500)
             .attr("opacity", 0)
             .remove(); //remove after transitions are complete
-    
+
     var newGroups = groupG.enter().append("g")
         .attr("class", "group");
     //the enter selection is stored in a variable so we can
     //enter the <path>, <text>, and <title> elements as well
 
-    
-    //Create the title tooltip for the new groups
-    newGroups				
-		.on("mouseover", function(p) {      
-			binnenwanderung_tooltip.transition()        
-				.duration(200)      
-				.style("opacity", .9); 
 
-			binnenwanderung_tooltip 
+    //Create the title tooltip for the new groups
+    newGroups
+		.on("mouseover", function(p) {
+			binnenwanderung_tooltip.transition()
+				.duration(200)
+				.style("opacity", .9);
+
+			binnenwanderung_tooltip
 				// TOOLTIP CONTENT
 				.html(function (foo) {
 					return parseInt(p.value)
-					+ " Personen sind aus/nach " 
+					+ " Personen sind aus/nach "
 					+ nameByIndex[p.index] + " weggezogen/zugezogen";
-				})  
-				
+				})
+
 				// -TOOLTIP CONTENT
-				.style("left", (d3.event.pageX) + "px")     
-				.style("top", (d3.event.pageY - 28) + "px");    
-		})                  
-		.on("mouseout", function(p) {       
-			binnenwanderung_tooltip.transition()        
-				.duration(500)      
-				.style("opacity", 0);   
+				.style("left", (d3.event.pageX) + "px")
+				.style("top", (d3.event.pageY - 28) + "px");
+		})
+		.on("mouseout", function(p) {
+			binnenwanderung_tooltip.transition()
+				.duration(500)
+				.style("opacity", 0);
 		});
-		
-			
+
+
 
     //create the arc paths and set the constant attributes
     //(those based on the group index, not on the value)
@@ -315,17 +315,17 @@ function updateChords( error, matrix ) {
         .style("fill", function (d) {
             return colorByIndex[d.index];
         });
-    
+
     //update the paths to match the layout
-    groupG.select("path") 
+    groupG.select("path")
         .transition()
             .duration(500)
             .attr("opacity", 0.5) //optional, just to observe the transition
         .attrTween("d", arcTween( last_layout ))
             .transition().duration(100).attr("opacity", 1) //reset opacity
         ;
-   
-	
+
+
     //create the group labels
     newGroups.append("text")
         .attr("dy", ".35em")
@@ -333,38 +333,38 @@ function updateChords( error, matrix ) {
         .text(function (d) {
             return nameByIndex[d.index];
         });
-		
-	
+
+
 
     //position group labels to match layout
     groupG.select("text")
 		// remove selection and highlight
 		.classed("selected highlighted", false)
-		
+
 		// do transition
         .transition()
             .duration(500)
             .attr("transform", function(d) {
                 d.angle = (d.startAngle + d.endAngle) / 2;
                 //store the midpoint angle in the data object
-                
+
                 return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")" +
-                    " translate(" + (innerRadius + 26) + ")" + 
-                    (d.angle > Math.PI ? " rotate(180)" : " rotate(0)"); 
+                    " translate(" + (innerRadius + 26) + ")" +
+                    (d.angle > Math.PI ? " rotate(180)" : " rotate(0)");
                 //include the rotate zero so that transforms can be interpolated
             })
             .attr("text-anchor", function (d) {
                 return d.angle > Math.PI ? "end" : "begin";
             });
-    
-    
+
+
     /* Create/update the chord paths */
     var chordPaths = g.selectAll("path.chord")
         .data(layout.chords(), chordKey );
             //specify a key function to match chords
             //between updates
-        
-    
+
+
     //create the new chord paths
     var newChords = chordPaths.enter()
         .append("path")
@@ -381,17 +381,17 @@ function updateChords( error, matrix ) {
         .duration(500)
         .attr("opacity", 0.5) //optional, just to observe the transition
         .style("fill", function (d) {
-		
+
             return colorByIndex[d.source.index];
         })
-		.style("stroke", function(d) { 
-			return colorByIndex[d.source.index]; 
+		.style("stroke", function(d) {
+			return colorByIndex[d.source.index];
 		})
 		.style("visibility", "hidden")
         .attrTween("d", chordTween(last_layout))
         .transition().duration(100).attr("opacity", 1) //reset opacity
     ;
-	
+
 	// add the highlight function if a neighborhood is clicked
 	groupG
 		.on("click", function(d) {
@@ -406,15 +406,15 @@ function updateChords( error, matrix ) {
 			groupG
 				.selectAll("text")
 				.classed("selected highlighted", false);
-				
-			// add selected class to clicked neighborhood label	
+
+			// add selected class to clicked neighborhood label
 			d3.select(this)
 				.select("text")
 				.classed("selected", true);
-			
+
 			// make visible all relevant chords
 			var sent = chordPaths
-				.filter(function(p) 
+				.filter(function(p)
 				{
 					// show all chords in relation to selected neighborhood (regardless of target and source)
 					return ((p.source.index == d.index && p.source.value != 0) || (p.target.index == d.index && p.target.value != 0));
@@ -430,46 +430,46 @@ function updateChords( error, matrix ) {
 				{
 					return colorByIndex[nameByIndex[d.index] == nameByIndex[p.target.index] ? p.source.index : p.target.index];
 				})
-				.on("mouseover", function(p) {      
-					binnenwanderung_tooltip.transition()        
-						.duration(200)      
-						.style("opacity", .9); 
-		
-					binnenwanderung_tooltip 
+				.on("mouseover", function(p) {
+					binnenwanderung_tooltip.transition()
+						.duration(200)
+						.style("opacity", .9);
+
+					binnenwanderung_tooltip
 						// TOOLTIP CONTENT
 						.html(function (foo) {
-						
-						if (mode == 'sent') 
+
+						if (mode == 'sent')
 						{
 							// matrix data is accessed directly to bypass confusing d3.js source/target-handling
 							var toolTipContent = nameByIndex[d.index] + " nach " + (nameByIndex[d.index] == nameByIndex[p.target.index] ? nameByIndex[p.source.index] : nameByIndex[p.target.index]) + ": "
-							
+
 							+ matrix[d.index][(nameByIndex[d.index] == nameByIndex[p.target.index] ? p.source.index : p.target.index)];
 						}
-						
+
 						if (mode == 'received')
 						{
 							// matrix data is accessed directly to bypass confusing d3.js source/target-handling
 							var toolTipContent = (nameByIndex[d.index] == nameByIndex[p.target.index] ? nameByIndex[p.source.index] : nameByIndex[p.target.index]) + " nach " + nameByIndex[d.index] + ": "
-							
+
 							+ matrix[d.index][(nameByIndex[d.index] == nameByIndex[p.target.index] ? p.source.index : p.target.index)];
 						}
-						
+
 						return toolTipContent;
-						})  
-						
+						})
+
 						// -TOOLTIP CONTENT
-						.style("left", (d3.event.pageX) + "px")     
-						.style("top", (d3.event.pageY - 28) + "px");    
-				})                  
-			.on("mouseout", function(p) {       
-				binnenwanderung_tooltip.transition()        
-					.duration(500)      
-					.style("opacity", 0);   
+						.style("left", (d3.event.pageX) + "px")
+						.style("top", (d3.event.pageY - 28) + "px");
+				})
+			.on("mouseout", function(p) {
+				binnenwanderung_tooltip.transition()
+					.duration(500)
+					.style("opacity", 0);
 			});
 
 		});
-    
+
     last_layout = layout; //save for next update
 }
 
@@ -481,7 +481,7 @@ function updateChords( error, matrix ) {
  */
 function arcTween(oldLayout) {
      //Create a key:value version of the old layout's groups array
-    //so we can easily find the matching group 
+    //so we can easily find the matching group
     //even if the group index values don't match the array index
     //(because of sorting)
     var oldGroups = {};
@@ -490,7 +490,7 @@ function arcTween(oldLayout) {
             oldGroups[ groupData.index ] = groupData;
         });
     }
-    
+
     return function (d, i) {
         var tween;
         var old = oldGroups[d.index];
@@ -503,7 +503,7 @@ function arcTween(oldLayout) {
                             endAngle:d.startAngle};
             tween = d3.interpolate(emptyArc, d);
         }
-        
+
         return function (t) {
             return arc( tween(t) );
         };
@@ -527,28 +527,28 @@ function chordKey(data) {
  * @param {} oldLayout Beschreibung
  * @return {} Beschreibung
  */
-function chordTween(oldLayout) {    
+function chordTween(oldLayout) {
     //Create a key:value version of the old layout's chords array
-    //so we can easily find the matching chord 
+    //so we can easily find the matching chord
     //(which may not have a matching index)
-    
+
     var oldChords = {};
-    
+
     if (oldLayout) {
         oldLayout.chords().forEach( function(chordData) {
             oldChords[ chordKey(chordData) ] = chordData;
         });
     }
-    
+
     return function (d, i) {
         //this function will be called for each active chord
-        
+
         var tween;
         var old = oldChords[ chordKey(d) ];
         if (old) {
             //old is not undefined, i.e.
             //there is a matching old chord value
-            
+
             //check whether source and target have been switched:
             if (d.source.index != old.source.index ){
                 //swap source and target to match the new data
@@ -557,7 +557,7 @@ function chordTween(oldLayout) {
                     target: old.source
                 };
             }
-            
+
             tween = d3.interpolate(old, d);
         }
         else {
@@ -581,23 +581,23 @@ function chordTween(oldLayout) {
 
 /* Activate the buttons and link to data sets */
 d3.select("#umzugsmatrix_showall").on("click", function(){
-	
+
 	d3.select("#umzugsmatrix_received").classed('active',false);
 	d3.select("#umzugsmatrix_sent").classed('active',false);
 	d3.select(this).classed('active',true);
-	
+
 	updateChords(saldoMatrix);
 
-});		
+});
 
 d3.select("#umzugsmatrix_sent").on("click", function(){
-	
+
 	d3.select("#umzugsmatrix_received").classed('active',false);
 	d3.select("#umzugsmatrix_showall").classed('active',false);
 	d3.select(this).classed('active',true);
-	
+
 	mode = 'sent';
-	
+
 	d3_queue.queue()
 		.defer(prepareData, year)
 		.await(updateChords);
@@ -605,13 +605,13 @@ d3.select("#umzugsmatrix_sent").on("click", function(){
 });
 
 d3.select("#umzugsmatrix_received").on("click", function(){
-	
+
 	d3.select("#umzugsmatrix_sent").classed('active',false);
 	d3.select("#umzugsmatrix_showall").classed('active',false);
 	d3.select(this).classed('active',true);
-	
+
 	mode = 'received';
-	
+
 	d3_queue.queue()
 		.defer(prepareData, year)
 		.await(updateChords);
@@ -620,11 +620,11 @@ d3.select("#umzugsmatrix_received").on("click", function(){
 d3.select('#slider').on('change', function change() {
 
 	var year = this.value;
-	
+
 	d3_queue.queue()
 		.defer(prepareData, year)
 		.await(updateChords);
-	
+
 });
- 
+
 </script>

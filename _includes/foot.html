@@ -1,21 +1,15 @@
 {% if page.scripts %}
-
 	{% for script in page.scripts %}
-		{% if script == 'ekko-lightbox.js' %}
-			{% javascript {{script}} %}	
-			
+    <script src="{{ script | prepend: site.baseurl }}"></script>
+		{% if script contains 'ekko-lightbox.js' %}
 			<script type="text/javascript">
 			$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) { event.preventDefault(); $(this).ekkoLightbox(); });
-			</script>		
-		{% else %}
-			{% javascript {{script}} %}
+			</script>
 		{% endif %}
 	{% endfor %}
-
 {% endif %}
 
-{% javascript einundleipzig.js %}
-
+{% asset einundleipzig.js %}
 
 <!-- Piwik -->
 <script type="text/javascript">

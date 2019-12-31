@@ -1,0 +1,40 @@
+{
+  "name": "einundleipzig",
+  "version": "1.0.0",
+  "description": "einundleipzig -  Leipzigs Stadtentwicklung ist das Thema: Einfach erklärt mit Daten und Ergebnissen aus der Stadt-Forschung. Interaktiv mit Karten und Filmen, für und vor allem mit den Menschen in Leipzig.",
+  "license": "GPL-3.0",
+  "author": {
+    "name": "Wolfgang Amann",
+    "email": "wolfgang@einundleipzig.de"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/einundleipzig/einundleipzig"
+  },
+  "dependencies": {
+    "bootstrap-sass": "3.4.0",
+    "bourbon": "4.3.4",
+    "bourbon-bitters": "1.2.1",
+    "c3": "0.4.22",
+    "colorbrewer": "1.3.0",
+    "d3": "3.5.14",
+    "d3-queue": "2.0.0",
+    "ekko-lightbox": "3.3.0",
+    "font-awesome": "4.5.0",
+    "html5shiv": "3.7.3",
+    "impress.js": "1.0.0",
+    "jquery": "1.12.0",
+    "jquery.easing": "1.4.0",
+    "jquery-quicksand": "1.5.0",
+    "leaflet": "0.7.3",
+    "respond.js": "1.4.2",
+    "underscore": "1.8.3",
+    "video.js": "4.8.5",
+    "videojs-swf": "4.4.5",
+    "videojs-sublime-skin": "1.0.3"
+  },
+  "resolutions": {
+    "node-sass": "4.13.0"
+  }
+}
