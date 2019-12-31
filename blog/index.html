@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% for post in paginator.posts %}
-	<article class="post no-comment">
+	<article class="post">
 		{% if post.category %}
 			<p class="type">
 				{{ post.category }}
@@ -56,7 +56,7 @@ layout: default
 {% endfor %}
 
 
-<p class="rss-subscribe no-comment"><a href="{{ "/feed.xml" | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-rss-square"></i> RSS</a></p>
+<p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-rss-square"></i> RSS</a></p>
 
 
 <div class="clearfix">&nbsp;</div>

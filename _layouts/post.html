@@ -1,28 +1,28 @@
 ---
 layout: default
 ---
-<section> 
-	<article class="post no-comment">
+<section>
+	<article class="post">
 		{% if page.category %}
 			<p class="type">
 				{{ page.category }}
 			</p>
 		{% endif %}
-	  
+
 		<h1>
 			{{ page.title }}
 		</h1>
-		
+
 		{% if page.image %}
 			<img src="{% asset {{page.image}} @path %}" class="img-responsive" style="padding-bottom: 35px;" alt="{{ page.title }}" />
 		{% endif %}
-		
+
 		{% if page.description %}
 			<h2>
 				{{ page.description }}
 			</h2>
 		{% endif %}
-	  
+
 		<p class="time">
 			{% assign m = page.date | date: "%-m" %}
 			{{ page.date | date: "%-d" }}.
@@ -40,21 +40,17 @@ layout: default
 			  {% when '11' %}November
 			  {% when '12' %}Dezember
 			{% endcase %}
-			{{ page.date | date: "%Y" }} 
+			{{ page.date | date: "%Y" }}
 			von
 			{% assign author = site.authors[page.author] %}
 			{{ author.display_name }}
 		</p>
-		
+
 		{{ content | markdownify }}
-							
+
 	</article>
 
 	<div class="clearfix">&nbsp;</div>
-
-	<article class="comments">
-		{% include comments.html %}
-	</article>
 </section>
 
-<div class="clearfix">&nbsp;</div>		
+<div class="clearfix">&nbsp;</div>
