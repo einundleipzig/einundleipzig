@@ -1,11 +1,9 @@
-{% stylesheet leaflet.css %}
- 
+<link type="text/css" rel="stylesheet" href="{{ 'node_modules/leaflet/dist/leaflet.css' | prepend: site.baseurl }}">
+
 <script>
 	L_PREFER_CANVAS = true;
 </script>
-{% javascript leaflet.js %}
-			
-		
+<script src="{{ 'node_modules/leaflet/dist/leaflet.js' | prepend: site.baseurl }}"></script>
 <style type="text/css">
 #mietkarte_legend {
 	padding: 1.5em 0 0 1.5em;
@@ -23,14 +21,9 @@
 
 <!--<button id="neuvermietungen" class="btn btn-simple active">Neuvermietungen</button> <button id="bestandsmieten" class="btn btn-simple active">Bestandsmieten</button>-->
 
-<div id="mietkarte_legend" style="width: 100%;">
-</div>
+<div id="mietkarte_legend" style="width: 100%;"></div>
 
-<div id="map_mietkarte" style="width: 100%; height: 700px;">
-						
-</div>
-
-			
+<div id="map_mietkarte" style="width: 100%; height: 700px;"></div>
 
 <script type="text/javascript">
 	{% if include.schleussig %}
@@ -38,9 +31,9 @@
 	{% else %}
 	var map_mietkarte = L.map('map_mietkarte').setView([51.340333333333, 12.37475113], 12);
 	{% endif %}
-	
+
 	map_mietkarte.scrollWheelZoom.disable();
-	
+
 	mapLink =
 		'<a href="https://openstreetmap.org">OpenStreetMap</a>';
 		L.tileLayer(
@@ -48,31 +41,31 @@
 		attribution: '&copy; ' + mapLink + ' Contributors',
 		maxZoom: 18,
 		}).addTo(map_mietkarte);
-							
+
 	// Layer initialisieren
 	var neuvermietungen = new L.LayerGroup;
 	var bestandsmieten = new L.LayerGroup;
-		  
+
 	// define colors (colorbrewer)
 	var mietkarte_colors = d3.scale.quantize()
 		.range(colorbrewer.YlOrRd[5]);
-		
+
 	// start the legend
 	var mietkarte_legend = d3.select('#mietkarte_legend')
 		.append('ul')
 		.attr('class', 'list-inline');
-	d3.csv("{% asset_path mietkarte/mietpreise.php %}?mode=neuvermietungen", function(collection) {
-			
+	d3.csv("{% asset mietkarte/mietpreise.php @path %}?mode=neuvermietungen", function(collection) {
+
 		// Color Domain
 		mietkarte_colors.domain([
-			d3.min(d3.values(collection), function(d) { return +d['europrom2']; }), 
+			d3.min(d3.values(collection), function(d) { return +d['europrom2']; }),
 			d3.max(d3.values(collection), function(d) { return +d['europrom2']; })
 		]);
-			
+
 		/* Add a LatLng object to each item in the dataset */
 		collection.forEach(function(d) {
 			d.color = mietkarte_colors(d.europrom2);
-				
+
 			var circleLocation = new L.LatLng(d.lat, d.lon),
 				circleOptions = {
 					stroke: false,
@@ -86,39 +79,39 @@
 					fillColor: d.color,
 					fillOpacity: 0.9
 				};
-						
-						
+
+
 			var circle = new L.Circle(circleLocation, 15, circleOptions),
 				circleMarker = new L.CircleMarker(circleLocation, markerOptions);
-							
+
 			circleMarker.setRadius(5);
-						
+
 			circle.bindPopup('<em>Erhobene Fläche:</em> ' + d.flaeche + 'm² <br> <em>Euro pro m² (Kaltmiete):</em> ' +  d3.format(".2f")(d.europrom2));
-					
+
 			neuvermietungen.addLayer(circle).addLayer(circleMarker);
 		});
-		
-		// Legend	
+
+		// Legend
 		var mietkarte_keys = mietkarte_legend.selectAll('li.key')
 			.data(mietkarte_colors.range());
-				
+
 		mietkarte_keys.enter().append('li')
 			.attr('class', 'key')
 			.style('border-top-color', String)
 			.text(function(d) {
 				var mietkarte_r = mietkarte_colors.invertExtent(d);
-						
+
 				// Round Number
 				return d3.format(".1f")(mietkarte_r[0]) + "0€";
-			});	
+			});
 		});
-				
-	d3.csv("{% asset_path mietkarte/mietpreise.php %}?mode=bestandsmieten", function(collection) {
-					
+
+	d3.csv("{% asset mietkarte/mietpreise.php @path %}?mode=bestandsmieten", function(collection) {
+
 		/* Add a LatLng object to each item in the dataset */
 		collection.forEach(function(d) {
 			d.color = mietkarte_colors(d.europrom2);
-				
+
 			var circleLocation = new L.LatLng(d.lat, d.lon),
 				circleOptions = {
 					stroke: false,
@@ -132,49 +125,49 @@
 				fillColor: d.color,
 				fillOpacity: 0.8
 			};
-					
-					
+
+
 			var circle = new L.Circle(circleLocation, 15, circleOptions),
 				circleMarker = new L.CircleMarker(circleLocation, markerOptions);
-						
+
 			circleMarker.setRadius(5);
-					
+
 			circle.bindPopup('<em>Erhobene Fläche:</em> ' + d.flaeche + 'm² <br> <em>Euro pro m² (Kaltmiete):</em> ' +  d3.format(".2f")(d.europrom2));
-				
+
 			bestandsmieten.addLayer(circle).addLayer(circleMarker);
 		})
 	})
-				
-				
+
+
 	// Standardansicht der Karte: Alle Infos auf einmal anzeigen
 	// Neuvermietungen zur Karte hinzufügen
 	map_mietkarte.addLayer(neuvermietungen);
 	map_mietkarte.addLayer(bestandsmieten);
-				
-				
+
+
 	// Button toggles
 	d3.select("#neuvermietungen").on("click", function(){
 		$(this).toggleClass("active");
-					
+
 		if ($(this).hasClass( "active" )) {
 			map_mietkarte.addLayer(neuvermietungen);
-		} 
-		else 
+		}
+		else
 		{
 			map_mietkarte.removeLayer(neuvermietungen);
 		}
 	});
-				
+
 	d3.select("#bestandsmieten").on("click", function(){
 		$(this).toggleClass("active");
-					
+
 		if ($(this).hasClass( "active" )) {
 			map_mietkarte.addLayer(bestandsmieten);
-		} 
-		else 
+		}
+		else
 		{
 			map_mietkarte.removeLayer(bestandsmieten);
 		}
-	});	
-			
+	});
+
 </script>

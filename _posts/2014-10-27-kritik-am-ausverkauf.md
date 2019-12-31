@@ -28,7 +28,7 @@ Am Ende hat uns Frau Jennicke noch einen Tipp gegeben, wie wir finanzielle Unter
 
 Über eine Spende aus den Aufwandsentschädigungen würden wir uns sehr freuen. Aber wie gesagt, auch andere Dinge helfen uns schon weiter. Auch die kritische Diskussion um unser Projekt begrüßen wir. Außerdem fänden wir es toll, wenn noch andere Fraktionen (aus allen politischen Lagern) sich dazu entschließen, unser Projekt zu unterstützen. Wir haben bewusst vorrangig die Stadtpolitiker angesprochen – und keine Investoren – da sie die Repräsentanten der Bürger sind und politisch am meisten bewirken können, was Open Data angeht. **Einundleipzig soll eine Art städtisches „Gemeingut” werden, beruhend auf offenen Daten.**
 
-<img src="{% asset_path dank/img/karte.jpg %}" style="width: 75%; display: block; margin: 0 auto;" />
+<img src="{% asset dank/img/karte.jpg @path %}" style="width: 75%; display: block; margin: 0 auto;" />
 
 <ul class="bullets" style="font-size: 11pt">
 

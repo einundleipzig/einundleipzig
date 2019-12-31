@@ -1,5 +1,15 @@
-# gems to include
-gems: 
+# don't exclude node_modules and exclude some custom files
+exclude:
+  - "*.iml"
+  - "LICENSE"
+  - "package.json"
+  - "Gemfile"
+  - "Rakefile"
+  - "README.md"
+  - "*.lock"
+
+  # plugins to include
+plugins:
   - jekyll-paginate
   - jekyll-assets
 
@@ -8,7 +18,7 @@ markdown: kramdown
 highlighter: pygments
 
 # Permalinks
-permalink:	/blog/:title/	
+permalink:	/blog/:title/
 
 # general settings
 title: einundleipzig
@@ -23,54 +33,53 @@ paginate_path: "blog/page:num"
 
 # asset setup
 assets:
-    compress:
-        css: true
-        js: true
-    sources:
-      - _assets/posts
-      - _assets/pages
-      - _assets/visualizations
-    assets:
-      - "*.csv"
-      - "*.json"
-      - "*.eot"
-      - "*.svg"
-      - "*.ttf"
-      - "*.woff"
-      - "*.woff2"
-  
+  compress:
+    css: true
+    js: true
+  sources:
+    - _assets/posts
+    - _assets/pages
+    - _assets/visualizations
+  raw_precompile: # this is a hacky workaround due to limitations of jekyll-assets
+    - src: umzugsmatrix/*.csv
+      dst: umzugsmatrix
+    - src: font-awesome/*
+      dst: font-awesome
+    - src: bootstrap/*
+      dst: bootstrap
+
 # Menu items
 menu:
   - title:	Was ist Gentrifizierung?
-    subtitle: Begriffe, Akteure und Hintergründe  
+    subtitle: Begriffe, Akteure und Hintergründe
     url:	was-ist-gentrifizierung/
     image: wissenschaft.jpg
     categories: [wissenschaft]
-    
+
   - title: Gentrifizierung in Leipzig
     subtitle: Daten und Analysen
     url:	gentrifizierung-in-leipzig/
     image: teaser.jpg
     categories: [wissenschaft]
-    
+
   - title:	Kampf den Mietern
-    subtitle: Holbeinstraße 28a  
+    subtitle: Holbeinstraße 28a
     url:	holbeinstrasse/
     image: teaser.jpg
-    categories: [geschichten]	
-    
+    categories: [geschichten]
+
   - title:	Platte im Aufwind
     subtitle: Grünau
     url:	gruenau/
     image: gruenau.jpg
     categories: [geschichten]
-    
-  - title:  Die Insel im Osten	
+
+  - title:  Die Insel im Osten
     subtitle: Bülowviertel
     url:	buelowviertel/
     image: buelow.jpg
     categories: [geschichten]
-    
+
   - title:	Die Siedlung, mein Leben
     subtitle: Krochsiedlung
     url:	krochsiedlung/
@@ -81,15 +90,15 @@ menu:
 authors:
   carolyn:
     display_name: Carolyn Wißing
-    email: carolyn@einundleipzig.de 
+    email: carolyn@einundleipzig.de
 
   christina:
     display_name: Christina Schmitt
-    email: christina@einundleipzig.de 
+    email: christina@einundleipzig.de
 
   marcus:
     display_name: Marcus Schoft
 
   wolfgang:
     display_name: Wolfgang Amann
-    email: wolfgang@einundleipzig.de	
+    email: wolfgang@einundleipzig.de

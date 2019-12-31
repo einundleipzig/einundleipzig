@@ -5,31 +5,31 @@ subtitle: „Der Norden ist halt nicht in“
 image: krochsiedlung/Seidel-4258.jpg
 description: Gründerzeithäuser oder Plattenbauten&#58; So stellen sich die meisten Menschen Wohnen in Leipzig vor. Dabei kann die Stadt mit so viel mehr aufwarten. Etwa mit Bauhaus-Architektur im Leipziger Norden. Seit 60 Jahren wohnt Siegfried Seidel in seiner Studentenbude in der Krochsiedlung. Früher war das Viertel hui. Und heute? Ein Ortsbesuch.
 author: marcus
-scripts: [ekko-lightbox.js, video.js]
+scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/video.js/dist/video.min.js]
 ---
 <section class="story-header-image">
-		
-	<!-- image -->  
-	<img src="{% asset_path {{page.image}} %}" class="img-responsive" alt="{{ page.title }}" />  
-	<!-- description div -->  
-	<div class="story-header-image-description">  
+
+	<!-- image -->
+	<img src="{% asset {{page.image}} @path %}" class="img-responsive" alt="{{ page.title }}" />
+	<!-- description div -->
+	<div class="story-header-image-description">
 		<span class="subdescr">
 			 {{ page.title }}
-		</span> 
+		</span>
 		<div class="clearfix">&nbsp;</div>
 		<span class="descr">
 			{{ page.subtitle }}
-		</span>  
-		
+		</span>
+
 	</div>
-</section>				
+</section>
 
 
 
 <section>
-	
+
 	<article class="teaser no-comment" style="padding-top: 35px;">
-	
+
 		<p>
 			<em>{{ page.description }}</em>
 		</p>
@@ -37,99 +37,99 @@ scripts: [ekko-lightbox.js, video.js]
 			{% assign author = site.authors[page.author] %}
 			<strong><em>Text</em></strong> <span style="text-transform: uppercase;">{{ author.display_name }}</span>, 15. Dezember 2014<br />
 		</p>
-					
+
 	</article>
-	
+
 	<article>
 		<p class="begin">Als Siegfried Seidel nach Leipzig kam, kannte er warmes Wasser aus dem Wasserhahn nur aus Erzählungen. „Ein Freund meinte, versuch mal eine Wohnungen mit Fernheizung zu bekommen“, erzählt Seidel und fügt hinzu: „Eine Mondfahrt zu machen, wäre einfacher gewesen.“ Dennoch: Seidel hatte Glück und zog 1952 in die Krochsiedlung. Flaches Dach, drei bis vier Stockwerke, Kastenform, der typische Bauhausstil eben. Jeder der etwas von sich hielt, wollte hier gerne wohnen.</p>
 		<div class="floater">
 			{% include video.html id="example_video_1" poster="krochsiedlung/Seidel-3984.jpg" mp4="krochsiedlung/video/Seidel.mp4" webm="krochsiedlung/video/Seidel.webm" %}
 		</div>
-			
+
 		<p>Heute sieht das anders aus: „Der Norden ist halt nicht in. Im Süden muss man leben, sagen alle“, wiederholt Siegfried Seidel das Mantra, das immer wieder zu hören ist in Leipzig. Der 81-Jährige kann das nicht so recht verstehen, wenn er wie fast jeden Tag zwischen den Wohnblocks der Krochsiedlung spazieren geht. „Wir haben doch alles hier: Geschäfte, Verkehrsanbindung und eine tolle Anlage mit vielen Bäumen“, sagt er und schüttelt mit dem Kopf. Aber heutzutage ist die Krochsiedlung eben keine beliebte Wohnsiedlung. Gefragt sind vor allem sanierte Gründerzeitwohnungen oder Neubauten, wie aus der Wanderungsbefragung des Helmholtz-Zentrums für Umweltforschung von 2014 hervorgeht.</p>
 		<p>„In München wäre dieses Stadtviertel sicher ein sehr gefragtes“, fasst Seidel das für ihn Unverständliche in Worte. Wer im Moment eine Wohnung in der Krochsiedlung bekommt, zahlt um die fünf Euro Kaltmiete im Monat. Und das für sanierte Bauhausarchitektur. </p>
 
 		<h3>Gebaut nach modernsten Standards</h3>
-		
+
 		<div class="floater">
-			<img src="{% asset_path krochsiedlung/Seidel-4572.jpg %}" class="img-responsive" alt="" />
+			<img src="{% asset krochsiedlung/Seidel-4572.jpg @path %}" class="img-responsive" alt="" />
 			<div class="video-description">
 				Flaches Dach, Kastenform und der typische Wintergarten - Die Krochsiedlung wurde im Bauhausstil erbaut und steht heute unter Denkmalschutz.
 			</div>
 		</div>
-		
+
 		<p>Zwar sehen die großen Kästen auf den ersten Blick nicht so aus, aber auch sie stehen heute unter Denkmalschutz. Vor bald 90 Jahren wurden sie gebaut – damals als einer der modernsten Siedlungskomplexe seiner Art: „Die Wohnstadt an der Landsberger Straße, im Volksmund Krochsiedlung benannt, vereinigt Baukunst und neuzeitliche Wohnkultur“, schrieb beispielsweise die Neue Leipziger Zeitung am 19. November 1931. Der jüdische Bankier Hans Kroch ließ die 1100 Wohnungen in den Jahren 1929 und 30 erbauen, weil billiger Wohnraum für seine Bankangestellten knapp war.</p>
 
 		<blockquote style="padding-bottom: 35px;">
 			Der Zusammenhalt war immer gut, selbst dann, wenn der Geheimdienst an die Tür geklopft hat.
 		</blockquote>
 
-		
+
 		<div class="floater">
-			<img src="{% asset_path krochsiedlung/Seidel-4014.jpg %}" class="img-responsive" alt="" />
+			<img src="{% asset krochsiedlung/Seidel-4014.jpg @path %}" class="img-responsive" alt="" />
 			<div class="video-description">
 				Ein Bett und ein Schreibtisch - viel mehr Platz war nicht, als Siegfried Seidel in der Krochsiedlung einzog.
 			</div>
 		</div>
 		<p>Seidel wohnt bis heute gerne hier. Als Student war er Anfang der 1950er Jahre eingezogen. Ein älteres Ehepaar vermietete zwei ihrer drei Zimmer an Studenten weiter. „Wir lebten hier zu viert mit einem Hund, auf 60 Quadratmetern, das war nicht immer einfach“, erinnert sich Seidel. Dennoch sei es eine schöne Zeit gewesen. „Meine Vermieterin hat mir morgens immer die Zeitung ans Bett gebracht.“</p>
-		
+
 		<p>Dass er mehr als 60 Jahre in derselben Wohnung leben sollte, konnte sich der Student damals nicht vorstellen. „Irgendwie hat sich das so ergeben“, erklärt Seidel. Erst bekam er eine Stelle an der Universität Halle und schließlich wurde ihm zusammen mit seiner Frau die Wohnung in der Krochsiedlung zugeteilt. „Auch da hatten wir viel Glück“, sagt Seidel. „Man muss schließlich sagen, dass während der DDR in dieser Siedlung immer bevorzugte Leute gelebt haben.“ Der Zusammenhalt in der Siedlung sei immer sehr gut gewesen, sagt Seidel, „selbst dann, wenn der Geheimdienst an die Tür geklopft hat.“ So habe die Nachbarin nur Gutes erzählt, als sich ein Agent einmal über Seidel erkundigte. “Sie hätte dem Mann auch sagen können, dass sie mich nicht kennt”, erklärt Seidel. Dass sie ihn hereingebeten hat, habe er erst Jahre später erfahren. “Ihr habe ich es zu verdanken, dass ich für die Universität in den Kongo reisen durfte“, freut sich der 81-Jährige bis heute.</p>
 
 		<div class="floater">
-			<img src="{% asset_path krochsiedlung/Seidel-4162.jpg %}" class="img-responsive" alt="" />
+			<img src="{% asset krochsiedlung/Seidel-4162.jpg @path %}" class="img-responsive" alt="" />
 			<div class="video-description">
 				Hier hat Siegfried Seidel inzwischen 60 Jahre gelebt.
 			</div>
-		</div>	
+		</div>
 		<p>An der Nachbarschaft hat sich bis heute nicht viel geändert. Erst als der Wohnkomfort immer drastischer abnahm, seien manche weggezogen, erzählt Seidel. „Damals sah es hier teilweise ganz schön schlimm aus." Die Wohnungen waren renovierungsbedürftig, aber keiner wusste so recht, wer verantwortlich war. Siegfried Seidel hatte die Siedlung da schon längst ins Herz geschlossen und entschieden, dass es so nicht weiter gehen kann. Um die Geschichte der Siedlung aufzuarbeiten, gründete er mit einigen Freunden nach der Wende den Bürgerverein Krochsiedlung. </p>
-		
+
 		<h3>Der Bürgerverein</h3>
-		
+
 		<p>Sie machten es sich zur Aufgabe, die Häuser zurückzugeben an die Erben von Hans Kroch, der während der NS-Zeit enteignet worden war. Und für eine Sanierung der Siedlung machten sie sich stark. Auch Seidel selbst legte immer wieder Hand an. In einem Sommer sei das Gras zwischen den Häusern nicht gemäht worden. Kurzer Hand kontaktierte Seidel einen Bekannten vom Land und zusammen mähten sie den Rasen. </p>
-		
+
 	</article>
-	
+
 	<article class="half" style="padding-bottom: 35px;">
-			<img src="{% asset_path krochsiedlung/Seidel-4143.jpg %}" class="img-responsive" alt="" />
+			<img src="{% asset krochsiedlung/Seidel-4143.jpg @path %}" class="img-responsive" alt="" />
 			<div class="video-description">
 				Für den Erhalt der Krochsiedlung und die Aufarbeitung ihrer Geschichte gründete sich nach der Wende der Bürgerverein Krochsiedlung
 			</div>
 	</article>
 
 	<article class="half" style="padding-bottom: 35px;">
-			<img src="{% asset_path krochsiedlung/Seidel-4250.jpg %}" class="img-responsive" alt=""/>
+			<img src="{% asset krochsiedlung/Seidel-4250.jpg @path %}" class="img-responsive" alt=""/>
 			<div class="video-description">
 				Die Wohnung des Bürgervereins wurde im Originalzustand der 30er Jahre belassen.
 			</div>
 	</article>
-	
+
 	<div class="clearfix"></div>
 
 	<article class="half" style="padding-bottom: 35px;">
-			<img src="{% asset_path krochsiedlung/Seidel-4222.jpg %}" class="img-responsive" alt="" />
+			<img src="{% asset krochsiedlung/Seidel-4222.jpg @path %}" class="img-responsive" alt="" />
 			<div class="video-description">
 				Eine Fernheizung brachte schon in den 30er Jahren warmes Wasser direkt ins Haus.
 			</div>
 	</article>
 
 	<article class="half" style="padding-bottom: 35px;">
-			<img src="{% asset_path krochsiedlung/Seidel-4191.jpg %}" class="img-responsive" alt="" />
+			<img src="{% asset krochsiedlung/Seidel-4191.jpg @path %}" class="img-responsive" alt="" />
 			<div class="video-description">
 				Ende der 90er Jahre wurde erst mit der Sanierung der Krochsiedlung begonnen.
 			</div>
-	</article>	
-	
+	</article>
+
 	<article>
 
 		<p>Ende der 90er Jahre ging es wieder bergauf mit der Siedlung. Nachdem sie den Kroch-Erben zurückgegeben und an einen neuen Eigentümer verkauft worden war, konnte die Sanierung beginnen. „Das war gar nicht so einfach“, erinnert sich Seidel. „Fast hätte der Experte vom Denkmalschutz die Sanierung verhindert.“ Dank des Bürgervereins war jedoch schnell eine Lösung gefunden. Eine Wohnung wurde im Originalzustand belassen und als Museum zugänglich gemacht.</p>
-		
+
 	</article>
-	
+
 	<article class="full" style="padding-top: 35px;">
 		<ul class="timeline">
 			<li>
 				<div class="timeline-image">
-					<img class="img-circle img-responsive" src="{% asset_path krochsiedlung/timeline/krochsiedlung_gruendung.jpg %}" alt="">
+					<img class="img-circle img-responsive" src="{% asset krochsiedlung/timeline/krochsiedlung_gruendung.jpg @path %}" alt="">
 				</div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
@@ -143,7 +143,7 @@ scripts: [ekko-lightbox.js, video.js]
 			</li>
 			<li class="timeline-inverted">
 				<div class="timeline-image">
-					<img class="img-circle img-responsive" src="{% asset_path krochsiedlung/timeline/krochhaus.jpg %}" alt="">
+					<img class="img-circle img-responsive" src="{% asset krochsiedlung/timeline/krochhaus.jpg @path %}" alt="">
 				</div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
@@ -160,7 +160,7 @@ scripts: [ekko-lightbox.js, video.js]
 			</li>
 			<li>
 				<div class="timeline-image">
-					<img class="img-circle img-responsive" src="{% asset_path krochsiedlung/timeline/neu-gohlis.jpg %}" alt="">
+					<img class="img-circle img-responsive" src="{% asset krochsiedlung/timeline/neu-gohlis.jpg @path %}" alt="">
 				</div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
@@ -175,7 +175,7 @@ scripts: [ekko-lightbox.js, video.js]
 			</li>
 			<li class="timeline-inverted">
 				<div class="timeline-image">
-					<img class="img-circle img-responsive" src="{% asset_path krochsiedlung/timeline/mietvertrag.jpg %}" alt="">
+					<img class="img-circle img-responsive" src="{% asset krochsiedlung/timeline/mietvertrag.jpg @path %}" alt="">
 				</div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
@@ -189,7 +189,7 @@ scripts: [ekko-lightbox.js, video.js]
 			</li>
 		   <li>
 				<div class="timeline-image">
-					<img class="img-circle img-responsive" src="{% asset_path krochsiedlung/timeline/rotearmee.jpg %}" alt="">
+					<img class="img-circle img-responsive" src="{% asset krochsiedlung/timeline/rotearmee.jpg @path %}" alt="">
 				</div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
@@ -203,10 +203,10 @@ scripts: [ekko-lightbox.js, video.js]
 						</div>
 					</div>
 				</div>
-			</li>	
+			</li>
 			<li class="timeline-inverted">
 				<div class="timeline-image">
-					<img class="img-circle img-responsive" src="{% asset_path krochsiedlung/timeline/buergerverein.jpg %}" alt="">
+					<img class="img-circle img-responsive" src="{% asset krochsiedlung/timeline/buergerverein.jpg @path %}" alt="">
 				</div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
@@ -220,7 +220,7 @@ scripts: [ekko-lightbox.js, video.js]
 			</li>
 		   <li>
 				<div class="timeline-image">
-					<img class="img-circle img-responsive" src="{% asset_path krochsiedlung/timeline/sanierung.jpg %}" alt="">
+					<img class="img-circle img-responsive" src="{% asset krochsiedlung/timeline/sanierung.jpg @path %}" alt="">
 				</div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
@@ -231,10 +231,10 @@ scripts: [ekko-lightbox.js, video.js]
 						<p class="text-muted no-comment">Nach großen Bedenken des Denkmalschutz wird am 16. Juni 1997 ein Kompromiss zur Sanierung der Siedlung gefunden. So sollte eine Wohnung im Originalzustand belassen und der Öffentlichkeit zugänglich gemacht werden, während der Rest der Siedlung mit modernen Mitteln wie Wärmedämmung saniert wird.</p>
 					</div>
 				</div>
-			</li>	
+			</li>
 			<li class="timeline-inverted">
 				<div class="timeline-image">
-					<img class="img-circle img-responsive" src="{% asset_path krochsiedlung/timeline/luftbild.jpg %}" alt="">
+					<img class="img-circle img-responsive" src="{% asset krochsiedlung/timeline/luftbild.jpg @path %}" alt="">
 				</div>
 				<div class="timeline-panel">
 					<div class="timeline-heading">
@@ -245,24 +245,24 @@ scripts: [ekko-lightbox.js, video.js]
 						<p class="text-muted no-comment">Inzwischen prägen Grünanlagen das Ensemble. Außerdem sind inzwischen auch die Felder um die Siedlung herum bebaut worden.</p>
 					</div>
 				</div>
-			</li>						
+			</li>
 		</ul>
 	</article>
-	
+
 	<article class="left" style="padding-top: 35px;">
-		
+
 		<p>„Viele Vorträge und Diskussionsrunden haben wir seitdem in dieser Wohnung veranstaltet“, erklärt Seidel, während er nachdenklich aus dem Fenster der Loggia schaut, und sich an die vielen Feste mit den alten Nachbarn und Freunden erinnert. Noch immer wohnen viele von ihnen hier. Gohlis Nord ist ein beständiger Ortsteil. Diesen Eindruck bestätigen auch Zahlen zur Bevölkerung von der Stadt Leipzig. Ein Drittel der Bewohner ist älter als 70 Jahre</p>
-		
+
 		<div class="floater">
-			<img src="{% asset_path krochsiedlung/Seidel-4184.jpg %}" class="img-responsive" alt="" />
+			<img src="{% asset krochsiedlung/Seidel-4184.jpg @path %}" class="img-responsive" alt="" />
 		</div>
 		<p>Mit diesem Problem hat auch der Bürgerverein zu kämpfen. Der steht vor dem Aus. „Es kamen leider einfach nicht genug junge Leute dazu“, erklärt Seidel. Dass das Leben in der Krochsiedlung aber weiter geht, da hat er keinen Zweifel. „Ich hoffe, dass ich noch lange hier bleiben kann. Wegziehen möchte ich nicht“, erklärt er mit fester Stimme. </p>
-		
+
 		<p>Seit 2010 nimmt der Zuzug in Gohlis Nord wieder zu. „In letzter Zeit habe ich immer mehr auch Familien gesehen“. Das freut Seidel. Er ist schon gespannt, wer in die alte Wohnung des Bürgervereins einzieht. <a href="http://www.wohnen-gaedeke.de/Angebote.32.0.html?no_cache=1&amp;tx_mjimmobilien_pi1[stadt_id]=6&amp;tx_mjimmobilien_pi1[stadtteil_id]=11&amp;tx_mjimmobilien_pi1[category_id]=2&amp;tx_mjimmobilien_pi1[object_id]=175&amp;tx_mjimmobilien_pi1[view_mode]=4" target="_blank">Im Internet wird sie schon angepriesen</a>, als „denkmalgeschütze Liebhaberwohnung“. Diese befinde sich in Mitten eines gepflegten und parkähnlichen Wohngebietes mit Bauhaus-Architektur, das „durch den schönen alten Baumbestand wie eine kleine grüne Lunge wirkt und zum Spazieren und Verweilen einlädt.“</p>
-	
+
 	</article>
-	
+
 	<article class="comments">
 		{% include comments.html inline="true" %}
-	</article>	
+	</article>
 </section>

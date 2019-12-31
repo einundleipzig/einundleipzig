@@ -9,7 +9,7 @@
 			<span class="icon-bar"></span>
 	    </button>
 		<a href="{{ site.url }}" class="navbar-brand">
-			<img src="{% asset_path logogross.png %}" style="height: 40px;" class="vcenter img-responsive" alt="einundleipzig Logo" />
+			<img src="{% asset logogross.png @path %}" style="height: 40px;" class="vcenter img-responsive" alt="einundleipzig Logo" />
 		</a>
 	</div>
 	<div class="navbar-collapse collapse">
@@ -25,10 +25,10 @@
 					</li>
 					{% endif %}
 					{% endfor %}
-				{% endfor %}	
+				{% endfor %}
                 </ul>
             </li>
-			
+
 			<li class="dropdown">
 				<a href="#" data-toggle="dropdown" class="dropdown-toggle">Geschichten <b class="caret"></b></a>
 				<ul class="dropdown-menu">
@@ -40,10 +40,10 @@
 					</li>
 					{% endif %}
 					{% endfor %}
-				{% endfor %}	
+				{% endfor %}
                 </ul>
             </li>
-			
+
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<li>
@@ -52,11 +52,11 @@
 			<li>
 				<a href="{{ "data/" | prepend: site.baseurl }}">Daten</a>
 			</li>
-			
+
 			<li>
 				<a href="{{ "contact/" | prepend: site.baseurl }}">Kontakt &nbsp;&nbsp; <i class="fa fa-lg fa-envelope"></i></a>
 			</li>
-			
+
 			<li>
 				<a href="https://www.facebook.com/einundleipzig" target="_blank" class="social"><i class="fa fa-lg fa-facebook-square"></i> </a>
 			</li>

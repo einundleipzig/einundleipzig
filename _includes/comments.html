@@ -1,6 +1,6 @@
 <p style="width: 100%; text-align: center; font-size: 1.3em; color: #999; padding: 35px;" class="no-comment">&diams;&diams;&diams;</p>
 
-<div id="disqus_thread"></div>	
+<div id="disqus_thread"></div>
 <!-- disqus -->
 <script type="text/javascript">
 	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -16,11 +16,11 @@
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 {% if include.inline == "deactivated" %}
-	
+
 	<script>
 	$(document).ready(function() {
-		$.getScript("{% asset_path inlineDisqussions.js %}", function() {
-	
+		$.getScript("{% asset inlineDisqussions.js @path %}", function() {
+
 			  jQuery("p:not(.no-comment)").inlineDisqussions({
 			  identifier: 'disqussion',
 			  displayCount: true,
@@ -28,10 +28,10 @@
 			  position: 'right',
 			  background: 'white',
 			  maxWidth: 500
-			});	
-		
-		
+			});
+
+
 		});
 	})
-	</script>	
+	</script>
 {% endif %}

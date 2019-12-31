@@ -24,7 +24,7 @@ An die Stadtpolitiker: Senden Sie uns eine Mail und teilen Sie uns mit, welchen 
 
 ### Derzeitiger Stand:
 
-<img src="{% asset_path dank/img/karte.jpg %}" style="width: 75%; display: block; margin: 0 auto;" />
+<img src="{% asset dank/img/karte.jpg @path %}" style="width: 75%; display: block; margin: 0 auto;" />
 
 <ul class="bullets" style="font-size: 11pt">
 

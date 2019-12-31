@@ -1,15 +1,15 @@
 # einundleipzig
 
-### Was ist einundleipzig?
+## Was ist einundleipzig?
 
 einundleipzig versteht sich als lokales Projekt in Leipzig, das klassischen
 Journalismus mit modernen Darstellungsformen verbindet und dabei den Ansatz
-des Data Driven Journalism verfolgt. einundleipzig ist dabei nichtkommerziell 
+des Data Driven Journalism verfolgt. einundleipzig ist dabei nichtkommerziell
 und offen - wir verstehen uns als **städtisches Gemeingut**, das die Bürgerschaft
 über Stadtentwicklungsprozesse informieren soll.
 
-### Lizenzen
-einundleipzig versteht sich als Teil der "Open Knowledge Bewegung", weswegen - 
+## Lizenzen
+einundleipzig versteht sich als Teil der "Open Knowledge Bewegung", weswegen -
 so weit wie möglich - alle Inhalte mit möglichst freien Lizenzen zur Verfügung
 gestellt werden.
 
@@ -20,7 +20,7 @@ Sofern nicht anders angegeben gilt:
 
 Im Zweifelsfall bitte bei den unten stehenden Kontaktdaten melden.
 
-### Tech
+##Tech
 einundleipzig basiert auf folgenden Open Source Projekten:
 * [jekyll] - Ein simpler Generator für statische Webseiten basierend auf Ruby
 
@@ -46,14 +46,14 @@ einundleipzig basiert auf folgenden Open Source Projekten:
 Visualisierungen liegen im Ordner `_includes/visualizations/`,
 Daten liegen im Ordner `assets/visualizations/`
 
-### ToDos
+## ToDos
 Lust, mitzuwirken? Folgende Dinge müssen noch eingebunden/verbessert werden:
 
 * Internet Explorer
  * Flip Cards: fehlende Unterstützung von preserve-3d
- * HTML5 Slider 
+ * HTML5 Slider
 * Firefox
- * Full Screen bei Flip Cards Videos 
+ * Full Screen bei Flip Cards Videos
  * Ladeverhalten von video.js optimieren
 
 
@@ -62,10 +62,14 @@ Lust, mitzuwirken? Folgende Dinge müssen noch eingebunden/verbessert werden:
 * Getting rid of Bootstrap: Vollständige Umstellung auf die Bourbon-Familie: Neat als Grid-System verwenden
 * Inhalte in `_pages/` auf Markdown umstellen
 
-### Kontakt
+## Kontakt
 
 * Bei inhaltlichen Anmerkungen wenden Sie sich bitte an kontakt@einundleipzig.de
 * Bei technischen Anmerkungen (Bug Reports etc.) bitte bei wolfgang@einundleipzig.de melden.
+
+## Kompatibilität
+* node 10
+* jekyll 3.6.x
 
 [GNU GPL]: http://www.gnu.org/copyleft/gpl.html
 [CC0 1.0]: http://creativecommons.org/publicdomain/zero/1.0/deed.de
@@ -81,7 +85,6 @@ Lust, mitzuwirken? Folgende Dinge müssen noch eingebunden/verbessert werden:
 [d3.js]: http://d3js.org
 [c3.js]: http://c3js.org
 [impress.js]: http://bartaz.github.io/impress.js
-[disqus]: http://disqus.com
 [ekko-lightbox]: http://ashleydw.github.io/lightbox/
 [font awesome]: http://fortawesome.github.io/Font-Awesome/
 [leaflet]: http://leafletjs.com/

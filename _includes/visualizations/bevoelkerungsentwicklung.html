@@ -1,5 +1,5 @@
-{% javascript d3-queue.js %}
-{% javascript underscore.js %}
+<script src="{{ 'node_modules/d3-queue/build/d3-queue.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ 'node_modules/underscore/underscore-min.js' | prepend: site.baseurl }}"></script>
 
 <style type="text/css">
 path.ortsteil {
@@ -21,15 +21,15 @@ path.ortsteil {
     padding-right: 0;
 }
 
-div.bevoelkerungsentwicklung_tooltip {   
-  position: absolute;           
-  text-align: center;                           
-  padding: 10px;             
+div.bevoelkerungsentwicklung_tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 10px;
   margin: 10px;
-  font: 10pt "Titillium Web",sans-serif;        
-  background: #FEFEFE;   
-  border: 1px solid #333;      
-  border-radius: 5px;           
+  font: 10pt "Titillium Web",sans-serif;
+  background: #FEFEFE;
+  border: 1px solid #333;
+  border-radius: 5px;
 }
 
 </style>
@@ -42,16 +42,16 @@ div.bevoelkerungsentwicklung_tooltip {
 </div>
 
 <div id="map_bevoelkerungsentwicklung" style="width: 100%;">
-						
+
 </div>
 
 
 <script type="text/javascript">
 var bevoelkerungsentwicklung_urls = {
-	ot: "{% asset_path ot.json %}",
-	data: "{% asset_path bevoelkerungsentwicklung/bevoelkerungsentwicklung.csv %}"
+	ot: "{% asset ot.json @path %}",
+	data: "{% asset bevoelkerungsentwicklung/bevoelkerungsentwicklung.csv @path %}"
 };
-	
+
 var bevoelkerungsentwicklung_margin = {top: 10, left: 10, bottom: 10, right: 10}
 	, bevoelkerungsentwicklung_width = parseInt(d3.select('#map_bevoelkerungsentwicklung').style('width'))
 	, bevoelkerungsentwicklung_width = bevoelkerungsentwicklung_width - bevoelkerungsentwicklung_margin.left - bevoelkerungsentwicklung_margin.right
@@ -63,12 +63,12 @@ var bevoelkerungsentwicklung_margin = {top: 10, left: 10, bottom: 10, right: 10}
 var bevoelkerungsentwicklung_projection = d3.geo.mercator()
 	.center([12.37475113, 51.340333333333])
 	.scale(bevoelkerungsentwicklung_width*160)
-	.translate([bevoelkerungsentwicklung_width / 2, bevoelkerungsentwicklung_height / 2]);		
+	.translate([bevoelkerungsentwicklung_width / 2, bevoelkerungsentwicklung_height / 2]);
 
 var bevoelkerungsentwicklung_path = d3.geo.path()
 	.projection(bevoelkerungsentwicklung_projection);
-	  
-// Standard colors	  
+
+// Standard colors
 var bevoelkerungsentwicklung_colors = d3.scale.quantile()
 	.range(colorbrewer.RdBu[5]);
 
@@ -76,50 +76,50 @@ var bevoelkerungsentwicklung_colors = d3.scale.quantile()
 var bevoelkerungsentwicklung_map = d3.select('#map_bevoelkerungsentwicklung').append('svg')
 	.style('height', bevoelkerungsentwicklung_height + 'px')
 	.style('width', bevoelkerungsentwicklung_width + 'px');
-		
-// tooltip div	
-var bevoelkerungsentwicklung_tooltip = d3.select("body").append("div")   
-	.attr("class", "bevoelkerungsentwicklung_tooltip")               
-	.style("opacity", 0);	
+
+// tooltip div
+var bevoelkerungsentwicklung_tooltip = d3.select("body").append("div")
+	.attr("class", "bevoelkerungsentwicklung_tooltip")
+	.style("opacity", 0);
 
 // queue and render
 d3_queue.queue()
 	.defer(d3.json, bevoelkerungsentwicklung_urls.ot)
 	.defer(d3.csv, bevoelkerungsentwicklung_urls.data)
 	.await(bevoelkerungsentwicklung_render);
-	
+
 // catch the resize
 d3.select(window).on('resize', bevoelkerungsentwicklung_resize);
-	
+
 // start the legend
 var bevoelkerungsentwicklung_legend = d3.select('#legend_bevoelkerungsentwicklung')
 	.append('ul')
 	.attr('class', 'list-inline');
 
 /**
- * Erstellt die Karte zur Bevoelkerungsentwicklung in Leipzig  
- * 
+ * Erstellt die Karte zur Bevoelkerungsentwicklung in Leipzig
+ *
  * @param {object} err Beschreibung
  * @param {json} ot Beschreibung
  * @param {string} data Beschreibung
- */	
+ */
 function bevoelkerungsentwicklung_render(err, ot, data) {
 	window.ot = ot;
 
 	// Daten intialisieren
 	data = window.data = _(data).chain().map(function(d) {
-	
+
 		d.saldo = +d['Saldo Einwohner Wachstum Prozent'];
-					
+
 		return [d.Gebiet, d];
 	}).object().value();
-	
+
 	bevoelkerungsentwicklung_colors.domain([
-		d3.min(d3.values(data), function(d) { return +d['Saldo Einwohner Wachstum Prozent']; }), 
+		d3.min(d3.values(data), function(d) { return +d['Saldo Einwohner Wachstum Prozent']; }),
 		d3.max(d3.values(data), function(d) { return +d['Saldo Einwohner Wachstum Prozent']; })
 	]);
-		
-		
+
+
 	// Karte initialisieren
 	var bevoelkerungsentwicklung_ortsteile = bevoelkerungsentwicklung_map.selectAll("path")
 		.data(ot.features)
@@ -127,8 +127,8 @@ function bevoelkerungsentwicklung_render(err, ot, data) {
 		.append("path")
 		.attr('class', 'ortsteil')
 		.attr("d", bevoelkerungsentwicklung_path)
-		.style('fill', function(d) {		
-		
+		.style('fill', function(d) {
+
 			// Heiterblick und Engelsdorf ausblenden wegen Gebietsumgliederung
 			if (d.properties.Name == 'Heiterblick' || d.properties.Name == 'Engelsdorf')
 			{
@@ -140,76 +140,76 @@ function bevoelkerungsentwicklung_render(err, ot, data) {
 				return bevoelkerungsentwicklung_colors(data[d.properties.Name]['Saldo Einwohner Wachstum Prozent']);
 			}
 		})
-		
-		// Tooltip update
-		.on("mouseover", function(d) {      
-			bevoelkerungsentwicklung_tooltip.transition()        
-				.duration(200)      
-				.style("opacity", .9); 
 
-			bevoelkerungsentwicklung_tooltip 
+		// Tooltip update
+		.on("mouseover", function(d) {
+			bevoelkerungsentwicklung_tooltip.transition()
+				.duration(200)
+				.style("opacity", .9);
+
+			bevoelkerungsentwicklung_tooltip
 				// TOOLTIP CONTENT
 				.html(function (foo) {
 					return "<h4>" + d.properties.Name + "</h4> Saldo: " + data[d.properties.Name]['Saldo Einwohner Wachstum Prozent'] + "%";
-				})  
-				
+				})
+
 				// -TOOLTIP CONTENT
-				.style("left", (d3.event.pageX) + "px")     
-				.style("top", (d3.event.pageY - 28) + "px");    
-		})                  
-		.on("mouseout", function(d) {       
-			bevoelkerungsentwicklung_tooltip.transition()        
-				.duration(500)      
-				.style("opacity", 0);   
+				.style("left", (d3.event.pageX) + "px")
+				.style("top", (d3.event.pageY - 28) + "px");
+		})
+		.on("mouseout", function(d) {
+			bevoelkerungsentwicklung_tooltip.transition()
+				.duration(500)
+				.style("opacity", 0);
 		});
-			
+
 	// Legende
 	bevoelkerungsentwicklung_legend.selectAll('li.key').remove();
-		
+
 	var bevoelkerungsentwicklung_keys = bevoelkerungsentwicklung_legend.selectAll('li.key')
 		.data(bevoelkerungsentwicklung_colors.range());
-		
+
 	bevoelkerungsentwicklung_keys.enter().append('li')
 		.attr('class', 'key')
 		.style('border-top-color', String)
 		.text(function(d) {
 			var bevoelkerungsentwicklung_r = bevoelkerungsentwicklung_colors.invertExtent(d);
-				
+
 			// Zahl auf zwei Nachkommastellen runden und ausgeben
 			return d3.format(".2f")(bevoelkerungsentwicklung_r[0]) + "%";
-		});	
+		});
 
 	// Button toggles
 	d3.select("#saldogeburtensterbefaelle").on("click", function(){
 		$(this).toggleClass("disabled");
-		$('#einwohnerwachstum').removeClass('disabled');	
-		$('#bevoelkerungsentwicklunggesamt').removeClass('disabled');	
-	
+		$('#einwohnerwachstum').removeClass('disabled');
+		$('#bevoelkerungsentwicklunggesamt').removeClass('disabled');
+
 		bevoelkerungsentwicklung_colors.domain([
-			d3.min(d3.values(data), function(d) { return +d['Saldo aus Geburten und Sterbefällen in Prozent']; }), 
+			d3.min(d3.values(data), function(d) { return +d['Saldo aus Geburten und Sterbefällen in Prozent']; }),
 			d3.max(d3.values(data), function(d) { return +d['Saldo aus Geburten und Sterbefällen in Prozent']; })
 		]);
-		
-	// Legende	
+
+	// Legende
 	bevoelkerungsentwicklung_legend.selectAll('li.key').remove();
-	
+
 	var bevoelkerungsentwicklung_keys = bevoelkerungsentwicklung_legend.selectAll('li.key')
 		.data(bevoelkerungsentwicklung_colors.range());
-	
+
 	bevoelkerungsentwicklung_keys.enter().append('li')
 		.attr('class', 'key')
 		.style('border-top-color', String)
 		.text(function(d) {
 			var bevoelkerungsentwicklung_r = bevoelkerungsentwicklung_colors.invertExtent(d);
-			
+
 			// Zahl auf zwei Nachkommastellen runden und ausgeben
 			return d3.format(".2f")(bevoelkerungsentwicklung_r[0]) + "%";
-		});				
+		});
 
 	bevoelkerungsentwicklung_ortsteile
-		.style('fill', function(d) {	
+		.style('fill', function(d) {
 			// Tooltip updaten
-			
+
 			// Heiterblick und Engelsdorf ausblenden wegen Gebietsumgliederung
 			if (d.properties.Name == 'Heiterblick' || d.properties.Name == 'Engelsdorf')
 			{
@@ -220,56 +220,56 @@ function bevoelkerungsentwicklung_render(err, ot, data) {
 				// Farbe updaten
 				return bevoelkerungsentwicklung_colors(data[d.properties.Name]['Saldo aus Geburten und Sterbefällen in Prozent']);
 			}
-			
-		})
-		.on("mouseover", function(d) {      
-			bevoelkerungsentwicklung_tooltip.transition()        
-				.duration(200)      
-				.style("opacity", .9); 
 
-			bevoelkerungsentwicklung_tooltip 
+		})
+		.on("mouseover", function(d) {
+			bevoelkerungsentwicklung_tooltip.transition()
+				.duration(200)
+				.style("opacity", .9);
+
+			bevoelkerungsentwicklung_tooltip
 				// TOOLTIP CONTENT
 				.html(function (foo) {
 					return "<h4>" + d.properties.Name + "</h4> Saldo: " + data[d.properties.Name]['Saldo aus Geburten und Sterbefällen in Prozent'] + "%";
-				})  
-				
+				})
+
 				// -TOOLTIP CONTENT
-				.style("left", (d3.event.pageX) + "px")     
-				.style("top", (d3.event.pageY - 28) + "px");    
-		})                  
-		.on("mouseout", function(d) {       
-			bevoelkerungsentwicklung_tooltip.transition()        
-				.duration(500)      
-				.style("opacity", 0);   
+				.style("left", (d3.event.pageX) + "px")
+				.style("top", (d3.event.pageY - 28) + "px");
+		})
+		.on("mouseout", function(d) {
+			bevoelkerungsentwicklung_tooltip.transition()
+				.duration(500)
+				.style("opacity", 0);
 		});
-		
+
 	});
-			
+
 	d3.select("#einwohnerwachstum").on("click", function(){
 		$(this).toggleClass("disabled");
-		$('#saldogeburtensterbefaelle').removeClass('disabled');	
-		$('#bevoelkerungsentwicklunggesamt').removeClass('disabled');	
-	
+		$('#saldogeburtensterbefaelle').removeClass('disabled');
+		$('#bevoelkerungsentwicklunggesamt').removeClass('disabled');
+
 		bevoelkerungsentwicklung_colors.domain([
-			d3.min(d3.values(data), function(d) { return +d['Saldo Zu- und Wegzüge in Prozent']; }), 
+			d3.min(d3.values(data), function(d) { return +d['Saldo Zu- und Wegzüge in Prozent']; }),
 			d3.max(d3.values(data), function(d) { return +d['Saldo Zu- und Wegzüge in Prozent']; })
 		]);
-		
-		// Legende	
+
+		// Legende
 		bevoelkerungsentwicklung_legend.selectAll('li.key').remove();
-		
+
 		var bevoelkerungsentwicklung_keys = bevoelkerungsentwicklung_legend.selectAll('li.key')
 			.data(bevoelkerungsentwicklung_colors.range());
-		
+
 		bevoelkerungsentwicklung_keys.enter().append('li')
 			.attr('class', 'key')
 			.style('border-top-color', String)
 			.text(function(d) {
 				var bevoelkerungsentwicklung_r = bevoelkerungsentwicklung_colors.invertExtent(d);
-				
+
 				// Zahl auf zwei Nachkommastellen runden und ausgeben
 				return d3.format(".2f")(bevoelkerungsentwicklung_r[0]) + "%";
-			});			
+			});
 
 		bevoelkerungsentwicklung_ortsteile
 			.style('fill', function(d) {
@@ -279,62 +279,62 @@ function bevoelkerungsentwicklung_render(err, ot, data) {
 					return '#999';
 				}
 				else
-				{			
+				{
 					// Farbe updaten
 					return bevoelkerungsentwicklung_colors(data[d.properties.Name]['Saldo Zu- und Wegzüge in Prozent']);
-				} 
+				}
 			})
 			// Tooltip update
-			.on("mouseover", function(d) {      
-				bevoelkerungsentwicklung_tooltip.transition()        
-					.duration(200)      
-					.style("opacity", .9); 
+			.on("mouseover", function(d) {
+				bevoelkerungsentwicklung_tooltip.transition()
+					.duration(200)
+					.style("opacity", .9);
 
-				bevoelkerungsentwicklung_tooltip 
+				bevoelkerungsentwicklung_tooltip
 					// TOOLTIP CONTENT
 					.html(function (foo) {
 						return "<h4>" + d.properties.Name + "</h4> Saldo: " + data[d.properties.Name]['Saldo Zu- und Wegzüge in Prozent'] + "%";
-					})  
-					
+					})
+
 					// -TOOLTIP CONTENT
-					.style("left", (d3.event.pageX) + "px")     
-					.style("top", (d3.event.pageY - 28) + "px");    
-			})                  
-			.on("mouseout", function(d) {       
-				bevoelkerungsentwicklung_tooltip.transition()        
-					.duration(500)      
-					.style("opacity", 0);   
+					.style("left", (d3.event.pageX) + "px")
+					.style("top", (d3.event.pageY - 28) + "px");
+			})
+			.on("mouseout", function(d) {
+				bevoelkerungsentwicklung_tooltip.transition()
+					.duration(500)
+					.style("opacity", 0);
 			});
-	});	
+	});
 
 	d3.select("#bevoelkerungsentwicklunggesamt").on("click", function(){
 		$(this).toggleClass("disabled");
-		$('#einwohnerwachstum').removeClass('disabled');	
+		$('#einwohnerwachstum').removeClass('disabled');
 		$('#saldogeburtensterbefaelle').removeClass('disabled');
 
 		bevoelkerungsentwicklung_colors.domain([
-			d3.min(d3.values(data), function(d) { return +d['Saldo Einwohner Wachstum Prozent']; }), 
+			d3.min(d3.values(data), function(d) { return +d['Saldo Einwohner Wachstum Prozent']; }),
 			d3.max(d3.values(data), function(d) { return +d['Saldo Einwohner Wachstum Prozent']; })
 		]);
-		
-		// Legende	
+
+		// Legende
 		bevoelkerungsentwicklung_legend.selectAll('li.key').remove();
-		
+
 		var bevoelkerungsentwicklung_keys = bevoelkerungsentwicklung_legend.selectAll('li.key')
 			.data(bevoelkerungsentwicklung_colors.range());
-		
+
 		bevoelkerungsentwicklung_keys.enter().append('li')
 			.attr('class', 'key')
 			.style('border-top-color', String)
 			.text(function(d) {
 				var bevoelkerungsentwicklung_r = bevoelkerungsentwicklung_colors.invertExtent(d);
-				
+
 				// Zahl auf zwei Nachkommastellen runden und ausgeben
 				return d3.format(".2f")(bevoelkerungsentwicklung_r[0]) + "%";
-			});				
+			});
 
 		bevoelkerungsentwicklung_ortsteile
-			.style('fill', function(d) {		
+			.style('fill', function(d) {
 				// Heiterblick und Engelsdorf ausblenden wegen Gebietsumgliederung
 				if (d.properties.Name == 'Heiterblick' || d.properties.Name == 'Engelsdorf')
 				{
@@ -342,39 +342,39 @@ function bevoelkerungsentwicklung_render(err, ot, data) {
 				}
 				else
 				{
-				
+
 					// Farbe updaten
 					return bevoelkerungsentwicklung_colors(data[d.properties.Name]['Saldo Einwohner Wachstum Prozent']);
 				}
 			})
-			.on("mouseover", function(d) {      
-				bevoelkerungsentwicklung_tooltip.transition()        
-					.duration(200)      
-					.style("opacity", .9); 
+			.on("mouseover", function(d) {
+				bevoelkerungsentwicklung_tooltip.transition()
+					.duration(200)
+					.style("opacity", .9);
 
-				bevoelkerungsentwicklung_tooltip 
+				bevoelkerungsentwicklung_tooltip
 					// TOOLTIP CONTENT
 					.html(function (foo) {
 						return "<h4>" + d.properties.Name + "</h4> Saldo: " + data[d.properties.Name]['Saldo Einwohner Wachstum Prozent'] + "%";
-					})  
-					
+					})
+
 					// -TOOLTIP CONTENT
-					.style("left", (d3.event.pageX) + "px")     
-					.style("top", (d3.event.pageY - 28) + "px");    
-			})                  
-			.on("mouseout", function(d) {       
-				bevoelkerungsentwicklung_tooltip.transition()        
-					.duration(500)      
-					.style("opacity", 0);   
+					.style("left", (d3.event.pageX) + "px")
+					.style("top", (d3.event.pageY - 28) + "px");
+			})
+			.on("mouseout", function(d) {
+				bevoelkerungsentwicklung_tooltip.transition()
+					.duration(500)
+					.style("opacity", 0);
 			});
 
-	});	
-		
+	});
+
 }
 
 /**
  * Passt die Groesse der Karte bei Neuskalierung des Browserfensters an
- */	
+ */
 function bevoelkerungsentwicklung_resize() {
 	// adjust things when the window size changes
 	bevoelkerungsentwicklung_width = parseInt(d3.select('#map_bevoelkerungsentwicklung').style('width'));
@@ -393,6 +393,6 @@ function bevoelkerungsentwicklung_resize() {
 
 	// resize the map
 	bevoelkerungsentwicklung_map.selectAll('.ortsteil').attr('d', bevoelkerungsentwicklung_path);
-}	
-	
-</script>		
+}
+
+</script>

@@ -1,69 +1,65 @@
-    <!-- meta tags -->
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="{{ site.description }}" />
-	<meta name="keywords" content="Leipzig, Gentrifizierung, Reurbanisierung, Re-Urbanisierung, Verdrängung, Mieter, Vermieter" />
+<!-- meta tags -->
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="{{ site.description }}" />
+<meta name="keywords" content="Leipzig, Gentrifizierung, Reurbanisierung, Re-Urbanisierung, Verdrängung, Mieter, Vermieter" />
 
-	<!-- favicon -->
-	<link rel="icon" href="{% asset_path favicon.ico %}" type="image/x-icon">
-	<link rel="shortcut icon" href="{% asset_path favicon.ico %}" type="image/x-icon">
-	<link rel="shortcut icon" href="{% asset_path favicon.ico %}" type="image/vnd.microsoft.icon">
+<!-- favicon -->
+<link rel="icon" href="{% asset favicon.ico @path %}" type="image/x-icon">
+<link rel="shortcut icon" href="{% asset favicon.ico @path %}" type="image/x-icon">
+<link rel="shortcut icon" href="{% asset favicon.ico @path %}" type="image/vnd.microsoft.icon">
 
-	<!-- Facebook OG Tags -->
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
-	<meta property="og:url" content="{{ page.url | prepend: site.url }}" />
-	<meta property="og:site_name" content="einundleipzig">
-	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %} {{ site.description }} {% endif %}" />
-	<meta property="og:image" name="facebook" content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{% asset_path einundleipzigfacebook.jpg %}{% endif %}" />
-	<meta property="og:locale" content="de_DE" />
+<!-- Facebook OG Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
+<meta property="og:url" content="{{ page.url | prepend: site.url }}" />
+<meta property="og:site_name" content="einundleipzig">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %} {{ site.description }} {% endif %}" />
+<meta property="og:image" name="facebook" content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{% asset einundleipzigfacebook.jpg @path %}{% endif %}" />
+<meta property="og:locale" content="de_DE" />
 
-	<!-- Twitter Card Tags -->
-	<meta name="twitter:site" content="@einundleipzig" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
-	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %} {{ site.description }} {% endif %}" />
-	<meta name="twitter:image" content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{% asset_path einundleipzigtwitter.jpg %}{% endif %}" />
+<!-- Twitter Card Tags -->
+<meta name="twitter:site" content="@einundleipzig" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %} {{ site.description }} {% endif %}" />
+<meta name="twitter:image" content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{% asset einundleipzigtwitter.jpg @path %}{% endif %}" />
 
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
-	<!-- video.js CDN -->
-	{% stylesheet videojs-sublime-skin.css %}
+<link type="text/css" rel="stylesheet" href="{{ 'node_modules/videojs-sublime-skin/dist/videojs-sublime-skin.min.css' | prepend: site.baseurl }}">
+<script src="{{ 'node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl }}"></script>
 
-	<!-- jQuery -->
-    {% javascript jquery.js %}
+<!-- Custom CSS -->
+<script src="{{ 'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js' | prepend: site.baseurl }}"></script>
+{% asset einundleipzig.css %}
 
-    <!-- Custom CSS -->
-	{% javascript bootstrap.js %}
-    {% stylesheet einundleipzig.css %}
+<!-- ekko-lightbox -->
+<link type="text/css" rel="stylesheet" href="{{ 'node_modules/ekko-lightbox/dist/ekko-lightbox.min.css' | prepend: site.baseurl }}">
+{% asset ekko-lightbox-dark.css %}
 
-	<!-- ekko-lightbox -->
-	{% stylesheet ekko-lightbox.css %}
-	{% stylesheet ekko-lightbox-dark.css %}
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="{{ 'node_modules/html5shiv/dist/html5shiv.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ 'node_modules/respond.js/dest/respond.min.js' | prepend: site.baseurl }}"></script>
+<![endif]-->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+{% for script in page.scripts %}
+  {% if script == 'video.js' %}
+    <!-- video.js - has to be loaded in head of page due to performance -->
+    <script src="{{ 'node_modules/video.js/dist/video.min.js' | prepend: site.baseurl }}"></script>
+    <script>
+      videojs.options.flash.swf = "{{ 'node_modules/jquery/dist/video-js.swf' | prepend: site.baseurl }}"
+    </script>
+    {% endif %}
+{% endfor %}
 
+<!-- d3js JavaScript - has to be loaded in head of page -->
+<script src="{{ 'node_modules/d3/d3.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ 'node_modules/colorbrewer/index.js' | prepend: site.baseurl }}"></script>
 
-	{% for script in page.scripts %}
-		{% if script == 'video.js' %}
-			<!-- video.js - has to be loaded in head of page due to performance -->
-			{% javascript video.js %}
-			<script>
-			  videojs.options.flash.swf = "{% asset_path video-js.swf %}"
-			</script>
-			{% endif %}
-	{% endfor %}
-
-	<!-- d3js JavaScript - has to be loaded in head of page -->
-    {% javascript d3.js %}
-	{% javascript colorbrewer.js %}
-
-	<!-- c3.js -->
-    {% javascript c3.js %}
-	{% stylesheet c3.css %}
+<!-- c3.js -->
+<script src="{{ 'node_modules/c3/c3.min.js' | prepend: site.baseurl }}"></script>
+<link type="text/css" rel="stylesheet" href="{{ 'node_modules/c3/c3.min.css' | prepend: site.baseurl }}">

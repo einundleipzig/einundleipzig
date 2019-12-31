@@ -1,25 +1,25 @@
 ---
 layout: index
-scripts: [jquery.quicksand.js, jquery.easing.min.js]
+scripts: [node_modules/jquery-quicksand/jquery.quicksand.js, node_modules/jquery.easing/jquery.easing.min.js]
 ---
 <header class="intro">
-	<video autoplay loop poster="{% asset_path index/header.jpg %}" id="bgvid">
-		<source src="{% asset_path index/intro.webm %}" type="video/webm">
-		<source src="{% asset_path index/intro.mp4 %}" type="video/mp4">
+	<video autoplay loop poster="{% asset index/header.jpg @path %}" id="bgvid">
+		<source src="{% asset index/intro.webm @path %}" type="video/webm">
+		<source src="{% asset index/intro.mp4 @path %}" type="video/mp4">
 	</video>
-	
+
 	<div class="intro-body">
-		
+
 		<div class="intro-logo">
-			<img src="{% asset_path index/logo.png %}" class="img-responsive" alt="einundleipzig Logo" />
-		</div>		
-	
+			<img src="{% asset index/logo.png @path %}" class="img-responsive" alt="einundleipzig Logo" />
+		</div>
+
 		<div class="intro-text">
 			<p>
 				„Sie sind so frei“, schrieb Zeit Online über das Leben junger Menschen in Leipzig. Und die New York Times verkündete, die Stadt sei das „bessere Berlin“. Mittlerweile werben Immobilienfirmen mit den gleichen Sprüchen. Das hat Auswirkungen auf den Wohnungsmarkt und das Leben der Leipziger. Wie viel Freiheit bleibt, dazukommt oder geht, nimmt einundleipzig in den Blick. Soziale Segregation, Reurbanisierung und Gentrifizierung sind die Themen: Einfach erklärt mit Daten und Ergebnissen aus der Stadt-Forschung. Interaktiv mit Karten und Filmen, für und vor allem mit den Menschen in Leipzig.
 			</p>
 		</div>
-	
+
 		<div class="intro-buttons">
 			<a class="btn btn-themen" href="#themen"><i class="fa fa-arrow-circle-o-down fa-lg fa-intro"></i> Themen</a>
 
@@ -43,34 +43,24 @@ scripts: [jquery.quicksand.js, jquery.easing.min.js]
 			<a href="javascript:void(0);" class="geschichten">Geschichten</a>
 		</li>
 	</ul>
-	<!--<ul id="filterOptions">
-		<li class="active"><a href="#" class="all">Alle</a></li>
-		{% for item in site.menu %}
-			{% for category in item.categories %}
-				<li>
-					<a href="javascript:void(0);" class="{{category}}">{{category}}</a>
-				</li>
-			{% endfor %}
-		{% endfor %}
-	</ul>-->
 
 
 	<ul class="ourHolder">
 	{% for item in site.menu %}
 		<li class="item" data-id="id-{{ forloop.index }}" data-type="{% for category in item.categories %}{{category }} {% endfor %}">
-			<a href="/{{ item.url }}">
+			<a href="{{ item.url | prepend: site.baseurl }}">
 				<div class="descriptionContainer">
 					<div class="description">
 						<h3 style="font-size: 2em;">{{ item.title }}</h3>
 						<h3>{{ item.subtitle }}</h3>
 					</div>
 				</div>
-				
-				<img src="{% asset_path {{item.url}}{{item.image}} %}" class="img-responsive" alt="{{ item.title }}" />
+
+				<img src="{% asset {{item.url}}{{item.image}} @path %}" class="img-responsive" alt="{{ item.title }}" />
 			</a>
 		</li>
-	{% endfor %}				
-	</ul>   
+	{% endfor %}
+	</ul>
 </section>
 
 <script type="text/javascript">
@@ -90,14 +80,14 @@ $(document).ready(function() {
 
 	// attempt to call Quicksand when a filter option item is clicked
 	$('#filterOptions li a').click(function(e) {
-    
+
 		// reset the active class on all the buttons
 		$('#filterOptions li').removeClass('active');
 
 		// assign the class of the clicked filter option element to our $filterType variable
 		var $filterType = $(this).attr('class');
 		$(this).parent().addClass('active');
-		
+
 		if ($filterType == 'all') {
 			// assign all li items to the $filteredData var when the 'All' filter option is clicked
 			var $filteredData = $data.find('li');
@@ -113,7 +103,7 @@ $(document).ready(function() {
 		  easing: 'easeInOutQuad'
 		});
 	});
-    
+
 	return false;
 });
 </script>
