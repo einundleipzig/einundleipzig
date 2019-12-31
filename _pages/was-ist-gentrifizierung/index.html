@@ -36,7 +36,7 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	</article>
 
 	<article>
-		<p class="credits no-comment">
+		<p class="credits">
 			{% assign author = site.authors[page.author] %}
 				<strong><em>Text</em></strong> <span style="text-transform: uppercase;">{{ author.display_name }}</span> |
 				<strong><em>Videos und Recherche </em></strong> <span style="text-transform: uppercase;">Christina Schmitt</span> und <span style="text-transform: uppercase;">Carolyn Wißing</span>, 15. Dezember 2014
@@ -44,7 +44,7 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	</article>
 
 	<article>
-		<p class="begin">Leipzig ist das neue Berlin, ruft die Republik. Günstige Mieten, Raum für kreative Köpfe und der Charme des Unvollkommenen. Aus Leipzig wurde Hypezig. Die <a href="" class="hinweis" data-remote="timeline.html" data-width="95%" data-title="Der Hype um Leipzig - Die Diskussion in den Medien" data-footer="Quelle: <a href='http://hypezig.tumblr.com/' target='_blank'>hypezig.tumblr.com</a>" data-toggle="lightbox" data-parent="" data-gallery="remoteload">Diskussion in den Medien</a> aber macht nun kehrt: Ist es wirklich so gut, wenn die Stadt weiterwächst? Was bedeutet das für die Mietpreise und den Freiraum? Viele fürchten sich vor einer Stadtentwicklung, die keinen Platz für alle zulässt. Gentrifizierung wurde zum Schreckgespenst. Doch während die einen in ihr eine mögliche Bedrohung sehen, halten andere die Aufwertung bestimmter Stadtteile für dringend notwendig. Und manche glauben, dass die Leipziger gerne auf hohem Niveau jammern – und es so etwas wie Gentrifizierung gar nicht gibt.</p>
+		<p class="begin">Leipzig ist das neue Berlin, ruft die Republik. Günstige Mieten, Raum für kreative Köpfe und der Charme des Unvollkommenen. Aus Leipzig wurde Hypezig. Die <a href="" class="hinweis" data-remote="{{ site.baseurl }}{% link was-ist-gentrifizierung/timeline.html %}" data-width="95%" data-title="Der Hype um Leipzig - Die Diskussion in den Medien" data-footer="Quelle: <a href='http://hypezig.tumblr.com/' target='_blank'>hypezig.tumblr.com</a>" data-toggle="lightbox" data-parent="" data-gallery="remoteload">Diskussion in den Medien</a> aber macht nun kehrt: Ist es wirklich so gut, wenn die Stadt weiterwächst? Was bedeutet das für die Mietpreise und den Freiraum? Viele fürchten sich vor einer Stadtentwicklung, die keinen Platz für alle zulässt. Gentrifizierung wurde zum Schreckgespenst. Doch während die einen in ihr eine mögliche Bedrohung sehen, halten andere die Aufwertung bestimmter Stadtteile für dringend notwendig. Und manche glauben, dass die Leipziger gerne auf hohem Niveau jammern – und es so etwas wie Gentrifizierung gar nicht gibt.</p>
 	</article>
 
 	<div class="col-xs-12 col-md-4 nopadding" style="padding-right: 1px;">
@@ -306,9 +306,9 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	</article>
 
 	<article class="full">
-		<iframe src="impress.html" seamless style="border: 0px; height: 555px; width: 100%;" class="visible-lg visible-md fade-in-element">
+		<iframe src="{{ site.baseurl }}{% link was-ist-gentrifizierung/impress.html %}" seamless style="border: 0px; height: 555px; width: 100%;" class="visible-lg visible-md fade-in-element">
 		  <p>Ihr Browser kann leider keine eingebetteten Frames anzeigen:
-		  Sie k&ouml;nnen die eingebettete Seite <a href="impress.html">hier aufrufen</a></p>
+		  Sie k&ouml;nnen die eingebettete Seite <a href="{{ site.baseurl }}{% link was-ist-gentrifizierung/impress.html %}">hier aufrufen</a></p>
 		</iframe>
 
 		<p class="no-comment visible-sm visible-xs">Auf Handys leider nicht darstellbar</p>
@@ -384,10 +384,6 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 		<p>In welchem Umfang bestimmte Ortsteile von Gentrifizierung betroffen sind, lässt sich nicht so einfach sagen. Dafür braucht es viele unterschiedliche Daten, die über einen größeren Zeitraum betrachtet werden. Untersuchen kann man dafür die <a href="{{ site.baseurl }}gentrifizierung-in-leipzig">Mietpreisentwicklung, Zu- und Wegzüge und die Binnenwanderung</a>. Aber auch die Entwicklung von Armutsanteilen, Ausländeranteilen oder dem Altersdurchschnitt geben Aufschluss darüber, wie stark ein Gebiet sich verändert hat. Denn Gentrifizierung geht meist auch mit einer Homogenisierung eines Viertels einher: Die Mischung im Quartier geht verloren. Eine sinkende Zahl von Arbeitslosen oder Migranten könnte ein Indiz für eine derartige Entwicklung sein. Außerdem – das ist zumindest unsere These – zeigt auch ein verändertes Angebot an Geschäften, Veranstaltungen oder Kneipen, dass sich ein Viertel und die Bevölkerung vor Ort verändern beziehungsweise verändert haben.</p>
 	</article>
 
-	<article class="comments">
-		{% include comments.html inline="true" %}
-	</article>
-
 </section>
 
 <div class="clearfix">&nbsp;</div>
@@ -400,9 +396,9 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 		<p>Um uns dem Thema Gentrifizierung erst einmal anzunähern, haben wir uns mit Wissenschaftlern und einzelnen Akteuren getroffen. Es war gar nicht so einfach zwischen all den unterschiedlichen Auffassungen und Meinungen, was Gentrifizierung ist und ob es das in Leipzig gibt, bei dem Wust an Informationen durchzusteigen. Wir selbst haben kein Tool entwickelt, um Gentrifizierung „zu messen“. Wir können das gar nicht leisten, da Wissenschaftler sich ein ganzes Leben lang damit beschäftigen. Das „Messen“ der Gentrifizierung ist weit schwieriger und aufwendiger, weshalb wir diesen Job lieber den Profis überlassen (ein Beispiel wie Stadtsoziologen und Geographen Gentrifizierung messen findet sich hier: <a href="http://gentrima.lepus.uberspace.de/" target="_blank">http://gentrima.lepus.uberspace.de/</a>). Wir stellen eher einzelne Visualisierungen zur Verfügung und versuchen diese mit den aktuellen Ergebnissen aus der Wissenschaft zu verknüpfen.</p>
 
 		<h4>Für genauere Infos/Quellen:</h4>
-		<p class="no-comment">Holm, Andrej (2013): Wir Bleiben Alle! Gentrifizierung – Städtische Konflikte um Aufwertung und Verdrängung, Münster: UNRAST.</p>
-		<p class="no-comment">Venema, Rebecca (2013): Gentrification in einer ostdeutschen Stadt? Öffentliche Diskurse zu städtischen Aufwertungsprozessen am Beispiel Leipzig (unveröffentlichte Masterarbeit), Leipzig: Universität Leipzig.</p>
-		<p class="no-comment">GentriMap. Gentrifizierung visualisieren (ein Projekt der Humboldt-Universität zu Berlin): <a href="http://gentrima.lepus.uberspace.de/" target="_blank">http://gentrima.lepus.uberspace.de/</a> </p>
+		<p>Holm, Andrej (2013): Wir Bleiben Alle! Gentrifizierung – Städtische Konflikte um Aufwertung und Verdrängung, Münster: UNRAST.</p>
+		<p>Venema, Rebecca (2013): Gentrification in einer ostdeutschen Stadt? Öffentliche Diskurse zu städtischen Aufwertungsprozessen am Beispiel Leipzig (unveröffentlichte Masterarbeit), Leipzig: Universität Leipzig.</p>
+		<p>GentriMap. Gentrifizierung visualisieren (ein Projekt der Humboldt-Universität zu Berlin): <a href="http://gentrima.lepus.uberspace.de/" target="_blank">http://gentrima.lepus.uberspace.de/</a> </p>
 
 	</article>
 

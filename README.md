@@ -20,7 +20,7 @@ Sofern nicht anders angegeben gilt:
 
 Im Zweifelsfall bitte bei den unten stehenden Kontaktdaten melden.
 
-##Tech
+## Tech
 einundleipzig basiert auf folgenden Open Source Projekten:
 * [jekyll] - Ein simpler Generator für statische Webseiten basierend auf Ruby
 
