@@ -8,11 +8,6 @@ exclude:
   - "README.md"
   - "*.lock"
 
-  # plugins to include
-plugins:
-  - jekyll-paginate
-  - jekyll-assets
-
 # Build settings
 markdown: kramdown
 highlighter: pygments
@@ -34,9 +29,6 @@ paginate_path: "blog/page:num"
 
 # asset setup
 assets:
-  compress:
-    css: true
-    js: true
   sources:
     - _assets/posts
     - _assets/pages
