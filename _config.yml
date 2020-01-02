@@ -22,10 +22,11 @@ permalink:	/blog/:title/
 
 # general settings
 title: einundleipzig
-url: http://www.einundleipzig.de
-baseurl: "/" # the subpath of your site, e.g. /blog/
+url: https://www.einundleipzig.de
+baseurl: /
 email: kontakt@einundleipzig.de
-description: einundleipzig -  Leipzigs Stadtentwicklung ist das Thema&#58; Einfach erklärt mit Daten und Ergebnissen aus der Stadt-Forschung. Interaktiv mit Karten und Filmen, für und vor allem mit den Menschen in Leipzig.
+description: einundleipzig -  Leipzigs Stadtentwicklung ist das Thema&#58; Einfach erklärt mit Daten und Ergebnissen
+  aus der Stadt-Forschung. Interaktiv mit Karten und Filmen, für und vor allem mit den Menschen in Leipzig.
 
 # Paginator setup
 paginate: 5
