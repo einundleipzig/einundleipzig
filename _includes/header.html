@@ -1,73 +1,80 @@
-<!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top shadow" role="navigation">
 	<div class="container">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-	    </button>
-		<a href="{{ site.url }}" class="navbar-brand">
-			<img src="{% asset logogross.png @path %}" style="height: 40px;" class="vcenter img-responsive" alt="einundleipzig Logo" />
-		</a>
-	</div>
-	<div class="navbar-collapse collapse">
-		<ul class="nav navbar-nav">
-			<li class="dropdown">
-				<a href="#" data-toggle="dropdown" class="dropdown-toggle">Wissenschaft <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-				{% for item in site.menu %}
-					{% for categories in item.categories %}
-					{% if categories == 'wissenschaft' %}
-					<li>
-						<a href="{{ item.url | remove_first: '/' | prepend: site.baseurl }}">{{ item.title }}</a>
-					</li>
-					{% endif %}
-					{% endfor %}
-				{% endfor %}
-                </ul>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      <a href="{{ site.url }}" class="navbar-brand">
+        <img src="{% asset logogross.png @path %}" style="height: 40px;" class="vcenter img-responsive" alt="einundleipzig Logo" />
+      </a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Wissenschaft <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+          {% for item in site.menu %}
+            {% for categories in item.categories %}
+            {% if categories == 'wissenschaft' %}
+            <li>
+              <a href="{{ item.url | remove_first: '/' | prepend: site.baseurl }}">{{ item.title }}</a>
             </li>
+            {% endif %}
+            {% endfor %}
+          {% endfor %}
+          </ul>
+         </li>
 
-			<li class="dropdown">
-				<a href="#" data-toggle="dropdown" class="dropdown-toggle">Geschichten <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-				{% for item in site.menu %}
-					{% for categories in item.categories %}
-					{% if categories == 'geschichten' %}
-					<li>
-						<a href="{{ item.url | remove_first: '/' | prepend: site.baseurl }}">{{ item.title }}</a>
-					</li>
-					{% endif %}
-					{% endfor %}
-				{% endfor %}
-                </ul>
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Geschichten <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+          {% for item in site.menu %}
+            {% for categories in item.categories %}
+            {% if categories == 'geschichten' %}
+            <li>
+              <a href="{{ item.url | remove_first: '/' | prepend: site.baseurl }}">{{ item.title }}</a>
             </li>
+            {% endif %}
+            {% endfor %}
+          {% endfor %}
+          </ul>
+        </li>
 
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<li>
-				<a href="{{ "blog/" | prepend: site.baseurl }}">Blog</a>
-			</li>
-			<li>
-				<a href="{{ "data/" | prepend: site.baseurl }}">Daten</a>
-			</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="{{ site.baseurl }}{% link blog/index.html %}">Blog</a>
+        </li>
+        <li>
+          <a href="{{ site.baseurl }}{% link data/index.html %}">Daten</a>
+        </li>
 
-			<li>
-				<a href="{{ "contact/" | prepend: site.baseurl }}">Kontakt &nbsp;&nbsp; <i class="fa fa-lg fa-envelope"></i></a>
-			</li>
+        <li>
+          <a href="{{ site.baseurl }}{% link contact/index.html %}">
+            Kontakt &nbsp;&nbsp; <i class="fa fa-lg fa-envelope"></i>
+          </a>
+        </li>
 
-			<li>
-				<a href="https://www.facebook.com/einundleipzig" target="_blank" class="social"><i class="fa fa-lg fa-facebook-square"></i> </a>
-			</li>
-			<li>
-				<a href="https://www.twitter.com/einundleipzig" target="_blank" class="social"><i class="fa fa-lg fa-twitter-square"></i> </a>
-			</li>
-			<li>
-				<a href="https://www.github.com/einundleipzig" target="_blank" class="social"><i class="fa fa-lg fa-github-square"></i> </a>
-			</li>
-		</ul>
-	</div><!--/.nav-collapse -->
+        <li>
+          <a href="https://www.facebook.com/einundleipzig" target="_blank" class="social">
+            <i class="fa fa-lg fa-facebook-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/einundleipzig" target="_blank" class="social">
+            <i class="fa fa-lg fa-twitter-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.github.com/einundleipzig" target="_blank" class="social">
+            <i class="fa fa-lg fa-github-square"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
 	</div>
 </nav>
 

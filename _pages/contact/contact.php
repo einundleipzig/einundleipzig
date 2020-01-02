@@ -1,8 +1,6 @@
 <?php
 /**
- * Simple contact Form.
- *
- * @author Wolfgang Amann
+ * Simple contact form.
  */
 
 // Check for empty fields
@@ -13,8 +11,8 @@ if(empty($_POST['name']) ||
 		echo "No arguments Provided!";
 		return false;
 }
-   
-// Vars   
+
+// Vars
 $name = $_POST['name'];
 $emailAddress = $_POST['email'];
 $message = $_POST['message'];
@@ -35,5 +33,5 @@ $text .= "Nachricht:\r\n" . $message;
 
 // Send the mail
 mail($to, $subject, $text, $from);
-return true;	
+return true;
 ?>

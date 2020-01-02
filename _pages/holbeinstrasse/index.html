@@ -3,9 +3,11 @@ layout: default
 title: Kampf den Mietern
 subtitle: „Vielleicht hätten wir etwas anders gemacht“
 image: holbeinstrasse/teaser.jpg
-description: Er gehört zu den Pionieren des Leipziger Westens&#58;  Vor 15 Jahren zog Künstler Steffen Balmer ins Elsterwerk, eine ehemalige Fabrik. Dann kam ein Schreiben seines Vermieters&#58; Kernsanierung, er soll ausziehen. Balmer aber will das nicht. Der Kampf ums Bleiben beginnt.
+description: Er gehört zu den Pionieren des Leipziger Westens&#58; Vor 15 Jahren zog Künstler Steffen Balmer ins
+  Elsterwerk, eine ehemalige Fabrik. Dann kam ein Schreiben seines Vermieters&#58; Kernsanierung, er soll ausziehen.
+  Balmer aber will das nicht. Der Kampf ums Bleiben beginnt.
 author: christina
-scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/video.js/dist/video.min.js]
+scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/video.js/dist/video-js/video.js]
 ---
 <section class="story-header-image">
 
@@ -33,48 +35,130 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 			</p>
 			<p class="credits">
 			{% assign author = site.authors[page.author] %}
-				<strong><em>Text</em></strong> <span style="text-transform: uppercase;">{{ author.display_name }}</span> | <strong><em>Bilder und Videos</em></strong> <span style="text-transform: uppercase;">{{ author.display_name }}</span> und <span style="text-transform: uppercase;">Carolyn Wißing</span>, 15. Dezember 2014<br />
+				<strong><em>Text</em></strong> <span style="text-transform: uppercase;">{{ author.display_name }}</span> | ^
+        <strong><em>Bilder und Videos</em></strong> <span style="text-transform: uppercase;">{{ author.display_name }}</span> und
+        <span style="text-transform: uppercase;">Carolyn Wißing</span>, 15. Dezember 2014<br />
 			</p>
 
 	</article>
 
 	<article class="full">
-		{% include video.html id="video-holbeinstrasse-fotofilm" poster="holbeinstrasse/video/Fotofilm.jpg" mp4="holbeinstrasse/video/Fotofilm.mp4" webm="holbeinstrasse/video/Fotofilm.webm" %}
+		{% include video.html id="video-holbeinstrasse-fotofilm" poster="holbeinstrasse/video/Fotofilm.jpg"
+    mp4="holbeinstrasse/video/Fotofilm.mp4" webm="holbeinstrasse/video/Fotofilm.webm" %}
 	</article>
 
 	<article>
 
-		<p class="begin">Ein goldfarbener Mercedes rattert über das Kopfsteinpflaster. Zwei Männer im Anzug steigen aus, schreiten das Haus entlang und deuten auf Dinge, die bald sein könnten: Eine Tiefgarage, strahlend weiße Fassaden und Lofts aus Backsteinwänden. Hinter der Einfahrt, einige Meter vom Mercedes entfernt, steht Steffen Balmer, 52, vor einem Fernsehreporter und sucht nach den Worten. Worte, die sagen, was das alles für ihn bedeutet. Langsam reiht er die Sätze aneinander und dann, „ach nein, anders. Noch mal von vorn“, bittet er. Er seufzt. Die Arme hält er dicht am Körper, seine Augen wandern zwischen dem Reporter, den Männern, dem Himmel. Er mag die Kamera nicht und dennoch braucht er sie, glaubt er, um sich zu wehren. Denn was die Männer schon so genau vor sich sehen können, ist für ihn ein lidloser Albtraum. „Das hier“, sagen sie, als sie an ihm vorbeigehen, „muss natürlich alles weg.“ Die Männer verziehen das Gesicht. Dann kommen sie auf Balmer zu. So sei nun mal der Lauf der Dinge, sagen sie dem Reporter, als der die Kamera ausstellt. Man könne nicht erwarten, für drei Euro Kaltmiete hier wohnen bleiben zu können. Der Reporter schüttelt den Kopf, als die Männer in ihrem Wagen davon fahren. Balmer steht neben ihm und schweigt. Er braucht jetzt keine Worte mehr, um zu erklären, was all das für ihn bedeutet: Er könnte sein Zuhause verlieren.
+		<p class="begin">
+      Ein goldfarbener Mercedes rattert über das Kopfsteinpflaster. Zwei Männer im Anzug steigen aus, schreiten das
+      Haus entlang und deuten auf Dinge, die bald sein könnten: Eine Tiefgarage, strahlend weiße Fassaden und Lofts aus
+      Backsteinwänden. Hinter der Einfahrt, einige Meter vom Mercedes entfernt, steht Steffen Balmer, 52, vor einem
+      Fernsehreporter und sucht nach den Worten. Worte, die sagen, was das alles für ihn bedeutet. Langsam reiht er die
+      Sätze aneinander und dann, „ach nein, anders. Noch mal von vorn“, bittet er. Er seufzt. Die Arme hält er dicht am
+      Körper, seine Augen wandern zwischen dem Reporter, den Männern, dem Himmel. Er mag die Kamera nicht und dennoch
+      braucht er sie, glaubt er, um sich zu wehren. Denn was die Männer schon so genau vor sich sehen können, ist für
+      ihn ein lidloser Albtraum. „Das hier“, sagen sie, als sie an ihm vorbeigehen, „muss natürlich alles weg.“ Die
+      Männer verziehen das Gesicht. Dann kommen sie auf Balmer zu. So sei nun mal der Lauf der Dinge, sagen sie dem
+      Reporter, als der die Kamera ausstellt. Man könne nicht erwarten, für drei Euro Kaltmiete hier wohnen bleiben zu
+      können. Der Reporter schüttelt den Kopf, als die Männer in ihrem Wagen davon fahren. Balmer steht neben ihm und
+      schweigt. Er braucht jetzt keine Worte mehr, um zu erklären, was all das für ihn bedeutet: Er könnte sein Zuhause
+      verlieren.
 		</p>
 
-		<p>Seit knapp 15 Jahren mietet der freischaffende Künstler über 120 Quadratmeter in der ehemaligen Fabrik, dem „Elsterwerk“ – und das zu einem Preis, wie er damals für ein unsaniertes Gebäude üblich war. Der damalige Vermieter hat sich nur wenig um das Haus in der Holbeinstraße gekümmert. Die Mieter hatten freie Hand und schufen sich ihr eigenes Reich. Seitdem aber die Projektentwicklungsgesellschaft KSW das Elsterwerk gekauft hat, hat sich das geändert. Balmer und die anderen Bewohner sollen ausziehen. Die KSW ist bekannt dafür, unsanierte Gebäude komplett aufzukaufen, teuer zu sanieren, um sie dann gewinnträchtig wieder zu verkaufen. Mit dem Elsterwerk soll das Gleiche geschehen. Dafür hat die Gesellschaft den Mietern Ende letzten Jahres ihre Kündigungen geschickt. Gegen eine Entschädigung sollen die alten Mietverträge aufgehoben werden. „Wir aber möchten bleiben“, sagt Balmer. Seitdem verläuft eine Frontlinie zwischen seiner Wohnungstür und dem goldenen Mercedes, zwischen seinem Zuhause und den Luftschlössern der KSW.
+		<p>
+      Seit knapp 15 Jahren mietet der freischaffende Künstler über 120 Quadratmeter in der ehemaligen Fabrik, dem
+      „Elsterwerk“ – und das zu einem Preis, wie er damals für ein unsaniertes Gebäude üblich war. Der damalige
+      Vermieter hat sich nur wenig um das Haus in der Holbeinstraße gekümmert. Die Mieter hatten freie Hand und schufen
+      sich ihr eigenes Reich. Seitdem aber die Projektentwicklungsgesellschaft KSW das Elsterwerk gekauft hat, hat sich
+      das geändert. Balmer und die anderen Bewohner sollen ausziehen. Die KSW ist bekannt dafür, unsanierte Gebäude
+      komplett aufzukaufen, teuer zu sanieren, um sie dann gewinnträchtig wieder zu verkaufen. Mit dem Elsterwerk soll
+      das Gleiche geschehen. Dafür hat die Gesellschaft den Mietern Ende letzten Jahres ihre Kündigungen geschickt.
+      Gegen eine Entschädigung sollen die alten Mietverträge aufgehoben werden. „Wir aber möchten bleiben“, sagt
+      Balmer. Seitdem verläuft eine Frontlinie zwischen seiner Wohnungstür und dem goldenen Mercedes, zwischen seinem
+      Zuhause und den Luftschlössern der KSW.
 		</p>
 
-		<p>Das Elsterwerk liegt im Leipziger Stadtteil Schleußig. Als Balmer 1999 mit seinem Atelier in die Fabrik zog, wurden noch Autos über den Lastzug in die oberen Stockwerke gehievt. „Kaum jemand dachte daran, dass man hier wohnen könnte“, sagt Balmer. Mittlerweile steht der Aufzug still. Stattdessen leben Künstler, Gewerbetreibende und Kreative in dem ehemaligen Werk. Günstige Mieten und der Charme vergangener Zeiten haben sie gelockt. „Jetzt aber sollen hier Luxuslofts entstehen. Für Leute, die sich das leisten können“, sagt Balmer. Doch so lange die Mieter in dem Haus bleiben, kann die KSW nicht mit der Kernsanierung anfangen. Balmer deutet auf die stahlgraue Bautür, hinter der man zum Treppenaufgang und den Wohnungen gelangt. Der Vermieter hat sie angebracht. „Wir können die Tür nicht abschließen.“ Seitdem bekommt die Hausgemeinschaft immer wieder Besuch: Von Bauarbeitern, die Schutt zurücklassen oder mit einem Vorschlaghammer Wände einreißen, teilweise sogar von bewohnten Räumen. Oder von Leuten, die durch die Wohnungen streifen, aus denen andere Mieter bereits ausgezogen sind. „Manche machen Lärm. Andere versuchen, noch verwertbare Sachen aus den verlassenen Räumen mitzunehmen“, sagt Balmer. Er glaubt, dass der Besuch nicht von Ungefähr kommt.
+		<p>
+      Das Elsterwerk liegt im Leipziger Stadtteil Schleußig. Als Balmer 1999 mit seinem Atelier in die Fabrik zog,
+      wurden noch Autos über den Lastzug in die oberen Stockwerke gehievt. „Kaum jemand dachte daran, dass man hier
+      wohnen könnte“, sagt Balmer. Mittlerweile steht der Aufzug still. Stattdessen leben Künstler, Gewerbetreibende
+      und Kreative in dem ehemaligen Werk. Günstige Mieten und der Charme vergangener Zeiten haben sie gelockt. „Jetzt
+      aber sollen hier Luxuslofts entstehen. Für Leute, die sich das leisten können“, sagt Balmer. Doch so lange die
+      Mieter in dem Haus bleiben, kann die KSW nicht mit der Kernsanierung anfangen. Balmer deutet auf die stahlgraue
+      Bautür, hinter der man zum Treppenaufgang und den Wohnungen gelangt. Der Vermieter hat sie angebracht. „Wir
+      können die Tür nicht abschließen.“ Seitdem bekommt die Hausgemeinschaft immer wieder Besuch: Von Bauarbeitern,
+      die Schutt zurücklassen oder mit einem Vorschlaghammer Wände einreißen, teilweise sogar von bewohnten Räumen.
+      Oder von Leuten, die durch die Wohnungen streifen, aus denen andere Mieter bereits ausgezogen sind. „Manche
+      machen Lärm. Andere versuchen, noch verwertbare Sachen aus den verlassenen Räumen mitzunehmen“, sagt Balmer. Er
+      glaubt, dass der Besuch nicht von Ungefähr kommt.
 		</p>
 
 		<h3>Der Leipziger Westen: Im Herzen von Hypezig</h3>
 
-		<p>Kaum eine andere deutsche Stadt wächst so schnell wie Leipzig. Und die Bürger, wie eine Umfrage ergeben hat, sind sehr zufrieden mit dem, was die Stadt zu bieten hat. Das war nicht immer so. Nach der Wende zogen viele Leipziger in die Vororte. Die Stadt verlor über 95.000 Einwohner und viele mit Westgeld frisch sanierte Gründerzeithäuser standen leer. Seit 2002 kommen die Menschen wieder zurück in die Stadt. Beliebt sind dabei vor allem die Altbauquartiere westlich des Auwaldes, wie zum Beispiel Schleußig. Seit 2010 allerdings hat sich die Situation verändert: Mehr Menschen ziehen wieder weg als zu. Denn der Ortsteil ist aufgefüllt und die Mietpreise bewegen sich über dem Durchschnitt. Die Lage zwischen Auwald und der weißen Elster ist attraktiv – und der hippe, kreative Westen liegt in direkter Nachbarschaft. Plagwitz und Lindenau sind bekannt für ihre Kunstszene und das alternative Flair. Das strahlt auf die ganze Stadt: Die sei nämlich das „better Berlin“, wie die New York Times behauptet. Mittlerweile werben Immobilienfirmen mit dem gleichen Spruch.
+		<p>
+      Kaum eine andere deutsche Stadt wächst so schnell wie Leipzig. Und die Bürger, wie eine Umfrage ergeben hat, sind
+      sehr zufrieden mit dem, was die Stadt zu bieten hat. Das war nicht immer so. Nach der Wende zogen viele Leipziger
+      in die Vororte. Die Stadt verlor über 95.000 Einwohner und viele mit Westgeld frisch sanierte Gründerzeithäuser
+      standen leer. Seit 2002 kommen die Menschen wieder zurück in die Stadt. Beliebt sind dabei vor allem die
+      Altbauquartiere westlich des Auwaldes, wie zum Beispiel Schleußig. Seit 2010 allerdings hat sich die Situation
+      verändert: Mehr Menschen ziehen wieder weg als zu. Denn der Ortsteil ist aufgefüllt und die Mietpreise bewegen
+      sich über dem Durchschnitt. Die Lage zwischen Auwald und der weißen Elster ist attraktiv – und der hippe,
+      kreative Westen liegt in direkter Nachbarschaft. Plagwitz und Lindenau sind bekannt für ihre Kunstszene und das
+      alternative Flair. Das strahlt auf die ganze Stadt: Die sei nämlich das „better Berlin“, wie die New York Times
+      behauptet. Mittlerweile werben Immobilienfirmen mit dem gleichen Spruch.
 		</p>
 
 		<div class="floater">
 
-			{% include video.html id="video-holbeinstrasse-schultz" poster="holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.jpg" mp4="holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.mp4" webm="holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.webm" %}
+			{% include video.html id="video-holbeinstrasse-schultz"
+        poster="holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.jpg"
+        mp4="holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.mp4"
+        webm="holbeinstrasse/video/Schultz_Entwicklungsmotor_Spinnerei.webm" %}
 
 			<div class="video-description">
-				„Der Motor für die Stadtentwicklung und Leipzigs gesamtcooles Image“ – Bertram Schultze, Geschäftsführer des Kunstbetriebs „Die alte Baumwollspinnerei“
+				„Der Motor für die Stadtentwicklung und Leipzigs gesamtcooles Image“ – Bertram Schultze, Geschäftsführer des
+        Kunstbetriebs „Die alte Baumwollspinnerei“
 			</div>
 
 		</div>
 
-		<p>„Sicher waren wir ein Motor für die Stadtentwicklung und Leipzigs gesamtcooles Image“, sagt Bertram Schultze, Geschäftsführer der „Spinnerei“. Hinter ihm hängt eine Zeichnung der alten Fabrik, deren Schornsteine den Rauch in den Himmel pusten. Von hier aus vermarktet und verwaltet er einen der wichtigsten Wirtschaftskomplexe im Leipziger Westen: Wo Anfang des 20. Jahrhunderts die größte Baumwollspinnerei Europas ihren Sitz hatte, entstehen nun Bilder, die in den größten Museen der Welt hängen. Zehn Hektar Kunst statt Baumwolle. Die Spinnerei war eine der Herbergen der Leipziger Kunstpioniere. Nach der Wende, als die Fabrik ihre Werktore allmählich schloss, standen die meisten Industriehallen leer. Künstler zogen ein. Für wenig Geld konnten sie weite Flächen mieten: Raum, um auch mal aus zehn Meter Entfernung auf die Leinwand zu blicken. Heute kommen Touristengruppen zur Spinnerei. Ihre Vermarktung als Kunstzentrum und als Wirtschaftsfaktor für die Stadt sei notwendig, um das Image zu pflegen, findet Bertram Schultze. „Das ist auch super für den Stadtteil“, sagt er. „Die Gebäude würden komplett verfallen, wenn es keine Aufwertung gäbe.“ Und Gentrifizierung heiße ja nichts anderes als Aufwertung oder Veredelung. Es brauche nun mal Kapital, um wertvolle Bausubstanz zu erhalten.
+		<p>
+      „Sicher waren wir ein Motor für die Stadtentwicklung und Leipzigs gesamtcooles Image“, sagt Bertram Schultze,
+      Geschäftsführer der „Spinnerei“. Hinter ihm hängt eine Zeichnung der alten Fabrik, deren Schornsteine den Rauch
+      in den Himmel pusten. Von hier aus vermarktet und verwaltet er einen der wichtigsten Wirtschaftskomplexe im
+      Leipziger Westen: Wo Anfang des 20. Jahrhunderts die größte Baumwollspinnerei Europas ihren Sitz hatte, entstehen
+      nun Bilder, die in den größten Museen der Welt hängen. Zehn Hektar Kunst statt Baumwolle. Die Spinnerei war eine
+      der Herbergen der Leipziger Kunstpioniere. Nach der Wende, als die Fabrik ihre Werktore allmählich schloss,
+      standen die meisten Industriehallen leer. Künstler zogen ein. Für wenig Geld konnten sie weite Flächen mieten:
+      Raum, um auch mal aus zehn Meter Entfernung auf die Leinwand zu blicken. Heute kommen Touristengruppen zur
+      Spinnerei. Ihre Vermarktung als Kunstzentrum und als Wirtschaftsfaktor für die Stadt sei notwendig, um das Image
+      zu pflegen, findet Bertram Schultze. „Das ist auch super für den Stadtteil“, sagt er. „Die Gebäude würden
+      komplett verfallen, wenn es keine Aufwertung gäbe.“ Und Gentrifizierung heiße ja nichts anderes als Aufwertung
+      oder Veredelung. Es brauche nun mal Kapital, um wertvolle Bausubstanz zu erhalten.
 		</p>
 
-		<p>Steffen Balmer steht auf dem Jahrtausendfeld und überlegt. In Gedanken sieht er ein Zirkuszelt und Familien, die auf der Wiese picknicken. Aber vorher müssen sie dieses Gras loswerden. „Wir können einen Workshop machen: So mäht man mit einer Sichel“, schlägt jemand vor. „Nein, bloß nicht! Dann lieber eine große Mähmaschine mieten“, sagt jemand anderes. Das Unkraut reicht ihnen bis zur Hüfte. Das Feld gehört zu den großen Brachflächen, die es in Plagwitz noch gibt. In einem Monat soll die Wiese endlich genutzt werden. Dann wird wieder der „Westbesuch“ stattfinden, ein Straßenfest, das Balmer im gleichnamigen Verein ehrenamtlich mitorganisiert. Es wird wahrscheinlich eine der letzten Gelegenheiten sein, das Feld zu nutzen. Denn bis 2019 soll darauf eine neue Grundschule samt Turnhalle entstehen.
+		<p>
+      Steffen Balmer steht auf dem Jahrtausendfeld und überlegt. In Gedanken sieht er ein Zirkuszelt und Familien, die
+      auf der Wiese picknicken. Aber vorher müssen sie dieses Gras loswerden. „Wir können einen Workshop machen: So
+      mäht man mit einer Sichel“, schlägt jemand vor. „Nein, bloß nicht! Dann lieber eine große Mähmaschine mieten“,
+      sagt jemand anderes. Das Unkraut reicht ihnen bis zur Hüfte. Das Feld gehört zu den großen Brachflächen, die es
+      in Plagwitz noch gibt. In einem Monat soll die Wiese endlich genutzt werden. Dann wird wieder der „Westbesuch“
+      stattfinden, ein Straßenfest, das Balmer im gleichnamigen Verein ehrenamtlich mitorganisiert. Es wird
+      wahrscheinlich eine der letzten Gelegenheiten sein, das Feld zu nutzen. Denn bis 2019 soll darauf eine neue
+      Grundschule samt Turnhalle entstehen.
 		</p>
 
-		<p>Als Balmer 2005 seine Arbeit beim Verein „Westbesuch“ begann, bröckelte der Putz von den grauen Fassaden. Cafés oder Kneipen gab es in Plagwitz kaum. „Die Karl-Heine-Straße hatte den Ruf wie ihn heute die Eisenbahnstraße im Leipziger Osten hat“, sagt Balmer und lacht. „Viele Bewohner meinten, sie würden sich nach zehn Uhr abends nicht mehr auf die Straße trauen.“ Die Stadt sah Plagwitz als Problemstadtteil mit überdurchschnittlich vielen Langzeitarbeitslosen und schlecht ausgebildeten Jugendlichen. Balmer hatte einen anderen Blick auf das Viertel. Er glaubte an dessen Potential und organisierte ab 2007 das Straßenfest vom „Westbesuch“. Unterstützt wurde der Verein durch die Stadt und ein Förderprogramm der EU, dem europäischen Fonds für regionale Entwicklung, kurz EFRE. Seitdem haben die Investoren den Westen für sich entdeckt, vor allem die Fabriken. Balmer hätte sich niemals träumen lassen, dass seine ehrenamtliche Arbeit indirekt sogar Folgen für ihn selbst haben könnte. „Vielleicht hätten wir etwas anders gemacht. Aber damals dachte einfach niemand an Gentrifizierung“, sagt Balmer.
+		<p>
+      Als Balmer 2005 seine Arbeit beim Verein „Westbesuch“ begann, bröckelte der Putz von den grauen Fassaden. Cafés
+      oder Kneipen gab es in Plagwitz kaum. „Die Karl-Heine-Straße hatte den Ruf wie ihn heute die Eisenbahnstraße im
+      Leipziger Osten hat“, sagt Balmer und lacht. „Viele Bewohner meinten, sie würden sich nach zehn Uhr abends nicht
+      mehr auf die Straße trauen.“ Die Stadt sah Plagwitz als Problemstadtteil mit überdurchschnittlich vielen
+      Langzeitarbeitslosen und schlecht ausgebildeten Jugendlichen. Balmer hatte einen anderen Blick auf das Viertel.
+      Er glaubte an dessen Potential und organisierte ab 2007 das Straßenfest vom „Westbesuch“. Unterstützt wurde der
+      Verein durch die Stadt und ein Förderprogramm der EU, dem europäischen Fonds für regionale Entwicklung, kurz
+      EFRE. Seitdem haben die Investoren den Westen für sich entdeckt, vor allem die Fabriken. Balmer hätte sich
+      niemals träumen lassen, dass seine ehrenamtliche Arbeit indirekt sogar Folgen für ihn selbst haben könnte.
+      „Vielleicht hätten wir etwas anders gemacht. Aber damals dachte einfach niemand an Gentrifizierung“, sagt Balmer.
 		</p>
 	</article>
 
@@ -83,54 +167,139 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	</article>
 
 	<article style="padding-top: 35px;">
-		<p>Die Mietpreise in den teuer sanierten Fabriken liegen meistens weit über dem Durchschnitt, zwischen 8 und 12 Euro. Industriecharme ja, aber nur mit sauber verputzten Wänden und Bodenheizung. Teure Sanierungen erhöhen den Druck auf das Mietpreislevel im Quartier, sagt Dieter Rink, Professor am Helmholtzzentrum für Umweltforschung (UFZ) in Leipzig. Der Stadtsoziologe forscht seit langem zur Leipziger Stadtentwicklung und zum hiesigen Wohnungsmarkt. Er schätzt, dass in ganz Leipzig noch etwa 1000 Gründerzeithäuser leer stehen, die überwiegend nicht saniert sind. „In über 40 Jahren DDR hatte niemand etwas in diese Altbauten investiert“, sagt Rink. Eigentlich viel Potential, um einer Wohnungsknappheit – wie sie in anderen Städten Alltag ist – vorzubeugen. Die Investoren in Leipzig hätten allerdings kaum ein Interesse an preiswerten Sanierungen. Stattdessen sind hauptsächlich Wohnungen im gehobenen Wohnsegment entstanden. Um das refinanzieren zu können, müssen die Wohnungen relativ teuer vermietet werden. Zahlungskräftigere Bevölkerungsschichten ziehen ins Viertel. „Bars und Cafés werden entstehen für ein ganz anderes Publikum. Und auf lange Sicht werden wahrscheinlich auch die Mietpreise der umliegenden Häuser steigen“, sagt Rink. Ärmere Bürger können sich das Viertel dann nicht mehr leisten und müssen in günstigere Lagen ziehen, an den Stadtrand zum Beispiel. Die soziale Mischung ist gefährdet. „Auch deshalb muss man Wege finden, die alten Gründerzeithäuser in der Innenstadt preiswert zu sanieren“, sagt Rink.
+		<p>
+      Die Mietpreise in den teuer sanierten Fabriken liegen meistens weit über dem Durchschnitt, zwischen 8 und
+      12 Euro. Industriecharme ja, aber nur mit sauber verputzten Wänden und Bodenheizung. Teure Sanierungen erhöhen
+      den Druck auf das Mietpreislevel im Quartier, sagt Dieter Rink, Professor am Helmholtzzentrum für Umweltforschung
+      (UFZ) in Leipzig. Der Stadtsoziologe forscht seit langem zur Leipziger Stadtentwicklung und zum hiesigen
+      Wohnungsmarkt. Er schätzt, dass in ganz Leipzig noch etwa 1000 Gründerzeithäuser leer stehen, die überwiegend
+      nicht saniert sind. „In über 40 Jahren DDR hatte niemand etwas in diese Altbauten investiert“, sagt Rink.
+      Eigentlich viel Potential, um einer Wohnungsknappheit – wie sie in anderen Städten Alltag ist – vorzubeugen. Die
+      Investoren in Leipzig hätten allerdings kaum ein Interesse an preiswerten Sanierungen. Stattdessen sind
+      hauptsächlich Wohnungen im gehobenen Wohnsegment entstanden. Um das refinanzieren zu können, müssen die Wohnungen
+      relativ teuer vermietet werden. Zahlungskräftigere Bevölkerungsschichten ziehen ins Viertel. „Bars und Cafés
+      werden entstehen für ein ganz anderes Publikum. Und auf lange Sicht werden wahrscheinlich auch die Mietpreise der
+      umliegenden Häuser steigen“, sagt Rink. Ärmere Bürger können sich das Viertel dann nicht mehr leisten und müssen
+      in günstigere Lagen ziehen, an den Stadtrand zum Beispiel. Die soziale Mischung ist gefährdet. „Auch deshalb muss
+      man Wege finden, die alten Gründerzeithäuser in der Innenstadt preiswert zu sanieren“, sagt Rink.
 		</p>
 
-		<p>Steffen Balmer hält Ende Mai ein Schreiben des Bauordnungsamtes in der Hand. Er und die anderen Bewohner des Elsterwerks sollen ausziehen, heißt es darin. Die Brandschutzvorkehrungen seien unzureichend. Balmer kann es kaum glauben. Jetzt haben sie sogar die Stadt in ihren Ämtern gegen sich. „Der Vermieter hat diese Situation absichtlich herbeigeführt“, brummt Balmer. Die KSW habe die Brandschutztüren herausreißen lassen und sich dann selbst angezeigt. Aufgrund ihrer „lebensgefährlichen Situation“, das mahnt das Amt nun an, sollen die Bewohner alsbald ausziehen – trotz der noch geltenden Mietverträge. Geschlagen geben wollen er und die anderen Bewohner sich aber noch nicht. Die Baubürgermeisterin und einige Stadträte kommen in den nächsten Tagen ins Haus, zudem noch weitere Journalisten. Die Hausgemeinschaft versucht, Druck aufzubauen und dem Vermieter etwas entgegen zu setzen. Der hat bereits Werbeplakate an das Haus angebracht. „Der Blick fürs Wesentliche“ steht darauf.
+		<p>
+      Steffen Balmer hält Ende Mai ein Schreiben des Bauordnungsamtes in der Hand. Er und die anderen Bewohner des
+      Elsterwerks sollen ausziehen, heißt es darin. Die Brandschutzvorkehrungen seien unzureichend. Balmer kann es kaum
+      glauben. Jetzt haben sie sogar die Stadt in ihren Ämtern gegen sich. „Der Vermieter hat diese Situation
+      absichtlich herbeigeführt“, brummt Balmer. Die KSW habe die Brandschutztüren herausreißen lassen und sich dann
+      selbst angezeigt. Aufgrund ihrer „lebensgefährlichen Situation“, das mahnt das Amt nun an, sollen die Bewohner
+      alsbald ausziehen – trotz der noch geltenden Mietverträge. Geschlagen geben wollen er und die anderen Bewohner
+      sich aber noch nicht. Die Baubürgermeisterin und einige Stadträte kommen in den nächsten Tagen ins Haus, zudem
+      noch weitere Journalisten. Die Hausgemeinschaft versucht, Druck aufzubauen und dem Vermieter etwas entgegen zu
+      setzen. Der hat bereits Werbeplakate an das Haus angebracht. „Der Blick fürs Wesentliche“ steht darauf.
 		</p>
 	</article>
 
 	<article class="full" style="padding-bottom: 35px;">
 
-		<a href="{% asset holbeinstrasse/img/1.JPG @path %}" data-toggle="lightbox" data-gallery="hiddenimages" data-footer="Früher wuchs Wein an der Hausfassade des Elsterwerks in der Holbeinstraße 28a. Mit Beginn der Sanierungsarbeiten ließ der Eigentümer das Grün entfernen." class="col-sm-6">
+		<a href="{% asset holbeinstrasse/img/1.JPG @path %}" data-toggle="lightbox" data-gallery="hiddenimages"
+       data-footer="Früher wuchs Wein an der Hausfassade des Elsterwerks in der Holbeinstraße 28a. Mit Beginn der
+       Sanierungsarbeiten ließ der Eigentümer das Grün entfernen." class="col-sm-6">
 			<img src="{% asset holbeinstrasse/img/1.JPG @path %}" class="img-responsive" alt="" />
 
 			<span class="video-description">
-				Früher wuchs Wein an der Hausfassade des Elsterwerks in der Holbeinstraße 28a. Mit Beginn der Sanierungsarbeiten ließ der Eigentümer das Grün entfernen.
+				Früher wuchs Wein an der Hausfassade des Elsterwerks in der Holbeinstraße 28a. Mit Beginn der
+        Sanierungsarbeiten ließ der Eigentümer das Grün entfernen.
 			</span>
 		</a>
 
 
-		<a href="{% asset holbeinstrasse/img/2.JPG @path %}" data-toggle="lightbox" data-gallery="hiddenimages" data-footer="Mieter Steffen Balmer witzelt über die „neue“ Eingangstür. Sie versprühe ein besonderes „Baustellen-Flair“, sagt er." class="col-sm-6">
+		<a href="{% asset holbeinstrasse/img/2.JPG @path %}" data-toggle="lightbox" data-gallery="hiddenimages"
+       data-footer="Mieter Steffen Balmer witzelt über die „neue“ Eingangstür. Sie versprühe ein besonderes
+       „Baustellen-Flair“, sagt er." class="col-sm-6">
 			<img src="{% asset holbeinstrasse/img/2.JPG @path %}" class="img-responsive" alt=""/>
 			<span class="video-description">
-				Mieter Steffen Balmer witzelt über die „neue“ Eingangstür. Sie versprühe ein besonderes „Baustellen-Flair“, sagt er.
+				Mieter Steffen Balmer witzelt über die „neue“ Eingangstür. Sie versprühe ein besonderes „Baustellen-Flair“,
+        sagt er.
 			</span>
 		</a>
 		<!-- elements not showing, use data-remote -->
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/3.JPG @path %}" data-footer="Seit 15 Jahren wohnt Steffen Balmer in der ehemaligen Fabrik. Dabei hatte sich einiges angesammelt..."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/4.JPG @path %}" data-footer="... zum Beispiel Mitbringsel von verschiedenen Reisen."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/5.JPG @path %}" data-footer="Ein Selbstportrait. Steffen Balmer hat an der Hochschule für Grafik und Buchkunst studiert."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/6.JPG @path %}" data-footer="Den Flur hat sich Balmer mit anderen Bewohnern geteilt."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/7.JPG @path %}" data-footer="Hinter der Tür befindet sich der Lastaufzug, über den vor mehr als 15 Jahren noch die Autos in die verschiedenen Stockwerke der Fabrik gehievt wurden."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/8.JPG @path %}" data-footer="Auch die anderen Bewohner kämpfen noch darum, in der ehemaligen Fabrik wohnen bleiben zu können."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/9.JPG @path %}" data-footer="Andere sind gegen eine Abfindung bereits ausgezogen. Hinter dieser Tür wohnte vorher eine Familie."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/10.JPG @path %}" data-footer="Direkt vor der Wohnungstür einer Bewohnerin haben Bauarbeiter Schutt hinterlassen."></div>
-		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/11.JPG @path %}" data-footer="Der Eigentümer wirbt bereits am Gebäude um künftige Mieter: „Für Genießer. Der Blick für’s Wesentliche“."></div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/3.JPG @path %}"
+         data-footer="Seit 15 Jahren wohnt Steffen Balmer in der ehemaligen Fabrik. Dabei hatte sich einiges
+         angesammelt...">
+    </div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/4.JPG @path %}"
+         data-footer="... zum Beispiel Mitbringsel von verschiedenen Reisen.">
+    </div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/5.JPG @path %}"
+         data-footer="Ein Selbstportrait. Steffen Balmer hat an der Hochschule für Grafik und Buchkunst studiert.">
+    </div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/6.JPG @path %}"
+         data-footer="Den Flur hat sich Balmer mit anderen Bewohnern geteilt.">
+    </div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/7.JPG @path %}"
+         data-footer="Hinter der Tür befindet sich der Lastaufzug, über den vor mehr als 15 Jahren noch die Autos in
+         die verschiedenen Stockwerke der Fabrik gehievt wurden.">
+    </div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/8.JPG @path %}"
+         data-footer="Auch die anderen Bewohner kämpfen noch darum, in der ehemaligen Fabrik wohnen bleiben zu
+         können.">
+    </div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/9.JPG @path %}"
+         data-footer="Andere sind gegen eine Abfindung bereits ausgezogen. Hinter dieser Tür wohnte vorher eine
+         Familie.">
+    </div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/10.JPG @path %}"
+         data-footer="Direkt vor der Wohnungstür einer Bewohnerin haben Bauarbeiter Schutt hinterlassen.">
+    </div>
+		<div data-toggle="lightbox" data-gallery="hiddenimages" data-remote="{% asset holbeinstrasse/img/11.JPG @path %}"
+         data-footer="Der Eigentümer wirbt bereits am Gebäude um künftige Mieter: „Für Genießer. Der Blick für’s
+         Wesentliche“.">
+    </div>
 	</article>
 
 	<article>
 
 		<h3>Der Vermieter wirbt mit den Kreativen – und versucht sie gleichzeitig loszuwerden</h3>
 
-		<p>„Das ist so ein absurder Moment, dass der Eigentümer genau mit uns wirbt“, sagt Steffen Balmer, „also, er wirbt damit, dass hier im Viertel viele Kreative wohnen und dass es viel Kunst gibt.“ Er seufzt. Was Gentrifizierung bedeute, habe er erst in den letzten Wochen gelernt, sagt er. Er sitzt vor seinem Computerbildschirm, auf dem er den Plan für den Westbesuch geöffnet hat. Im Juni-Sonnenschein werden Trödler wieder ihren Tand verkaufen und Bands entlang der Karl-Heine-Straße ihre Lieder spielen. Balmer plant das Fest schon seit Wochen. „So habe ich wenigstens keine Zeit, über seine Wohnsituation zu grübeln“, sagt er. Seine Augen werden ganz klein, wenn er lächelt.
+		<p>
+      „Das ist so ein absurder Moment, dass der Eigentümer genau mit uns wirbt“, sagt Steffen Balmer, „also, er wirbt
+      damit, dass hier im Viertel viele Kreative wohnen und dass es viel Kunst gibt.“ Er seufzt. Was Gentrifizierung
+      bedeute, habe er erst in den letzten Wochen gelernt, sagt er. Er sitzt vor seinem Computerbildschirm, auf dem er
+      den Plan für den Westbesuch geöffnet hat. Im Juni-Sonnenschein werden Trödler wieder ihren Tand verkaufen und
+      Bands entlang der Karl-Heine-Straße ihre Lieder spielen. Balmer plant das Fest schon seit Wochen. „So habe ich
+      wenigstens keine Zeit, über seine Wohnsituation zu grübeln“, sagt er. Seine Augen werden ganz klein, wenn er
+      lächelt.
 		</p>
 
-		<p>Die Situation für die Hausgemeinschaft hat sich im Sommer erst mal wieder entspannt: Der Besuch der Baubürgermeisterin und der Stadträte hat den Mietern einen Aufschub verschafft. Jetzt sollen Mediationstreffen zwischen ihnen und der KSW einen Kompromiss bewirken. Im Falle von Steffen Balmer allerdings steht für den August eine Gerichtsverhandlung an. Der Streitpunkt: Sein Mietvertrag, den er mit dem vorherigen Eigentümer des Hauses noch vereinbart hatte. Dieser sei kein Wohnmietvertrag, sondern lediglich auf ein Gewerbe festgelegt, lautet der Vorwurf der gegnerischen Seite. Und bei Gewerbemietverträgen ist der Schutz für den Mieter deutlich geringer. Balmer aber sagt, er habe einen Wohnmietvertrag vereinbart – allerdings nur mündlich. Der vorherige Eigentümer müsste das nun vor Gericht bestätigen. Ansonsten muss Balmer seine Wohnung räumen. Am Schreibtisch lehnt ein Stapel Umzugskartons. Balmer winkt ab. Wenn er sie nicht brauche, könne er sie ja immer noch für eine Installation verwenden.</p>
+		<p>
+      Die Situation für die Hausgemeinschaft hat sich im Sommer erst mal wieder entspannt: Der Besuch der
+      Baubürgermeisterin und der Stadträte hat den Mietern einen Aufschub verschafft. Jetzt sollen Mediationstreffen
+      zwischen ihnen und der KSW einen Kompromiss bewirken. Im Falle von Steffen Balmer allerdings steht für den August
+      eine Gerichtsverhandlung an. Der Streitpunkt: Sein Mietvertrag, den er mit dem vorherigen Eigentümer des Hauses
+      noch vereinbart hatte. Dieser sei kein Wohnmietvertrag, sondern lediglich auf ein Gewerbe festgelegt, lautet der
+      Vorwurf der gegnerischen Seite. Und bei Gewerbemietverträgen ist der Schutz für den Mieter deutlich geringer.
+      Balmer aber sagt, er habe einen Wohnmietvertrag vereinbart – allerdings nur mündlich. Der vorherige Eigentümer
+      müsste das nun vor Gericht bestätigen. Ansonsten muss Balmer seine Wohnung räumen. Am Schreibtisch lehnt ein
+      Stapel Umzugskartons. Balmer winkt ab. Wenn er sie nicht brauche, könne er sie ja immer noch für eine
+      Installation verwenden.
+    </p>
 
-		<p>Ende August ist klar, dass er sie packen wird. Er hat den Streit mit seinem Vermieter vor Gericht verloren.</p>
+		<p>
+      Ende August ist klar, dass er sie packen wird. Er hat den Streit mit seinem Vermieter vor Gericht verloren.
+    </p>
 
-		<p><em>Rechtlich sei der Fall von Steffen Balmer ganz eindeutig, gab Pressesprecher der Leipziger Immobilien-Akteure Michael Rücker zu bedenken. Bei der verbleibenden Hausgemeinschaft sieht die Situation aber anders aus. Sie kämpft weiterhin darum, im Elsterwerk wohnen bleiben zu können. Im Herbst 2014 gab es Mediationstreffen zwischen Vermieter und Mietern, bei denen ein Kompromiss gefunden werden sollte. Auch deshalb wollte sich der Eigentümer, die Projektentwicklungsgesellschaft KSW GmbH, auf eine Anfrage von unserer Seite im September nicht zu dem Thema äußern. Man wolle einen Kompromiss nicht gefährden, schrieb Jörg Zochert. Er denke, dass Ende des Jahres 2014 eine abschließende Einigung möglich sei. „[Wir] haben jedoch unsererseits keinen Zeitdruck.“ Auf ihrem <a href="http://www.holbeinstrasse28a.de/unser-blog" target="_blank">Blog</a> berichten die verbleibenden Bewohner des Elsterwerks in der Holbeinstraße 28a über den derzeitigen Stand der Dinge.</em></p>
+		<p>
+      <em>
+        Rechtlich sei der Fall von Steffen Balmer ganz eindeutig, gab Pressesprecher der Leipziger
+        Immobilien-Akteure Michael Rücker zu bedenken. Bei der verbleibenden Hausgemeinschaft sieht die Situation aber
+        anders aus. Sie kämpft weiterhin darum, im Elsterwerk wohnen bleiben zu können. Im Herbst 2014 gab es
+        Mediationstreffen zwischen Vermieter und Mietern, bei denen ein Kompromiss gefunden werden sollte. Auch deshalb
+        wollte sich der Eigentümer, die Projektentwicklungsgesellschaft KSW GmbH, auf eine Anfrage von unserer Seite im
+        September nicht zu dem Thema äußern. Man wolle einen Kompromiss nicht gefährden, schrieb Jörg Zochert. Er
+        denke, dass Ende des Jahres 2014 eine abschließende Einigung möglich sei. „[Wir] haben jedoch unsererseits
+        keinen Zeitdruck.“ Auf ihrem <a href="http://www.holbeinstrasse28a.de/unser-blog" target="_blank"
+        rel="noopener noreferrer">Blog</a> berichten die verbleibenden Bewohner des Elsterwerks in der Holbeinstraße
+        28a über den derzeitigen Stand der Dinge.
+      </em>
+    </p>
 
 	</article>
 
@@ -141,9 +310,21 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	<article class="full" style="padding-right: 25px;">
 
 		<h4>Zur Recherche</h4>
-		<p>Aufmerksam wurden wir auf die Geschichte über den Verein „Stadt für alle“. Bei einem Treffen im Februar 2014 haben wir einige Bewohner des Elsterwerks kennengelernt. Seitdem haben wir Steffen Balmer immer wieder getroffen und die aktuellen Entwicklungen verfolgt. Wie angespannt die Situation dort war, haben wir erfahren, als wir zusammen mit einem MDR-Reporter den beiden Männern mit dem goldfarbenen Mercedes begegneten. Wir stellten einander mit Namen vor. Die Männer erklärten, dass sie geschäftlich mit der KSW zu tun hätten. Wie genau sie jedoch mit der Gesellschaft zusammenhängen, haben wir nicht erfahren. „Grüßen Sie aber die Karola von mir“, sagte einer der beiden zum Kollegen vom MDR. „Aber, ach, wahrscheinlich sehe ich sie öfters als Sie.“ Karola Wille heißt die Intendantin des MDR.
-		<br />
-		Nach dieser Situation hat sich die Autorin Christina Schmitt oft gefragt, ob sie überhaupt noch neutral sein kann, und ist zu der Erkenntnis gekommen: Kann sie in diesem Fall nur schwer. Denn während Steffen Balmer sie an seinem Leben teilhaben ließ, wollte sich die KSW bei der ersten Kontaktaufnahme nicht äußern. Bei der nächsten Geschichte sollte sie vielleicht die Sicht der Immobilienwirtschaft darstellen, glaubt sie.</p>
+		<p>
+      Aufmerksam wurden wir auf die Geschichte über den Verein „Stadt für alle“. Bei einem Treffen im Februar 2014
+      haben wir einige Bewohner des Elsterwerks kennengelernt. Seitdem haben wir Steffen Balmer immer wieder getroffen
+      und die aktuellen Entwicklungen verfolgt. Wie angespannt die Situation dort war, haben wir erfahren, als wir
+      zusammen mit einem MDR-Reporter den beiden Männern mit dem goldfarbenen Mercedes begegneten. Wir stellten
+      einander mit Namen vor. Die Männer erklärten, dass sie geschäftlich mit der KSW zu tun hätten. Wie genau sie
+      jedoch mit der Gesellschaft zusammenhängen, haben wir nicht erfahren. „Grüßen Sie aber die Karola von mir“, sagte
+      einer der beiden zum Kollegen vom MDR. „Aber, ach, wahrscheinlich sehe ich sie öfters als Sie.“ Karola Wille
+      heißt die Intendantin des MDR.
+		  <br />
+		  Nach dieser Situation hat sich die Autorin Christina Schmitt oft gefragt, ob sie überhaupt noch neutral sein kann,
+      und ist zu der Erkenntnis gekommen: Kann sie in diesem Fall nur schwer. Denn während Steffen Balmer sie an seinem
+      Leben teilhaben ließ, wollte sich die KSW bei der ersten Kontaktaufnahme nicht äußern. Bei der nächsten
+      Geschichte sollte sie vielleicht die Sicht der Immobilienwirtschaft darstellen, glaubt sie.
+    </p>
 
 	</article>
 

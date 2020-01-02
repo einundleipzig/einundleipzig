@@ -3,153 +3,370 @@ layout: default
 title: Die Insel im Osten
 subtitle: „Die haben ihr Herzblut hier reingesteckt“
 image: buelowviertel/buelow.jpg
-description: Im Leipziger Westen wird es langsam eng und teuer. Die Karawane zieht weiter Richtung Osten. Umschlossen von Torgauer und Eisenbahnstraße liegt eine kleine Insel, deren Bewohner sich eine andere Entwicklung wünschen&#58; Das Bülowviertel.
+description: Im Leipziger Westen wird es langsam eng und teuer. Die Karawane zieht weiter Richtung Osten. Umschlossen
+  von Torgauer und Eisenbahnstraße liegt eine kleine Insel, deren Bewohner sich eine andere Entwicklung wünschen&#58;
+  Das Bülowviertel.
 author: carolyn
-scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/video.js/dist/video.min.js]
+scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/video.js/dist/video-js/video.js]
 ---
 
 
 <section class="story-header-image">
-
-	<!-- image -->
-	<img src="{% asset {{page.image}} @path %}" class="img-responsive" alt="{{ page.title }}" />
-	<!-- description div -->
-	<div class="story-header-image-description">
+  <img src="{% asset {{page.image}} @path %}" class="img-responsive" alt="{{ page.title }}" />
+  <div class="story-header-image-description">
 		<span class="subdescr">
 			 {{ page.title }}
 		</span>
-		<div class="clearfix">&nbsp;</div>
-		<span class="descr">
+    <div class="clearfix">&nbsp;</div>
+    <span class="descr">
 			{{ page.subtitle }}
 		</span>
 
-	</div>
+  </div>
 </section>
 
 <section id="kapitel1">
 
-	<article class="teaser" style="padding-top: 35px;">
-		<p>
-			<em>{{ page.description }}</em>
-		</p>
-		<p class="credits">
-			{% assign author = site.authors[page.author] %}
-			<strong><em>Text</em></strong> <span style="text-transform: uppercase;">{{ author.display_name }}</span>, 15. Dezember 2014<br />
-		</p>
+  <article class="teaser" style="padding-top: 35px;">
+    <p>
+      <em>{{ page.description }}</em>
+    </p>
+    <p class="credits">
+      {% assign author = site.authors[page.author] %}
+      <strong><em>Text</em></strong> <span style="text-transform: uppercase;">{{ author.display_name }}</span>, 15. Dezember 2014<br />
+    </p>
 
-	</article>
+  </article>
 
-	<article>
-		<p class="begin">Zweimal Softeis gefrostet. Vanille-Schoko bitte!“ Hier im Eiscafé am Stünzer Park wird die braun-weiß gestreifte Eiscreme noch aus alten DDR-Maschinen gezapft. Und die Leute stehen auch an diesem Sonntag dafür Schlange. Julia Klein greift über die Ladentheke und fühlt sich wieder wie damals, als sie regelmäßig mit ihren Großeltern hierher kam. Mit dem kleinen weißen Plastiklöffel schabt sie dünne Streifen aus dem Eis während sie in Richtung Kleingartenanlage schlendert.</p>
+  <article>
+    <p class="begin">
+      Zweimal Softeis gefrostet. Vanille-Schoko bitte!“ Hier im Eiscafé am Stünzer Park wird die braun-weiß gestreifte
+      Eiscreme noch aus alten DDR-Maschinen gezapft. Und die Leute stehen auch an diesem Sonntag dafür Schlange. Julia
+      Klein greift über die Ladentheke und fühlt sich wieder wie damals, als sie regelmäßig mit ihren Großeltern
+      hierher kam. Mit dem kleinen weißen Plastiklöffel schabt sie dünne Streifen aus dem Eis während sie in Richtung
+      Kleingartenanlage schlendert.
+    </p>
 
-		<p>Julia Klein deutet mit der Hand in die Umgebung. Genau hier sei sie vor zwei Jahren mit ihrem Freund Johannes zwischen den Gartensparten entlang spaziert. Es war Sommer, die Sonne knallte. „Beim Geruch von Dachpappe und leicht fauligem Obst hat sich bei mir so eine Kindheitserinnerung aktiviert“, erinnert sich Julia. Der Blick auf die Karte zeigte dann, die Wohnung ihrer Großeltern ist ganz in der Nähe. „Das war so ein zentraler Wendepunkt. Mich verbindet etwas mit dem Leipziger Osten“, erzählt sie. Danach war klar, Julia und Johannes ziehen hierher.</p>
+    <p>
+      Julia Klein deutet mit der Hand in die Umgebung. Genau hier sei sie vor zwei Jahren mit ihrem Freund Johannes
+      zwischen den Gartensparten entlang spaziert. Es war Sommer, die Sonne knallte. „Beim Geruch von Dachpappe und
+      leicht fauligem Obst hat sich bei mir so eine Kindheitserinnerung aktiviert“, erinnert sich Julia. Der Blick auf
+      die Karte zeigte dann, die Wohnung ihrer Großeltern ist ganz in der Nähe. „Das war so ein zentraler Wendepunkt.
+      Mich verbindet etwas mit dem Leipziger Osten“, erzählt sie. Danach war klar, Julia und Johannes ziehen hierher.
+    </p>
 
-		<p>Bis dahin stand nur fest, dass die beiden das stressige und schnelllebige Berlin für Leipzig verlassen wollten. „Berlin war für uns nicht die lebenswerte Stadt, um dort eine Familie zu gründen“, erklärt Julia. Doch die Suche nach der bezahlbaren Leipziger Traumwohnung gestaltete sich schwierig – bis sie auf einer Party zwei frisch gebackene Hauseigentümerinnen kennenlernten, die ihnen eine Wohnung zum Selbstausbau im Bülowviertel anboten. Direkt am nächsten Tag standen Julia und Johannes in der zweiten Etage der unsanierten Bülowstraße 19 auf dreckigem PVC-Boden zwischen heruntergerissenen Tapetenresten. „Uns war klar, hier ist tierisch viel zu tun, aber die Wohnung hat unglaublich viel Potential“, erzählt Julia. Das war im Sommer 2012.</p>
+    <p>
+      Bis dahin stand nur fest, dass die beiden das stressige und schnelllebige Berlin für Leipzig verlassen wollten.
+      „Berlin war für uns nicht die lebenswerte Stadt, um dort eine Familie zu gründen“, erklärt Julia. Doch die Suche
+      nach der bezahlbaren Leipziger Traumwohnung gestaltete sich schwierig – bis sie auf einer Party zwei frisch
+      gebackene Hauseigentümerinnen kennenlernten, die ihnen eine Wohnung zum Selbstausbau im Bülowviertel anboten.
+      Direkt am nächsten Tag standen Julia und Johannes in der zweiten Etage der unsanierten Bülowstraße 19 auf
+      dreckigem PVC-Boden zwischen heruntergerissenen Tapetenresten. „Uns war klar, hier ist tierisch viel zu tun, aber
+      die Wohnung hat unglaublich viel Potential“, erzählt Julia. Das war im Sommer 2012.
+    </p>
 
-	</article>
+  </article>
 
-	<article class="full">
+  <article class="full">
 
-		{% include video.html id="example_video_1" poster="buelowviertel/video/buelowfotofilm.jpg" mp4="buelowviertel/video/buelowfotofilm.mp4" webm="buelowviertel/video/buelowfotofilm.webm" %}
+    {% include video.html id="example_video_1" poster="buelowviertel/video/buelowfotofilm.jpg" mp4="buelowviertel/video/buelowfotofilm.mp4" webm="buelowviertel/video/buelowfotofilm.webm" %}
 
-	</article>
+  </article>
 
-	<article style="padding-top: 35px;">
+  <article style="padding-top: 35px;">
 
-		<p>Heute kommt Julia Klein von ihrem Spaziergang durch den Stünzer Park zurück und schließt die Tür zu ihrer fertig sanierten Wohnung auf. An die Ausbauzeit kann sie mittlerweile gelassen zurückdenken, obwohl die eineinhalb Jahre eine unglaublich stressige Phase waren. An den Wochenenden pendelten Julia und Johannes von Berlin nach Leipzig. Was sie konnten, haben sie dann selber gemacht: Wände rausreißen, Dielenboden abschleifen, Kabelkanäle ziehen. Mit den Hauseigentümerinnen gibt es einen Deal, wie er für eine Ausbauwohnung üblich ist. Vor der Sanierung werden pauschal die Kosten berechnet, die nötig sind, die Wohnung auf einem Mindeststandard herzurichten. Diesen Betrag können Julia und Johannes in den nächsten neun Jahren abwohnen. Doch die beiden haben mehr investiert als die Pauschale. „Das ist ein Handel, den viele nicht nachvollziehen können“, erklärt Julia. „Wir wollten uns hier einfach wohlfühlen und haben uns eine Wohnung hergerichtet, die voll und ganz unseren Vorstellungen entspricht.“</p>
+    <p>
+      Heute kommt Julia Klein von ihrem Spaziergang durch den Stünzer Park zurück und schließt die Tür zu ihrer fertig
+      sanierten Wohnung auf. An die Ausbauzeit kann sie mittlerweile gelassen zurückdenken, obwohl die eineinhalb Jahre
+      eine unglaublich stressige Phase waren. An den Wochenenden pendelten Julia und Johannes von Berlin nach Leipzig.
+      Was sie konnten, haben sie dann selber gemacht: Wände rausreißen, Dielenboden abschleifen, Kabelkanäle ziehen.
+      Mit den Hauseigentümerinnen gibt es einen Deal, wie er für eine Ausbauwohnung üblich ist. Vor der Sanierung
+      werden pauschal die Kosten berechnet, die nötig sind, die Wohnung auf einem Mindeststandard herzurichten. Diesen
+      Betrag können Julia und Johannes in den nächsten neun Jahren abwohnen. Doch die beiden haben mehr investiert als
+      die Pauschale. „Das ist ein Handel, den viele nicht nachvollziehen können“, erklärt Julia. „Wir wollten uns hier
+      einfach wohlfühlen und haben uns eine Wohnung hergerichtet, die voll und ganz unseren Vorstellungen entspricht.“
+    </p>
 
-		<p>Julia Klein steht in ihrer großzügigen Küche am Fenster, das zum Hinterhof hinausgeht. Dort unten steht eine bepflanzte alte Badewanne, eine Feuerschale und ein paar weiße Plastikstühle drumherum. Wenige Meter dahinter, die Böschung hinab, führen Bahnschienen am Grundstück vorbei. Alle paar Minuten fährt ein Zug entlang. Julia stört das wenig. „Sicher hört man die Züge. Aber auf mich hat das eher eine beruhigende Wirkung.“ Sie geht zum Küchentisch und hebt eine postkartengroße Einladung auf. „MusikTrassenFest: Lieder am Gleis“ steht darauf geschrieben. In ein paar Wochen wollen Julia und Johannes gemeinsam mit Freunden und Nachbarn aus dem Bülowviertel ein gemütliches Fest im Hinterhof feiern.</p>
+    <p>
+      Julia Klein steht in ihrer großzügigen Küche am Fenster, das zum Hinterhof hinausgeht. Dort unten steht eine
+      bepflanzte alte Badewanne, eine Feuerschale und ein paar weiße Plastikstühle drumherum. Wenige Meter dahinter,
+      die Böschung hinab, führen Bahnschienen am Grundstück vorbei. Alle paar Minuten fährt ein Zug entlang. Julia
+      stört das wenig. „Sicher hört man die Züge. Aber auf mich hat das eher eine beruhigende Wirkung.“ Sie geht zum
+      Küchentisch und hebt eine postkartengroße Einladung auf. „MusikTrassenFest: Lieder am Gleis“ steht darauf
+      geschrieben. In ein paar Wochen wollen Julia und Johannes gemeinsam mit Freunden und Nachbarn aus dem
+      Bülowviertel ein gemütliches Fest im Hinterhof feiern.
+    </p>
 
-		<h3>Der Leipziger Osten: Eine rasante Entwicklung</h3>
+    <h3>Der Leipziger Osten: Eine rasante Entwicklung</h3>
 
-		<p>Kein Auwald, kein Kanal, keine nahegelegenen Seen. Der Leipziger Osten hat im Vergleich zu anderen Stadtteilen in dieser Hinsicht nicht viel zu bieten. Sicherlich gibt es auch hier Kleingartenanlagen und Parks. Aber nichts, wofür der Leipziger extra herkommen würde. Schon immer galten die Wohnquartiere nördlich und südlich der Eisenbahnstraße als wenig attraktiv. Nach der Wende hatten die Ortsteile im Osten, wie das gesamte Stadtgebiet, unter dem massiven Wegzug der Bewohner zu leiden. Doch Neustadt-Neuschönefeld, Volkmarsdorf, Anger-Crottendorf, Sellerhausen-Stünz, und Reudnitz-Thonberg erholten sich weniger schnell als die Ortsteile im Süden, Norden und zuletzt im Westen.</p>
+    <p>
+      Kein Auwald, kein Kanal, keine nahegelegenen Seen. Der Leipziger Osten hat im Vergleich zu anderen Stadtteilen in
+      dieser Hinsicht nicht viel zu bieten. Sicherlich gibt es auch hier Kleingartenanlagen und Parks. Aber nichts,
+      wofür der Leipziger extra herkommen würde. Schon immer galten die Wohnquartiere nördlich und südlich der
+      Eisenbahnstraße als wenig attraktiv. Nach der Wende hatten die Ortsteile im Osten, wie das gesamte Stadtgebiet,
+      unter dem massiven Wegzug der Bewohner zu leiden. Doch Neustadt-Neuschönefeld, Volkmarsdorf, Anger-Crottendorf,
+      Sellerhausen-Stünz, und Reudnitz-Thonberg erholten sich weniger schnell als die Ortsteile im Süden, Norden und
+      zuletzt im Westen.
+    </p>
 
-		<p>Obwohl die Stadt und auch zahlreiche private Initiativen versuchten, die Gegend wieder zu beleben, bleibt der Osten das Sorgenkind in der Stadtentwicklung. Der Gebäude- und Wohnungsleerstand ist nirgendwo in Leipzig so hoch wie hier. Noch 2011 stand jede fünfte Wohnung im Osten leer. Viele Bewohner haben ein vergleichsweise niedriges Einkommen zur Verfügung. Der Anteil an Arbeitslosen ist 2013 beispielsweise in Volkmarsdorf (17,4 Prozent) mehr als doppelt so hoch wie in der gesamten Stadt (7,9 Prozent). All das trägt zum negativen Image des Ostens bei, der als Migranten- und Hartz-IV-Hochburg unter vielen Leipzigern verrufen ist. Nur diejenigen, die von auswärts nach Leipzig kommen, scheint das nicht abzuschrecken. Die günstigen Mieten locken vor allem junge Berufseinsteiger und Studenten her.</p>
+    <p>
+      Obwohl die Stadt und auch zahlreiche private Initiativen versuchten, die Gegend wieder zu beleben, bleibt der
+      Osten das Sorgenkind in der Stadtentwicklung. Der Gebäude- und Wohnungsleerstand ist nirgendwo in Leipzig so
+      hoch wie hier. Noch 2011 stand jede fünfte Wohnung im Osten leer. Viele Bewohner haben ein vergleichsweise
+      niedriges Einkommen zur Verfügung. Der Anteil an Arbeitslosen ist 2013 beispielsweise in Volkmarsdorf
+      (17,4 Prozent) mehr als doppelt so hoch wie in der gesamten Stadt (7,9 Prozent). All das trägt zum negativen
+      Image des Ostens bei, der als Migranten- und Hartz-IV-Hochburg unter vielen Leipzigern verrufen ist. Nur
+      diejenigen, die von auswärts nach Leipzig kommen, scheint das nicht abzuschrecken. Die günstigen Mieten locken
+      vor allem junge Berufseinsteiger und Studenten her.
+    </p>
 
-		<p>Seit 2011 aber nimmt der Osten eine bemerkenswerte Entwicklung. „Momentan überschlägt es sich hier beinahe. Es passiert alles gleichzeitig“, erklärt Marlen Försterling und schüttelt dabei ungläubig den Kopf. Sie arbeitet beim Amt für Stadterneuerung und Wohnungsbauförderung der Stadt Leipzig und beobachtet seit fast drei Jahren, wie der Osten Stück für Stück aufgekauft wird. Quasi aus dem Nichts habe sich dieser Trend ergeben. Es sei eine ganz andere Dynamik als im Westen, wo zuerst die Kreativen kamen und dann allmählich die Investoren aufmerksam wurden. „Im Osten hat man gerade erst die Pioniere, aber gleichzeitig sind schon die Investoren da, die die Häuser aufkaufen“, sagt sie.</p>
+    <p>
+      Seit 2011 aber nimmt der Osten eine bemerkenswerte Entwicklung. „Momentan überschlägt es sich hier beinahe. Es
+      passiert alles gleichzeitig“, erklärt Marlen Försterling und schüttelt dabei ungläubig den Kopf. Sie arbeitet
+      beim Amt für Stadterneuerung und Wohnungsbauförderung der Stadt Leipzig und beobachtet seit fast drei Jahren, wie
+      der Osten Stück für Stück aufgekauft wird. Quasi aus dem Nichts habe sich dieser Trend ergeben. Es sei eine ganz
+      andere Dynamik als im Westen, wo zuerst die Kreativen kamen und dann allmählich die Investoren aufmerksam wurden.
+      „Im Osten hat man gerade erst die Pioniere, aber gleichzeitig sind schon die Investoren da, die die Häuser
+      aufkaufen“, sagt sie.
+    </p>
 
-		<div class="floater">
-			<img src="{% asset buelowviertel/img/foersterling.jpg @path %}" class="img-responsive" />
-			<div class="video-description">
-				Marlen Försterling ist beim Amt für Stadterneuerung und Wohnungsbauförderung speziell für den Leipziger Osten zuständig
-			</div>
-		</div>
+    <div class="floater">
+      <img src="{% asset buelowviertel/img/foersterling.jpg @path %}" class="img-responsive" />
+      <div class="video-description">
+        Marlen Försterling ist beim Amt für Stadterneuerung und Wohnungsbauförderung speziell für den Leipziger Osten
+        zuständig
+      </div>
+    </div>
 
-		<p>Vor vier Jahren konnte man noch ein ganzes Mehrfamilienhaus in Volkmarsdorf für 20.000 Euro kaufen. Mittlerweile ist man bei 120.000 Euro. Und die Häuser werden teilweise immer wieder weiterverkauft. Marlen Försterling ist sich sicher, das sind Spekulationsobjekte. „Bei der Arbeit habe ich ja Einblick in die Immobilienverkäufe und manche Objekte gehen jeden Monat wieder über den Tisch.“ Käufer, die bereitwillig die immer höheren Preise bezahlen, scheint es genug zu geben. Der Hype um Leipzig hat in Deutschland die Runde gemacht. Viele Immobilienfirmen aber auch Privatleute sehen die Chance, in Leipzig lukrative Anlageobjekte zu bekommen. Aus dem <a href="http://www.leipzig.de/bauen-und-wohnen/stadtentwicklung/raumbeobachtung-und-monitoring/monitoring-wohnen/" target="_blank">Wohnungsmarktbericht</a> der Stadt Leipzig geht hervor, dass 2012 nur sechs Prozent der sanierten Altbauwohnungen von Leipzigern selbst gekauft wurden, die restlichen Käufer kommen aus dem gesamten Bundesgebiet. Und wenn die Renditeerwartungen der Käufer erfüllt werden sollen, müssen irgendwann entsprechend die Mieten steigen.</p>
+    <p>
+      Vor vier Jahren konnte man noch ein ganzes Mehrfamilienhaus in Volkmarsdorf für 20.000 Euro kaufen. Mittlerweile
+      ist man bei 120.000 Euro. Und die Häuser werden teilweise immer wieder weiterverkauft. Marlen Försterling ist
+      sich sicher, das sind Spekulationsobjekte. „Bei der Arbeit habe ich ja Einblick in die Immobilienverkäufe und
+      manche Objekte gehen jeden Monat wieder über den Tisch.“ Käufer, die bereitwillig die immer höheren Preise
+      bezahlen, scheint es genug zu geben. Der Hype um Leipzig hat in Deutschland die Runde gemacht. Viele
+      Immobilienfirmen aber auch Privatleute sehen die Chance, in Leipzig lukrative Anlageobjekte zu bekommen. Aus
+      dem <a href="http://www.leipzig.de/bauen-und-wohnen/stadtentwicklung/raumbeobachtung-und-monitoring/monitoring-wohnen/"
+      target="_blank" rel="noopener nofererrer">Wohnungsmarktbericht</a> der Stadt Leipzig geht hervor, dass 2012 nur
+      sechs Prozent der sanierten Altbauwohnungen von Leipzigern selbst gekauft wurden, die restlichen Käufer kommen
+      aus dem gesamten Bundesgebiet. Und wenn die Renditeerwartungen der Käufer erfüllt werden sollen, müssen
+      irgendwann entsprechend die Mieten steigen.
+    </p>
 
-		<p>Von Seiten der Stadt Leipzig gebe es Versuche einen kompletten Ausverkauf zu verhindern, berichtet Marlen Försterling. „Wir brauchen junge und aktive Leute, die in ihrem Viertel etwas aufbauen und sich engagieren wollen. Denen muss man es leichter machen, Häuser zu kaufen.“ Försterling versucht deshalb die Eigentümer solcher Häuser ausfindig zu machen, die noch nicht verkauft und saniert sind. Mit ihnen bespricht sie <a class="hinweis toggle-background-info" href="#hintergrund-alternativen" data-target="#hintergrund-alternativen">alternative Verkaufs- und Nutzungsmöglichkeiten</a>, wie etwa das Konzept von Ausbauhäusern. Drei Projekte dieser Art sind daraus bereits entstanden. Ähnlich lief es auch im Falle des Bülowviertels. 2008 war das Quartier heruntergekommen, hatte aber durchaus Potential. Es mussten sich nur genügend Eigentümer finden, die in dem eigentlich hübschen Viertel etwas voranbringen wollen.</p>
+    <p>
+      Von Seiten der Stadt Leipzig gebe es Versuche einen kompletten Ausverkauf zu verhindern, berichtet Marlen
+      Försterling. „Wir brauchen junge und aktive Leute, die in ihrem Viertel etwas aufbauen und sich engagieren
+      wollen. Denen muss man es leichter machen, Häuser zu kaufen.“ Försterling versucht deshalb die Eigentümer solcher
+      Häuser ausfindig zu machen, die noch nicht verkauft und saniert sind. Mit ihnen bespricht sie <a class="hinweis
+      toggle-background-info" href="#hintergrund-alternativen" data-target="#hintergrund-alternativen">alternative
+      Verkaufs- und Nutzungsmöglichkeiten</a>, wie etwa das Konzept von Ausbauhäusern. Drei Projekte dieser Art
+      sind daraus bereits entstanden. Ähnlich lief es auch im Falle des Bülowviertels. 2008 war das Quartier
+      heruntergekommen, hatte aber durchaus Potential. Es mussten sich nur genügend Eigentümer finden, die in dem
+      eigentlich hübschen Viertel etwas voranbringen wollen.
+    </p>
 
-		<div id="hintergrund-alternativen" class="background-info-content hidden">
-			<strong>Alternative Wohn- und Nutzungsmöglichkeiten</strong> <a href="javascript:void(0)" class="background-info-close"><i class="fa fa-close" style="float: right;"></i></a>
-			<br /><br />
-			<h4>Wächterhäuser:</h4>
-			<p>Eigentümer von lange leerstehenden Objekten, die aktuell keine Möglichkeit haben die Häuser zu renovieren, übergeben diese an sogenannte „Wächter“. Für wenig Geld können die Nutzer sich die Räumlichkeiten einrichten, dort wohnen und arbeiten. Im Gegenzug sorgen sie dafür, dass weitere Schäden am Haus – etwa durch Vandalismus oder Witterung – eingegrenzt werden. </p>
-			<h4>Ausbauhäuser:</h4>
-			<p>In einem Ausbauhaus stellen die Eigentümer ihren Mietern Wohnfläche zum Selbstausbau zur Verfügung. Die Kosten, die die Mieter für Materialien und Arbeitsleistung einbringen, können sie abwohnen. Das heißt, sie können für einen festgelegten Zeitraum zu sehr günstigen und stabilen Mietkonditionen in der Wohnung leben. Der Eigentümer selbst kann auf diese Weise das Haus ohne großen Investitionsaufwand instand setzen.</p>
-			<h4>Hausprojekte:</h4>
-			<p>Bei Hausprojekten haben sich meist mehrere Personen zusammengeschlossen und ein renovierungsbedürftiges Haus gekauft. In Eigenregie richten sie das Haus mit der Absicht her, dort selbst langfristig nach eigenen Vorstellungen wohnen zu können. </p>
-			<p>Weitere Infos bei <a href="http://www.haushalten.org/" target="_blank">Haushalten e.V.</a></p>
+    <div id="hintergrund-alternativen" class="background-info-content hidden">
+      <strong>Alternative Wohn- und Nutzungsmöglichkeiten</strong>
+      <a href="javascript:void(0)" class="background-info-close"><i class="fa fa-close" style="float: right;"></i></a>
+      <br /><br />
+      <h4>Wächterhäuser:</h4>
+      <p>
+        Eigentümer von lange leerstehenden Objekten, die aktuell keine Möglichkeit haben die Häuser zu renovieren,
+        übergeben diese an sogenannte „Wächter“. Für wenig Geld können die Nutzer sich die Räumlichkeiten einrichten,
+        dort wohnen und arbeiten. Im Gegenzug sorgen sie dafür, dass weitere Schäden am Haus – etwa durch Vandalismus
+        oder Witterung – eingegrenzt werden.
+      </p>
+      <h4>Ausbauhäuser:</h4>
+      <p>
+        In einem Ausbauhaus stellen die Eigentümer ihren Mietern Wohnfläche zum Selbstausbau zur Verfügung. Die Kosten,
+        die die Mieter für Materialien und Arbeitsleistung einbringen, können sie abwohnen. Das heißt, sie können für
+        einen festgelegten Zeitraum zu sehr günstigen und stabilen Mietkonditionen in der Wohnung leben. Der Eigentümer
+        selbst kann auf diese Weise das Haus ohne großen Investitionsaufwand instand setzen.
+      </p>
+      <h4>Hausprojekte:</h4>
+      <p>
+        Bei Hausprojekten haben sich meist mehrere Personen zusammengeschlossen und ein renovierungsbedürftiges Haus
+        gekauft. In Eigenregie richten sie das Haus mit der Absicht her, dort selbst langfristig nach eigenen
+        Vorstellungen wohnen zu können.
+      </p>
+      <p>
+        Weitere Infos bei <a href="http://www.haushalten.org/" target="_blank" rel="noopener nofererrer">Haushalten e.V.
+      </a>
+      </p>
 
-		</div>
+    </div>
 
-		<h3>Das Bülowviertel: Eine einmalige Eigentümerinitiative</h3>
+    <h3>Das Bülowviertel: Eine einmalige Eigentümerinitiative</h3>
 
-		<p>Asena Kahraman tritt aus dem großen Hauseingangstor auf die Eisenbahnstraße. Von ihrem Büro- und Wohnhaus an der angeblich <a href="http://www.youtube.com/watch?v=T6Zo1cwNw5A" target="_blank">„schlimmsten Straße Deutschlands“</a> läuft sie die 300 Meter bis ins Bülowviertel, wo sie schon seit Jahren zwei weitere Immobilien besitzt. Der Lärm der ratternden Straßenbahn verschwindet mit jedem Schritt mehr hinter den Fassaden an der Torgauer Straße. Und auch das Erscheinungsbild wandelt sich. Die Gebäude im Quartier ragen nur dreigeschossig in die Höhe. Sonnenblumen, Rosen und Klatschmohn blühen in den schmalen Vorgartenstreifen zwischen Bürgersteig und Hauswänden. „Ach, hallo!“ Asena Kahraman lächelt einem Mann auf dem Fahrrad zu. Hier im Bülowviertel kennt sie jedes Haus und fast jeden Eigentümer persönlich.</p>
+    <p>
+      Asena Kahraman tritt aus dem großen Hauseingangstor auf die Eisenbahnstraße. Von ihrem Büro- und Wohnhaus an der
+      angeblich <a href="http://www.youtube.com/watch?v=T6Zo1cwNw5A" target="_blank" rel="noopener nofererrer">
+      „schlimmsten Straße Deutschlands“</a> läuft sie die 300 Meter bis ins Bülowviertel, wo sie schon seit Jahren zwei
+      weitere Immobilien besitzt. Der Lärm der ratternden Straßenbahn verschwindet mit jedem Schritt mehr hinter den
+      Fassaden an der Torgauer Straße. Und auch das Erscheinungsbild wandelt sich. Die Gebäude im Quartier ragen nur
+      dreigeschossig in die Höhe. Sonnenblumen, Rosen und Klatschmohn blühen in den schmalen Vorgartenstreifen zwischen
+      Bürgersteig und Hauswänden. „Ach, hallo!“ Asena Kahraman lächelt einem Mann auf dem Fahrrad zu. Hier im
+      Bülowviertel kennt sie jedes Haus und fast jeden Eigentümer persönlich.
+    </p>
 
-		<p>Im Juni 2009 hat Kahraman gemeinsam mit anderen Hausbesitzern aus dem Quartier den <a href="http://www.buelowviertel-leipzig.de/buelowviertel-e-v/" target="_blank">Bülowviertelverein</a> gegründet. Viele der 86 Häuser standen damals leer und verwahrlosten. Wer von den Mietern die Möglichkeit hatte, zog weg. Die Atmosphäre war düster und das sollte sich ändern. Gefördert durch das Programm „Experimenteller Wohnungs- und Städtebau“ vom Bund und mit Unterstützung der Stadt Leipzig wollte der Verein das Bülowviertel nachhaltig aufwerten. Es fing mit einfachen Maßnahmen an. „Wir haben selber angepackt, Schutt weggeräumt, Hecken geschnitten und die Vorgärten bepflanzt“, erinnert sich Kahraman. Dann folgten gezielte Marketingaktionen. Rundgänge durch das Viertel wurden organisiert. Sie veranstalteten einen Vorgartenwettbewerb und luden zum Probewohnen ein. Interessierte konnten für drei Tage eine Wohnung im Viertel beziehen, um ein Gefühl für das Leben hier zu bekommen.</p>
+    <p>
+      Im Juni 2009 hat Kahraman gemeinsam mit anderen Hausbesitzern aus dem Quartier den
+      <a href="http://www.buelowviertel-leipzig.de/buelowviertel-e-v/" target="_blank"
+      rel="noopener nofererrer">Bülowviertelverein</a> gegründet. Viele der 86 Häuser standen damals leer und
+      verwahrlosten. Wer von den Mietern die Möglichkeit hatte, zog weg. Die Atmosphäre war düster und das sollte sich
+      ändern. Gefördert durch das Programm „Experimenteller Wohnungs- und Städtebau“ vom Bund und mit Unterstützung der
+      Stadt Leipzig wollte der Verein das Bülowviertel nachhaltig aufwerten. Es fing mit einfachen Maßnahmen an. „Wir
+      haben selber angepackt, Schutt weggeräumt, Hecken geschnitten und die Vorgärten bepflanzt“, erinnert sich
+      Kahraman. Dann folgten gezielte Marketingaktionen. Rundgänge durch das Viertel wurden organisiert. Sie
+      veranstalteten einen Vorgartenwettbewerb und luden zum Probewohnen ein. Interessierte konnten für drei Tage eine
+      Wohnung im Viertel beziehen, um ein Gefühl für das Leben hier zu bekommen.
+    </p>
 
-	</article>
+  </article>
 
+  <article class="full">
+    <a href="{% asset buelowviertel/img/slide/werner1.jpg @path %}" data-toggle="lightbox" data-gallery="slideshow"
+       data-title="Jörg Werner" data-footer="<strong>Jörg Werner</strong> hat zusammen mit einem Freund Mitte 2012 die
+       Eisenbahnstraße 143 gekauft – erbaut von einem  Vorfahren seiner Mutter. Und nur drei Hausnummern weiter steht
+       Jörg Werners Geburtshaus. So viel Geschichte soll bewahrt werden. Die Renovierung bewältigt er mit seinem Freund
+       selbst. Dabei verwenden sie..." class="col-sm-6">
+      <img src="{% asset buelowviertel/img/slide/werner1.jpg @path %}" class="img-responsive" />
+      <div class="video-description">
+        <strong>Jörg Werner</strong> hat zusammen mit einem Freund Mitte 2012 die Eisenbahnstraße 143 gekauft – erbaut
+        von einem  Vorfahren seiner Mutter. Und nur drei Hausnummern weiter steht Jörg Werners Geburtshaus. So viel
+        Geschichte soll bewahrt werden. Die Renovierung bewältigt er mit seinem Freund selbst. Dabei verwenden sie...
+      </div>
 
-	<article class="full">
-		<a href="{% asset buelowviertel/img/slide/werner1.jpg @path %}" data-toggle="lightbox" data-gallery="slideshow" data-title="Jörg Werner" data-footer="<strong>Jörg Werner</strong> hat zusammen mit einem Freund Mitte 2012 die Eisenbahnstraße 143 gekauft – erbaut von einem  Vorfahren seiner Mutter. Und nur drei Hausnummern weiter steht Jörg Werners Geburtshaus. So viel Geschichte soll bewahrt werden. Die Renovierung bewältigt er mit seinem Freund selbst. Dabei verwenden sie..." class="col-sm-6">
-				<img src="{% asset buelowviertel/img/slide/werner1.jpg @path %}" class="img-responsive" />
-			<div class="video-description">
-				<strong>Jörg Werner</strong> hat zusammen mit einem Freund Mitte 2012 die Eisenbahnstraße 143 gekauft – erbaut von einem  Vorfahren seiner Mutter. Und nur drei Hausnummern weiter steht Jörg Werners Geburtshaus. So viel Geschichte soll bewahrt werden. Die Renovierung bewältigt er mit seinem Freund selbst. Dabei verwenden sie...
-			</div>
+    </a>
 
-		</a>
+    <a href="{% asset buelowviertel/img/slide/werner2.jpg @path %}" data-toggle="lightbox" data-gallery="slideshow"
+       data-title="Jörg Werner" data-footer="... ähnliche Materialien wie vor 100 Jahren. Der ökologische Gedanke und
+       das Raumklima sollen beibehalten werden, um den ursprünglichen Charakter des Hauses weiterzutragen. Das Gebäude
+       steht zwar nicht unter Denkmalschutz. „Doch unser Anspruch bei der Instandsetzung ist mindestens genauso hoch“,
+       sagt Jörg Werner." class="col-sm-6">
+      <img src="{% asset buelowviertel/img/slide/werner2.jpg @path %}" class="img-responsive" />
+      <div class="video-description">
+        ... ähnliche Materialien wie vor 100 Jahren. Der ökologische Gedanke und das Raumklima sollen beibehalten
+        werden, um den ursprünglichen Charakter des Hauses weiterzutragen. Das Gebäude steht zwar nicht unter
+        Denkmalschutz. „Doch unser Anspruch bei der Instandsetzung ist mindestens genauso hoch“, sagt Jörg Werner.
+      </div>
+    </a>
 
-		<a href="{% asset buelowviertel/img/slide/werner2.jpg @path %}" data-toggle="lightbox" data-gallery="slideshow" data-title="Jörg Werner" data-footer="... ähnliche Materialien wie vor 100 Jahren. Der ökologische Gedanke und das Raumklima sollen beibehalten werden, um den ursprünglichen Charakter des Hauses weiterzutragen. Das Gebäude steht zwar nicht unter Denkmalschutz. „Doch unser Anspruch bei der Instandsetzung ist mindestens genauso hoch“, sagt Jörg Werner." class="col-sm-6">
-			<img src="{% asset buelowviertel/img/slide/werner2.jpg @path %}" class="img-responsive" />
-			<div class="video-description">
-				... ähnliche Materialien wie vor 100 Jahren. Der ökologische Gedanke und das Raumklima sollen beibehalten werden, um den ursprünglichen Charakter des Hauses weiterzutragen. Das Gebäude steht zwar nicht unter Denkmalschutz. „Doch unser Anspruch bei der Instandsetzung ist mindestens genauso hoch“, sagt Jörg Werner.
-			</div>
-		</a>
+    <div data-toggle="lightbox" data-gallery="slideshow"
+         data-remote="{% asset buelowviertel/img/slide/meysing1.jpg @path %}" data-title="Susanne Meysing"
+         data-footer="<strong>Susanne Meysing</strong> hat im Frühjahr 2011 eher „aus Zufall“ das Eckhaus in der
+         Torgauer Straße 48 bei einer Versteigerung in Berlin erworben. Für sie war von Anfang an klar, dass sie keine
+         gewöhnliche Mietshaus-Atmosphäre möchte. Die rund 800 Quadratmeter Wohnfläche teilt sie lieber...">
+    </div>
+    <div data-toggle="lightbox" data-gallery="slideshow"
+         data-remote="{% asset buelowviertel/img/slide/meysing2.jpg @path %}" data-title="Susanne Meysing"
+         data-footer="... mit vielen interessanten Menschen – auch aus unterschiedlichen Ländern.  Das Haus, in dem die
+         Bewohner freiwillig beim Ausbau mithelfen können, begreift Susanne Meysing als eine Art große
+         Wohngemeinschaft. „Ich wollte Platz haben, aber nicht für mich alleine, sondern um mit anderen Menschen Musik,
+         Kulturen, Sprachen und Lebenseinstellungen auszutauschen.“">
+    </div>
+    <div data-toggle="lightbox" data-gallery="slideshow"
+         data-remote="{% asset buelowviertel/img/slide/wichmann1.jpg @path %}" data-title="Hardy Wichmann-Mimus"
+         data-footer="<strong>Hardy Wichmann-Mimus</strong> wohnt seit 1998 im Haus neben der Gretschelstraße 2. Der
+         Charme des fast unbewohnten Nachbarhauses reizte ihn. 2012 wurde er dann einer von mehreren neuen Eigentümern.
+         Sie entschieden sich für das Konzept eines Ausbauhauses – keine schnelle Sanierung und Vermietung. Die
+         jetzigen Bewohner bauen...">
+    </div>
+    <div data-toggle="lightbox" data-gallery="slideshow"
+         data-remote="{% asset buelowviertel/img/slide/wichmann2.jpg @path %}" data-title="Hardy Wichmann-Mimus"
+         data-footer="... das Haus in Eigenregie aus. Sie sind jung und kreativ, aber haben nicht viel Kapital. Dass
+         der Renovierungsprozess sich dadurch in die Länge zieht, stört Hardy Wichmann-Mimus gar nicht. „Bei alten
+         Häusern ist es gut, wenn man sich Zeit lässt und sie Schritt für Schritt wieder in einen guten Zustand
+         versetzt.“">
+    </div>
+    <div data-toggle="lightbox" data-gallery="slideshow"
+         data-remote="{% asset buelowviertel/img/slide/kahraman1.jpg @path %}" data-title="Asena Kahraman"
+         data-footer="<strong>Asena Kahraman</strong> besitzt zwei Immobilien im Bülowviertel. Dieses Haus in der
+         Geißlerstraße 16 ist bereits seit 2007 saniert und bewohnt, das andere soll bald folgen. Asena Kahraman setzt
+         nicht auf luxuriösen Ausbau und teure Weitervermietung. Ihr ist es wichtig, dass auch Geringverdiener...">
+    </div>
+    <div data-toggle="lightbox" data-gallery="slideshow"
+         data-remote="{% asset buelowviertel/img/slide/kahraman2.jpg @path %}" data-title="Asena Kahraman"
+         data-footer="... im Viertel ihren Platz haben. „Mir kommt es darauf an, dass die Mieter sympathisch sind,
+         nicht wie viel sie verdienen“, sagt sie. Auch darüber hinaus setzt sie sich als Vorsitzende des
+         Bülowviertel-Vereins dafür ein, dass es ein nachbarschaftliches Miteinander gibt und das Viertel langfristig
+         durch seine Bewohner aufgewertet wird.">
+    </div>
+  </article>
 
-		<div data-toggle="lightbox" data-gallery="slideshow" data-remote="{% asset buelowviertel/img/slide/meysing1.jpg @path %}" data-title="Susanne Meysing" data-footer="<strong>Susanne Meysing</strong> hat im Frühjahr 2011 eher „aus Zufall“ das Eckhaus in der Torgauer Straße 48 bei einer Versteigerung in Berlin erworben. Für sie war von Anfang an klar, dass sie keine gewöhnliche Mietshaus-Atmosphäre möchte. Die rund 800 Quadratmeter Wohnfläche teilt sie lieber..."></div>
-		<div data-toggle="lightbox" data-gallery="slideshow" data-remote="{% asset buelowviertel/img/slide/meysing2.jpg @path %}" data-title="Susanne Meysing" data-footer="... mit vielen interessanten Menschen – auch aus unterschiedlichen Ländern.  Das Haus, in dem die Bewohner freiwillig beim Ausbau mithelfen können, begreift Susanne Meysing als eine Art große Wohngemeinschaft. „Ich wollte Platz haben, aber nicht für mich alleine, sondern um mit anderen Menschen Musik, Kulturen, Sprachen und Lebenseinstellungen auszutauschen.“"></div>
-		<div data-toggle="lightbox" data-gallery="slideshow" data-remote="{% asset buelowviertel/img/slide/wichmann1.jpg @path %}" data-title="Hardy Wichmann-Mimus" data-footer="<strong>Hardy Wichmann-Mimus</strong> wohnt seit 1998 im Haus neben der Gretschelstraße 2. Der Charme des fast unbewohnten Nachbarhauses reizte ihn. 2012 wurde er dann einer von mehreren neuen Eigentümern. Sie entschieden sich für das Konzept eines Ausbauhauses – keine schnelle Sanierung und Vermietung. Die jetzigen Bewohner bauen..."></div>
-		<div data-toggle="lightbox" data-gallery="slideshow" data-remote="{% asset buelowviertel/img/slide/wichmann2.jpg @path %}" data-title="Hardy Wichmann-Mimus" data-footer="... das Haus in Eigenregie aus. Sie sind jung und kreativ, aber haben nicht viel Kapital. Dass der Renovierungsprozess sich dadurch in die Länge zieht, stört Hardy Wichmann-Mimus gar nicht. „Bei alten Häusern ist es gut, wenn man sich Zeit lässt und sie Schritt für Schritt wieder in einen guten Zustand versetzt.“"></div>
-		<div data-toggle="lightbox" data-gallery="slideshow" data-remote="{% asset buelowviertel/img/slide/kahraman1.jpg @path %}" data-title="Asena Kahraman" data-footer="<strong>Asena Kahraman</strong> besitzt zwei Immobilien im Bülowviertel. Dieses Haus in der Geißlerstraße 16 ist bereits seit 2007 saniert und bewohnt, das andere soll bald folgen. Asena Kahraman setzt nicht auf luxuriösen Ausbau und teure Weitervermietung. Ihr ist es wichtig, dass auch Geringverdiener..."></div>
-		<div data-toggle="lightbox" data-gallery="slideshow" data-remote="{% asset buelowviertel/img/slide/kahraman2.jpg @path %}" data-title="Asena Kahraman" data-footer="... im Viertel ihren Platz haben. „Mir kommt es darauf an, dass die Mieter sympathisch sind, nicht wie viel sie verdienen“, sagt sie. Auch darüber hinaus setzt sie sich als Vorsitzende des Bülowviertel-Vereins dafür ein, dass es ein nachbarschaftliches Miteinander gibt und das Viertel langfristig durch seine Bewohner aufgewertet wird."></div>
-	</article>
+  <article style="padding-top: 35px;">
 
-	<article style="padding-top: 35px;">
+    <p>
+      „All diese Aktionen haben wir gemacht, um Käufer für die Häuser zu finden, die langfristig das Viertel
+      voranbringen und am besten auch selbst hier wohnen wollen“, erklärt Kahraman. Die neuen Eigentümer sanieren nicht
+      luxuriös und vermieten dementsprechend günstig weiter. Oder es werden alternative Eigentums- und
+      Wohnvereinbarungen getroffen. Die Bülowstraße 19 ist nicht das einzige Ausbauhaus im Viertel. Auch 100 Meter
+      weiter an der Fassade des Backsteinhauses mit dem hübschen Fachwerkgiebel in der Gretschelstraße baumelt ein
+      gelbes Banner mit der Aufschrift „Ausbauhaus“. Doch nicht in allen Fällen ist der Plan des Bülowviertelvereins
+      aufgegangen. Asena Kahraman blickt die Straße hinunter. „Dort drüben gibt es drei oder vier Spekulationsobjekte,
+      die werden nicht so schnell bewohnbar gemacht.“ Sie deutet auf ein anderes quietschgelb gestrichenes Haus mit
+      Videokamera über dem Eingang. „Und hier wurde schnellstmöglich und eben nicht nach dem typischen Bild im
+      Bülowviertel saniert. Den Eigentümer kenne ich nicht persönlich. Ich weiß aber, dass er nicht vermietet, sondern
+      Eigentumswohnungen zum Kauf anbietet.“
+    </p>
 
-		<p>„All diese Aktionen haben wir gemacht, um Käufer für die Häuser zu finden, die langfristig das Viertel voranbringen und am besten auch selbst hier wohnen wollen“, erklärt Kahraman. Die neuen Eigentümer sanieren nicht luxuriös und vermieten dementsprechend günstig weiter. Oder es werden alternative Eigentums- und Wohnvereinbarungen getroffen. Die Bülowstraße 19 ist nicht das einzige Ausbauhaus im Viertel. Auch 100 Meter weiter an der Fassade des Backsteinhauses mit dem hübschen Fachwerkgiebel in der Gretschelstraße baumelt ein gelbes Banner mit der Aufschrift „Ausbauhaus“. Doch nicht in allen Fällen ist der Plan des Bülowviertelvereins aufgegangen. Asena Kahraman blickt die Straße hinunter. „Dort drüben gibt es drei oder vier Spekulationsobjekte, die werden nicht so schnell bewohnbar gemacht.“ Sie deutet auf ein anderes quietschgelb gestrichenes Haus mit Videokamera über dem Eingang. „Und hier wurde schnellstmöglich und eben nicht nach dem typischen Bild im Bülowviertel saniert. Den Eigentümer kenne ich nicht persönlich. Ich weiß aber, dass er nicht vermietet, sondern Eigentumswohnungen zum Kauf anbietet.“</p>
+    <p>
+      Diejenigen, die sich engagieren, haben das Bülowviertel in den letzten Jahren zu einer <a class="hinweis
+      toggle-background-info" href="#hintergrund-incumbent-upgrading" data-target="#hintergrund-incumbent-upgrading">
+      gefragten Wohngegend</a> gemacht. Fast alle Wohnungen sind vermietet. Viele junge Familien hat es hergezogen, die
+      den dörflichen und nachbarschaftlichen Charakter des Quartiers schätzen. Das haben auch die Investoren
+      mitbekommen. Der große Ausverkauf im Leipziger Osten macht vor dem Bülowviertel nicht halt. Die Eigentümer, die
+      selbst im Viertel wohnen, würden allerdings nicht verkaufen. Da ist sich Kahraman sicher. „Die haben doch
+      teilweise ihr Herzblut in den Ausbau der Häuser und Wohnungen gesteckt. Sie verbindet etwas mit dem
+      Bülowviertel.“ Auch Asena Kahraman hat schon Kaufanfragen für ihre zwei Immobilien im Viertel bekommen. „Da
+      müsste man mir schon eine Million oder mehr bieten“, lacht sie. „Dafür genieße ich zu sehr die gemeinschaftliche
+      Atmosphäre hier.“
+    </p>
 
-		<p>Diejenigen, die sich engagieren, haben das Bülowviertel in den letzten Jahren zu einer <a class="hinweis toggle-background-info" href="#hintergrund-incumbent-upgrading" data-target="#hintergrund-incumbent-upgrading">gefragten Wohngegend</a> gemacht. Fast alle Wohnungen sind vermietet. Viele junge Familien hat es hergezogen, die den dörflichen und nachbarschaftlichen Charakter des Quartiers schätzen. Das haben auch die Investoren mitbekommen. Der große Ausverkauf im Leipziger Osten macht vor dem Bülowviertel nicht halt. Die Eigentümer, die selbst im Viertel wohnen, würden allerdings nicht verkaufen. Da ist sich Kahraman sicher. „Die haben doch teilweise ihr Herzblut in den Ausbau der Häuser und Wohnungen gesteckt. Sie verbindet etwas mit dem Bülowviertel.“ Auch Asena Kahraman hat schon Kaufanfragen für ihre zwei Immobilien im Viertel bekommen. „Da müsste man mir schon eine Million oder mehr bieten“, lacht sie. „Dafür genieße ich zu sehr die gemeinschaftliche Atmosphäre hier.“</p>
+    <div id="hintergrund-incumbent-upgrading" class="background-info-content hidden">
+      <strong>Incumbent Upgrading</strong> <a href="javascript:void(0)" class="background-info-close">
+      <i class="fa fa-close" style="float: right;"></i></a>
+      <br /><br />
+      <p>
+        Die Entwicklung des Bülowviertels kann mit dem wissenschaftlichen Begriff des „incumbent upgrading“
+        beschrieben werden. Anders als bei der Gentrifizierung folgt beim incumbent upgrading auf die Aufwertung des
+        Viertels weniger Verdrängung. Die Initiative zur Verbesserung der Wohnbedingungen geht meist von den
+        Hauseigentümern und Bewohnern selbst aus. Im Vordergrund stehen allerdings keine kapitalistischen Interessen,
+        sondern der Wunsch der Eigentümer nach einem langfristigen Erhalt der Häuser und der Umgebung. Dabei wird
+        dieses Interesse nicht gegen, sondern in Zusammenarbeit mit den Bewohnern durchgesetzt.
+      </p>
+      <p>
+        (Clay, Phillip L. (1979): Neighborhood Renewal: Middle-Class Resettlement and Incumbent Upgrading in American
+        Neighborhoods. Lexington: Lexington Books.)
+      </p>
+    </div>
 
-		<div id="hintergrund-incumbent-upgrading" class="background-info-content hidden">
-			<strong>Incumbent Upgrading</strong> <a href="javascript:void(0)" class="background-info-close"><i class="fa fa-close" style="float: right;"></i></a>
-			<br /><br />
-			<p>Die Entwicklung des Bülowviertels kann mit dem wissenschaftlichen Begriff des „incumbent upgrading“ beschrieben werden. Anders als bei der Gentrifizierung folgt beim incumbent upgrading auf die Aufwertung des Viertels weniger Verdrängung. Die Initiative zur Verbesserung der Wohnbedingungen geht meist von den Hauseigentümern und Bewohnern selbst aus. Im Vordergrund stehen allerdings keine kapitalistischen Interessen, sondern der Wunsch der Eigentümer nach einem langfristigen Erhalt der Häuser und der Umgebung. Dabei wird dieses Interesse nicht gegen, sondern in Zusammenarbeit mit den Bewohnern durchgesetzt.</p>
-			<p>(Clay, Phillip L. (1979): Neighborhood Renewal: Middle-Class Resettlement and Incumbent Upgrading in American Neighborhoods. Lexington: Lexington Books.)</p>
-		</div>
-
-		<p>Julia Klein steht hinter der provisorisch aufgebauten Theke im Hinterhof und schenkt einen Weißwein ein. Mit einem breiten Lächeln begrüßt sie jeden Gast, der es trotz Gewitters zu ihrem Musiktrassenfest geschafft hat. Auch direkte Nachbarn und Anwohner aus dem restlichen Bülowviertel schauen vorbei. Als der Regen nachlässt, sammelt sich eine gemütliche Runde um das Lagerfeuer. Zwischen Bier und Wein fällt das Gespräch irgendwann auf Julias und Johannes Ausbauprojekt und das Wohnen im Viertel. Der Tenor unter den Gästen: Wirklich schön haben sie es hier. Es hat so einen besonderen Charme, das Bülowviertel.</p>
-	</article>
+    <p>
+      Julia Klein steht hinter der provisorisch aufgebauten Theke im Hinterhof und schenkt einen Weißwein ein. Mit
+      einem breiten Lächeln begrüßt sie jeden Gast, der es trotz Gewitters zu ihrem Musiktrassenfest geschafft hat.
+      Auch direkte Nachbarn und Anwohner aus dem restlichen Bülowviertel schauen vorbei. Als der Regen nachlässt,
+      sammelt sich eine gemütliche Runde um das Lagerfeuer. Zwischen Bier und Wein fällt das Gespräch irgendwann auf
+      Julias und Johannes Ausbauprojekt und das Wohnen im Viertel. Der Tenor unter den Gästen: Wirklich schön haben sie
+      es hier. Es hat so einen besonderen Charme, das Bülowviertel.
+    </p>
+  </article>
 
 </section>
 
 <section id="anmerkungen">
 
-	<article class="full" style="padding-right: 25px;">
+  <article class="full" style="padding-right: 25px;">
 
-		<h4>Zur Recherche:</h4>
-		<p>„Exkursion in den Leipziger Osten“ – klingt spannend, dachten wir uns und schlossen uns kurzum der Praktikantengruppe vom Leibniz Institut für Länderkunde (IfL) an. Bei eisigen Temperaturen Anfang März führte uns Stefan Haustein, wissenschaftlicher Mitarbeiter am IfL, durch den Rabet und in den urbanen Garten von „Querbeet“. Er erklärte uns die besondere Geschichte des Leipziger Ostens und wie sich der Bezirk in den vergangenen Jahren verändert hat. Von der lauten Eisenbahnstraße bogen wir in eine Seitenstraße ab und standen plötzlich in einer Siedlung, die so ganz anders wirkte als der restliche Leipziger Osten. Kleinere Häuser, bepflanzte Vorgärten und Ausbauhaus-Banner an den Fassaden: Das Bülowviertel. Uns war klar, hier müssen wir uns mal genauer umsehen.</p>
+    <h4>Zur Recherche:</h4>
+    <p>
+      „Exkursion in den Leipziger Osten“ – klingt spannend, dachten wir uns und schlossen uns kurzum der
+      Praktikantengruppe vom Leibniz Institut für Länderkunde (IfL) an. Bei eisigen Temperaturen Anfang März führte uns
+      Stefan Haustein, wissenschaftlicher Mitarbeiter am IfL, durch den Rabet und in den urbanen Garten von „Querbeet“.
+      Er erklärte uns die besondere Geschichte des Leipziger Ostens und wie sich der Bezirk in den vergangenen Jahren
+      verändert hat. Von der lauten Eisenbahnstraße bogen wir in eine Seitenstraße ab und standen plötzlich in einer
+      Siedlung, die so ganz anders wirkte als der restliche Leipziger Osten. Kleinere Häuser, bepflanzte Vorgärten und
+      Ausbauhaus-Banner an den Fassaden: Das Bülowviertel. Uns war klar, hier müssen wir uns mal genauer umsehen.
+    </p>
 
-	</article>
+  </article>
 
 </section>

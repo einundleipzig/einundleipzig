@@ -3,56 +3,56 @@ layout: default
 ---
 
 {% for post in paginator.posts %}
-	<article class="post">
-		{% if post.category %}
-			<p class="type">
-				{{ post.category }}
-			</p>
-		{% endif %}
+<article class="post">
+  {% if post.category %}
+  <p class="type">
+    {{ post.category }}
+  </p>
+  {% endif %}
 
-		<h1>
-			{{ post.title }}
-		</h1>
+  <h1>
+    {{ post.title }}
+  </h1>
 
-		{% if post.image %}
-			<img src="{% asset {{post.image}} @path %}" class="img-responsive" style="padding-bottom: 35px;" alt="{{ post.title }}" />
-		{% endif %}
+  {% if post.image %}
+  <img src="{% asset {{post.image}} @path %}" class="img-responsive" style="padding-bottom: 35px;" alt="{{ post.title }}" />
+  {% endif %}
 
-		{% if post.description %}
-			<h2>
-				{{ post.description }}
-			</h2>
-		{% endif %}
+  {% if post.description %}
+  <h2>
+    {{ post.description }}
+  </h2>
+  {% endif %}
 
-		<p class="time">
-			{% assign m = post.date | date: "%-m" %}
-			{{ post.date | date: "%-d" }}.
-			{% case m %}
-			  {% when '1' %}Januar
-			  {% when '2' %}Februar
-			  {% when '3' %}M&auml;rz
-			  {% when '4' %}April
-			  {% when '5' %}Mai
-			  {% when '6' %}Juni
-			  {% when '7' %}Juli
-			  {% when '8' %}August
-			  {% when '9' %}September
-			  {% when '10' %}Oktober
-			  {% when '11' %}November
-			  {% when '12' %}Dezember
-			{% endcase %}
-			{{ post.date | date: "%Y" }}
-			von
-			{% assign author = site.authors[post.author] %}
-			{{ author.display_name }}
-		</p>
+  <p class="time">
+    {% assign m = post.date | date: "%-m" %}
+    {{ post.date | date: "%-d" }}.
+    {% case m %}
+    {% when '1' %}Januar
+    {% when '2' %}Februar
+    {% when '3' %}M&auml;rz
+    {% when '4' %}April
+    {% when '5' %}Mai
+    {% when '6' %}Juni
+    {% when '7' %}Juli
+    {% when '8' %}August
+    {% when '9' %}September
+    {% when '10' %}Oktober
+    {% when '11' %}November
+    {% when '12' %}Dezember
+    {% endcase %}
+    {{ post.date | date: "%Y" }}
+    von
+    {% assign author = site.authors[post.author] %}
+    {{ author.display_name }}
+  </p>
 
-		{{ post.excerpt | markdownify }}
-		<a class="readmore" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">Weiter lesen... <span>›</span></a>
+  {{ post.excerpt | markdownify }}
+  <a class="readmore" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">Weiter lesen... <span>›</span></a>
 
-		<hr>
+  <hr>
 
-	</article>
+</article>
 {% endfor %}
 
 
@@ -62,38 +62,38 @@ layout: default
 <div class="clearfix">&nbsp;</div>
 
 {% if paginator.total_pages > 1 %}
-	<nav class="pagination center-block">
-		<ul>
-			{% if paginator.previous_page %}
-				<li>
-					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Vorherige Seite</a>
-				</li>
-			{% endif %}
+<nav class="pagination center-block">
+  <ul>
+    {% if paginator.previous_page %}
+    <li>
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Vorherige Seite</a>
+    </li>
+    {% endif %}
 
-			<li>
-				<ul>
-					{% for page in (1..paginator.total_pages) %}
-						{% if page == paginator.page %}
-							<li>
-								<a href="javascript:void(0);">{{ page }}</a>
-							</li>
-						{% elsif page == 1 %}
-							<li>
-								<a href="{{ '/blog/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-							</li>
-						{% else %}
-							<li>
-								<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-							</li>
-						{% endif %}
-					{% endfor %}
-				</ul>
-			</li>
-			{% if paginator.next_page %}
-				<li>
-					<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Nächste Seite</a>
-				</li>
-			{% endif %}
-		</ul>
-	</nav>
+    <li>
+      <ul>
+        {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <li>
+          <a href="javascript:void(0);">{{ page }}</a>
+        </li>
+        {% elsif page == 1 %}
+        <li>
+          <a href="{{ '/blog/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+        </li>
+        {% else %}
+        <li>
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+    {% if paginator.next_page %}
+    <li>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Nächste Seite</a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>
 {% endif %}

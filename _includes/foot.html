@@ -1,12 +1,15 @@
 {% if page.scripts %}
-	{% for script in page.scripts %}
-    <script src="{{ script | prepend: site.baseurl }}"></script>
-		{% if script contains 'ekko-lightbox.js' %}
-			<script type="text/javascript">
-			$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) { event.preventDefault(); $(this).ekkoLightbox(); });
-			</script>
-		{% endif %}
-	{% endfor %}
+  {% for script in page.scripts %}
+  <script src="{{ script | prepend: site.baseurl }}"></script>
+    {% if script contains 'ekko-lightbox' %}
+    <script type="text/javascript">
+      $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
+    {% endif %}
+  {% endfor %}
 {% endif %}
 
 {% asset einundleipzig.js %}

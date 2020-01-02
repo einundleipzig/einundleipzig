@@ -15,20 +15,25 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
 <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
 <meta property="og:site_name" content="einundleipzig">
-<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %} {{ site.description }} {% endif %}" />
-<meta property="og:image" name="facebook" content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{% asset einundleipzigfacebook.jpg @path %}{% endif %}" />
+<meta property="og:description"
+      content="{% if page.description %}{{ page.description }}{% else %} {{ site.description }} {% endif %}" />
+<meta property="og:image" name="facebook"
+      content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{% asset einundleipzigfacebook.jpg @path %}{% endif %}" />
 <meta property="og:locale" content="de_DE" />
 
 <!-- Twitter Card Tags -->
 <meta name="twitter:site" content="@einundleipzig" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
-<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %} {{ site.description }} {% endif %}" />
-<meta name="twitter:image" content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{% asset einundleipzigtwitter.jpg @path %}{% endif %}" />
+<meta name="twitter:description"
+      content="{% if page.description %}{{ page.description }}{% else %} {{ site.description }} {% endif %}" />
+<meta name="twitter:image"
+      content="http://www.einundleipzig.de{% if page.image %}{{ page.image }}{% else %}{% asset einundleipzigtwitter.jpg @path %}{% endif %}" />
 
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
-<link type="text/css" rel="stylesheet" href="{{ 'node_modules/videojs-sublime-skin/dist/videojs-sublime-skin.min.css' | prepend: site.baseurl }}">
+<link type="text/css" rel="stylesheet"
+      href="{{ 'node_modules/videojs-sublime-skin/dist/videojs-sublime-skin.min.css' | prepend: site.baseurl }}">
 <script src="{{ 'node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl }}"></script>
 
 <!-- Custom CSS -->
@@ -36,7 +41,8 @@
 {% asset einundleipzig.css %}
 
 <!-- ekko-lightbox -->
-<link type="text/css" rel="stylesheet" href="{{ 'node_modules/ekko-lightbox/dist/ekko-lightbox.min.css' | prepend: site.baseurl }}">
+<link type="text/css" rel="stylesheet"
+      href="{{ 'node_modules/ekko-lightbox/dist/ekko-lightbox.min.css' | prepend: site.baseurl }}">
 {% asset ekko-lightbox-dark.css %}
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -49,7 +55,7 @@
 {% for script in page.scripts %}
   {% if script == 'video.js' %}
     <!-- video.js - has to be loaded in head of page due to performance -->
-    <script src="{{ 'node_modules/video.js/dist/video.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ 'node_modules/video.js/dist/video-js/video.js' | prepend: site.baseurl }}"></script>
     <script>
       videojs.options.flash.swf = "{{ 'node_modules/jquery/dist/video-js.swf' | prepend: site.baseurl }}"
     </script>

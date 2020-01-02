@@ -43,30 +43,15 @@ $grid-float-breakpoint: 992px;
 /* load files
 /*-----------------------------------------------------------------------------------*/
 
-// add bootstrap
+$icon-font-path: "bootstrap/";
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
-// add some bourbon!
 @import '../../node_modules/bourbon/app/assets/stylesheets/bourbon';
 
-// add bourbon bitters
 @import '../../node_modules/bourbon-bitters/app/assets/stylesheets/bitters';
 
-// add font-awesome
-@font-face {
-  font-family: 'FontAwesome';
-  src: asset_url('font-awesome/fontawesome-webfont.eot?v=4.5.0 @path');
-  src: asset_url('font-awesome/fontawesome-webfont.eot?#iefix&v=4.5.0 @path') format('embedded-opentype'),
-  asset_url('font-awesome/fontawesome-webfont.woff2?v=4.5.0 @path') format('woff2'),
-  asset_url('font-awesome/fontawesome-webfont.woff?v=4.5.0 @path') format('woff'),
-  asset_url('font-awesome/fontawesome-webfont.ttf?v=4.5.0 @path') format('truetype'),
-  asset_url('font-awesome/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular @path') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
+$fa-font-path: "font-awesome";
 @import '../../node_modules/font-awesome/scss/font-awesome';
-
 @import 'general';
 
 @import 'navigation';
