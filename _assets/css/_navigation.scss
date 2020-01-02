@@ -21,9 +21,7 @@
       display: inline-block;
 
       > a:not(.social) {
-
-
-        @include transition (all .3s ease-in-out);
+        transition: all ease-in-out .3s;
 
         &:hover {
           background-color: #E7E7E7 !important;

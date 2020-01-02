@@ -11,16 +11,15 @@ div#myScrollspy {
     right: 15px;
 
     &.dotnav  {
-      padding: 0px;
+      padding: 0;
       list-style-type: none;
       direction: rtl;
 
-      //z-index: -9999;
       background: rgba(0, 0, 0, 0.2);
       border-radius: 5px;
 
       // bootstrap fix
-      border: 0px;
+      border: 0;
 
       padding-top: 5px;
       padding-bottom: 5px;
@@ -61,16 +60,15 @@ div#myScrollspy {
 
         a {
           // bootstrap fix
-          border-radius: 0px;
-          display: inline;
-          padding: 0px;
+          border-radius: 0;
+          padding: 0;
           display: none;
 
           &:hover,
           &:focus {
             // bootstrap fix
             background: none;
-            border: 0px;
+            border: 0;
           }
         }
 
@@ -85,8 +83,6 @@ div#myScrollspy {
 
           border-right: 5px solid transparent;
           border-left: 5px solid transparent;
-
-          //border-right: 10px solid #fff;
         }
 
         &:hover {
@@ -102,19 +98,12 @@ div#myScrollspy {
           a {
             font-weight: $bold;
           }
-
-          &:before {
-            //margin-right: -5px;
-            //direction: rtl;
-            //font-family: 'FontAwesome';
-            //content: "\f0c9";
-          }
         }
 
         &.active {
           a {
             background: transparent;
-            border: 0px;
+            border: 0;
           }
         }
 
@@ -133,7 +122,6 @@ div#myScrollspy {
 
     &.affix-top {
       position: fixed;
-      //@include transform(translate3d( 5px, 150px, 0px ));
       top: 250px;
     }
 
@@ -141,7 +129,6 @@ div#myScrollspy {
       // bootstrap fix
       position: fixed;
       top: 250px;
-      //@include transform(translate3d( 5px, 150px, 0px ));
     }
 
     &.affix-bottom {
