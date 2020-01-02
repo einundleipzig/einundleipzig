@@ -13,7 +13,7 @@
     "url": "https://github.com/einundleipzig/einundleipzig"
   },
   "dependencies": {
-    "bootstrap-sass": "3.4.0",
+    "bootstrap-sass": "3.4.1",
     "bourbon": "4.3.4",
     "bourbon-bitters": "1.2.1",
     "c3": "0.4.22",
