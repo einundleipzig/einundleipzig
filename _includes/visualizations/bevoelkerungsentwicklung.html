@@ -130,7 +130,7 @@ function bevoelkerungsentwicklung_render(err, ot, data) {
 		.style('fill', function(d) {
 
 			// Heiterblick und Engelsdorf ausblenden wegen Gebietsumgliederung
-			if (d.properties.Name == 'Heiterblick' || d.properties.Name == 'Engelsdorf')
+			if (d.properties.Name === 'Heiterblick' || d.properties.Name === 'Engelsdorf')
 			{
 				return '#999';
 			}
@@ -211,7 +211,7 @@ function bevoelkerungsentwicklung_render(err, ot, data) {
 			// Tooltip updaten
 
 			// Heiterblick und Engelsdorf ausblenden wegen Gebietsumgliederung
-			if (d.properties.Name == 'Heiterblick' || d.properties.Name == 'Engelsdorf')
+			if (d.properties.Name === 'Heiterblick' || d.properties.Name === 'Engelsdorf')
 			{
 				return '#999';
 			}
@@ -274,7 +274,7 @@ function bevoelkerungsentwicklung_render(err, ot, data) {
 		bevoelkerungsentwicklung_ortsteile
 			.style('fill', function(d) {
 				// Heiterblick und Engelsdorf ausblenden wegen Gebietsumgliederung
-				if (d.properties.Name == 'Heiterblick' || d.properties.Name == 'Engelsdorf')
+				if (d.properties.Name === 'Heiterblick' || d.properties.Name === 'Engelsdorf')
 				{
 					return '#999';
 				}
@@ -336,7 +336,7 @@ function bevoelkerungsentwicklung_render(err, ot, data) {
 		bevoelkerungsentwicklung_ortsteile
 			.style('fill', function(d) {
 				// Heiterblick und Engelsdorf ausblenden wegen Gebietsumgliederung
-				if (d.properties.Name == 'Heiterblick' || d.properties.Name == 'Engelsdorf')
+				if (d.properties.Name === 'Heiterblick' || d.properties.Name === 'Engelsdorf')
 				{
 					return '#999';
 				}

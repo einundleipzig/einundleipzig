@@ -23,9 +23,9 @@ module Jekyll
     def extract_directory(filepath)
       dir_match = filepath.match(/(.*\/)[^\/]*$/)
       if dir_match
-        return dir_match[1]
+        dir_match[1]
       else
-        return ''
+        ''
       end
     end
   end

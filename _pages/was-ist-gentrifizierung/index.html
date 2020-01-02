@@ -3,9 +3,12 @@ layout: default
 title: Was ist Gentrifizierung?
 subtitle: Begriffe, Akteure und Hintergründe
 image: was-ist-gentrifizierung/wissenschaft.jpg
-description: Leipzig ist das neue Berlin, ruft die Republik. Günstige Mieten, Raum für kreative Köpfe und der Charme des Unvollkommenen. Aus Leipzig wurde Hypezig. Die Diskussion in den Medien aber macht nun kehrt&#58; Ist es wirklich so gut, wenn die Stadt weiterwächst? Was bedeutet das für die Mietpreise und den Freiraum? Viele fürchten sich vor einer Stadtentwicklung, die keinen Platz für alle zulässt. Gentrifizierung wurde zum Schreckgespenst.
+description: Leipzig ist das neue Berlin, ruft die Republik. Günstige Mieten, Raum für kreative Köpfe und der Charme
+  des Unvollkommenen. Aus Leipzig wurde Hypezig. Die Diskussion in den Medien aber macht nun kehrt&#58; Ist es wirklich
+  so gut, wenn die Stadt weiterwächst? Was bedeutet das für die Mietpreise und den Freiraum? Viele fürchten sich vor
+  einer Stadtentwicklung, die keinen Platz für alle zulässt. Gentrifizierung wurde zum Schreckgespenst.
 author: christina
-scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/video.js/dist/video.min.js]
+scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/video.js/dist/video-js/video.js]
 ---
 <section class="story-header-image">
 
@@ -38,18 +41,35 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	<article>
 		<p class="credits">
 			{% assign author = site.authors[page.author] %}
-				<strong><em>Text</em></strong> <span style="text-transform: uppercase;">{{ author.display_name }}</span> |
-				<strong><em>Videos und Recherche </em></strong> <span style="text-transform: uppercase;">Christina Schmitt</span> und <span style="text-transform: uppercase;">Carolyn Wißing</span>, 15. Dezember 2014
+      <strong><em>Text</em></strong> <span style="text-transform: uppercase;">{{ author.display_name }}</span> |
+      <strong><em>Videos und Recherche </em></strong>
+      <span style="text-transform: uppercase;">Christina Schmitt</span> und <span style="text-transform: uppercase;">Carolyn Wißing</span>,
+      15. Dezember 2014
 		</p>
 	</article>
 
 	<article>
-		<p class="begin">Leipzig ist das neue Berlin, ruft die Republik. Günstige Mieten, Raum für kreative Köpfe und der Charme des Unvollkommenen. Aus Leipzig wurde Hypezig. Die <a href="" class="hinweis" data-remote="{{ site.baseurl }}{% link was-ist-gentrifizierung/timeline.html %}" data-width="95%" data-title="Der Hype um Leipzig - Die Diskussion in den Medien" data-footer="Quelle: <a href='http://hypezig.tumblr.com/' target='_blank'>hypezig.tumblr.com</a>" data-toggle="lightbox" data-parent="" data-gallery="remoteload">Diskussion in den Medien</a> aber macht nun kehrt: Ist es wirklich so gut, wenn die Stadt weiterwächst? Was bedeutet das für die Mietpreise und den Freiraum? Viele fürchten sich vor einer Stadtentwicklung, die keinen Platz für alle zulässt. Gentrifizierung wurde zum Schreckgespenst. Doch während die einen in ihr eine mögliche Bedrohung sehen, halten andere die Aufwertung bestimmter Stadtteile für dringend notwendig. Und manche glauben, dass die Leipziger gerne auf hohem Niveau jammern – und es so etwas wie Gentrifizierung gar nicht gibt.</p>
+		<p class="begin">
+      Leipzig ist das neue Berlin, ruft die Republik. Günstige Mieten, Raum für kreative Köpfe und der Charme des
+      Unvollkommenen. Aus Leipzig wurde Hypezig. Die <a href="" class="hinweis"
+      data-remote="{{ site.baseurl }}{% link was-ist-gentrifizierung/timeline.html %}" data-width="95%"
+      data-title="Der Hype um Leipzig - Die Diskussion in den Medien"
+      data-footer="Quelle: <a href='http://hypezig.tumblr.com/' target='_blank'
+      rel='noopener noreferrer'>hypezig.tumblr.com</a>" data-toggle="lightbox" data-parent=""
+      data-gallery="remoteload">Diskussion in den Medien</a> aber macht nun kehrt: Ist es wirklich so gut, wenn die
+      Stadt weiterwächst? Was bedeutet das für die Mietpreise und den Freiraum? Viele fürchten sich vor einer
+      Stadtentwicklung, die keinen Platz für alle zulässt. Gentrifizierung wurde zum Schreckgespenst. Doch während
+      die einen in ihr eine mögliche Bedrohung sehen, halten andere die Aufwertung bestimmter Stadtteile für dringend
+      notwendig. Und manche glauben, dass die Leipziger gerne auf hohem Niveau jammern – und es so etwas wie
+      Gentrifizierung gar nicht gibt.
+    </p>
 	</article>
 
 	<div class="col-xs-12 col-md-4 nopadding" style="padding-right: 1px;">
 
-		{% include video.html id="video-stadtfueralle" poster="was-ist-gentrifizierung/video/Stadt_Fuer_Alle1.jpg" webm="was-ist-gentrifizierung/video/Stadt_Fuer_Alle1.webm" mp4="was-ist-gentrifizierung/video/Stadt_Fuer_Alle1.mp4" %}
+		{% include video.html id="video-stadtfueralle" poster="was-ist-gentrifizierung/video/Stadt_Fuer_Alle1.jpg"
+      webm="was-ist-gentrifizierung/video/Stadt_Fuer_Alle1.webm"
+      mp4="was-ist-gentrifizierung/video/Stadt_Fuer_Alle1.mp4" %}
 
 		<div class="video-description">
 			<strong>"Eine extreme Dynamik für Leipzig"</strong><br />
@@ -59,8 +79,10 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	</div>
 	<div class="col-xs-12 col-md-4 nopadding" style="padding-right: 0.5px;">
 
-		{% include video.html id="video-schulze-gentrifizierung" poster="was-ist-gentrifizierung/video/Schultze1.jpg" mp4="was-ist-gentrifizierung/video/Schultze1.mp4" webm="was-ist-gentrifizierung/video/Schultze1.webm" %}
-
+		{% include video.html id="video-schulze-gentrifizierung"
+      poster="was-ist-gentrifizierung/video/Schultze1.jpg"
+      mp4="was-ist-gentrifizierung/video/Schultze1.mp4"
+      webm="was-ist-gentrifizierung/video/Schultze1.webm" %}
 
 		<div class="video-description">
 			<strong>"Gentrifizierung hat auch viele positive Seiten"</strong><br />
@@ -70,7 +92,10 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	</div>
 	<div class="col-xs-12 col-md-4 nopadding" style="padding-left: 0.5px;">
 
-		{% include video.html id="video-hobusch-gentrifizierung" poster="was-ist-gentrifizierung/video/Hobusch1.jpg" mp4="was-ist-gentrifizierung/video/Hobusch1.mp4" webm="was-ist-gentrifizierung/video/Hobusch1.webm" %}
+		{% include video.html id="video-hobusch-gentrifizierung"
+      poster="was-ist-gentrifizierung/video/Hobusch1.jpg"
+      mp4="was-ist-gentrifizierung/video/Hobusch1.mp4"
+      webm="was-ist-gentrifizierung/video/Hobusch1.webm" %}
 		<div class="video-description">
 			<strong>"Noch nicht einmal in Berlin gibt es Gentrification"</strong><br />
 			René Hobusch<br />
@@ -93,9 +118,19 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	</article>
 
 	<article>
-		 <p class="begin">Während Bürgervereine <a href="{{ site.baseurl }}holbeinstrasse">Verdrängung</a> der zahlungsschwächeren Mieter aus den zentrumsnahen Stadtteilen befürchten, glauben Immobilienwirtschaft und manche Stadtpolitiker, dass es Gentrifizierung in Leipzig gar nicht gibt – oder nur sehr begrenzt. Sie bewerten die Stadtentwicklung völlig anders: Heruntergekommene Viertel würden aufgewertet und der Leipziger Wohnungsmarkt normalisiere sich endlich, heißt es. Der Begriff „Gentrifizierung“ ist also politisch umkämpft und zwischen Verdrängung und Aufwertung liegt ein tiefer Graben. Wie die einzelnen Akteure die Prozesse beurteilen, hängt ab von deren Rolle im Stadtentwicklungsprozess, deren Interessen und politischer Gesinnung.
+		 <p class="begin">
+       Während Bürgervereine <a href="{{ site.baseurl }}{% link holbeinstrasse/index.html %}">Verdrängung</a> der
+       zahlungsschwächeren Mieter aus den zentrumsnahen Stadtteilen befürchten, glauben Immobilienwirtschaft und manche
+       Stadtpolitiker, dass es Gentrifizierung in Leipzig gar nicht gibt – oder nur sehr begrenzt. Sie bewerten die
+       Stadtentwicklung völlig anders: Heruntergekommene Viertel würden aufgewertet und der Leipziger Wohnungsmarkt
+       normalisiere sich endlich, heißt es. Der Begriff „Gentrifizierung“ ist also politisch umkämpft und zwischen
+       Verdrängung und Aufwertung liegt ein tiefer Graben. Wie die einzelnen Akteure die Prozesse beurteilen, hängt ab
+       von deren Rolle im Stadtentwicklungsprozess, deren Interessen und politischer Gesinnung.
 		</p>
-		<p>Die Grafik zeigt, welche Akteure bei der Entwicklung der Stadt eine Rolle spielen und wie sie miteinander agieren. Hinter den Karten liegen Videos, in denen die Leipziger Akteure erklären, wer sie sind und was sie tun.</p>
+		<p>
+      Die Grafik zeigt, welche Akteure bei der Entwicklung der Stadt eine Rolle spielen und wie sie miteinander
+      agieren. Hinter den Karten liegen Videos, in denen die Leipziger Akteure erklären, wer sie sind und was sie tun.
+    </p>
 	</article>
 
 	<article class="full text-center">
@@ -121,12 +156,11 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 					<figure class="back">
 						<div style="height: 100%;">
 						<div class="ribbon-wrapper2"><div class="ribbon2 flip">Klick</div></div>
-							{% include video.html id="hermann-hypezig" poster="was-ist-gentrifizierung/video/flipcards/Medien.jpg" mp4="was-ist-gentrifizierung/video/flipcards/Medien.mp4" webm="was-ist-gentrifizierung/video/flipcards/Medien.webm" %}
+							{% include video.html id="hermann-hypezig" poster="was-ist-gentrifizierung/video/flipcards/Medien.jpg"
+                mp4="was-ist-gentrifizierung/video/flipcards/Medien.mp4"
+                webm="was-ist-gentrifizierung/video/flipcards/Medien.webm" %}
 						</div>
-
-
-						<!--<button class="btn btn-primary" id="flip2">Flip Card</button>-->
-					</figure>
+          </figure>
 				</div>
 		  </div>
 
@@ -147,12 +181,11 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 					<figure class="back">
 						<div style="height: 100%;">
 						<div class="ribbon-wrapper2"><div class="ribbon2 flip">Klick</div></div>
-							{% include video.html id="video-buerger" poster="was-ist-gentrifizierung/video/flipcards/Buerger.jpg" mp4="was-ist-gentrifizierung/video/flipcards/Buerger.mp4" webm="was-ist-gentrifizierung/video/flipcards/Buerger.webm" %}
+							{% include video.html id="video-buerger" poster="was-ist-gentrifizierung/video/flipcards/Buerger.jpg"
+                mp4="was-ist-gentrifizierung/video/flipcards/Buerger.mp4"
+                webm="was-ist-gentrifizierung/video/flipcards/Buerger.webm" %}
 						</div>
-
-
-						<!--<button class="btn btn-primary" id="flip2">Flip Card</button>-->
-					</figure>
+          </figure>
 				</div>
 		  </div>
 
@@ -172,12 +205,12 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 					<figure class="back">
 						<div style="height: 100%;">
 						<div class="ribbon-wrapper2"><div class="ribbon2 flip">Klick</div></div>
-							{% include video.html id="video-immobilienwirtschaft" poster="was-ist-gentrifizierung/video/flipcards/Immobilienwirtschaft.jpg" mp4="was-ist-gentrifizierung/video/flipcards/Immobilienwirtschaft.mp4" webm="was-ist-gentrifizierung/video/flipcards/Immobilienwirtschaft.webm" %}
+							{% include video.html id="video-immobilienwirtschaft"
+                poster="was-ist-gentrifizierung/video/flipcards/Immobilienwirtschaft.jpg"
+                mp4="was-ist-gentrifizierung/video/flipcards/Immobilienwirtschaft.mp4"
+                webm="was-ist-gentrifizierung/video/flipcards/Immobilienwirtschaft.webm" %}
 						</div>
-
-
-						<!--<button class="btn btn-primary" id="flip2">Flip Card</button>-->
-					</figure>
+          </figure>
 				</div>
 		  </div>
 
@@ -197,12 +230,12 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 					<figure class="back">
 						<div style="height: 100%;">
 						<div class="ribbon-wrapper2"><div class="ribbon2 flip">Klick</div></div>
-							{% include video.html id="video-buergerverein" poster="was-ist-gentrifizierung/video/flipcards/Buergerverein.jpg" mp4="was-ist-gentrifizierung/video/flipcards/Buergerverein.mp4" webm="was-ist-gentrifizierung/video/flipcards/Buergerverein.webm" %}
+							{% include video.html id="video-buergerverein"
+                poster="was-ist-gentrifizierung/video/flipcards/Buergerverein.jpg"
+                mp4="was-ist-gentrifizierung/video/flipcards/Buergerverein.mp4"
+                webm="was-ist-gentrifizierung/video/flipcards/Buergerverein.webm" %}
 						</div>
-
-
-						<!--<button class="btn btn-primary" id="flip2">Flip Card</button>-->
-					</figure>
+          </figure>
 				</div>
 		  </div>
 
@@ -221,11 +254,10 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 					<figure class="back">
 						<div style="height: 100%;">
 						<div class="ribbon-wrapper2"><div class="ribbon2 flip">Klick</div></div>
-							{% include video.html id="video-stadt" poster="was-ist-gentrifizierung/video/flipcards/Stadt.jpg" mp4="was-ist-gentrifizierung/video/flipcards/Stadt.mp4" webm="was-ist-gentrifizierung/video/flipcards/Stadt.webm" %}
+							{% include video.html id="video-stadt" poster="was-ist-gentrifizierung/video/flipcards/Stadt.jpg"
+                mp4="was-ist-gentrifizierung/video/flipcards/Stadt.mp4"
+                webm="was-ist-gentrifizierung/video/flipcards/Stadt.webm" %}
 						</div>
-
-
-						<!--<button class="btn btn-primary" id="flip2">Flip Card</button>-->
 					</figure>
 				</div>
 		  </div>
@@ -245,11 +277,11 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 					<figure class="back">
 						<div style="height: 100%;">
 						<div class="ribbon-wrapper2"><div class="ribbon2 flip">Klick</div></div>
-							{% include video.html id="video-kreativwirtschaft" poster="was-ist-gentrifizierung/video/flipcards/Kreativwirtschaft.jpg" mp4="was-ist-gentrifizierung/video/flipcards/Kreativwirtschaft.mp4" webm="was-ist-gentrifizierung/video/flipcards/Kreativwirtschaft.webm" %}
+							{% include video.html id="video-kreativwirtschaft"
+                poster="was-ist-gentrifizierung/video/flipcards/Kreativwirtschaft.jpg"
+                mp4="was-ist-gentrifizierung/video/flipcards/Kreativwirtschaft.mp4"
+                webm="was-ist-gentrifizierung/video/flipcards/Kreativwirtschaft.webm" %}
 						</div>
-
-
-						<!--<button class="btn btn-primary" id="flip2">Flip Card</button>-->
 					</figure>
 				</div>
 		  </div>
@@ -262,7 +294,17 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 <section id="kapitel2-appendix">
 
 	<article>
-		<p>Einundleipzig nimmt vor allem die Bürger der Stadt in den Blick. Sie bewegen sich irgendwo zwischen den anderen Akteuren. Die Hausgemeinschaft im Elsterwerk in der <a href="{{ site.baseurl }}holbeinstrasse">Holbeinstraße 28a</a> kämpft darum, trotz teurer Sanierung in ihren Wohnungen bleiben zu können. Jule zog von Berlin nach Leipzig, um sich ihre Traumwohnung in einem Ausbauhaus zu ermöglichen. Und der frühere Bauleiter <a href="{{ site.baseurl }}gruenau">Bernd Puckelwaldt</a> will ein besseres Image für „sein Grünau“, das eben kein „Monstervorort“ mit hässlichen Plattenbauten ist. Ihre Geschichten sind Versatzstücke einer Stadtentwicklung: nicht nur in puncto Gentrifizierung, sondern auch in Bezug auf andere Phänomene, wie etwa (Re)urbanisierung oder soziale Segregation.</p>
+		<p>
+      Einundleipzig nimmt vor allem die Bürger der Stadt in den Blick. Sie bewegen sich irgendwo zwischen den anderen
+      Akteuren. Die Hausgemeinschaft im Elsterwerk in der
+      <a href="{{ site.baseurl }}{% link holbeinstrasse/index.html %}">Holbeinstraße 28a</a> kämpft darum, trotz teurer
+      Sanierung in ihren Wohnungen bleiben zu können. Jule zog von Berlin nach Leipzig, um sich ihre
+      Traumwohnung in einem Ausbauhaus zu ermöglichen. Und der frühere Bauleiter
+      <a href="{{ site.baseurl }}{% link gruenau/index.html %}">Bernd Puckelwaldt</a> will ein besseres Image für
+      „sein Grünau“, das eben kein „Monstervorort“ mit hässlichen Plattenbauten ist. Ihre Geschichten sind
+      Versatzstücke einer Stadtentwicklung: nicht nur in puncto Gentrifizierung, sondern auch in Bezug auf andere
+      Phänomene, wie etwa (Re)urbanisierung oder soziale Segregation.
+    </p>
 	</article>
 
 </section>
@@ -279,7 +321,17 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	</article>
 
 	<article>
-		<p class="begin">Der Begriff „Gentrification“ beziehungsweise „Gentrifizierung“ (beide Begriffe werden verwendet) beschreibt ein wissenschaftliches Konzept innerhalb der Stadtsoziologie. Er leitet sich vom englischen Wort „gentry“ ab, das auf Deutsch in etwa „niederer Adel“ heißt. Was Wissenschaftler darunter verstehen, erklären sie in den Videos. Außerdem nehmen sie noch ein weiteres Phänomen in den Blick, das Leipzigs Entwicklung in den letzten zehn Jahren stark beeinflusst hat: Die Reurbanisierung. Dass wir verschiedene Wissenschaftler ihre Definition geben lassen, hat folgenden Grund: Jeder von ihnen setzt unterschiedliche Schwerpunkte. Während Jan Glatter von einem „Austausch statusniederer gegen statushöhere Bevölkerung“ spricht, beschreibt Dieter Rink die Gentrifizierung als „Verdrängung durch Aufwertung“. Übrigens sind sich die beiden auch darüber uneinig, ob man „Gentrifizierung“ mit „G“ oder “Dsch“ ausspricht („Dsch“, da der Begriff aus dem Englischen kommt). Einig sind sie sich aber darin: Die Aussprache ist wichtig.
+		<p class="begin">
+      Der Begriff „Gentrification“ beziehungsweise „Gentrifizierung“ (beide Begriffe werden verwendet) beschreibt ein
+      wissenschaftliches Konzept innerhalb der Stadtsoziologie. Er leitet sich vom englischen Wort „gentry“ ab, das auf
+      Deutsch in etwa „niederer Adel“ heißt. Was Wissenschaftler darunter verstehen, erklären sie in den Videos.
+      Außerdem nehmen sie noch ein weiteres Phänomen in den Blick, das Leipzigs Entwicklung in den letzten zehn Jahren
+      stark beeinflusst hat: Die Reurbanisierung. Dass wir verschiedene Wissenschaftler ihre Definition geben lassen,
+      hat folgenden Grund: Jeder von ihnen setzt unterschiedliche Schwerpunkte. Während Jan Glatter von einem
+      „Austausch statusniederer gegen statushöhere Bevölkerung“ spricht, beschreibt Dieter Rink die Gentrifizierung
+      als „Verdrängung durch Aufwertung“. Übrigens sind sich die beiden auch darüber uneinig, ob man „Gentrifizierung“
+      mit „G“ oder “Dsch“ ausspricht („Dsch“, da der Begriff aus dem Englischen kommt). Einig sind sie sich aber darin:
+      Die Aussprache ist wichtig.
 		</p>
 	</article>
 
@@ -288,50 +340,82 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	</article>
 
 	<article class="half">
-		{% include video.html id="video-glatter-gentrifizierung" poster="was-ist-gentrifizierung/video/Glatter_Def_Gentrifizierung.jpg" webm="was-ist-gentrifizierung/video/Glatter_Def_Gentrifizierung.webm" mp4="was-ist-gentrifizierung/video/Glatter_Def_Gentrifizierung.mp4" %}
+		{% include video.html id="video-glatter-gentrifizierung"
+      poster="was-ist-gentrifizierung/video/Glatter_Def_Gentrifizierung.jpg"
+      webm="was-ist-gentrifizierung/video/Glatter_Def_Gentrifizierung.webm"
+      mp4="was-ist-gentrifizierung/video/Glatter_Def_Gentrifizierung.mp4" %}
 		<div class="video-description">
 			Dr. Jan Glatter, geographische Wohnungsmarktforschung, Universität Köln
 		</div>
 	</article>
 	<article class="half">
-		{% include video.html id="video-rink-gentrifizierung" poster="was-ist-gentrifizierung/video/Rink_Def_Gentrifizierung.jpg" webm="was-ist-gentrifizierung/video/Rink_Def_Gentrifizierung.webm" mp4="was-ist-gentrifizierung/video/Rink_Def_Gentrifizierung.mp4" %}
+		{% include video.html id="video-rink-gentrifizierung"
+      poster="was-ist-gentrifizierung/video/Rink_Def_Gentrifizierung.jpg"
+      webm="was-ist-gentrifizierung/video/Rink_Def_Gentrifizierung.webm"
+      mp4="was-ist-gentrifizierung/video/Rink_Def_Gentrifizierung.mp4" %}
 		<div class="video-description">
 			Prof. Dr. Dieter Rink, Stadtsoziologe, Helmholtzzentrum für Umweltforschung (UFZ) in Leipzig
 		</div>
 	</article>
 
 	<article style="padding-top: 35px;">
-		<p>Der Sozialwissenschaftler Andrej Holm definiert Gentrifizierung als „immobilienwirtschaftliche Inwertsetzung“ (Holm 2013, 11) und „soziale Aufwertung“. Das klingt abstrakt. Wir haben uns an der Beschreibung von Holm orientiert und an einen 3D-Flug durch die Gentrifizierung gewagt. Natürlich ist die Darstellung schemenhaft und geprägt von den Annahmen und Begriffen, die wir so bei Holm gefunden haben. Es gibt sicherlich (siehe die Experten-Videos oben) weitere Auffassungen dazu, was Gentrifizierung ist.
+		<p>
+      Der Sozialwissenschaftler Andrej Holm definiert Gentrifizierung als „immobilienwirtschaftliche Inwertsetzung“
+      (Holm 2013, 11) und „soziale Aufwertung“. Das klingt abstrakt. Wir haben uns an der Beschreibung von Holm
+      orientiert und an einen 3D-Flug durch die Gentrifizierung gewagt. Natürlich ist die Darstellung schemenhaft und
+      geprägt von den Annahmen und Begriffen, die wir so bei Holm gefunden haben. Es gibt sicherlich (siehe die
+      Experten-Videos oben) weitere Auffassungen dazu, was Gentrifizierung ist.
 		</p>
 	</article>
 
 	<article class="full">
-		<iframe src="{{ site.baseurl }}{% link was-ist-gentrifizierung/impress.html %}" seamless style="border: 0px; height: 555px; width: 100%;" class="visible-lg visible-md fade-in-element">
-		  <p>Ihr Browser kann leider keine eingebetteten Frames anzeigen:
-		  Sie k&ouml;nnen die eingebettete Seite <a href="{{ site.baseurl }}{% link was-ist-gentrifizierung/impress.html %}">hier aufrufen</a></p>
+		<iframe src="{{ site.baseurl }}{% link was-ist-gentrifizierung/impress.html %}" seamless
+      style="border: 0px; height: 555px; width: 100%;" class="visible-lg visible-md fade-in-element">
+		  <p>
+        Ihr Browser kann leider keine eingebetteten Frames anzeigen:
+		    Sie k&ouml;nnen die eingebettete Seite
+        <a href="{{ site.baseurl }}{% link was-ist-gentrifizierung/impress.html %}">hier aufrufen</a>
+      </p>
 		</iframe>
 
 		<p class="no-comment visible-sm visible-xs">Auf Handys leider nicht darstellbar</p>
 	</article>
 
 	<article style="padding-top: 35px;">
-		<p>Verstärkt wird der Prozess um Aufwertung oft auch dadurch, dass bestimmte Viertel von der Stadt zu Sanierungsgebieten erklärt und in ihrer Entwicklung konkret gefördert werden (Holm 2013, 11). Der Leipziger Westen etwa erhielt ab 2009 Fördermittel durch den Europäischen Fonds für regionale Entwicklung (EFRE). Die Stadt begründete ihr Förderprogramm damals folgendermaßen:
+		<p>
+      Verstärkt wird der Prozess um Aufwertung oft auch dadurch, dass bestimmte Viertel von der Stadt zu
+      Sanierungsgebieten erklärt und in ihrer Entwicklung konkret gefördert werden (Holm 2013, 11). Der Leipziger
+      Westen etwa erhielt ab 2009 Fördermittel durch den Europäischen Fonds für regionale Entwicklung (EFRE). Die Stadt
+      begründete ihr Förderprogramm damals folgendermaßen:
 		</p>
 	</article>
 
 	<article class="full" style="padding-bottom: 35px;">
 
 		<blockquote>
-		<strong>städtebauliche Missstände</strong> und <strong>hohe Leerstände</strong> von Wohn- und Gewerbeflächen. Besonders problematisch ist die zunehmende Bündelung sozialer Problemlagen im Leipziger Westen, abzulesen an hoher Arbeitslosigkeit, einem hohen Anteil von Transferleistungsempfängern und einer unterdurchschnittlichen Bildungssituation breiter Bevölkerungsteile.
+		<strong>städtebauliche Missstände</strong> und <strong>hohe Leerstände</strong> von Wohn- und Gewerbeflächen.
+      Besonders problematisch ist die zunehmende Bündelung sozialer Problemlagen im Leipziger Westen, abzulesen an
+      hoher Arbeitslosigkeit, einem hohen Anteil von Transferleistungsempfängern und einer unterdurchschnittlichen
+      Bildungssituation breiter Bevölkerungsteile.
 
-		<cite><a href="http://www.leipziger-westen.de/front_content.php?idcat=105&amp;lang=1" target="_blank">Quelle</a> </cite>
+		  <cite>
+        <a href="http://www.leipziger-westen.de/front_content.php?idcat=105&amp;lang=1"
+          target="_blank" rel="noopener noreferrer">Quelle</a>
+      </cite>
 		</blockquote>
 
 	</article>
 
 	<article>
 
-		<p>Heute erklären Wissenschaftler wie der Stadtsoziologe Dieter Rink den Leipziger Westen zum „Hotspot von Aufwertung“. Die Mietpreise bei Neuvermietungen liegen oft im oberen Preissegment. Und diese können sich eher zahlungskräftigere Mieter leisten. Das kann auch eine Verdrängung der alteingesessenen Bevölkerung mit sich bringen, muss es jedoch nicht. So bestehen subkulturelle Nischen trotzdem oft weiter. „Viele Aufwertungsprozesse bleiben auf halbem Wege stecken, ohne dass es zu einer vollständigen Verdrängung der früheren Bewohnerschaft kommt“, schreibt Andrej Holm in seinem Buch „Wir bleiben Alle!“.</p>
+		<p>
+      Heute erklären Wissenschaftler wie der Stadtsoziologe Dieter Rink den Leipziger Westen zum „Hotspot von
+      Aufwertung“. Die Mietpreise bei Neuvermietungen liegen oft im oberen Preissegment. Und diese können sich eher
+      zahlungskräftigere Mieter leisten. Das kann auch eine Verdrängung der alteingesessenen Bevölkerung mit sich
+      bringen, muss es jedoch nicht. So bestehen subkulturelle Nischen trotzdem oft weiter. „Viele Aufwertungsprozesse
+      bleiben auf halbem Wege stecken, ohne dass es zu einer vollständigen Verdrängung der früheren Bewohnerschaft
+      kommt“, schreibt Andrej Holm in seinem Buch „Wir bleiben Alle!“.
+    </p>
 
 	</article>
 
@@ -350,14 +434,24 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 
 	<article>
 
-		<p class="begin">In den 1990er Jahren schrumpften einige deutsche Städte, Nürnberg etwa, aber auch Leipzig. Familien zogen in die Vororte, ins Grüne. Diesen Prozess bezeichnen Wissenschaftler als Suburbanisierung. Seit den 2000ern aber erlebt die Stadt ein Comeback. Denn viele Menschen wollen auf die infrastrukturellen Vorteile einer Stadt nicht verzichten oder haben dort bessere Jobperspektiven. Wissenschaftler sprechen von einer „Reurbanisierung“, die sich auch in Leipzig bemerkbar macht. <strong><em>Die Stadt wächst wieder und zwar stärker als das Umland.</em></strong></p>
+		<p class="begin">
+      In den 1990er Jahren schrumpften einige deutsche Städte, Nürnberg etwa, aber auch Leipzig. Familien zogen in die
+      Vororte, ins Grüne. Diesen Prozess bezeichnen Wissenschaftler als Suburbanisierung. Seit den 2000ern aber erlebt
+      die Stadt ein Comeback. Denn viele Menschen wollen auf die infrastrukturellen Vorteile einer Stadt nicht
+      verzichten oder haben dort bessere Jobperspektiven. Wissenschaftler sprechen von einer „Reurbanisierung“, die
+      sich auch in Leipzig bemerkbar macht. <strong><em>Die Stadt wächst wieder und zwar stärker als das
+      Umland.</em></strong>
+    </p>
 
 		<h3>Wie definieren Wissenschaftler „Reurbanisierung“?</h3>
 	</article>
 
 	<article class="half">
 
-		{% include video.html id="video-glatter-reurbanisierung" poster="was-ist-gentrifizierung/video/Glatter_Def_Reurbanisierung.jpg" webm="was-ist-gentrifizierung/video/Glatter_Def_Reurbanisierung.webm" mp4="was-ist-gentrifizierung/video/Glatter_Def_Reurbanisierung.mp4" %}
+		{% include video.html id="video-glatter-reurbanisierung"
+      poster="was-ist-gentrifizierung/video/Glatter_Def_Reurbanisierung.jpg"
+      webm="was-ist-gentrifizierung/video/Glatter_Def_Reurbanisierung.webm"
+      mp4="was-ist-gentrifizierung/video/Glatter_Def_Reurbanisierung.mp4" %}
 		<div class="video-description">
 			Dr. Jan Glatter, geographische Wohnungsmarktforschung, Universität Köln
 		</div>
@@ -366,7 +460,10 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 
 	<article class="half">
 
-		{% include video.html id="video-rink-reurbanisierung" poster="was-ist-gentrifizierung/video/Rink_Def_Reurbanisierung.jpg" webm="was-ist-gentrifizierung/video/Rink_Def_Reurbanisierung.webm" mp4="was-ist-gentrifizierung/video/Rink_Def_Reurbanisierung.mp4" %}
+		{% include video.html id="video-rink-reurbanisierung"
+      poster="was-ist-gentrifizierung/video/Rink_Def_Reurbanisierung.jpg"
+      webm="was-ist-gentrifizierung/video/Rink_Def_Reurbanisierung.webm"
+      mp4="was-ist-gentrifizierung/video/Rink_Def_Reurbanisierung.mp4" %}
 		<div class="video-description">
 			Prof. Dr. Dieter Rink, Stadtsoziologe, Helmholtzzentrum für Umweltforschung (UFZ) in Leipzig
 		</div>
@@ -377,11 +474,30 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 
 		<h3 style="padding-top: 35px;">Wird Wohnraum in der Stadt teurer, weil es eine größere Nachfrage gibt?</h3>
 
-		<p>Nicht unbedingt. Auch wenn viele Menschen in die Stadt ziehen und damit auch die Nachfrage an Wohnungen größer wird, muss dies nicht automatisch zu Mietsteigerungen führen. <strong>Viele Wissenschaftler, wie etwa Andrej Holm, sehen als Ursache für Gentrifizierung das <em>veränderte</em> Angebot: Etwa wenn die Eigentümer Wohnungen (luxus)sanieren und auf Grund dessen höhere Mieten verlangen.</strong> Das hängt nicht zwangsläufig mit einer starken Nachfrage durch Zuzug zusammen. Doch je größer der Druck innerhalb der Stadt wird, desto wahrscheinlicher ist es, dass Mietpreise steigen. Erst für einzelne neu sanierte Wohnungen. Später dann auch für Häuser in der Umgebung, die sich den Spitzenpreisen im gefragten Viertel Stück für Stück annähern.</p>
+		<p>
+      Nicht unbedingt. Auch wenn viele Menschen in die Stadt ziehen und damit auch die Nachfrage an Wohnungen größer
+      wird, muss dies nicht automatisch zu Mietsteigerungen führen. <strong>Viele Wissenschaftler, wie etwa Andrej
+      Holm, sehen als Ursache für Gentrifizierung das <em>veränderte</em> Angebot: Etwa wenn die Eigentümer Wohnungen
+      (luxus)sanieren und auf Grund dessen höhere Mieten verlangen.</strong> Das hängt nicht zwangsläufig mit einer
+      starken Nachfrage durch Zuzug zusammen. Doch je größer der Druck innerhalb der Stadt wird, desto wahrscheinlicher
+      ist es, dass Mietpreise steigen. Erst für einzelne neu sanierte Wohnungen. Später dann auch für Häuser in der
+      Umgebung, die sich den Spitzenpreisen im gefragten Viertel Stück für Stück annähern.
+    </p>
 
 		<h3>Was kann man untersuchen, um dem Phänomen „Gentrifizierung“ näher zu kommen? </h3>
 
-		<p>In welchem Umfang bestimmte Ortsteile von Gentrifizierung betroffen sind, lässt sich nicht so einfach sagen. Dafür braucht es viele unterschiedliche Daten, die über einen größeren Zeitraum betrachtet werden. Untersuchen kann man dafür die <a href="{{ site.baseurl }}gentrifizierung-in-leipzig">Mietpreisentwicklung, Zu- und Wegzüge und die Binnenwanderung</a>. Aber auch die Entwicklung von Armutsanteilen, Ausländeranteilen oder dem Altersdurchschnitt geben Aufschluss darüber, wie stark ein Gebiet sich verändert hat. Denn Gentrifizierung geht meist auch mit einer Homogenisierung eines Viertels einher: Die Mischung im Quartier geht verloren. Eine sinkende Zahl von Arbeitslosen oder Migranten könnte ein Indiz für eine derartige Entwicklung sein. Außerdem – das ist zumindest unsere These – zeigt auch ein verändertes Angebot an Geschäften, Veranstaltungen oder Kneipen, dass sich ein Viertel und die Bevölkerung vor Ort verändern beziehungsweise verändert haben.</p>
+		<p>
+      In welchem Umfang bestimmte Ortsteile von Gentrifizierung betroffen sind, lässt sich nicht so einfach sagen.
+      Dafür braucht es viele unterschiedliche Daten, die über einen größeren Zeitraum betrachtet werden. Untersuchen
+      kann man dafür die
+      <a href="{{ site.baseurl }}{% link gentrifizierung-in-leipzig/index.html %}">Mietpreisentwicklung, Zu- und
+        Wegzüge und die Binnenwanderung</a>. Aber auch die Entwicklung von Armutsanteilen, Ausländeranteilen oder dem
+      Altersdurchschnitt geben Aufschluss darüber, wie stark ein Gebiet sich verändert hat. Denn Gentrifizierung geht
+      meist auch mit einer Homogenisierung eines Viertels einher: Die Mischung im Quartier geht verloren. Eine sinkende
+      Zahl von Arbeitslosen oder Migranten könnte ein Indiz für eine derartige Entwicklung sein. Außerdem – das ist
+      zumindest unsere These – zeigt auch ein verändertes Angebot an Geschäften, Veranstaltungen oder Kneipen, dass
+      sich ein Viertel und die Bevölkerung vor Ort verändern beziehungsweise verändert haben.
+    </p>
 	</article>
 
 </section>
@@ -393,12 +509,32 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	<article class="full" style="padding-right: 25px;">
 
 		<h4>Zur Recherche:</h4>
-		<p>Um uns dem Thema Gentrifizierung erst einmal anzunähern, haben wir uns mit Wissenschaftlern und einzelnen Akteuren getroffen. Es war gar nicht so einfach zwischen all den unterschiedlichen Auffassungen und Meinungen, was Gentrifizierung ist und ob es das in Leipzig gibt, bei dem Wust an Informationen durchzusteigen. Wir selbst haben kein Tool entwickelt, um Gentrifizierung „zu messen“. Wir können das gar nicht leisten, da Wissenschaftler sich ein ganzes Leben lang damit beschäftigen. Das „Messen“ der Gentrifizierung ist weit schwieriger und aufwendiger, weshalb wir diesen Job lieber den Profis überlassen (ein Beispiel wie Stadtsoziologen und Geographen Gentrifizierung messen findet sich hier: <a href="http://gentrima.lepus.uberspace.de/" target="_blank">http://gentrima.lepus.uberspace.de/</a>). Wir stellen eher einzelne Visualisierungen zur Verfügung und versuchen diese mit den aktuellen Ergebnissen aus der Wissenschaft zu verknüpfen.</p>
+		<p>
+      Um uns dem Thema Gentrifizierung erst einmal anzunähern, haben wir uns mit Wissenschaftlern und einzelnen
+      Akteuren getroffen. Es war gar nicht so einfach zwischen all den unterschiedlichen Auffassungen und Meinungen,
+      was Gentrifizierung ist und ob es das in Leipzig gibt, bei dem Wust an Informationen durchzusteigen. Wir selbst
+      haben kein Tool entwickelt, um Gentrifizierung „zu messen“. Wir können das gar nicht leisten, da Wissenschaftler
+      sich ein ganzes Leben lang damit beschäftigen. Das „Messen“ der Gentrifizierung ist weit schwieriger und
+      aufwendiger, weshalb wir diesen Job lieber den Profis überlassen (ein Beispiel wie Stadtsoziologen und Geographen
+      Gentrifizierung messen findet sich hier: <a href="http://gentrima.lepus.uberspace.de/" target="_blank"
+      rel="noopener noreferrer">http://gentrima.lepus.uberspace.de/</a>). Wir stellen eher einzelne Visualisierungen
+      zur Verfügung und versuchen diese mit den aktuellen Ergebnissen aus der Wissenschaft zu verknüpfen.
+    </p>
 
 		<h4>Für genauere Infos/Quellen:</h4>
-		<p>Holm, Andrej (2013): Wir Bleiben Alle! Gentrifizierung – Städtische Konflikte um Aufwertung und Verdrängung, Münster: UNRAST.</p>
-		<p>Venema, Rebecca (2013): Gentrification in einer ostdeutschen Stadt? Öffentliche Diskurse zu städtischen Aufwertungsprozessen am Beispiel Leipzig (unveröffentlichte Masterarbeit), Leipzig: Universität Leipzig.</p>
-		<p>GentriMap. Gentrifizierung visualisieren (ein Projekt der Humboldt-Universität zu Berlin): <a href="http://gentrima.lepus.uberspace.de/" target="_blank">http://gentrima.lepus.uberspace.de/</a> </p>
+		<p>
+      Holm, Andrej (2013): Wir Bleiben Alle! Gentrifizierung – Städtische Konflikte um Aufwertung und Verdrängung,
+      Münster: UNRAST.
+    </p>
+		<p>
+      Venema, Rebecca (2013): Gentrification in einer ostdeutschen Stadt? Öffentliche Diskurse zu städtischen
+      Aufwertungsprozessen am Beispiel Leipzig (unveröffentlichte Masterarbeit), Leipzig: Universität Leipzig.
+    </p>
+		<p>
+      GentriMap. Gentrifizierung visualisieren (ein Projekt der Humboldt-Universität zu Berlin):
+      <a href="http://gentrima.lepus.uberspace.de/" target="_blank"
+      rel="noopener noreferrer">http://gentrima.lepus.uberspace.de/</a>
+    </p>
 
 	</article>
 

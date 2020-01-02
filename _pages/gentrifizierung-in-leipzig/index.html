@@ -3,10 +3,11 @@ layout: default
 title: Gentrifizierung in Leipzig?
 subtitle: Daten und Analysen
 image: gentrifizierung-in-leipzig/teaser.jpg
-description: Wir haben uns auf die Suche nach der Gentrifizierung in Leipzig begeben. Eine abschließende Antwort haben wir selbst noch nicht. Aber wir versuchen etwas aufzuräumen mit dem Wissen um die Stadt. Um dem Thema näher zu kommen, blicken wir zurück auf Leipzigs Entwicklung seit dem Mauerfall.
-
+description: Wir haben uns auf die Suche nach der Gentrifizierung in Leipzig begeben. Eine abschließende Antwort haben
+  wir selbst noch nicht. Aber wir versuchen etwas aufzuräumen mit dem Wissen um die Stadt. Um dem Thema näher zu
+  kommen, blicken wir zurück auf Leipzigs Entwicklung seit dem Mauerfall.
 author: christina
-scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/video.js/dist/video.min.js]
+scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/video.js/dist/video-js/video.js]
 ---
 <section class="story-header-image">
 
@@ -204,7 +205,6 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 		<div class="floater">
 			<div id="herkunft" style="width: 100%;"></div>
 			<script>
-			//$(function() {
 				var chart = c3.generate({
 					bindto: '#herkunft',
 					data: {
@@ -212,36 +212,73 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 						type : 'pie'
 					 }
 				});
-			//});
 			</script>
 			<div class="video-description">
-				Herkunft der Zuzügler von außen, Stand Okt. 2012 bis Sept. 2013, Quelle: Wanderungsbefragung 2014, UFZ Leipzig und Amt für Stadterneuerung und Wohnungsbauförderung (ASW)
+				Herkunft der Zuzügler von außen, Stand Okt. 2012 bis Sept. 2013, Quelle: Wanderungsbefragung 2014, UFZ Leipzig
+        und Amt für Stadterneuerung und Wohnungsbauförderung (ASW)
 			</div>
 		</div>
 
-		<p>Etwa 40 Prozent der Befragten nannten als Hauptgrund für den Umzug das Studium oder den Arbeitsplatz. Dies überrascht kaum, denn die meisten der Zugezogenen sind zwischen 18 und 35 Jahre alt. Eine Ursache für den Wanderungsgewinn der letzten Jahre, das vermutet die Stadt in ihrem Monitoringbericht 2014, dürften auch die doppelten Abiturjahrgänge in einigen west- und süddeutschen Bundesländern sein. Fast 70 Prozent des Wanderungsgewinns machen die 18 bis 25-Jährigen aus. Außerdem haben sich viele für einen Umzug nach Leipzig entschieden, weil sie mit ihrem Partner oder der Familie zusammenleben wollen. Der Hypefaktor scheint ebenso Einfluss zu nehmen. Denn auch die Attraktivität Leipzigs und die günstigen Mieten in der Stadt ziehen die Menschen an. Gleichzeitig verlor Leipzig Familien mit kleinen Kindern an das Umland: Am häufigsten zogen Bürger zwischen 35 und 45 Jahren aus der Stadt weg, sowie Kleinkinder unter sechs Jahren.</p>
+		<p>
+      Etwa 40 Prozent der Befragten nannten als Hauptgrund für den Umzug das Studium oder den Arbeitsplatz. Dies
+      überrascht kaum, denn die meisten der Zugezogenen sind zwischen 18 und 35 Jahre alt. Eine Ursache für den
+      Wanderungsgewinn der letzten Jahre, das vermutet die Stadt in ihrem Monitoringbericht 2014, dürften auch die
+      doppelten Abiturjahrgänge in einigen west- und süddeutschen Bundesländern sein. Fast 70 Prozent des
+      Wanderungsgewinns machen die 18 bis 25-Jährigen aus. Außerdem haben sich viele für einen Umzug nach Leipzig
+      entschieden, weil sie mit ihrem Partner oder der Familie zusammenleben wollen. Der Hypefaktor scheint ebenso
+      Einfluss zu nehmen. Denn auch die Attraktivität Leipzigs und die günstigen Mieten in der Stadt ziehen die
+      Menschen an. Gleichzeitig verlor Leipzig Familien mit kleinen Kindern an das Umland: Am häufigsten zogen Bürger
+      zwischen 35 und 45 Jahren aus der Stadt weg, sowie Kleinkinder unter sechs Jahren.
+    </p>
 
-		<p>Die meisten Ortsteile konnten 2013 einen Wanderungsgewinn erzielen, das heißt, es zogen mehr Menschen dorthin als weg. Neu-Leipziger verschlug es vor allem in die Ortsteile östlich und südöstlich des Stadtzentrums, sowie in den Leipziger Westen, nach Plagwitz und Altlindenau. Der zuletzt genannte ist auch bei den Leipzigern hoch im Kurs, die innerhalb der Stadt umziehen.</p>
+		<p>
+      Die meisten Ortsteile konnten 2013 einen Wanderungsgewinn erzielen, das heißt, es zogen mehr Menschen dorthin als
+      weg. Neu-Leipziger verschlug es vor allem in die Ortsteile östlich und südöstlich des Stadtzentrums, sowie in den
+      Leipziger Westen, nach Plagwitz und Altlindenau. Der zuletzt genannte ist auch bei den Leipzigern hoch im Kurs,
+      die innerhalb der Stadt umziehen.
+    </p>
 
 		<h3>Umzüge innerhalb der Stadt</h3>
 
 		<div class="floater">
 			<blockquote>
-				Ich finde dieses Bild, dass Menschen, die schon immer in Schleußig gewohnt haben, ausziehen und nach Grünau ziehen müssen, überreizt ist. Ich bin der festen Überzeugung, das gibt es nicht.
+				Ich finde dieses Bild, dass Menschen, die schon immer in Schleußig gewohnt haben, ausziehen und nach Grünau
+        ziehen müssen, überreizt ist. Ich bin der festen Überzeugung, das gibt es nicht.
 				<cite>Rene Hobusch, Stadtrat zu Leipzig (FDP)</cite>
 			</blockquote>
 		</div>
-		<p>Nehmen wir Schleußig als Beispiel: Bis 2009 war der Ortsteil besonders beliebt und verhältnismäßig viele Menschen zogen dorthin, nicht zuletzt aufgrund der sanierten Gründerzeitbauten und der attraktiven Lage. Elster und Clara-Zetkin-Park liegen nur einen Spaziergang entfernt. Seit drei Jahren aber ist Schleußig „aufgefüllt“. Mittlerweile ziehen von hier, gemessen an der Einwohnerzahl, verhältnismäßig viele Menschen in andere Teile der Stadt, etwa nach Plagwitz.</p>
+		<p>
+      Nehmen wir Schleußig als Beispiel: Bis 2009 war der Ortsteil besonders beliebt und verhältnismäßig viele Menschen
+      zogen dorthin, nicht zuletzt aufgrund der sanierten Gründerzeitbauten und der attraktiven Lage. Elster und
+      Clara-Zetkin-Park liegen nur einen Spaziergang entfernt. Seit drei Jahren aber ist Schleußig „aufgefüllt“.
+      Mittlerweile ziehen von hier, gemessen an der Einwohnerzahl, verhältnismäßig viele Menschen in andere Teile der
+      Stadt, etwa nach Plagwitz.
+    </p>
 
 		<div class="floater">
 			<blockquote>
-				Das würde ja bedeuten, dass man eine Wahl hat, in welches Gebiet man ziehen will – das sehe ich nicht so. Das ist eine forcierte Entwicklung. Potenziale sind in einigen Gebieten ausgeschöpft. In der Südvorstadt, Gohlis oder Schleußig gibt es nicht mehr das Angebot an Wohnungen und ein Ausweichraum könnte Grünau sein.
+				Das würde ja bedeuten, dass man eine Wahl hat, in welches Gebiet man ziehen will – das sehe ich nicht so. Das
+        ist eine forcierte Entwicklung. Potenziale sind in einigen Gebieten ausgeschöpft. In der Südvorstadt, Gohlis
+        oder Schleußig gibt es nicht mehr das Angebot an Wohnungen und ein Ausweichraum könnte Grünau sein.
 				<cite>Prof. Dr. Sigrun Kabisch, Stadtsoziologin am Helmholtzzentrum Leipzig</cite>
 			</blockquote>
 		</div>
-		<p>Und nicht nur Schleußig ist von diesem Phänomen betroffen: Die Altbauquartiere von Gohlis bis Connewitz entlang des Auwaldes – nennen wir ihn den „Auwald-Streifen“ - konnten in den 2000ern noch starke Wanderungsgewinne verbuchen, während jetzt von dort vor allem Familien wegziehen, wie die Wanderungsbefragung ergab. Als Gründe für den Umzug gaben die Teilnehmer familiäre Beziehungen an, aber auch, dass die Wohnung zu klein geworden sei. Wenn also Familien aus den zentrumsnahen Ortsteilen wegziehen, dann möglicherweise auch, weil sie woanders eine größere Wohnung für einen ähnlichen Preis bekommen. Gleichzeitig gewinnen übrigens die Übergangsbezirke zwischen Stadt und Stadtrand, wie Plagwitz oder Lindenau, an Familien hinzu. Der Rückschluss allerdings, dass zum Beispiel viele Familien von Schleußig nach Plagwitz ziehen, ist nicht erlaubt.</p>
+		<p>
+      Und nicht nur Schleußig ist von diesem Phänomen betroffen: Die Altbauquartiere von Gohlis bis Connewitz entlang
+      des Auwaldes – nennen wir ihn den „Auwald-Streifen“ - konnten in den 2000ern noch starke Wanderungsgewinne
+      verbuchen, während jetzt von dort vor allem Familien wegziehen, wie die Wanderungsbefragung ergab. Als Gründe für
+      den Umzug gaben die Teilnehmer familiäre Beziehungen an, aber auch, dass die Wohnung zu klein geworden sei. Wenn
+      also Familien aus den zentrumsnahen Ortsteilen wegziehen, dann möglicherweise auch, weil sie woanders eine
+      größere Wohnung für einen ähnlichen Preis bekommen. Gleichzeitig gewinnen übrigens die Übergangsbezirke zwischen
+      Stadt und Stadtrand, wie Plagwitz oder Lindenau, an Familien hinzu. Der Rückschluss allerdings, dass zum Beispiel
+      viele Familien von Schleußig nach Plagwitz ziehen, ist nicht erlaubt.
+    </p>
 
-		<p>Um diese Bewegungen leichter nachvollziehen zu können, haben wir uns von der Stadt Leipzig die Daten zu den Umzügen innerhalb Leipzigs geben lassen. Ob beispielsweise besonders viele Menschen von Schleußig nach Grünau ziehen, was FDP-Stadrtat René Hobusch bestreitet, lässt sich anhand der Grafik erstmalig nachvollziehen.</p>
+		<p>
+      Um diese Bewegungen leichter nachvollziehen zu können, haben wir uns von der Stadt Leipzig die Daten zu den
+      Umzügen innerhalb Leipzigs geben lassen. Ob beispielsweise besonders viele Menschen von Schleußig nach Grünau
+      ziehen, was FDP-Stadrtat René Hobusch bestreitet, lässt sich anhand der Grafik erstmalig nachvollziehen.
+    </p>
 
 	</article>
 
@@ -266,13 +303,49 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	</article>
 
 	<article>
-		<p class="begin" style="padding-top: 35px;">Anfang der 2000er standen mehr als 20 Prozent der Wohnungen in Leipzig leer. Investoren hatten die Nachfrage überschätzt und viele der Gründerzeithäuser saniert. Gleichzeitig zogen viele Leipziger weg und es entstand ein Überangebot an sanierten, bezugsfertigen Wohnungen. Das drückte die Mietpreise. „Teilweise haben die Eigentümer draufgezahlt und viele sind Pleite gegangen“, sagt der Pressesprecher der Immobilienakteure in Leipzig, Michael Rücker. Im neuesten <a href="http://www.leipzig.de/bauen-und-wohnen/stadtentwicklung/raumbeobachtung-und-monitoring/monitoring-wohnen/?eID=dam_frontend_push&amp;docID=32022" target="_blank">Monitoringbericht</a> der Stadt Leipzig (2013/14) zum Thema Wohnen wird der Leerstand auf 39.800 Wohnungen geschätzt. Allerdings gilt diese Zahl für den Stichtag am 9.5.2011. Die Leerstandsquote hätte sich damit seit Anfang der 2000er bis 2011 beinahe halbiert. Besonders in den Stadtteilen im „Auwald-Streifen“ ist der Leerstand in den 2000er Jahren auf unter fünf Prozent zurückgegangen. Diese Gebiete hatten sich somit bis 2011 schon aufgefüllt.</p>
+		<p class="begin" style="padding-top: 35px;">
+      Anfang der 2000er standen mehr als 20 Prozent der Wohnungen in Leipzig leer. Investoren hatten die Nachfrage
+      überschätzt und viele der Gründerzeithäuser saniert. Gleichzeitig zogen viele Leipziger weg und es entstand ein
+      Überangebot an sanierten, bezugsfertigen Wohnungen. Das drückte die Mietpreise. „Teilweise haben die Eigentümer
+      draufgezahlt und viele sind Pleite gegangen“, sagt der Pressesprecher der Immobilienakteure in Leipzig, Michael
+      Rücker. Im neuesten <a href="http://www.leipzig.de/bauen-und-wohnen/stadtentwicklung/raumbeobachtung-und-monitoring/monitoring-wohnen/?eID=dam_frontend_push&amp;docID=32022"
+      target="_blank" rel="noopener nofererrer">Monitoringbericht</a> der Stadt Leipzig (2013/14) zum Thema Wohnen wird
+      der Leerstand auf 39.800 Wohnungen geschätzt. Allerdings gilt diese Zahl für den Stichtag am 9.5.2011. Die
+      Leerstandsquote hätte sich damit seit Anfang der 2000er bis 2011 beinahe halbiert. Besonders in den Stadtteilen
+      im „Auwald-Streifen“ ist der Leerstand in den 2000er Jahren auf unter fünf Prozent zurückgegangen. Diese Gebiete
+      hatten sich somit bis 2011 schon aufgefüllt.
+    </p>
 
 		<h3>Leerstand: Jeder macht seine eigene Rechnung auf</h3>
 
-		<p>Zum Jahr 2013 dürfte die Leerstandsquote für ganz Leipzig noch stärker gesunken sein. Verlässliche Daten hierzu gibt es aber nicht, denn die Eigentümer müssen nicht melden, dass eine Immobilie leer steht. Außerdem messen die Akteure oft mit zweierlei Maß. Die Immobilienwirtschaft etwa betrachtet oft auch „nicht-marktaktive“ Wohnungen als Leerstände. Sprich, wenn Wohnungen in einem desolaten Zustand sind oder die Eigentumsverhältnisse nicht offen liegen. Bürgervereine oder Wissenschaftler zählen oft nur bewohnbare Häuser zum Leerstand. Es werden verschiedene Rechnungen aufgemacht, die die eine oder andere Position unterfüttern.</p>
+		<p>
+      Zum Jahr 2013 dürfte die Leerstandsquote für ganz Leipzig noch stärker gesunken sein. Verlässliche Daten hierzu
+      gibt es aber nicht, denn die Eigentümer müssen nicht melden, dass eine Immobilie leer steht. Außerdem messen die
+      Akteure oft mit zweierlei Maß. Die Immobilienwirtschaft etwa betrachtet oft auch „nicht-marktaktive“ Wohnungen
+      als Leerstände. Sprich, wenn Wohnungen in einem desolaten Zustand sind oder die Eigentumsverhältnisse nicht offen
+      liegen. Bürgervereine oder Wissenschaftler zählen oft nur bewohnbare Häuser zum Leerstand. Es werden verschiedene
+      Rechnungen aufgemacht, die die eine oder andere Position unterfüttern.
+    </p>
 
-		<p>„Beim derzeitigen Leerstand, gibt es gar keinen Grund massenweise neue Wohnungen zu bauen“, sagt Michael Rücker, Pressesprecher der Immobilienwirtschaft. Er sieht noch viel Potential bei den unsanierten, den sogenannten „nicht-marktaktiven“ Wohnungen. Experten vom Helmholtz-Zentrum kommen im <a href="http://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/02.1_Dez1_Allgemeine_Verwaltung/12_Statistik_und_Wahlen/Statistik/Statistischer_Quartalsbericht_Leipzig_2014_1.pdf" target="_blank">ersten Quartalsbericht 2014</a> zu einem anderen Schluss. Grundlage für deren Schätzung bildet der starke Einwohnerzuwachs der letzten drei Jahre. Für das Jahr 2014 gehen die Wissenschaftler von 12.000 bis 15.000 leerstehenden, aber grundsätzlich bewohnbaren Wohnungen aus. Das entspricht einer Quote zwischen vier und fünf Prozent. Dies würde in etwa der durchschnittlichen Leerstandquote in Deutschland entsprechen, sagen die Wissenschaftler. Sie geben zu denken: „Bleibt die Zuwanderung weiterhin auf dem Niveau der letzten drei Jahre, dann ist – ein gleich bleibendes Bau- und Sanierungsniveau vorausgesetzt – bereits in drei Jahren mit einem angespannten Wohnungsmarkt zu rechnen.“ Der Bürgerverein <a href="http://www.leipzig-stadtfueralle.de/index.php/materialdetails/items/wohnunspolitisches-konzept.html" target="_blank">„Stadt für Alle“</a> mahnt ebenso an, dass rund 7.000 bis 10.000 Wohnungen dauerhaft als Umzugsreserve innerhalb der Stadt benötigt werden. Das <a href="http://www.leipzig.de/buergerservice-und-verwaltung/buergerbeteiligung-und-einflussnahme/leipzig-weiter-denken/beteiligen/wohnen-in-der-wachsenden-stadt/" target="_blank">wohnungspolitische Konzept</a>, das die Stadt Leipzig derzeit entwickelt, müsse diese Probleme stärker in den Blick nehmen, um möglichem Wohnungsmangel entgegen zu wirken.</p>
+		<p>
+      „Beim derzeitigen Leerstand, gibt es gar keinen Grund massenweise neue Wohnungen zu bauen“, sagt Michael Rücker,
+      Pressesprecher der Immobilienwirtschaft. Er sieht noch viel Potential bei den unsanierten, den sogenannten
+      „nicht-marktaktiven“ Wohnungen. Experten vom Helmholtz-Zentrum kommen im
+      <a href="http://www.leipzig.de/fileadmin/mediendatenbank/leipzig-de/Stadt/02.1_Dez1_Allgemeine_Verwaltung/12_Statistik_und_Wahlen/Statistik/Statistischer_Quartalsbericht_Leipzig_2014_1.pdf"
+      target="_blank" rel="noopener nofererrer">ersten Quartalsbericht 2014</a> zu einem anderen Schluss. Grundlage für
+      deren Schätzung bildet der starke Einwohnerzuwachs der letzten drei Jahre. Für das Jahr 2014 gehen die
+      Wissenschaftler von 12.000 bis 15.000 leerstehenden, aber grundsätzlich bewohnbaren Wohnungen aus. Das entspricht
+      einer Quote zwischen vier und fünf Prozent. Dies würde in etwa der durchschnittlichen Leerstandquote in
+      Deutschland entsprechen, sagen die Wissenschaftler. Sie geben zu denken: „Bleibt die Zuwanderung weiterhin auf
+      dem Niveau der letzten drei Jahre, dann ist – ein gleich bleibendes Bau- und Sanierungsniveau vorausgesetzt –
+      bereits in drei Jahren mit einem angespannten Wohnungsmarkt zu rechnen.“ Der Bürgerverein
+      <a href="http://www.leipzig-stadtfueralle.de/index.php/materialdetails/items/wohnunspolitisches-konzept.html"
+      target="_blank" rel="noopener nofererrer">„Stadt für Alle“</a> mahnt ebenso an, dass rund 7.000 bis 10.000
+      Wohnungen dauerhaft als Umzugsreserve innerhalb der Stadt benötigt werden. Das
+      <a href="http://www.leipzig.de/buergerservice-und-verwaltung/buergerbeteiligung-und-einflussnahme/leipzig-weiter-denken/beteiligen/wohnen-in-der-wachsenden-stadt/"
+      target="_blank">wohnungspolitische Konzept</a>, das die Stadt Leipzig derzeit entwickelt, müsse diese Probleme
+      stärker in den Blick nehmen, um möglichem Wohnungsmangel entgegen zu wirken.
+    </p>
 	</article>
 
 </section>
@@ -289,101 +362,111 @@ scripts: [node_modules/ekko-lightbox/dist/ekko-lightbox.min.js, node_modules/vid
 	</article>
 
 	<article>
-		<p class="begin" style="padding-top: 35px;">Leipzig ist eine Mieterstadt. Dies bestätigte auch noch einmal der <a href="http://www.statistik.sachsen.de/download/080_Zensus_2011_GWZ/gwz_14713000.pdf" target="_blank">Zensus 2011</a>. Demnach waren etwa 87 Prozent aller bezogenen Wohnungen vermietet, bei nur 13 Prozent lebten die Eigentümer selbst darin. Die Stadt Leipzig beziffert diese Zahl der Selbstnutzer sogar nur auf 11 Prozent (Leipzig weiter denken, Oktober 2014). Die Mietpreisentwicklung spielt also für die Mehrheit der Leipziger Haushalte eine wichtige Rolle. Die Datengrundlage sollte man sich auch hier genauer ansehen: Wer hat die Mietpreise erhoben? Umfasst die Datensammlung nur Neuvermietungen?</p>
+		<p class="begin" style="padding-top: 35px;">
+      Leipzig ist eine Mieterstadt. Dies bestätigte auch noch einmal der
+      <a href="http://www.statistik.sachsen.de/download/080_Zensus_2011_GWZ/gwz_14713000.pdf" target="_blank"
+      rel="noopener nofererrer">Zensus 2011</a>. Demnach waren etwa 87 Prozent aller bezogenen Wohnungen vermietet, bei
+      nur 13 Prozent lebten die Eigentümer selbst darin. Die Stadt Leipzig beziffert diese Zahl der Selbstnutzer sogar
+      nur auf 11 Prozent (Leipzig weiter denken, Oktober 2014). Die Mietpreisentwicklung spielt also für die Mehrheit
+      der Leipziger Haushalte eine wichtige Rolle. Die Datengrundlage sollte man sich auch hier genauer ansehen: Wer
+      hat die Mietpreise erhoben? Umfasst die Datensammlung nur Neuvermietungen?
+    </p>
 
 		<h4>Karten von Immoscout und der städtische Mietspiegel</h4>
-		<p>Online-Marktplätze wie Immobilien-Scout 24 oder Immonet bieten Daten und Karten zu den durchschnittlichen Kaltmietpreisen an. Dort zu sehen sind allerdings ausschließlich die <strong>Neuvermietungen</strong>, die über diese Portale eingestellt werden. Mietpreise, die die Bürger tatsächlich aktuell zahlen, werden nicht sichtbar. So hat die <a href="http://www.lvz-online.de/nachrichten/aktuell_themen/leipzig-in-karten/mietpreis-check-fuer-leipzig-das-kosten-wohnungen-in-den-stadtteilen/r-leipzig-in-karten-a-259891.html" target="_blank">Leipziger Volkszeitung</a> beispielsweise Daten von Immonet in einer Karte visualisiert. Je nach Höhe der Durchschnittsmiete sind dort die verschiedenen Ortsteile Leipzigs eingefärbt. Dass aber möglicherweise nur bestimmte Straßen in einem Ortsteil äußerst gefragt sind und dadurch den Durchschnittswert erhöhen, kann man daran nicht ablesen.</p>
+		<p>
+      Online-Marktplätze wie Immobilien-Scout 24 oder Immonet bieten Daten und Karten zu den durchschnittlichen
+      Kaltmietpreisen an. Dort zu sehen sind allerdings ausschließlich die <strong>Neuvermietungen</strong>, die über
+      diese Portale eingestellt werden. Mietpreise, die die Bürger tatsächlich aktuell zahlen, werden nicht sichtbar.
+      So hat die <a href="http://www.lvz-online.de/nachrichten/aktuell_themen/leipzig-in-karten/mietpreis-check-fuer-leipzig-das-kosten-wohnungen-in-den-stadtteilen/r-leipzig-in-karten-a-259891.html"
+      target="_blank" rel="noopener nofererrer">Leipziger Volkszeitung</a> beispielsweise Daten von Immonet in einer
+      Karte visualisiert. Je nach Höhe der Durchschnittsmiete sind dort die verschiedenen Ortsteile Leipzigs
+      eingefärbt. Dass aber möglicherweise nur bestimmte Straßen in einem Ortsteil äußerst gefragt sind und dadurch den
+      Durchschnittswert erhöhen, kann man daran nicht ablesen.
+    </p>
 
-		<p>Oft erheben die Städte auch einen <strong>Mietspiegel</strong>, indem sie die Bürger nach den Merkmalen ihrer Wohnung (Baujahr, Ausstattung, Umgebung etc.) und ihren Ausgaben für die Miete befragen. Verpflichtet sind die Städte dazu jedoch nicht. Ein klarer Vorteil ist, dass dabei auch die Mieten aus alten Mietverträgen (<strong>Bestandsmieten</strong>) berücksichtigt werden – und nicht allein Neuvermietungen. Allerdings dürfen oft nur bestimmte Haushalte an der Befragung teilnehmen. In Leipzig beispielweise werden nur Mietverträge berücksichtigt, die in den vergangenen vier Jahren abgeschlossen oder geändert worden sind. </p>
+		<p>
+      Oft erheben die Städte auch einen <strong>Mietspiegel</strong>, indem sie die Bürger nach den Merkmalen ihrer
+      Wohnung (Baujahr, Ausstattung, Umgebung etc.) und ihren Ausgaben für die Miete befragen. Verpflichtet sind die
+      Städte dazu jedoch nicht. Ein klarer Vorteil ist, dass dabei auch die Mieten aus alten Mietverträgen
+      (<strong>Bestandsmieten</strong>) berücksichtigt werden – und nicht allein Neuvermietungen. Allerdings dürfen oft
+      nur bestimmte Haushalte an der Befragung teilnehmen. In Leipzig beispielweise werden nur Mietverträge
+      berücksichtigt, die in den vergangenen vier Jahren abgeschlossen oder geändert worden sind.
+    </p>
 
-		<p>Im Dezember 2014 veröffentlichte die Stadt Leipzig die aktuellsten Ergebnisse ihrer Mietspiegel-Befragung. Daraus ist unter anderem abzulesen, mit wie viel Kaltmiete man in Leipzig  durchschnittlich pro Quadratmeter rechnen muss, je nachdem wie groß die Wohnung insgesamt ist und wann das Haus gebaut wurde. So zahlt man in einer Wohnung, die mehr als 90 Quadratmeter umfasst, und in einem Haus, das zwischen 1961 und 1990 gebaut wurde, durchschnittlich 4,13 Euro pro Quadratmeter. In einem Haus, das ab 1991 gebaut wurde, muss man für die gleiche Wohnungsgröße bereits 6,36 Euro zahlen. Interessant ist auch der Vergleich zu den Werten des Mietspiegels von 2012. Innerhalb der letzten zwei Jahre sind die Mietpreise in fast allen Vergleichskategorien angestiegen – zwischen 0,6 und 26,7 Prozent.  Vor allem größere Wohnungen ab 60 Quadratmetern sind teurer geworden. In einer Stadtkarte lassen sich die Ergebnisse des Mietspiegels allerdings nicht darstellen, da nicht erfasst wird, in welchem Stadt- oder Ortsteil sich die befragten Wohnungen befinden.</p>
+		<p>
+      Im Dezember 2014 veröffentlichte die Stadt Leipzig die aktuellsten Ergebnisse ihrer Mietspiegel-Befragung.
+      Daraus ist unter anderem abzulesen, mit wie viel Kaltmiete man in Leipzig  durchschnittlich pro Quadratmeter
+      rechnen muss, je nachdem wie groß die Wohnung insgesamt ist und wann das Haus gebaut wurde. So zahlt man in einer
+      Wohnung, die mehr als 90 Quadratmeter umfasst, und in einem Haus, das zwischen 1961 und 1990 gebaut wurde,
+      durchschnittlich 4,13 Euro pro Quadratmeter. In einem Haus, das ab 1991 gebaut wurde, muss man für die gleiche
+      Wohnungsgröße bereits 6,36 Euro zahlen. Interessant ist auch der Vergleich zu den Werten des Mietspiegels von
+      2012. Innerhalb der letzten zwei Jahre sind die Mietpreise in fast allen Vergleichskategorien angestiegen –
+      zwischen 0,6 und 26,7 Prozent.  Vor allem größere Wohnungen ab 60 Quadratmetern sind teurer geworden. In einer
+      Stadtkarte lassen sich die Ergebnisse des Mietspiegels allerdings nicht darstellen, da nicht erfasst wird, in
+      welchem Stadt- oder Ortsteil sich die befragten Wohnungen befinden.
+    </p>
 
 		<h4>Das wollen wir besser machen in einer eigenen Karte</h4>
-		<p>Das alles zeigt: Sowohl die Daten des Mietspiegels der Stadt als auch die Mietpreiskarten von Anbietern wie Immoscout haben Vor- und Nachteile. Deshalb haben wir uns entschlossen, die Mietpreisentwicklung in einer eigenen Darstellungen zu zeigen. Zusammen mit dem Bürgerverein „Stadt für Alle“ und dem Quartiersmanagement West haben wir eine Karte entwickelt. Der Vorteil hierbei: Man kann Unterschiede von Mietpreisen zwischen einzelnen Straßenzügen und sogar Häusern erkennen. Außerdem wollen wir die Bestandsmieten den Neumieten gegenüberstellen. In diesem ersten Teil der Karte haben wir nun Daten zu Neuvermietungen in Leipzig gesammelt und sie in einer Stadtkarte eingetragen. In einigen Wochen kommt dann Teil zwei der Karte hinzu: die Besucher unserer Seite können selbst ihre Bestandsmieten in ein Formular eingeben und so neue Datenpunkte auf der Karte setzen.</p>
+		<p>
+      Das alles zeigt: Sowohl die Daten des Mietspiegels der Stadt als auch die Mietpreiskarten von Anbietern wie
+      Immoscout haben Vor- und Nachteile. Deshalb haben wir uns entschlossen, die Mietpreisentwicklung in einer eigenen
+      Darstellungen zu zeigen. Zusammen mit dem Bürgerverein „Stadt für Alle“ und dem Quartiersmanagement West haben
+      wir eine Karte entwickelt. Der Vorteil hierbei: Man kann Unterschiede von Mietpreisen zwischen einzelnen
+      Straßenzügen und sogar Häusern erkennen. Außerdem wollen wir die Bestandsmieten den Neumieten gegenüberstellen.
+      In diesem ersten Teil der Karte haben wir nun Daten zu Neuvermietungen in Leipzig gesammelt und sie in einer
+      Stadtkarte eingetragen. In einigen Wochen kommt dann Teil zwei der Karte hinzu: die Besucher unserer Seite können
+      selbst ihre Bestandsmieten in ein Formular eingeben und so neue Datenpunkte auf der Karte setzen.
+    </p>
 
 		<h4>So bekommen wir unsere Daten zu Neumieten</h4>
-		<p>Seit dem 18. Juni 2014 sammeln wir stichprobenartig die Miet-Angebote, die bei verschiedenen Portalen (Immowelt und Immoscout24, aber auch von Genossenschaften und privaten Anbieter) für Leipzig eingestellt werden. Nach nur fünf Monaten haben wir mehr als 10.000 Angebote registriert. Allerdings visualisieren wir nur die Häuser als Datenpunkte (Stand 15.12.2014: 1000 Häuser), bei denen wir mindestens drei Mietangebote gefunden haben. Daraus errechnen wir einen Durchschnittswert an Kaltmiete für jedes Haus. Die Karte aktualisiert sich im Übrigen von ganz allein. Sobald drei Mietangebote für eine Adresse vorliegen, wird ein neuer Datenpunkt automatisiert eingetragen.</p>
+		<p>
+      Seit dem 18. Juni 2014 sammeln wir stichprobenartig die Miet-Angebote, die bei verschiedenen Portalen (Immowelt
+      und Immoscout24, aber auch von Genossenschaften und privaten Anbieter) für Leipzig eingestellt werden. Nach nur
+      fünf Monaten haben wir mehr als 10.000 Angebote registriert. Allerdings visualisieren wir nur die Häuser als
+      Datenpunkte (Stand 15.12.2014: 1000 Häuser), bei denen wir mindestens drei Mietangebote gefunden haben. Daraus
+      errechnen wir einen Durchschnittswert an Kaltmiete für jedes Haus. Die Karte aktualisiert sich im Übrigen von
+      ganz allein. Sobald drei Mietangebote für eine Adresse vorliegen, wird ein neuer Datenpunkt automatisiert
+      eingetragen.
+    </p>
 
-		<p>Wir weisen darauf hin, dass die Mietpreise, die in den Angeboten stehen, nichts darüber aussagen, zu welchem Preis die Wohnungen tatsächlich vermietet wurden. Erstens zeigt die Karte Durchschnittswerte pro Haus an. Will heißen: Die eine Wohnung wurde vielleicht für 5 Euro Kaltmiete pro Quadratmeter eingestellt, die darüber liegende beispielweise für 10 Euro. Das ergäbe dann einen Durchschnittswert von 7,50 Euro. Zweitens kann der Mieter einen anderen Mietpreis mit dem Eigentümer ausgehandelt haben, als es das Angebot angibt.</p>
+		<p>
+      Wir weisen darauf hin, dass die Mietpreise, die in den Angeboten stehen, nichts darüber aussagen, zu welchem
+      Preis die Wohnungen tatsächlich vermietet wurden. Erstens zeigt die Karte Durchschnittswerte pro Haus an. Will
+      heißen: Die eine Wohnung wurde vielleicht für 5 Euro Kaltmiete pro Quadratmeter eingestellt, die darüber liegende
+      beispielweise für 10 Euro. Das ergäbe dann einen Durchschnittswert von 7,50 Euro. Zweitens kann der Mieter einen
+      anderen Mietpreis mit dem Eigentümer ausgehandelt haben, als es das Angebot angibt.
+    </p>
 	</article>
 
 	<article class="full">
 
-
-		<!--<div class="col-sm-9">-->
 			{% include visualizations/mietkarte.html %}
-		<!--</div>-->
-
-<!--
-EIGENEN MIETPREIS EINTRAGEN KOMMT HIER HIN - NOCH NICHT FERTIG!
-
-<div class="col-sm-3">
-
-    <form action="post.php" method="post" class="form-inline" role="form" accept-charset="UTF-8">
-
-	<div class="col-xs-12">
-		<h3>Eigene Wohnung eintragen!</h3>
-        <div class="form-group">
-            <label class="sr-only" for="inputStrasse">Straße</label>
-            <input type="text" class="form-control" id="inputStrasse" name="inputStrasse" placeholder="Straße">
-        </div>
-
-        <div class="form-group">
-            <label class="sr-only" for="inputHausnummer">Hausnummer</label>
-            <input type="text" class="form-control" name="inputHausnummer" placeholder="Hausnummer">
-        </div>
-	</div>
-
-	<div class="col-xs-12">
-		<div class="form-group">
-            <label class="sr-only" for="inputKaltmiete">Kaltmiete</label>
-            <input type="text" class="form-control" name="inputKaltmiete" placeholder="Kaltmiete in €">
-        </div>
-
-		<div class="form-group">
-            <label class="sr-only" for="inputPassword">Warmmiete</label>
-            <input type="text" class="form-control" name="inputWarmmiete" placeholder="Warmmiete in €">
-        </div>
-
-		<div class="form-group">
-            <label class="sr-only" for="inputPassword">Fläche</label>
-            <input type="text" class="form-control" name="inputFlaeche" placeholder="Fläche in m²">
-        </div>
-	</div>
-
-	<div class="col-xs-12">
-		<label class="radio-inline">
-			<input type="radio" name="mietart" value="3" checked="checked"> Neuvermietung
-		</label>
-
-		<label class="radio-inline">
-			<input type="radio" name="mietart" value="4"> Bestandsmiete
-		</label>
-	</div>
-
-	<div class="col-xs-12">
-		<div class="form-group">
-            <label class="sr-only" for="inputEinzugsdatum">Einzugsdatum</label>
-            <input type="text" class="form-control" name="inputEinzugsdatum" placeholder="Einzugsdatum">
-        </div>
-	</div>
-
-	<button type="submit" class="btn btn-primary">Absenden</button>
-
-    </form>
-
-</div>
-
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">	-->
-
 
 	</article>
 
 	<article style="padding-top: 35px;">
 		<h3>Wohnen am Auwald besonders teuer</h3>
-		<p>Studien geben an, dass die Mietpreise in Leipzig moderat steigen. Die Stadt Leipzig hat über eine Befragung herausgefunden, dass im Jahr 2013 die durchschnittliche Kaltmiete 5,08 Euro pro Quadratmeter betrug. Bei der Mietspiegelerhebung 2012 waren es noch 4,95 Euro und 2008 4,66 Euro. Eine neuere Studie der Immobiliengesellschaft JLL (Jones Lang LaSalle) bestätigt diesen Eindruck. Demnach seien die Preise zwischen 2004 und 2013 um durchschnittlich 0,8 Prozent im Jahr geklettert. Eine Quote, die sogar noch unter der Inflationsrate liegt. </p>
+		<p>
+      Studien geben an, dass die Mietpreise in Leipzig moderat steigen. Die Stadt Leipzig hat über eine Befragung
+      herausgefunden, dass im Jahr 2013 die durchschnittliche Kaltmiete 5,08 Euro pro Quadratmeter betrug. Bei der
+      Mietspiegelerhebung 2012 waren es noch 4,95 Euro und 2008 4,66 Euro. Eine neuere Studie der
+      Immobiliengesellschaft JLL (Jones Lang LaSalle) bestätigt diesen Eindruck. Demnach seien die Preise zwischen 2004
+      und 2013 um durchschnittlich 0,8 Prozent im Jahr geklettert. Eine Quote, die sogar noch unter der Inflationsrate
+      liegt.
+    </p>
 
-		<p>Betrachtet man allerdings unsere Karte, wird deutlich, dass günstige Wohnungen entlang des Auwaldes mittlerweile weniger angeboten werden (Angebotsmieten). In den Randbezirken wiederum sind die Mieten mit drei bis vier Euro pro Quadratmeter noch sehr günstig. Wissenschaftler Dieter Rink vom Helmholtz-Zentrum für Umweltforschung bestätigt diesen Eindruck. Er spricht von einer „Ausdifferenzierung des Wohnungsmarktes nach Lagen und Segmenten“. Will heißen: <strong>In den Ortsteilen entlang des Auwalds, aber auch in Teilen von Plagwitz und dem Zentrum Ost, steigen die Preise spürbar.</strong> Vor allem der Westen sei zum Hotspot von Aufwertung geworden, sagt der Stadtsoziologe. Das Angebot an teuer sanierten Wohnungen und Neubauten wird größer. Die Preise bei Neuvermietungen liegen oft weit über den Bestandsmieten. Zentrumsnahe Wohnungen, die neu vermietet werden, können sich einkommensschwache Haushalte dann nicht mehr leisten. Sie müssen auf die Randbezirke ausweichen. Wohnen am Auwald wird also zum Privileg der Besserverdiener.</p>
+		<p>
+      Betrachtet man allerdings unsere Karte, wird deutlich, dass günstige Wohnungen entlang des Auwaldes mittlerweile
+      weniger angeboten werden (Angebotsmieten). In den Randbezirken wiederum sind die Mieten mit drei bis vier Euro
+      pro Quadratmeter noch sehr günstig. Wissenschaftler Dieter Rink vom Helmholtz-Zentrum für Umweltforschung
+      bestätigt diesen Eindruck. Er spricht von einer „Ausdifferenzierung des Wohnungsmarktes nach Lagen und
+      Segmenten“. Will heißen: <strong>In den Ortsteilen entlang des Auwalds, aber auch in Teilen von Plagwitz und dem
+      Zentrum Ost, steigen die Preise spürbar.</strong> Vor allem der Westen sei zum Hotspot von Aufwertung geworden,
+      sagt der Stadtsoziologe. Das Angebot an teuer sanierten Wohnungen und Neubauten wird größer. Die Preise bei
+      Neuvermietungen liegen oft weit über den Bestandsmieten. Zentrumsnahe Wohnungen, die neu vermietet werden, können
+      sich einkommensschwache Haushalte dann nicht mehr leisten. Sie müssen auf die Randbezirke ausweichen. Wohnen am
+      Auwald wird also zum Privileg der Besserverdiener.
+    </p>
 
 		<div class="floater">
 			<blockquote>
@@ -391,7 +474,13 @@ EIGENEN MIETPREIS EINTRAGEN KOMMT HIER HIN - NOCH NICHT FERTIG!
 				<cite>Michael Rücker, Pressesprecher der Immobilienakteure in Leipzig</cite>
 			</blockquote>
 		</div>
-		<p>Der Pressesprecher der Immobilienakteure in Leipzig, Michael Rücker, sieht die Verantwortung für steigende Mietpreise nicht bei den Immobilienakteuren. Wenn neu gebaut wird, so müssten die Träger viele gesetzliche Vorgaben zur energetischen Sanierung einhalten. Der Staat mache diese Vorschriften – und das treibt die Preise in die Höhe. Dass auch langjährige Mieter immer mehr für ihre Wohnung bezahlen müssen, läge meistens nicht an einer Erhöhung der Kaltmiete, so Rücker: „Die eigentlichen Preistreiber sind die Nebenkosten.“</p>
+		<p>
+      Der Pressesprecher der Immobilienakteure in Leipzig, Michael Rücker, sieht die Verantwortung für steigende
+      Mietpreise nicht bei den Immobilienakteuren. Wenn neu gebaut wird, so müssten die Träger viele gesetzliche
+      Vorgaben zur energetischen Sanierung einhalten. Der Staat mache diese Vorschriften – und das treibt die Preise in
+      die Höhe. Dass auch langjährige Mieter immer mehr für ihre Wohnung bezahlen müssen, läge meistens nicht an einer
+      Erhöhung der Kaltmiete, so Rücker: „Die eigentlichen Preistreiber sind die Nebenkosten.“
+    </p>
 	</article>
 
 </section>
@@ -408,17 +497,50 @@ EIGENEN MIETPREIS EINTRAGEN KOMMT HIER HIN - NOCH NICHT FERTIG!
 	</article>
 
 	<article>
-		<p class="begin">2011 noch galt Leipzig als die ärmste Stadt Deutschlands. Zu diesem Ergebnis kam die Heinrich-Böll-Stiftung, indem sie den Anteil der Menschen berechnete, die unter der Armutsgrenze leben. Als arm gelten in Deutschland Personen, deren Einkommen maximal 60 Prozent des mittleren Einkommens <a class="hinweis toggle-background-info" href="#hintergrund-median" data-target="#hintergrund-median">(Median)</a> erreicht. Deutschlandweit liegt die Armutsgrenze durchschnittlich bei 870 Euro im Monat. Dass ein Münchner jedoch mehr Geld in die Hand nehmen muss, um sich in der Stadt das Gleiche leisten zu können wie ein Leipziger, ist klar. Genau diese Überlegung bezog nun eine neue <a href="http://www.iwkoeln.de/de/wissenschaft/veranstaltungen/beitrag/pressekonferenz-einkommensarmut-in-deutschland-aus-regionaler-sicht-179584" target="_blank">Studie</a> des Instituts für deutsche Wirtschaft in Köln mit ein. Die Experten haben die „kaufkraftbereinigte Einkommensarmut“ errechnet. Das heißt, regionale Preise wurden in Bezug zum Einkommen betrachtet. Leipzig steht damit nicht mehr ganz so schlecht dar. Es belegt bei diesem Ranking zusammen mit Bremerhaven den dritten Platz. Nur Köln und Dortmund sind noch ärmer dran laut Studie.</p>
+		<p class="begin">
+      2011 noch galt Leipzig als die ärmste Stadt Deutschlands. Zu diesem Ergebnis kam die Heinrich-Böll-Stiftung,
+      indem sie den Anteil der Menschen berechnete, die unter der Armutsgrenze leben. Als arm gelten in Deutschland
+      Personen, deren Einkommen maximal 60 Prozent des mittleren Einkommens <a class="hinweis toggle-background-info"
+      href="#hintergrund-median" data-target="#hintergrund-median">(Median)</a> erreicht. Deutschlandweit liegt die
+      Armutsgrenze durchschnittlich bei 870 Euro im Monat. Dass ein Münchner jedoch mehr Geld in die Hand nehmen muss,
+      um sich in der Stadt das Gleiche leisten zu können wie ein Leipziger, ist klar. Genau diese Überlegung bezog nun
+      eine neue <a href="http://www.iwkoeln.de/de/wissenschaft/veranstaltungen/beitrag/pressekonferenz-einkommensarmut-in-deutschland-aus-regionaler-sicht-179584"
+      target="_blank" rel="noopener nofererrer">Studie</a> des Instituts für deutsche Wirtschaft in Köln mit ein. Die
+      Experten haben die „kaufkraftbereinigte Einkommensarmut“ errechnet. Das heißt, regionale Preise wurden in Bezug
+      zum Einkommen betrachtet. Leipzig steht damit nicht mehr ganz so schlecht dar. Es belegt bei diesem Ranking
+      zusammen mit Bremerhaven den dritten Platz. Nur Köln und Dortmund sind noch ärmer dran laut Studie.
+    </p>
 
 		<div id="hintergrund-median" class="background-info-content hidden">
 			<strong>Median</strong> <a href="javascript:void(0)" class="background-info-close"><i class="fa fa-close" style="float: right;"></i></a>
 			<br /><br />
-			Wie viel verdient ein „typischer Bürger?“ In diesem Fall wird besonders gerne der Median und nicht der Durchschnittswert verwendet. Denn sogenannte Ausreißer können das Ergebnis beim Durchschnittswert verzerren. Ein Beispiel: Wenn bei einer Erhebung die große Mehrheit der Personen zwischen 40.000 und 60.000 Euro im Jahr verdient, allerdings ein oder zwei Personen dabei sind, die mehrere Millionen verdienen, wäre der Durchschnittswert, den man daraus errechnen würde viel höher. Der Median gibt eher das „typische“ Einkommen an, indem er die zwei Ausreißer bei der Berechnung nicht einbezieht.
+			Wie viel verdient ein „typischer Bürger?“ In diesem Fall wird besonders gerne der Median und nicht der
+      Durchschnittswert verwendet. Denn sogenannte Ausreißer können das Ergebnis beim Durchschnittswert verzerren. Ein
+      Beispiel: Wenn bei einer Erhebung die große Mehrheit der Personen zwischen 40.000 und 60.000 Euro im Jahr
+      verdient, allerdings ein oder zwei Personen dabei sind, die mehrere Millionen verdienen, wäre der
+      Durchschnittswert, den man daraus errechnen würde viel höher. Der Median gibt eher das „typische“ Einkommen an,
+      indem er die zwei Ausreißer bei der Berechnung nicht einbezieht.
 		</div>
 
-		<p>Gleichzeitig kann Leipzig aber auch Erfolge verbuchen: So lag 2005 die Arbeitslosenquote noch bei über 20 Prozent, mittlerweile ist sie auf unter 10 Prozent gesunken. Auch die monatlichen Haushaltsnettoeinkommen sind in dieser Zeit gestiegen, von 1317 Euro auf 1416 Euro (Abel 2013). Rechnet man aber die Verbraucherpreise mit ein, ergibt sich das „reale“ Haushaltnettoeinkommen. Und das stagniert, ja ist sogar leicht gesunken seit 2005 (ebd.).</p>
+		<p>
+      Gleichzeitig kann Leipzig aber auch Erfolge verbuchen: So lag 2005 die Arbeitslosenquote noch bei über 20
+      Prozent, mittlerweile ist sie auf unter 10 Prozent gesunken. Auch die monatlichen Haushaltsnettoeinkommen sind in
+      dieser Zeit gestiegen, von 1317 Euro auf 1416 Euro (Abel 2013). Rechnet man aber die Verbraucherpreise mit ein,
+      ergibt sich das „reale“ Haushaltnettoeinkommen. Und das stagniert, ja ist sogar leicht gesunken seit 2005 (ebd.).
+    </p>
 
-		<p>Sinkende reale Einkommen und steigende Mietpreise bei Neuvermietungen: Roman Grabolle vom Bürgerverein „Stadt für Alle“ sieht genau das als akutes Problem für die Entwicklung auf dem Leipziger Wohnungsmarkt. „Wie derzeit Häuser saniert werden, also mit zwei Bädern, Parkett und Bodenheizung, das geht am eigentlichen Bedarf vorbei“, sagt er. Die Löhne jedenfalls würden das nicht hergeben. Andere Gesprächspartner, die aber nicht namentlich in diesem Zusammenhang zitiert werden wollten, gaben zu bedenken: Mit der Finanzkrise hätten viele Investoren ihr Geld in „sichere Wertanlagen“ gesteckt, in Immobilien etwa. In Leipzig habe es viele Möglichkeiten gegeben zu investieren. Doch ob die Leipziger sich diese Wohnungen leisten können, sei eine andere Frage. „Es wird sich in den nächsten Jahren herausstellen, ob sich nicht wieder einige Eigentümer verhoben haben“, ist die Vermutung eines Gesprächspartners. Er bezweifelt, dass der Zuzug auf Dauer auch den Zuzug von reicheren Bevölkerungsteilen mit sich bringt, die sich teuer sanierte Wohnungen leisten können.</p>
+		<p>
+      Sinkende reale Einkommen und steigende Mietpreise bei Neuvermietungen: Roman Grabolle vom Bürgerverein „Stadt für
+      Alle“ sieht genau das als akutes Problem für die Entwicklung auf dem Leipziger Wohnungsmarkt. „Wie derzeit Häuser
+      saniert werden, also mit zwei Bädern, Parkett und Bodenheizung, das geht am eigentlichen Bedarf vorbei“, sagt er.
+      Die Löhne jedenfalls würden das nicht hergeben. Andere Gesprächspartner, die aber nicht namentlich in diesem
+      Zusammenhang zitiert werden wollten, gaben zu bedenken: Mit der Finanzkrise hätten viele Investoren ihr Geld in
+      „sichere Wertanlagen“ gesteckt, in Immobilien etwa. In Leipzig habe es viele Möglichkeiten gegeben zu
+      investieren. Doch ob die Leipziger sich diese Wohnungen leisten können, sei eine andere Frage. „Es wird sich in
+      den nächsten Jahren herausstellen, ob sich nicht wieder einige Eigentümer verhoben haben“, ist die Vermutung
+      eines Gesprächspartners. Er bezweifelt, dass der Zuzug auf Dauer auch den Zuzug von reicheren Bevölkerungsteilen
+      mit sich bringt, die sich teuer sanierte Wohnungen leisten können.
+    </p>
 
 	</article>
 
@@ -437,9 +559,28 @@ EIGENEN MIETPREIS EINTRAGEN KOMMT HIER HIN - NOCH NICHT FERTIG!
 
 	<article>
 
-		<p class="begin">Wir ziehen (fürs Erste und nur für diesen Beitrag) Resümee: Ja, es gab und gibt Verdrängung in Leipzig. Konkrete <a href="https://www.google.com/maps/d/viewer?oe=UTF8&amp;gl=de&amp;ie=UTF8&amp;msa=0&amp;mid=zoDdJ63qBApU.k-wwqyJ670RI" target="_blank">Beispiele</a> finden sich derzeit stark in den Medien: Die <a href="{{ site.baseurl }}holbeinstrasse">Holbeinstraße 28a</a>, die der Häuserblock in der Windmühlenstraße oder aber auch die Bernhard-Göring-Straße 110. Juliane Nagel von DIE LINKE in Leipzig etwa vermutet auf ihrem <a href="http://jule.linxxnet.de/index.php/2014/11/verdraengung-von-mieterinnen-und-mietern-ist-in-leipzig-kein-randproblem/" target="_blank">Blog</a>, dass die Zahl der Fälle um ein Vielfaches höher sein dürfte als noch vor einigen Jahren. Ob das stimmt, ist schwer mit Zahlen zu belegen. Viele, die von Mieterhöhungen oder direkter Verdrängung betroffen sind, gehen dem Konflikt mit dem Vermieter lieber aus dem Weg und suchen sich eine neue Wohnung.</p>
+		<p class="begin">
+      Wir ziehen (fürs Erste und nur für diesen Beitrag) Resümee: Ja, es gab und gibt Verdrängung in Leipzig. Konkrete
+      <a href="https://www.google.com/maps/d/viewer?oe=UTF8&amp;gl=de&amp;ie=UTF8&amp;msa=0&amp;mid=zoDdJ63qBApU.k-wwqyJ670RI"
+      target="_blank" rel="noopener nofererrer">Beispiele</a> finden sich derzeit stark in den Medien: Die
+      <a href="{{ site.baseurl }}holbeinstrasse">Holbeinstraße 28a</a>, die der Häuserblock in der Windmühlenstraße
+      oder aber auch die Bernhard-Göring-Straße 110. Juliane Nagel von DIE LINKE in Leipzig etwa vermutet auf ihrem
+      <a href="http://jule.linxxnet.de/index.php/2014/11/verdraengung-von-mieterinnen-und-mietern-ist-in-leipzig-kein-randproblem/"
+      target="_blank" rel="noopener nofererrer">Blog</a>, dass die Zahl der Fälle um ein Vielfaches höher sein dürfte
+      als noch vor einigen Jahren. Ob das stimmt, ist schwer mit Zahlen zu belegen. Viele, die von Mieterhöhungen oder
+      direkter Verdrängung betroffen sind, gehen dem Konflikt mit dem Vermieter lieber aus dem Weg und suchen sich eine
+      neue Wohnung.
+    </p>
 
-		<p>Mit der Finanzkrise haben Investoren Immobilien als „sichere Anlage“ entdeckt – und auch in Leipzig ist das zu spüren. Die Investoren in Leipzig hätten kaum ein Interesse an preiswerten Sanierungen, sagt der Stadtsoziologe Dieter Rink vom Helmholtz-Zentrum für Umweltforschung in Leipzig. Stattdessen seien hauptsächlich Wohnungen im gehobenen Wohnsegment entstanden. Um das refinanzieren zu können, müssen die Wohnungen relativ teuer vermietet werden. Zahlungskräftigere Bevölkerungsschichten ziehen ins Viertel. „Bars und Cafés werden entstehen für ein ganz anderes Publikum. Und auf lange Sicht werden wahrscheinlich auch die Mietpreise der umliegenden Häuser steigen“, sagt Rink.</p>
+		<p>
+      Mit der Finanzkrise haben Investoren Immobilien als „sichere Anlage“ entdeckt – und auch in Leipzig ist das zu
+      spüren. Die Investoren in Leipzig hätten kaum ein Interesse an preiswerten Sanierungen, sagt der Stadtsoziologe
+      Dieter Rink vom Helmholtz-Zentrum für Umweltforschung in Leipzig. Stattdessen seien hauptsächlich Wohnungen im
+      gehobenen Wohnsegment entstanden. Um das refinanzieren zu können, müssen die Wohnungen relativ teuer vermietet
+      werden. Zahlungskräftigere Bevölkerungsschichten ziehen ins Viertel. „Bars und Cafés werden entstehen für ein
+      ganz anderes Publikum. Und auf lange Sicht werden wahrscheinlich auch die Mietpreise der umliegenden Häuser
+      steigen“, sagt Rink.
+    </p>
 	</article>
 
 	<article class="half">
@@ -458,16 +599,34 @@ EIGENEN MIETPREIS EINTRAGEN KOMMT HIER HIN - NOCH NICHT FERTIG!
 
 	<article style="padding-top: 35px;">
 
-		<p>Wie stark Gentrifizierung in den nächsten Jahren voranschreitet, hängt nicht nur von der Immobilienwirtschaft ab, sondern auch davon, wie stark Leipzig an Einwohnern gewinnt und ob sich dadurch die Nachfrage nach zentrumsnahem Wohnen erhöht. Die Stadt Leipzig aber hätte in jedem Fall einige Mittel in der Hand, um eine derartige Entwicklung abzufangen oder zumindest auszubremsen: Mit der städtischen Wohnbaugenossenschaft LWB könnte sie versuchen, weiterhin günstige Wohnungen im Zentrum anzubieten. Dass es aber in eine andere Richtung geht, haben die letzten Hausverkäufe der LWB an private Eigentümer gezeigt. Eine weitere Stellschraube ist das wohnungspolitische Konzept, an dem die Stadt Leipzig derzeit arbeitet. Der Stadtsoziologe Dieter Rink glaubt daran, dass vor allem einfache Sanierungsmaßnahmen Abhilfe schaffen könnten – und dem Bedarf an Wohnungen eher entspricht.</p>
+		<p>
+      Wie stark Gentrifizierung in den nächsten Jahren voranschreitet, hängt nicht nur von der Immobilienwirtschaft ab,
+      sondern auch davon, wie stark Leipzig an Einwohnern gewinnt und ob sich dadurch die Nachfrage nach zentrumsnahem
+      Wohnen erhöht. Die Stadt Leipzig aber hätte in jedem Fall einige Mittel in der Hand, um eine derartige
+      Entwicklung abzufangen oder zumindest auszubremsen: Mit der städtischen Wohnbaugenossenschaft LWB könnte sie
+      versuchen, weiterhin günstige Wohnungen im Zentrum anzubieten. Dass es aber in eine andere Richtung geht, haben
+      die letzten Hausverkäufe der LWB an private Eigentümer gezeigt. Eine weitere Stellschraube ist das
+      wohnungspolitische Konzept, an dem die Stadt Leipzig derzeit arbeitet. Der Stadtsoziologe Dieter Rink glaubt
+      daran, dass vor allem einfache Sanierungsmaßnahmen Abhilfe schaffen könnten – und dem Bedarf an Wohnungen eher
+      entspricht.
+    </p>
 
 		<h3 id="weitergehen">Wie soll es weiter gehen?</h3>
 
-		<p>Die Stadt hat sich zum Ziel gesetzt weiter zu wachsen. Wenn es nach den Wunschvorstellungen der kommunalen Politik geht, sollen bis 2030 630.000 Menschen in Leipzig leben. In dem <a href="http://www.leipzig.de/buergerservice-und-verwaltung/stadtverwaltung/oberbuergermeister/arbeitsprogramm-leipzig-2020/?eID=dam_frontend_push&amp;docID=28519" target="_blank">Arbeitsprogramm 2020</a> der Stadt Leipzig heißt es:</p>
+		<p>
+      Die Stadt hat sich zum Ziel gesetzt weiter zu wachsen. Wenn es nach den Wunschvorstellungen der kommunalen
+      Politik geht, sollen bis 2030 630.000 Menschen in Leipzig leben. In dem
+      <a href="http://www.leipzig.de/buergerservice-und-verwaltung/stadtverwaltung/oberbuergermeister/arbeitsprogramm-leipzig-2020/?eID=dam_frontend_push&amp;docID=28519"
+      target="_blank" rel="noopener nofererrer">Arbeitsprogramm 2020</a> der Stadt Leipzig heißt es:
+    </p>
 	</article>
 
 	<article class="full" style="padding-bottom: 35px;">
 		<blockquote>
-		Leipzig braucht dieses Wachstum dringend, um seinen Bürgerinnen und Bürgern Lebensqualität dauerhaft bieten und als Stadt auf eigenen Füßen stehen zu können. Will Leipzig trotz Auslaufen des Solidarpaktes langfristig eine stabile, auskömmliche Finanzierung der städtischen Aufgaben erreichen und neue Gestaltungsspielräume öffnen, ist wirtschaftliches und demographisches Wachstum eine Notwendigkeit.
+		Leipzig braucht dieses Wachstum dringend, um seinen Bürgerinnen und Bürgern Lebensqualität dauerhaft bieten und als
+      Stadt auf eigenen Füßen stehen zu können. Will Leipzig trotz Auslaufen des Solidarpaktes langfristig eine
+      stabile, auskömmliche Finanzierung der städtischen Aufgaben erreichen und neue Gestaltungsspielräume öffnen, ist
+      wirtschaftliches und demographisches Wachstum eine Notwendigkeit.
 		<cite>Quelle: Leipzig“ Arbeitsprogramm 2020, S.</cite>
 		</blockquote>
 	</article>
@@ -494,13 +653,33 @@ EIGENEN MIETPREIS EINTRAGEN KOMMT HIER HIN - NOCH NICHT FERTIG!
 	<article class="full" style="padding-right: 25px;">
 
 		<h4>Quellen:</h4>
-		<p>Abel, Falk (2013): Zur Einkommensentwicklung in sächsischen Großstädten. In: Stadt Leipzig (Hrsg.): Statistischer Quartalsbericht 3/2013. Leipzig.</p>
-		<p>Bundschuh, Anne (2010): Gentrification in ostdeutschen Städten? Das Beispiel Leipzig. Leipzig.</p>
-		<p>Heinig, Stefan/ Herfert, Günter (2012): Leipzig – intraregionale und innerstädtische Reurbanisierungspfade. In: Brake, Klaus/ Herfert, Günter: Reurbanisierung, Wiesbaden: S. 323 – 342.</p>
-		<p>Rink, Dieter (2014): Stadtentwicklung und Gentrifizierung in Leipzig. Vortrag. Helmholtz-Zentrum für Umweltforschung UFZ. Leipzig.</p>
-		<p>Rink, Dieter/ Haase, Annegret/ Schneider, Andreas (2014): Vom Leerstand zum Bauboom? Zur Entwicklung des Leipziger Wohnungsmarkts. In: Stadt Leipzig (Hrsg.): Statistischer Quartalsbericht 1/2014. Leipzig: S. 25-28.</p>
-		<p>Stadt Leipzig: Leipzig! wächst nachhaltig, Leipzig: Messedruck Leipzig GmbH, 15.08.2012. (<a href="http://www.leipzig.de/bauen-und-wohnen/buergerbeteiligung-und-planinformation/publikationen/?eID=dam_frontend_push&amp;docID=4602" target="_blank">www.leipzig.de</a>)</p>
-		<p>Stadt Leipzig (2014): Monitoringbericht Wohnen 2013/2014. Leipzig.</p>
+		<p>
+      Abel, Falk (2013): Zur Einkommensentwicklung in sächsischen Großstädten. In: Stadt Leipzig (Hrsg.): Statistischer
+      Quartalsbericht 3/2013. Leipzig.
+    </p>
+		<p>
+      Bundschuh, Anne (2010): Gentrification in ostdeutschen Städten? Das Beispiel Leipzig. Leipzig.
+    </p>
+		<p>
+      Heinig, Stefan/ Herfert, Günter (2012): Leipzig – intraregionale und innerstädtische Reurbanisierungspfade. In:
+      Brake, Klaus/ Herfert, Günter: Reurbanisierung, Wiesbaden: S. 323 – 342.
+    </p>
+		<p>
+      Rink, Dieter (2014): Stadtentwicklung und Gentrifizierung in Leipzig. Vortrag. Helmholtz-Zentrum für
+      Umweltforschung UFZ. Leipzig.
+    </p>
+		<p>
+      Rink, Dieter/ Haase, Annegret/ Schneider, Andreas (2014): Vom Leerstand zum Bauboom? Zur Entwicklung des
+      Leipziger Wohnungsmarkts. In: Stadt Leipzig (Hrsg.): Statistischer Quartalsbericht 1/2014. Leipzig: S. 25-28.
+    </p>
+		<p>
+      Stadt Leipzig: Leipzig! wächst nachhaltig, Leipzig: Messedruck Leipzig GmbH, 15.08.2012.
+      (<a href="http://www.leipzig.de/bauen-und-wohnen/buergerbeteiligung-und-planinformation/publikationen/?eID=dam_frontend_push&amp;docID=4602"
+      target="_blank" rel="noopener nofererrer">www.leipzig.de</a>)
+    </p>
+		<p>
+      Stadt Leipzig (2014): Monitoringbericht Wohnen 2013/2014. Leipzig.
+    </p>
 	</article>
 
 </section>
