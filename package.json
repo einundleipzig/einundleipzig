@@ -16,7 +16,7 @@
     "bootstrap-sass": "3.4.1",
     "bourbon": "4.3.4",
     "bourbon-bitters": "1.2.1",
-    "c3": "0.4.22",
+    "c3": "0.7.11",
     "colorbrewer": "1.3.0",
     "d3": "3.5.14",
     "d3-queue": "2.0.0",
