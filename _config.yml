@@ -40,6 +40,9 @@ assets:
       dst: font-awesome
     - src: bootstrap/*
       dst: bootstrap
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
 
 # Menu items
 menu:
