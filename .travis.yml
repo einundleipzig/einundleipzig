@@ -1,0 +1,22 @@
+language: ruby
+rvm:
+  - 2.6.3
+
+script: bundle exec rake build
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+addons:
+  apt:
+    packages:
+      - libcurl4-openssl-dev
+
+cache:
+  bundler: true
+  yarn: true
+  directories:
+    - node_modules
+
+os: linux
