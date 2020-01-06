@@ -285,7 +285,12 @@ bourbon-bitters@1.2.1:
     gulp-sass "^2.0.2"
     node-bourbon "^4.2.3"
 
-bourbon@4.3.4, bourbon@^4.2.6:
+bourbon@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/bourbon/-/bourbon-6.0.0.tgz#41ad318371128888261a390bebe0e9e89daaa01e"
+  integrity sha512-Skds0R1+GY3c1oBddh9BggYVq39Uo4ySvW33zttPk+4+nfGYpbZqwaDwENkbtV7PYhCk0ctTFkzfTNFv5365ag==
+
+bourbon@^4.2.6:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/bourbon/-/bourbon-4.3.4.tgz#4da380029e92c0c8f9764c779451a134b11e7cc3"
   integrity sha1-TaOAAp6SwMj5dkx3lFGhNLEefMM=
