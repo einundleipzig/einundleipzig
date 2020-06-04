@@ -3630,6 +3630,11 @@ videojs-swf@4.4.5:
   resolved "https://registry.yarnpkg.com/videojs-swf/-/videojs-swf-4.4.5.tgz#29c4dd2890264e6c1cd0674bc71edc1d5f8982ec"
   integrity sha1-KcTdKJAmTmwc0GdLxx7cHV+Jguw=
 
+videojs-swf@5.4.2:
+  version "5.4.2"
+  resolved "https://registry.yarnpkg.com/videojs-swf/-/videojs-swf-5.4.2.tgz#6964a9bff903b732f3e465314ae478a02a17e8ab"
+  integrity sha512-FGg+Csioa8/A/EacvFefBdb9Z0rSiMlheHDunZnN3xXfUF43jvjawcWFQnZvrv1Cs1nE1LBrHyUZjF7j2mKOLw==
+
 vinyl-fs@^0.3.0:
   version "0.3.14"
   resolved "https://registry.yarnpkg.com/vinyl-fs/-/vinyl-fs-0.3.14.tgz#9a6851ce1cac1c1cea5fe86c0931d620c2cfa9e6"
