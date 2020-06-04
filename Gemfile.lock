@@ -11,7 +11,7 @@ GEM
     autoprefixer-rails (9.7.3)
       execjs
     colorator (1.1.0)
-    concurrent-ruby (1.1.5)
+    concurrent-ruby (1.1.6)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -22,7 +22,7 @@ GEM
     extras (0.3.0)
       forwardable-extended (~> 2.5)
     fastimage (2.1.7)
-    ffi (1.11.3)
+    ffi (1.13.0)
     forwardable-extended (2.6.0)
     html-proofer (3.15.0)
       addressable (~> 2.3)
@@ -35,7 +35,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    jekyll (3.8.6)
+    jekyll (3.8.7)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -84,14 +84,14 @@ GEM
     parallel (1.19.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (4.0.2)
+    public_suffix (4.0.5)
     rack (2.0.8)
     rainbow (3.0.0)
     rake (13.0.1)
-    rb-fsevent (0.10.3)
+    rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rouge (3.14.0)
+    rouge (3.19.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -114,7 +114,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   html-proofer
-  jekyll (= 3.8.6)
+  jekyll (= 3.8.7)
   jekyll-assets
   jekyll-paginate
   rake
