@@ -1007,10 +1007,10 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-ekko-lightbox@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/ekko-lightbox/-/ekko-lightbox-3.3.0.tgz#aedfc666d7d0b069d21db0581e10f844e7adc6c4"
-  integrity sha1-rt/GZtfQsGnSHbBYHhD4ROetxsQ=
+ekko-lightbox@5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/ekko-lightbox/-/ekko-lightbox-5.3.0.tgz#fbfcd9df93a8d1cdbf8770adc8c05aaac4d24f56"
+  integrity sha512-mbacwySuVD3Ad6F2hTkjSTvJt59bcVv2l/TmBerp4xZnLak8tPtA4AScUn4DL42c1ksTiAO6sGhJZ52P/1Qgew==
 
 end-of-stream@~0.1.5:
   version "0.1.5"
