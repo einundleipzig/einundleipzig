@@ -1,0 +1,44 @@
+name: deploy site
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: set up Ruby 2.6
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.6.x
+      - name: install bundler & dependencies
+        run: |
+          sudo gem install bundler -v '2.1.2'
+          sudo bundle install --jobs 4 --retry 3
+      - name: build site
+        run: |
+          sudo bundle exec rake build
+      - name: decrypt ssh key
+        env:
+          ENCRYPTION_KEY: ${{ secrets.DEPLOYMENT_ENC_KEY }}
+          ENCRYPTION_IV: ${{ secrets.DEPLOYMENT_ENC_IV }}
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          openssl aes-256-cbc -d -K $ENCRYPTION_KEY -iv $ENCRYPTION_IV -in ./.github/secrets/id_rsa.enc -out ./.github/secrets/id_rsa
+          chmod 600 ./.github/secrets/id_rsa
+          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+          ssh-add ./.github/secrets/id_rsa
+      - name: deploy build
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          mkdir -p $HOME/.ssh
+          ssh-keyscan -H einundleipzig.de > $HOME/.ssh/known_hosts
+          git remote add deploy ssh://git@einundleipzig.de/home/git/einundleipzig.git
+          git push -f deploy HEAD:master
