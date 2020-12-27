@@ -19,7 +19,7 @@ jobs:
           ruby-version: 2.6.x
       - name: install bundler & dependencies
         run: |
-          sudo gem install bundler -v '2.1.2'
+          sudo gem install bundler -v '2.1.4'
           sudo bundle install --jobs 4 --retry 3
       - name: build site
         run: |
