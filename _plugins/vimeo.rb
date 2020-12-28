@@ -1,5 +1,5 @@
 # A plugin for embedding videos from Vimeo using a simple Liquid tag, ie: {% vimeo 12345678 %}.
-# Based of the Youtube plugin from http://www.portwaypoint.co.uk/jekyll-youtube-liquid-template-tag-gist/
+# Based on the YouTube Embed Plugin from https://gist.github.com/joelverhagen/1805814
 module Jekyll
   class Vimeo < Liquid::Tag
 
