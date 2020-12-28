@@ -26,11 +26,11 @@ einundleipzig basiert auf folgenden Open Source Projekten:
 
 **Javascript:**
 * [jquery]
- * [jquery Quicksand] - Reorder and filter items with a nice shuffling animation
+* [jquery Quicksand] - Reorder and filter items with a nice shuffling animation
 * [d3-queue.js]
 * [underscore.js]
 * [OpenStreetMap]
- * [leaflet]
+* [leaflet]
 * [video.js] - HTML5 Video Player
 * [d3.js] - JavaScript-Bibliothek zur Visualisierung von Daten
 * [c3.js] - Auf D3 basierende JavaScript-Bibliothek für Diagramme
@@ -46,30 +46,10 @@ einundleipzig basiert auf folgenden Open Source Projekten:
 Visualisierungen liegen im Ordner `_includes/visualizations/`,
 Daten liegen im Ordner `assets/visualizations/`
 
-## ToDos
-Lust, mitzuwirken? Folgende Dinge müssen noch eingebunden/verbessert werden:
-
-* Internet Explorer
- * Flip Cards: fehlende Unterstützung von preserve-3d
- * HTML5 Slider
-* Firefox
- * Full Screen bei Flip Cards Videos
- * Ladeverhalten von video.js optimieren
-
-
-* Formular zum Eintragen von Mietpreisen durch User (HALF DONE)
-* Visualisierung von `_includes/visualizations/umzugsmatrix.html` verbessern
-* Getting rid of Bootstrap: Vollständige Umstellung auf die Bourbon-Familie: Neat als Grid-System verwenden
-* Inhalte in `_pages/` auf Markdown umstellen
-
 ## Kontakt
 
 * Bei inhaltlichen Anmerkungen wenden Sie sich bitte an kontakt@einundleipzig.de
 * Bei technischen Anmerkungen (Bug Reports etc.) bitte bei wolfgang@einundleipzig.de melden.
-
-## Kompatibilität
-* node 10
-* jekyll 3.6.x
 
 [GNU GPL]: http://www.gnu.org/copyleft/gpl.html
 [CC0 1.0]: http://creativecommons.org/publicdomain/zero/1.0/deed.de
