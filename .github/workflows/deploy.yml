@@ -3,7 +3,7 @@ name: deploy site
 on:
   push:
     branches:
-      - master
+      - test-deploy
 
 jobs:
   build_and_deploy:
