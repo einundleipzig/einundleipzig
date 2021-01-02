@@ -1,4 +1,5 @@
 task :build do
-  sh 'yarn'
+  sh 'yarn install'
+  sh 'yarn build'
   sh 'jekyll b'
 end

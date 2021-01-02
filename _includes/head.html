@@ -32,40 +32,7 @@
 
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
-<link type="text/css" rel="stylesheet"
-      href="{{ 'node_modules/videojs-sublime-skin/dist/videojs-sublime-skin.min.css' | prepend: site.baseurl }}">
-<script src="{{ 'node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{% asset bundle.js @path %}" charset="utf-8"></script>
 
 <!-- Custom CSS -->
-<script src="{{ 'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js' | prepend: site.baseurl }}"></script>
 {% asset einundleipzig.css %}
-
-<!-- ekko-lightbox -->
-<link type="text/css" rel="stylesheet"
-      href="{{ 'node_modules/ekko-lightbox/dist/ekko-lightbox.min.css' | prepend: site.baseurl }}">
-{% asset ekko-lightbox-dark.css %}
-
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-  <script src="{{ 'node_modules/html5shiv/dist/html5shiv.min.js' | prepend: site.baseurl }}"></script>
-  <script src="{{ 'node_modules/respond.js/dest/respond.min.js' | prepend: site.baseurl }}"></script>
-<![endif]-->
-
-{% for script in page.scripts %}
-  {% if script == 'video.js' %}
-    <!-- video.js - has to be loaded in head of page due to performance -->
-    <script src="{{ 'node_modules/video.js/dist/video-js/video.js' | prepend: site.baseurl }}"></script>
-    <script>
-      videojs.options.flash.swf = "{{ 'node_modules/jquery/dist/video-js.swf' | prepend: site.baseurl }}"
-    </script>
-    {% endif %}
-{% endfor %}
-
-<!-- d3js JavaScript - has to be loaded in head of page -->
-<script src="{{ 'node_modules/d3/d3.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ 'node_modules/colorbrewer/index.js' | prepend: site.baseurl }}"></script>
-
-<!-- c3.js -->
-<script src="{{ 'node_modules/c3/c3.min.js' | prepend: site.baseurl }}"></script>
-<link type="text/css" rel="stylesheet" href="{{ 'node_modules/c3/c3.min.css' | prepend: site.baseurl }}">

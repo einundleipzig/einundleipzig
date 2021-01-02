@@ -9,6 +9,7 @@ exclude:
   - "*.lock"
   - "script"
   - "vendor"
+  - "node_modules"
 
 # Build settings
 markdown: kramdown

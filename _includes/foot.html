@@ -1,16 +1,9 @@
-{% if page.scripts %}
-  {% for script in page.scripts %}
-  <script src="{{ script | prepend: site.baseurl }}"></script>
-    {% if script contains 'ekko-lightbox' %}
-    <script type="text/javascript">
-      $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-      });
-    </script>
-    {% endif %}
-  {% endfor %}
-{% endif %}
+<script type="text/javascript">
+  $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
+</script>
 
 {% asset einundleipzig.js %}
 

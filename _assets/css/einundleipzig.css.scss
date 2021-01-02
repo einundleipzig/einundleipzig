@@ -61,3 +61,10 @@ $fa-font-path: "font-awesome";
 @import 'pages';
 
 @import 'posts';
+
+// third party styles
+@import '../../node_modules/ekko-lightbox/dist/ekko-lightbox.min.css';
+@import '../../_assets/css/ekko-lightbox-dark.css';
+@import '../../node_modules/leaflet/dist/leaflet.css';
+@import '../../node_modules/videojs-sublime-skin/dist/videojs-sublime-skin.min.css';
+@import '../../node_modules/c3/c3.min.css';
