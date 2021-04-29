@@ -1909,10 +1909,10 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
-jquery-quicksand@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/jquery-quicksand/-/jquery-quicksand-1.5.0.tgz#eb91f7d3cace0d7af1574f8b89831ae8ce56ddc4"
-  integrity sha512-o+51IjWtPky9U5MmfsPPOZrIYCJdZSQNNo6vy7KjXFQqOkF/g3HSMq+rQxaIIOtbIJjZOavOzyqNGcMuEC0CsA==
+jquery-quicksand@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/jquery-quicksand/-/jquery-quicksand-1.6.0.tgz#2d0a25910c57aa019f41246a462eef04f3e75e39"
+  integrity sha512-5PEYBkYzQmQwa6s9VPmmQm1meXQz/7Ezg0iNETBFlFzyhqzRTcLVP7kmEHFuzh0KCUFIh5YgE6XWq6Z5bT7y8A==
   dependencies:
     jquery ">=1.6.1"
 
