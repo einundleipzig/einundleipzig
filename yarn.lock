@@ -753,10 +753,10 @@ d3-quadtree@1:
   resolved "https://registry.yarnpkg.com/d3-quadtree/-/d3-quadtree-1.0.7.tgz#ca8b84df7bb53763fe3c2f24bd435137f4e53135"
   integrity sha512-RKPAeXnkC59IDGD0Wu5mANy0Q2V28L+fNe65pOCXVdVuTJS3WPKaJlFHer32Rbh9gIo9qMuJXio8ra4+YmIymA==
 
-d3-queue@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/d3-queue/-/d3-queue-2.0.0.tgz#5cf0d7329a2c4a155d6dca8d5215d88fcbc30443"
-  integrity sha1-XPDXMposShVdbcqNUhXYj8vDBEM=
+d3-queue@3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/d3-queue/-/d3-queue-3.0.7.tgz#c93a2e54b417c0959129d7d73f6cf7d4292e7618"
+  integrity sha1-yTouVLQXwJWRKdfXP2z31Ckudhg=
 
 d3-random@1:
   version "1.1.2"
