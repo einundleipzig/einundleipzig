@@ -11,7 +11,7 @@ GEM
     autoprefixer-rails (10.1.0.0)
       execjs
     colorator (1.1.0)
-    concurrent-ruby (1.1.7)
+    concurrent-ruby (1.1.8)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -22,7 +22,7 @@ GEM
     extras (0.3.0)
       forwardable-extended (~> 2.5)
     fastimage (2.1.7)
-    ffi (1.14.2)
+    ffi (1.15.0)
     forwardable-extended (2.6.0)
     html-proofer (3.18.3)
       addressable (~> 2.3)
@@ -35,7 +35,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    jekyll (3.9.0)
+    jekyll (3.9.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -66,7 +66,7 @@ GEM
       sass (~> 3.4)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    kramdown (2.3.0)
+    kramdown (2.3.1)
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
@@ -74,7 +74,7 @@ GEM
     liquid-tag-parser (1.9.0)
       extras (~> 0.3)
       liquid (>= 3.0, < 5.0)
-    listen (3.3.3)
+    listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
@@ -94,7 +94,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rexml (3.2.4)
+    rexml (3.2.5)
     rouge (3.26.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
@@ -118,7 +118,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   html-proofer
-  jekyll (= 3.9.0)
+  jekyll (= 3.9.1)
   jekyll-assets
   jekyll-paginate
   kramdown-parser-gfm

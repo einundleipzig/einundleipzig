@@ -5,7 +5,7 @@ Encoding.default_internal = Encoding::UTF_8
 
 gem "autoprefixer-rails"
 gem "html-proofer"
-gem "jekyll", "3.9.0"
+gem "jekyll", "3.9.1"
 gem "kramdown-parser-gfm"
 gem "rake"
 gem "sprockets", "~> 3.7"
