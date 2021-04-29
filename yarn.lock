@@ -1677,10 +1677,10 @@ iconv-lite@0.4.13:
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.13.tgz#1f88aba4ab0b1508e8312acc39345f36e992e2f2"
   integrity sha1-H4irpKsLFQjoMSrMOTRfNumS4vI=
 
-impress.js@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/impress.js/-/impress.js-1.0.0.tgz#a73f86bf8bc6748fc8822809d8d764a607d0b846"
-  integrity sha1-pz+Gv4vGdI/IgigJ2NdkpgfQuEY=
+impress.js@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/impress.js/-/impress.js-1.1.0.tgz#2a056e7ac51855ff7b5188bf1520d429a73b3544"
+  integrity sha512-APQNnZx1M8RBe9vHdNAiAbIz4MaL0UDqIj0BDJOeFLqI/529/lGMmiz0m/c82xC08tBq8n9JzpMNoDykq0Zckg==
 
 in-publish@^2.0.0:
   version "2.0.0"
