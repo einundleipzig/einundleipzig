@@ -30,7 +30,7 @@
     "leaflet": "1.6.0",
     "respond.js": "1.4.2",
     "underscore": "1.9.1",
-    "video.js": "4.8.5",
+    "video.js": "7.13.3",
     "videojs-swf": "4.4.5",
     "videojs-sublime-skin": "1.0.3"
   },
