@@ -9,7 +9,7 @@
 
     <div class="row">
 
-      <div class="col-sm-3 col-sm-offset-1">
+      <div class="col-sm-2 col-sm-offset-3">
         <h4>Themen</h4>
         <ul>
           {% for item in site.menu %}
@@ -25,55 +25,16 @@
         <ul>
           <li><a href="{{ site.baseurl }}{% link about/index.html %}">Wer wir sind</a></li>
           <li><a href="{{ site.baseurl }}{% link blog/index.html %}">Blog</a></li>
-          <li><a href="{{ site.baseurl }}{% link contact/index.html %}">Kontakt</a></li>
           <li><a href="{{ site.baseurl }}{% link dank/index.html %}">Danksagung</a></li>
         </ul>
       </div>
 
       <div class="col-sm-2">
-        <h4>Social</h4>
-        <ul class="socialbuttons">
-          <li>
-            <a href="https://www.facebook.com/einundleipzig" target="_blank"><i class="fa fa-facebook-square"></i> </a>
-          </li>
-
-          <li>
-            <a href="https://www.twitter.com/einundleipzig" target="_blank"><i class="fa fa-twitter-square"></i> </a>
-          </li>
-
-          <li>
-            <a href="https://www.github.com/einundleipzig" target="_blank"><i class="fa fa-github-square"></i></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-sm-2">
-        <h4>Support</h4>
-
-        <ul>
-          <li>
-            <a href="https://flattr.com/submit/auto?user_id=einundleipzig&amp;url=http%3A%2F%2Fwww.einundleipzig.de"
-               target="_blank">
-              <img src="{% asset flattr.png @path %}" alt="Flattr this" title="Flattr this" style="float: left;">
-            </a>
-          </li>
-          <li>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="hosted_button_id" value="4RSX768L6X3YL">
-              <input type="image" src="{% asset paypal.gif @path %}" name="submit"
-                     alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
-            </form>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-sm-1">
         <h4><a href="{{ site.baseurl }}{% link impressum/index.html %}">Impressum</a></h4>
       </div>
 
 
-      <div style="padding-top: 35px;" class="col-xs-12 col-sm-11 col-sm-offset-1">
+      <div style="padding-top: 35px;" class="col-xs-5 col-sm-6 col-sm-offset-3">
         <h4>Lizenz</h4>
         Die von uns verfassten Inhalte stehen, soweit nicht anders vermerkt, unter der Lizenz
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons BY-NC-SA 4.0</a>.
