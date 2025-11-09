@@ -11,6 +11,10 @@
 }
 
 @media(min-width: $grid-float-breakpoint) {
+  .navbar-toggle {
+    display: none !important;
+  }
+
   .navbar-nav {
     &.navbar-right:last-child {
       // Bootstrap fix

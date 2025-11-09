@@ -48,8 +48,8 @@ Daten liegen im Ordner `assets/visualizations/`
 
 ## Kontakt
 
-* Bei inhaltlichen Anmerkungen wenden Sie sich bitte an kontakt@einundleipzig.de
-* Bei technischen Anmerkungen (Bug Reports etc.) bitte bei wolfgang@einundleipzig.de melden.
+* Bei inhaltlichen Anmerkungen wenden Sie sich bitte an allef@posteo.de
+* Bei technischen Anmerkungen (Bug Reports etc.) bitte bei allef@posteo.de melden.
 
 [GNU GPL]: http://www.gnu.org/copyleft/gpl.html
 [CC0 1.0]: http://creativecommons.org/publicdomain/zero/1.0/deed.de

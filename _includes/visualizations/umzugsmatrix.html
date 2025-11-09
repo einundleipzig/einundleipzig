@@ -185,7 +185,7 @@
     d3.text("{% asset umzugsmatrix/stadtteile.csv @path %}", function(imports) {
       neighborhoods = d3.csv.parse(imports);
 
-      d3.text("{{ site.baseurl }}assets/umzugsmatrix/ortsteildaten" + year + ".csv", function(imports) {
+      d3.text("{{ site.baseurl }}/assets/umzugsmatrix/ortsteildaten" + year + ".csv", function(imports) {
         var csv_values = d3.csv.parseRows(imports);
 
         // read data
