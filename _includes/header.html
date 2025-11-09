@@ -20,7 +20,7 @@
             {% for categories in item.categories %}
             {% if categories == 'wissenschaft' %}
             <li>
-              <a href="{{ item.url | remove_first: '/' | prepend: site.baseurl }}">{{ item.title }}</a>
+              <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
             </li>
             {% endif %}
             {% endfor %}
@@ -35,7 +35,7 @@
             {% for categories in item.categories %}
             {% if categories == 'geschichten' %}
             <li>
-              <a href="{{ item.url | remove_first: '/' | prepend: site.baseurl }}">{{ item.title }}</a>
+              <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
             </li>
             {% endif %}
             {% endfor %}

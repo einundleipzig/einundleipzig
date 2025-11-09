@@ -1,6 +1,6 @@
 ---
 layout: index
-scripts: [node_modules/jquery-quicksand/jquery.quicksand.js, node_modules/jquery.easing/jquery.easing.min.js]
+scripts: ['https://cdn.jsdelivr.net/npm/jquery-quicksand@1.5.0/jquery.quicksand.min.js', 'https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js']
 ---
 <header class="intro">
 	<video autoplay loop poster="{% asset index/header.jpg @path %}" id="bgvid">
@@ -56,7 +56,8 @@ scripts: [node_modules/jquery-quicksand/jquery.quicksand.js, node_modules/jquery
 					</div>
 				</div>
 
-				<img src="{% asset {{item.url}}{{item.image}} @path %}" class="img-responsive" alt="{{ item.title }}" />
+        {% capture full_url %}{{item.url | remove_first: '/' }}{{item.image}}{% endcapture %}
+				<img src="{% asset {{full_url}} @path %}" class="img-responsive" alt="{{ item.title }}" />
 			</a>
 		</li>
 	{% endfor %}

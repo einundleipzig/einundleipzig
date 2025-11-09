@@ -20,7 +20,6 @@ permalink:	/blog/:title/
 # general settings
 title: einundleipzig
 url: https://www.einundleipzig.de
-baseurl: /
 email: kontakt@einundleipzig.de
 description: einundleipzig -  Leipzigs Stadtentwicklung ist das Thema&#58; Einfach erklärt mit Daten und Ergebnissen
   aus der Stadt-Forschung. Interaktiv mit Karten und Filmen, für und vor allem mit den Menschen in Leipzig.
@@ -32,6 +31,7 @@ paginate_path: "blog/page:num"
 # asset setup
 assets:
   sources:
+    - _sass
     - _assets/posts
     - _assets/pages
     - _assets/visualizations
@@ -46,41 +46,44 @@ assets:
     browsers:
       - "last 2 versions"
 
+sass:
+  sass_dir: _sass
+
 # Menu items
 menu:
   - title:	Was ist Gentrifizierung?
     subtitle: Begriffe, Akteure und Hintergründe
-    url:	was-ist-gentrifizierung/
+    url:	/was-ist-gentrifizierung/
     image: wissenschaft.jpg
     categories: [wissenschaft]
 
   - title: Gentrifizierung in Leipzig
     subtitle: Daten und Analysen
-    url:	gentrifizierung-in-leipzig/
+    url:	/gentrifizierung-in-leipzig/
     image: teaser.jpg
     categories: [wissenschaft]
 
   - title:	Kampf den Mietern
     subtitle: Holbeinstraße 28a
-    url:	holbeinstrasse/
+    url:	/holbeinstrasse/
     image: teaser.jpg
     categories: [geschichten]
 
   - title:	Platte im Aufwind
     subtitle: Grünau
-    url:	gruenau/
+    url:	/gruenau/
     image: gruenau.jpg
     categories: [geschichten]
 
   - title:  Die Insel im Osten
     subtitle: Bülowviertel
-    url:	buelowviertel/
+    url:	/buelowviertel/
     image: buelow.jpg
     categories: [geschichten]
 
   - title:	Die Siedlung, mein Leben
     subtitle: Krochsiedlung
-    url:	krochsiedlung/
+    url:	/krochsiedlung/
     image: Seidel-4258.jpg
     categories: [geschichten]
 

@@ -44,14 +44,15 @@ $grid-float-breakpoint: 992px;
 /*-----------------------------------------------------------------------------------*/
 
 $icon-font-path: "bootstrap/";
-@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-sprockets';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
-@import '../../node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import 'bourbon/bourbon/bourbon';
 
-@import '../../node_modules/bourbon-bitters/app/assets/stylesheets/bitters';
+@import 'bourbon-bitters/base/base';
 
-$fa-font-path: "font-awesome";
-@import '../../node_modules/font-awesome/scss/font-awesome';
+$fa-font-path: "font-awesome/";
+@import "font-awesome";
 @import 'general';
 
 @import 'navigation';

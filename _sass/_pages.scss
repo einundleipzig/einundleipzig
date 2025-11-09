@@ -253,7 +253,7 @@ video#bgvid {
 }
 
 .card-container {
-  @include size(100% 206px);
+  @include size(100%, 206px);
 
   position: relative;
   margin: 0 auto 40px;
@@ -274,7 +274,7 @@ video#bgvid {
 }
 
 .card {
-  @include size(100% 100%);
+  @include size(100%, 100%);
 
   position: absolute;
 
@@ -284,7 +284,7 @@ video#bgvid {
 
   figure {
     display: block;
-    @include size(100% 100%);
+    @include size(100%, 100%);
 
     font-size: 12pt;
     color: #000;

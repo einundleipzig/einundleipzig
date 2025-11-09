@@ -14,7 +14,7 @@
         <ul>
           {% for item in site.menu %}
           <li>
-            <a href="{{ item.url | remove_first: '/' | prepend: site.baseurl }}">{{ item.title }}</a>
+            <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
           </li>
           {% endfor %}
         </ul>
