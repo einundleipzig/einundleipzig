@@ -51,7 +51,7 @@
 	var mietkarte_legend = d3.select('#mietkarte_legend')
 		.append('ul')
 		.attr('class', 'list-inline');
-	d3.csv("{% asset mietkarte/mietpreise.php @path %}?mode=neuvermietungen", function(collection) {
+	d3.csv("{% asset mietkarte/neuvermietungen.csv @path %}", function(collection) {
 
 		// Color Domain
 		mietkarte_colors.domain([
@@ -103,7 +103,7 @@
 			});
 		});
 
-	d3.csv("{% asset mietkarte/mietpreise.php @path %}?mode=bestandsmieten", function(collection) {
+	d3.csv("{% asset mietkarte/bestandsmieten.csv @path %}", function(collection) {
 
 		/* Add a LatLng object to each item in the dataset */
 		collection.forEach(function(d) {
