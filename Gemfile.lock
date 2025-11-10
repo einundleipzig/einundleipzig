@@ -29,8 +29,10 @@ GEM
       forwardable-extended (~> 2.5)
     fastimage (2.4.0)
     ffi (1.17.2)
-    font-awesome-sass (4.7.0)
-      sass (>= 3.2)
+    ffi (1.17.2-arm64-darwin)
+    ffi (1.17.2-x86_64-linux-gnu)
+    font-awesome-sass (6.7.2)
+      sassc (~> 2.0)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
     i18n (0.9.5)
@@ -101,6 +103,8 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     sprockets (3.7.5)
       base64
       concurrent-ruby (~> 1.0)
@@ -118,7 +122,7 @@ DEPENDENCIES
   autoprefixer-rails
   bitters (= 1.2.0)
   bourbon (= 4.3.4)
-  font-awesome-sass (= 4.7.0)
+  font-awesome-sass (= 6.7.2)
   jekyll (= 3.9.1)
   jekyll-assets
   jekyll-paginate

@@ -6,7 +6,7 @@ Encoding.default_internal = Encoding::UTF_8
 gem "autoprefixer-rails"
 gem "bitters", "1.2.0"
 gem "bourbon", "4.3.4"
-gem "font-awesome-sass", "4.7.0"
+gem "font-awesome-sass", "6.7.2"
 gem "jekyll", "3.9.1"
 gem "kramdown-parser-gfm"
 gem "rake"
