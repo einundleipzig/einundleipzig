@@ -39,8 +39,8 @@ jobs:
         # Outputs to the './_site' directory by default
         run: |
           yarn install --frozen-lockfile
-          bourbon install --path _sass/bourbon
-          bitters install --path _sass/bourbon-bitters
+          bundle exec bourbon install --path _sass/bourbon
+          bundle exec bitters install --path _sass/bourbon-bitters
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
