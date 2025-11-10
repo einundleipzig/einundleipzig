@@ -41,7 +41,7 @@ jobs:
           yarn install --frozen-lockfile
           bundle exec bourbon install --path _sass/bourbon
           bundle exec bitters install --path _sass/bourbon-bitters
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+          bundle exec jekyll build
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
