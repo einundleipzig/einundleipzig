@@ -8,8 +8,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
-    autoprefixer-rails (10.1.0.0)
-      execjs
+    autoprefixer-rails (10.4.21.0)
+      execjs (~> 2)
     base64 (0.3.0)
     bitters (1.2.0)
       bourbon (>= 4.2)
